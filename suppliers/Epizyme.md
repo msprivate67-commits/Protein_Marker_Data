@@ -11,6 +11,7 @@ Source category: https://www.epizyme.cn/Products/Group/ProteinMWStandard
 - URL: https://www.epizyme.cn/Products/Details/25016
 - Bands: 10
 - Sizes (kDa): 10, 15, 25, 35, 40, 55, 70, 100, 130, 180
+- GenePad colors: 10 kDa green (`#16a34a`); 70 kDa red (`#dc2626`); all other bands blue (`#2563eb`)
 - PDF: pdfs/Epizyme_WJ107_manual.pdf ✓
 
 ## 双色预染蛋白Marker 15 kDa~150 kDa (Dual-Color Prestained Protein Marker)
@@ -19,6 +20,7 @@ Source category: https://www.epizyme.cn/Products/Group/ProteinMWStandard
 - URL: https://www.epizyme.cn/Products/Details/1070
 - Bands: 9
 - Sizes (kDa): 15, 20, 25, 35, 40, 50, 70, 100, 150
+- GenePad colors: 25 and 70 kDa red (`#dc2626`); all other bands blue (`#2563eb`)
 - PDF: pdfs/Epizyme_WJ101_manual.pdf ✓
 
 ## 双色预染蛋白Marker 10 kDa~250 kDa (Dual-Color Prestained Protein Marker)
@@ -27,6 +29,7 @@ Source category: https://www.epizyme.cn/Products/Group/ProteinMWStandard
 - URL: https://www.epizyme.cn/Products/Details/1071
 - Bands: 11
 - Sizes (kDa): 10, 15, 20, 25, 35, 40, 50, 70, 100, 150, 250
+- GenePad colors: 25 and 70 kDa red (`#dc2626`); all other bands blue (`#2563eb`)
 - PDF: 说明书 https://cdn.epizyme.cn/uploads/2021/12/171527059154.pdf (与WJ101同册)
 
 ## 三色预染蛋白Marker 10 kDa~250 kDa (Tri-Color Prestained Protein Marker)
@@ -35,6 +38,7 @@ Source category: https://www.epizyme.cn/Products/Group/ProteinMWStandard
 - URL: https://www.epizyme.cn/Products/Details/1073
 - Bands: 11
 - Sizes (kDa): 10, 15, 20, 25, 35, 40, 50, 70, 100, 150, 250
+- GenePad colors: 25 kDa green (`#16a34a`); 70 kDa red (`#dc2626`); all other bands blue (`#2563eb`)
 - PDF: 说明书 https://cdn.epizyme.cn/uploads/2021/12/171527059154.pdf (与WJ101同册)
 
 ## 双色预染蛋白Marker 10kDa~250kDa（适用于近红外荧光成像系统）
@@ -43,6 +47,7 @@ Source category: https://www.epizyme.cn/Products/Group/ProteinMWStandard
 - URL: https://www.epizyme.cn/Products/Details/1072
 - Bands: 11
 - Sizes (kDa): 10, 15, 20, 25, 35, 40, 50, 70, 100, 150, 250
+- GenePad colors: 25 and 70 kDa green (`#16a34a`); all other bands blue (`#2563eb`)
 - PDF: 说明书 https://cdn.epizyme.cn/uploads/2021/12/171527059154.pdf (与WJ101同册)
 
 ## 双色预染低分子量蛋白分子量标准 1.2~40 kDa（用于Tricine凝胶）
@@ -51,6 +56,7 @@ Source category: https://www.epizyme.cn/Products/Group/ProteinMWStandard
 - URL: https://www.epizyme.cn/Products/Details/26632
 - Bands: 7
 - Sizes (kDa): 1.2, 4.2, 7.5, 15, 20, 30, 40
+- GenePad colors: 20 kDa green (`#16a34a`); all other bands blue (`#2563eb`)
 - PDF: pdfs/Epizyme_WJ402_manual.pdf ✓
 
 ## 非预染蛋白Marker (Unstained Protein Ladder)
@@ -59,6 +65,7 @@ Source category: https://www.epizyme.cn/Products/Group/ProteinMWStandard
 - URL: https://www.epizyme.cn/Products/Details/1075
 - Bands: 10
 - Sizes (kDa): 10, 15, 20, 25, 35, 50, 70, 100, 150, 235
+- GenePad display color: all bands gray (`#334155`) to distinguish this unstained ladder in the simulation
 - PDF: pdfs/Epizyme_WJ201_manual.pdf ✓
 
 ---
