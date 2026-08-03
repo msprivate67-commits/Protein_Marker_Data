@@ -1,0 +1,1425 @@
+{
+ "total_suppliers": 56,
+ "suppliers_with_protein_markers": 26,
+ "total_products": 117,
+ "suppliers": {
+  "Accuris": {
+   "name": "Accuris",
+   "domain": "accuris-usa.com",
+   "protein_marker_count": 5,
+   "products": [
+    {
+     "name": "SmartCheck™ Tri-Color Extended Range Plus Protein Marker",
+     "catalog": "PR5013-TC (2 × 250 µl)",
+     "type": "Prestained, three-color (Tri-Color)",
+     "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
+     "bands": "13",
+     "sizes_kda": "Range 5–245 kDa (Tris-Glycine; 3.5–235 kDa in Bis-Tris). Reference bands: green at 25 kDa, red at 75 kDa; remaining bands blue.",
+     "pdf": "Accuris_PR5000TC_Manual.pdf, Accuris_PR5000_series_Brochure.pdf"
+    },
+    {
+     "name": "SmartCheck™ Tri-Color Extended Range Protein Marker",
+     "catalog": "PR5012-TC (2 × 250 µl)",
+     "type": "Prestained, three-color (Tri-Color)",
+     "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
+     "bands": "12",
+     "sizes_kda": "Range 9–245 kDa. Reference bands: green at 25 kDa, red at 75 kDa; remaining bands blue.",
+     "pdf": "Accuris_PR5000TC_Manual.pdf, Accuris_PR5000_series_Brochure.pdf"
+    },
+    {
+     "name": "SmartCheck™ Tri-Color Protein Marker",
+     "catalog": "PR5010-TC (2 × 250 µl)",
+     "type": "Prestained, three-color (Tri-Color)",
+     "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
+     "bands": "10",
+     "sizes_kda": "Range 9–180 kDa. Reference bands: green at 25 kDa, red at 75 kDa; remaining bands blue.",
+     "pdf": "Accuris_PR5000TC_Manual.pdf, Accuris_PR5000_series_Brochure.pdf"
+    },
+    {
+     "name": "SmartCheck™ All Blue Regular Range Plus Protein Marker",
+     "catalog": "PR5011-BL (2 × 250 µl)",
+     "type": "Prestained, single blue chromophore",
+     "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
+     "bands": "11",
+     "sizes_kda": "Range 9–180 kDa. Two enhanced-intensity reference bands at 25 kDa and 72 kDa.",
+     "pdf": "Accuris_PR5000_series_Brochure.pdf"
+    },
+    {
+     "name": "SmartCheck™ All Blue Regular Range Protein Marker",
+     "catalog": "PR5010-BL (2 × 250 µl)",
+     "type": "Prestained, single blue chromophore",
+     "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
+     "bands": "10",
+     "sizes_kda": "Range 9–180 kDa. Two enhanced-intensity reference bands at 25 kDa and 72 kDa.",
+     "pdf": "Accuris_PR5000_series_Brochure.pdf"
+    }
+   ]
+  },
+  "Agilent": {
+   "name": "Agilent",
+   "domain": "agilent.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Axygen": {
+   "name": "Axygen",
+   "domain": "www.axygen.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Azura-Genomics": {
+   "name": "Azura-Genomics",
+   "domain": "azuragenomics.com",
+   "protein_marker_count": 1,
+   "products": [
+    {
+     "name": "PureView™ Prestained Protein Ladder",
+     "catalog": "AZ-1141 (1 × 500 µl), AZ-1142 (2 × 500 µl), AZ-1142-2 (4 × 500 µl)",
+     "type": "Ready-to-use prestained protein ladder, three-color (tricolor) protein standard",
+     "url": "https://www.azuragenomics.com/products/pureview-prestained-protein-ladder",
+     "bands": "13",
+     "sizes_kda": "Range 5–245 kDa in Tris-Glycine buffer (3.5–235 kDa in Bis-Tris MOPS/MES). Two reference bands: green at 25 kDa, red at 75 kDa; remaining 11 bands blue. (Per-band masses in Table 1 of the manual — migration-chart table across buffer systems.)",
+     "pdf": "Azura_PureView_AZ1141_manual.pdf, Azura_ladders_product_sheet.pdf"
+    }
+   ]
+  },
+  "Bio-Rad": {
+   "name": "Bio-Rad",
+   "domain": "https://www.bio-rad.com",
+   "protein_marker_count": 6,
+   "products": [
+    {
+     "name": "Precision Plus Protein All Blue Standards",
+     "catalog": "1610373 (also 1610374 value pack / 1610393 mini-pack family)",
+     "type": "Prestained (All Blue; 10 blue-stained recombinant proteins)",
+     "url": "https://www.bio-rad.com/en-us/sku/1610373-precision-plus-protein-all-blue-standards",
+     "bands": "10 (range 10–250 kDa; reference bands at 25, 50, 75 kDa)",
+     "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250",
+     "pdf": "pdfs/BioRad_AllBlue_1610373_manual.pdf ✓ (downloaded via browser)"
+    },
+    {
+     "name": "Precision Plus Protein Dual Color Standards",
+     "catalog": "1610374",
+     "type": "Prestained Dual Color (8 blue + 2 pink reference bands)",
+     "url": "https://www.bio-rad.com/en-us/sku/1610374-precision-plus-protein-dual-color-standards",
+     "bands": "10 (range 10–250 kDa)",
+     "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250 (pink references at 25 & 75 kDa)",
+     "pdf": "- Instruction Manual https://www.bio-rad.com/webroot/web/pdf/lsr/literature/4110025.pdf (403 — not saved)"
+    },
+    {
+     "name": "Precision Plus Protein Unstained Standards (Strep-tagged)",
+     "catalog": "1610363",
+     "type": "Unstained (recombinant, Strep-tag affinity handle)",
+     "url": "https://www.bio-rad.com/en-us/sku/1610363-precision-plus-protein-unstained-standards",
+     "bands": "10 (range 10–250 kDa; reference bands at 25, 50, 75 kDa)",
+     "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250",
+     "pdf": "- Instruction Manual https://www.bio-rad.com/webroot/web/pdf/lsr/literature/Bulletin_4110023.pdf (403 — not saved)"
+    },
+    {
+     "name": "Precision Plus Protein WesternC Blotting Standards",
+     "catalog": "1610376",
+     "type": "Western blotting standard (combination of stained Dual Color + unstained Strep-tag proteins; for chemiluminescent/fluorescent western visualization with StrepTactin-HRP)",
+     "url": "https://www.bio-rad.com/en-us/sku/1610376-precision-plus-protein-westernc-standards",
+     "bands": "10 (range 10–250 kDa; three pink reference bands at 25, 50, 75 kDa)",
+     "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250",
+     "pdf": "- Instruction Manual (standards) https://www.bio-rad.com/webroot/web/pdf/lsr/literature/10008761.pdf (403 — not saved)"
+    },
+    {
+     "name": "Precision Plus Protein Kaleidoscope Standards",
+     "catalog": "1610395 (value pack; also 1610393 single)",
+     "type": "Prestained Kaleidoscope (multicolored recombinant proteins)",
+     "url": "https://www.bio-rad.com/en-us/sku/1610395-precision-plus-protein-kaleidoscope-prestained-standards",
+     "bands": "10",
+     "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250",
+     "pdf": "Instruction Manual https://www.bio-rad.com/webroot/web/pdf/lsr/literature/4110182.pdf (403 — not saved)"
+    },
+    {
+     "name": "Silver Stain SDS-PAGE Standards (Low Range), natural",
+     "catalog": "1610314",
+     "type": "Unstained natural proteins (for silver stain / Coomassie; broad-use SDS-PAGE)",
+     "url": "https://www.bio-rad.com/en-us/sku/1610314",
+     "bands": "6",
+     "sizes_kda": "range 14.4–97.4 (commonly 14.4, 21.5, 31, 45, 66.2, 97.4 — natural bovine proteins; intermediate exact values not enumerated on page)",
+     "pdf": "not enumerated"
+    }
+   ]
+  },
+  "Bioline": {
+   "name": "Bioline",
+   "domain": "www.bioline.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Bioneer": {
+   "name": "Bioneer",
+   "domain": "bioneer.com (English catalog: eng.bioneer.com / US shop: us.bioneer.com)",
+   "protein_marker_count": 1,
+   "products": [
+    {
+     "name": "AccuLadder™ 3-color Prestained Protein size marker (Broad)",
+     "catalog": "D-2030 (500 µl)",
+     "type": "Prestained, three-color (25 kDa = green, 75 kDa = red, other 10 bands blue)",
+     "url": "https://eng.bioneer.com/20-d-2030.html",
+     "bands": "12",
+     "sizes_kda": "range 11–245 kDa (exact 12-band ladder is image-based; reference bands documented at 25 kDa green and 75 kDa red)",
+     "pdf": "Bioneer_D2030_manual.pdf (https://eng.bioneer.com/literatures/manual/LaddersandMarkers/PM_Prestained_protein_marker_EN.pdf)"
+    }
+   ]
+  },
+  "Bionexus": {
+   "name": "Bionexus",
+   "domain": "www.bionexus.net",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Biotium": {
+   "name": "Biotium",
+   "domain": "biotium.com",
+   "protein_marker_count": 2,
+   "products": [
+    {
+     "name": "Peacock™ Prestained Protein Marker",
+     "catalog": "21530-50uL (50 µl), 21530-500uL (500 µl)",
+     "type": "Prestained, three-color protein ladder",
+     "url": "https://biotium.com/product/peacock-prestained-protein-marker/",
+     "bands": "10 (8 blue bands + orange reference + green reference)",
+     "sizes_kda": "Range 10–180 kDa. Reference bands: orange at ~75 kDa (also labeled ~72 kDa on some gels), green at 25 kDa. (Individual blue band masses shown in migration chart Figure 1 of PI PDF.)",
+     "pdf": "- PDF: Biotium_Peacock_21530_PI.pdf"
+    },
+    {
+     "name": "Peacock™ Plus Prestained Protein Marker",
+     "catalog": "21531-50uL (50 µl), 21531-500uL (500 µl)",
+     "type": "Prestained, three-color protein ladder",
+     "url": "https://biotium.com/product/peacock-plus-prestained-protein-marker/",
+     "bands": "12 (10 blue bands + orange reference + green reference)",
+     "sizes_kda": "Range 8–245 kDa. Reference bands: orange at ~75 kDa, green at 25 kDa. (Individual blue band masses shown in migration chart Figure 1 of PI PDF.)",
+     "pdf": "- PDF: Biotium_PeacockPlus_21531_PI.pdf"
+    }
+   ]
+  },
+  "Biozym": {
+   "name": "Biozym",
+   "domain": "biozym.com",
+   "protein_marker_count": 3,
+   "products": [
+    {
+     "name": "TriColor Protein Ladder (10 - 180 kDa)",
+     "catalog": "350900201",
+     "type": "Prestained (tricolor)",
+     "url": "https://www.biozym.com/biochemikalien/proteinbiologie/protein-marker/tricolor-protein-ladder-10-180-kda",
+     "bands": "10",
+     "sizes_kda": "10-180 (reference bands approx. 25, 75)",
+     "pdf": ""
+    },
+    {
+     "name": "TriColor Broad Protein Ladder (3.5 - 245 kDa)",
+     "catalog": "350900101",
+     "type": "Prestained (tricolor)",
+     "url": "https://www.biozym.com/biochemikalien/proteinbiologie/protein-marker/tricolor-broad-protein-ladder-3.5-245-kda",
+     "bands": "13",
+     "sizes_kda": "3.5-245 (reference bands approx. 25, 75)",
+     "pdf": ""
+    },
+    {
+     "name": "ProSieve QuadColor Protein Marker (4.6 - 300 kDa)",
+     "catalog": "830537 (Biozym) / 00191770 (Lonza)",
+     "type": "Prestained (quadcolor)",
+     "url": "https://www.biozym.com/biochemikalien/proteinbiologie/protein-marker/prosieve-quadcolor-protein-marker-4.6-300-kda",
+     "bands": "11",
+     "sizes_kda": "4.6-300",
+     "pdf": ""
+    }
+   ]
+  },
+  "Canvax_Biotech": {
+   "name": "Canvax_Biotech",
+   "domain": "canvaxbiotech.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Carl_Roth": {
+   "name": "Carl_Roth",
+   "domain": "carlroth.com",
+   "protein_marker_count": 5,
+   "products": [
+    {
+     "name": "PiNK Plus Prestained Protein Ladder",
+     "catalog": "**1GG5.1**",
+     "type": "**Prestained, multicolor** (pink/blue multicolor)",
+     "url": "https://www.carlroth.com/com/en/protein-markers-prestained/pink-plus-prestained-protein-ladder/p/1gg5.1",
+     "bands": "**11 bands**, range **10–175 kDa**",
+     "sizes_kda": "blue-stained reference bands at ~10, 40 and 90 kDa (full per-band",
+     "pdf": "`CarlRoth_PinkPlus_1GG5_Spec.pdf`"
+    },
+    {
+     "name": "BlueRAY Prestained Protein Ladder",
+     "catalog": "**1GG6.1**",
+     "type": "**Prestained, three-color** (blue + green ref @25 kDa + red ref @75 kDa)",
+     "url": "https://www.carlroth.com/com/en/protein-markers-prestained/blueray-prestained-protein-ladder/p/1gg6.1",
+     "bands": "**10 bands**, range **10–180 kDa**",
+     "sizes_kda": "green ref @25, red ref @75 (others blue)",
+     "pdf": "`CarlRoth_BlueRay_1GG6_Spec.pdf`"
+    },
+    {
+     "name": "BLUeye Prestained Protein Ladder",
+     "catalog": "**1GG7.1**",
+     "type": "**Prestained, three-color** (blue + green ref @25 kDa + red ref @75 kDa)",
+     "url": "https://www.carlroth.com/com/en/protein-markers-prestained/blueye-prestained-protein-ladder/p/1gg7.1",
+     "bands": "**12 bands**, range **10–245 kDa**",
+     "sizes_kda": "green ref @25, red ref @75",
+     "pdf": "`CarlRoth_BlueEye_1GG7_Spec.pdf`"
+    },
+    {
+     "name": "BLUelf Prestained Protein Ladder",
+     "catalog": "**1GG8.1**",
+     "type": "**Prestained, three-color** (blue + green ref @25 kDa + red ref @75 kDa)",
+     "url": "https://www.carlroth.com/com/en/protein-markers-prestained/bluelf-prestained-protein-ladder/p/1gg8.1",
+     "bands": "**13 bands**, range **3.5–245 kDa** (widest range)",
+     "sizes_kda": "green ref @25, red ref @75",
+     "pdf": "`CarlRoth_BlueElf_1GG8_Spec.pdf`"
+    },
+    {
+     "name": "BlueAQUA Prestained Protein Ladder",
+     "catalog": "**1GG9.1**",
+     "type": "**Prestained, single-color (all blue)** — enhanced-intensity reference",
+     "url": "https://www.carlroth.com/com/en/protein-markers-prestained/blueaqua-prestained-protein-ladder/p/1gg9.1",
+     "bands": "**11 bands**, range **10–180 kDa**",
+     "sizes_kda": "enhanced-intensity ref bands @25 and @72 kDa",
+     "pdf": "`CarlRoth_BlueAqua_1GG9_Spec.pdf`"
+    }
+   ]
+  },
+  "Dongsheng_GDSBio": {
+   "name": "Dongsheng_GDSBio",
+   "domain": "gdsbio.cn",
+   "protein_marker_count": 4,
+   "products": [
+    {
+     "name": "15-180KD Prestained Protein Ladder",
+     "catalog": "D1011-A (250 µl) / D1011-B",
+     "type": "Prestained, multi-color (blue + orange)",
+     "url": "https://gdsbio.cn/product/product-22457-103642",
+     "bands": "8",
+     "sizes_kda": "15, 25, 35, 40, 55, 70, 100, 180",
+     "pdf": "GDSBio_D1011_15-180KD.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1011-A15-180KDPrestainedProteinLadderV1.0.pdf)"
+    },
+    {
+     "name": "10-250KD Prestained Protein Ladder",
+     "catalog": "D1012-A / D1012-B",
+     "type": "Prestained, multi-color (blue + orange + green)",
+     "url": "https://gdsbio.cn/product/product-22457-103645",
+     "bands": "10",
+     "sizes_kda": "10, 15, 25, 35, 40, 55, 70, 100, 150, 250",
+     "pdf": "GDSBio_D1012_10-250KD.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1012-AD1012-B10-250KDPrestainedProteinLadderV1.0.pdf)"
+    },
+    {
+     "name": "10-180KD Prestained Protein Ladder",
+     "catalog": "D1013-A / D1013-B",
+     "type": "Prestained, multi-color (blue + orange + green)",
+     "url": "https://gdsbio.cn/product/product-22457-103646",
+     "bands": "10",
+     "sizes_kda": "10, 15, 25, 35, 40, 55, 70, 100, 130, 180",
+     "pdf": "GDSBio_D1013_10-180KD.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1013-AD1013-B10-180KDPrestainedProteinLadderV1.0.pdf)"
+    },
+    {
+     "name": "10-250KD 预染显影蛋白Marker (Prestained + Western-Blot Developable Protein Marker)",
+     "catalog": "D1014-A / D1014-B",
+     "type": "Hybrid — 10 prestained bands (blue/orange/green) + 2 unstained IgG-binding bands (30, 80 kDa) detectable by Western Blot chemiluminescence and Coomassie staining",
+     "url": "https://gdsbio.cn/product/product-22457-103647",
+     "bands": "12",
+     "sizes_kda": "10, 15, 25, 30, 35, 40, 55, 70, 80, 100, 150, 250 (range 10–250 kDa)",
+     "pdf": "GDSBio_D1014_10-250KD_WB.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1014-AD1014-B10-250KDMarkerV1.0.pdf)"
+    }
+   ]
+  },
+  "DyneBio": {
+   "name": "DyneBio",
+   "domain": "dynebio.co.kr",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "EURx": {
+   "name": "EURx",
+   "domain": "eurx.com.pl",
+   "protein_marker_count": 3,
+   "products": [
+    {
+     "name": "Perfect™ Tricolor Protein Ladder",
+     "catalog": "E3210 / E3210-01 (50 loadings)",
+     "type": "Prestained, three-color (25 kDa = green, 75 kDa = orange, others blue)",
+     "url": "https://eurx.com.pl/product/e3210/",
+     "bands": "12",
+     "sizes_kda": "11, 17, 20, 25, 35, 48, 63, 75, 100, 135, 180, 245 (range 11–245 kDa)",
+     "pdf": "EURx_E3210_Tricolor.pdf (https://eurx.com.pl/docs/specs/en/e3210.pdf)"
+    },
+    {
+     "name": "Perfect™ Rainbow Protein Ladder (prestained)",
+     "catalog": "E3212 / E3212-01 (50 loadings)",
+     "type": "Prestained, multi-color (15 kDa = yellow, 25 kDa = green, 80 kDa = red, 250 kDa = purple, others blue)",
+     "url": "https://eurx.com.pl/product/e3212/",
+     "bands": "13",
+     "sizes_kda": "5, 11, 15, 20, 25, 36, 50, 58, 80, 110, 135, 180, 250 (range 5–250 kDa)",
+     "pdf": "EURx_E3212_Rainbow.pdf (https://eurx.com.pl/docs/specs/en/e3212.pdf)"
+    },
+    {
+     "name": "Perfect™ Amber Protein Ladder (prestained)",
+     "catalog": "E3214 / E3214-01 (100 loadings)",
+     "type": "Prestained, multi-color (15 kDa = yellow, 25 kDa = green, 75 kDa = purple, 255 kDa = orange, others blue)",
+     "url": "https://eurx.com.pl/product/e3214/",
+     "bands": "12",
+     "sizes_kda": "11, 15, 20, 25, 36, 50, 58, 75, 110, 115, 180, 255 (range 11–255 kDa)",
+     "pdf": "EURx_E3214_Amber.pdf (https://eurx.com.pl/docs/specs/en/e3214.pdf)"
+    }
+   ]
+  },
+  "Ecogen": {
+   "name": "Ecogen",
+   "domain": "www.ecogen.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Eurogentec": {
+   "name": "Eurogentec",
+   "domain": "eurogentec.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Fisher_Scientific": {
+   "name": "Fisher_Scientific",
+   "domain": "www.fishersci.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "FroggaBio": {
+   "name": "FroggaBio",
+   "domain": "froggabio.com",
+   "protein_marker_count": 3,
+   "products": [
+    {
+     "name": "BLUelf Prestained Protein Ladder (group page)",
+     "catalog": "PM008-R500G / PM008-R500M",
+     "type": "Prestained",
+     "url": "https://www.froggabio.com/globalstoreview/bluelf-group.html",
+     "bands": "12",
+     "sizes_kda": "10-245 (reference bands approx. 25, 75)",
+     "pdf": ""
+    },
+    {
+     "name": "BLUelf Prestained Protein Ladder (500 µl)",
+     "catalog": "PM008-R500G",
+     "type": "Prestained",
+     "url": "https://www.froggabio.com/globalstoreview/bluelf-prestained-protein-ladder-pm008-r500g.html",
+     "bands": "",
+     "sizes_kda": "10-245 (reference bands approx. 25, 75)",
+     "pdf": ""
+    },
+    {
+     "name": "IRIS11 Prestained Protein Ladder",
+     "catalog": "IRIS11",
+     "type": "Prestained",
+     "url": "https://www.froggabio.com/globalstoreview/iris11-prestained-protein-ladder-1.html",
+     "bands": "",
+     "sizes_kda": "11 bands (approx. 10-245)",
+     "pdf": ""
+    }
+   ]
+  },
+  "G-Biosciences": {
+   "name": "G-Biosciences",
+   "domain": "gbiosciences.com (A Geno Technology, Inc. brand)",
+   "protein_marker_count": 2,
+   "products": [
+    {
+     "name": "PAGEmark™ Tricolor PLUS Protein Markers",
+     "catalog": "786-419",
+     "type": "Prestained, three-color (Tricolor)",
+     "url": "https://www.gbiosciences.com/Protein-Markers/PAGEmark-Protein-Markers",
+     "bands": "13",
+     "sizes_kda": "Wide range 5–245 kDa in Tris-Glycine buffer (3.5–235 kDa in Bis-Tris). Reference bands: green at 25 kDa, red at 75 kDa. (Individual 13 band masses not enumerated separately in protocol text.)",
+     "pdf": "GBiosciences_PAGEmarkTricolorPLUS_786-419_protocol.pdf, GBiosciences_PAGEmarkTricolorPLUS_786-419_SDS.pdf"
+    },
+    {
+     "name": "PAGEmark™ Blue PLUS Protein Markers",
+     "catalog": "786-418",
+     "type": "Prestained (single blue chromophore)",
+     "url": "https://www.gbiosciences.com/Protein-Markers/PAGEmark-Protein-Markers",
+     "bands": "12",
+     "sizes_kda": "Wide range 10–240 kDa in Tris-Glycine buffer (9–235 kDa in Bis-Tris MOPS/MES). Two enhanced-intensity reference bands: 25 kDa and 72 kDa. (Individual 12 band masses not enumerated separately in protocol text.)",
+     "pdf": "GBiosciences_PAGEmarkBluePLUS_786-418_protocol.pdf, GBiosciences_PAGEmarkBluePLUS_786-418_SDS.pdf"
+    }
+   ]
+  },
+  "GenDEPOT": {
+   "name": "GenDEPOT",
+   "domain": "www.gendepot.com",
+   "protein_marker_count": 1,
+   "products": [
+    {
+     "name": "Xpert Plus Prestained Protein Marker (P8507-050)",
+     "catalog": "P8507-050",
+     "type": "Pre-stained, ready-to-use (3-color: blue chromophore + 2 orange + 1 purple reference bands). Broad range 10–250 kDa.",
+     "url": "https://gendepot.com/products/xpert-plus-prestained-protein-marker",
+     "bands": "11",
+     "sizes_kda": "10, 14, 18, 26, 36, 49, 64, 75, 110, 150, 250",
+     "pdf": "GenDEPOT_P8507_Insert.pdf (product insert), GenDEPOT_P8507_SDS.pdf (SDS)"
+    }
+   ]
+  },
+  "GenScript": {
+   "name": "GenScript",
+   "domain": "genscript.com",
+   "protein_marker_count": 4,
+   "products": [
+    {
+     "name": "Broad Multi Color Pre-Stained Protein Standard",
+     "catalog": "M00624 (also sold as M00624-250, 250 µl size)",
+     "type": "Pre-stained, Multicolor (orange / green / blue bands)",
+     "url": "https://www.genscript.com/molecule/M00624-Broad_Multi_Color_Pre-Stained_Protein_Standard.html",
+     "bands": "10",
+     "sizes_kda": "10–270 kDa range. Reference bands: 30 kDa (orange), 270 kDa (orange), 50 kDa (green); remaining bands blue. (Specific kDa values for all 10 bands not fully enumerated in page text — full list in downloaded manual PDF.)",
+     "pdf": "- PDF: GenScript_BroadMultiColor_M00624_manual.pdf"
+    },
+    {
+     "name": "PAGE-MASTER Protein Standard Plus",
+     "catalog": "MM1397 (MM1397-500, 500 µl)",
+     "type": "Partially pre-stained (2 blue pre-stained reference bands at 15 & 50 kDa + 7 unstained bands)",
+     "url": "https://www.genscript.com/molecule/MM1397-PAGE_MASTER_Protein_Standard_Plus.html",
+     "bands": "9",
+     "sizes_kda": "10, 15, 20, 30, 40, 50, 60, 80, 120 (15 kDa & 50 kDa are pre-stained blue)",
+     "pdf": "GenScript_PAGEMasterPlus_MM1397_manual.pdf"
+    },
+    {
+     "name": "PAGE-MASTER Protein Standard (for SDS-PAGE)",
+     "catalog": "M00516",
+     "type": "Unstained protein standard",
+     "url": "https://www.genscript.com/molecule/M00516-PAGE_MASTER_Protein_Standard_for_SDS_PAGE_.html",
+     "bands": "7",
+     "sizes_kda": "10, 20, 30, 40, 60, 80, 120",
+     "pdf": "GenScript_PAGEMaster_M00516_manual.pdf"
+    },
+    {
+     "name": "WB-MASTER Protein Standard",
+     "catalog": "M00521",
+     "type": "Unstained, Western Blot protein standard (recombinant proteins with IgG binding site for antibody-based visualization)",
+     "url": "https://www.genscript.com/molecule/M00521-WB_MASTER_Protein_Standard.html",
+     "bands": "7",
+     "sizes_kda": "20, 30, 40, 50, 60, 80, 120",
+     "pdf": "GenScript_WBMaster_M00521_manual.pdf"
+    }
+   ]
+  },
+  "GeneDireX": {
+   "name": "GeneDireX",
+   "domain": "genedirex.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "GeneMate": {
+   "name": "GeneMate",
+   "domain": "www.bioexpress.com (defunct); now distributed via thomassci.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Geneaid": {
+   "name": "Geneaid",
+   "domain": "www.geneaid.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Genessee_Scientific": {
+   "name": "Genessee_Scientific",
+   "domain": "www.geneseesci.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Gold-Biotechnology": {
+   "name": "Gold-Biotechnology",
+   "domain": "goldbio.com",
+   "protein_marker_count": 3,
+   "products": [
+    {
+     "name": "BLUEstain™ 2 Protein Ladder, 5-245 kDa",
+     "catalog": "P008 (P008-500 = 500 µl size)",
+     "type": "Prestained, three-color (tri-color) protein standard",
+     "url": "https://www.goldbio.com/products/bluestain-2-protein-ladder-5-245-kda",
+     "bands": "13",
+     "sizes_kda": "Range 3.5–245 kDa. Reference bands: green at 25 kDa, red at 75 kDa; all other bands blue. (Individual 13 band masses shown graphically in TDS/Comparison chart — see PDFs.)",
+     "pdf": "- PDF: GoldBio_BLUEstain2_P008_TDS.pdf, GoldBio_Ladder_Comparison.pdf"
+    },
+    {
+     "name": "BLUEstain™ Protein Ladder, 11-245 kDa",
+     "catalog": "P007 (P007-500 = 500 µl size)",
+     "type": "Prestained, three-color (tri-color) protein standard",
+     "url": "https://www.goldbio.com/products/bluestain-protein-ladder-11-245-kda",
+     "bands": "12",
+     "sizes_kda": "Range 10–245 kDa. Reference bands: green at 25 kDa, red at 75 kDa; other bands blue. (Individual masses in TDS PDF.)",
+     "pdf": "- PDF: GoldBio_BLUEstain_P007_TDS.pdf, GoldBio_Ladder_Comparison.pdf"
+    },
+    {
+     "name": "BLUEstain™ Low Range Protein Ladder, 2-40 kDa",
+     "catalog": "P002 (P002-250 = 250 µl size)",
+     "type": "Prestained, tri-color protein standard",
+     "url": "https://www.goldbio.com/products/bluestain-low-range-protein-ladder",
+     "bands": "6",
+     "sizes_kda": "Range 2–40 kDa. Reference bands: red at 40 kDa, green at 10 kDa; additional visible bands below 10 kDa. (Individual masses in Comparison chart PDF.)",
+     "pdf": "- PDF: GoldBio_Ladder_Comparison.pdf"
+    }
+   ]
+  },
+  "IBI-Scientific": {
+   "name": "IBI-Scientific",
+   "domain": "ibiscientific.com (now redirects 301 → ibisci.com)",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Jena_Bioscience": {
+   "name": "Jena_Bioscience",
+   "domain": "jenabioscience.com",
+   "protein_marker_count": 4,
+   "products": [
+    {
+     "name": "BlueRay Prestained Protein Marker (10–180 kDa)",
+     "catalog": "**PS-103**",
+     "type": "**Prestained, three-color** (blue proteins; green ref @25 kDa, red ref @75 kDa)",
+     "url": "https://www.jenabioscience.com/molecular-biology/enzymes-protein-markers/protein-markers/ps-103-blueray-prestained-protein-marker-10-180kda",
+     "bands": "**10 bands**, range **10–180 kDa**",
+     "sizes_kda": "individual band sizes shown on migration-pattern image (not in",
+     "pdf": "`JenaBioscience_BlueRay_PS-103_Datasheet.pdf`,"
+    },
+    {
+     "name": "BlueEye Prestained Protein Marker (10–245 kDa)",
+     "catalog": "**PS-104**",
+     "type": "**Prestained, three-color** (blue + green ref @25 kDa, red ref @75 kDa)",
+     "url": "https://www.jenabioscience.com/molecular-biology/enzymes-protein-markers/protein-markers/ps-104-blueeye-prestained-protein-marker-10-245kda",
+     "bands": "**12 bands**, range **10–245 kDa**",
+     "sizes_kda": "see migration-pattern image; refs at 25 (green) & 75 (red) kDa",
+     "pdf": "`JenaBioscience_BlueEye_PS-104_Datasheet.pdf`,"
+    },
+    {
+     "name": "BlueElf Prestained Protein Marker (5–245 kDa)",
+     "catalog": "**PS-105**",
+     "type": "**Prestained, three-color** (blue + green ref @25 kDa, red ref @75 kDa)",
+     "url": "https://www.jenabioscience.com/molecular-biology/enzymes-protein-markers/protein-markers/ps-105-blueelf-prestained-protein-marker-5-245kda",
+     "bands": "**13 bands**, range **5–245 kDa** (widest range of the four)",
+     "sizes_kda": "see migration-pattern image; refs at 25 (green) & 75 (red) kDa",
+     "pdf": "`JenaBioscience_BlueElf_PS-105_Datasheet.pdf`,"
+    },
+    {
+     "name": "BlueClassic Prestained Protein Marker (10–180 kDa)",
+     "catalog": "**PS-107**",
+     "type": "**Prestained, single-color (all blue)** — budget/economy option",
+     "url": "https://www.jenabioscience.com/molecular-biology/enzymes-protein-markers/protein-markers/ps-107-blueclassic-prestained-protein-marker-10-180kda",
+     "bands": "**10 bands**, range **10–180 kDa**",
+     "sizes_kda": "see migration-pattern image (no green/red reference bands)",
+     "pdf": "`JenaBioscience_BlueClassic_PS-107_Datasheet.pdf`,"
+    }
+   ]
+  },
+  "KAPA-Biosystems": {
+   "name": "KAPA-Biosystems",
+   "domain": "kapabiosystems.com (now redirects to Roche; the old domain currently redirects to an UNRELATED site, affipcr.com, about IgG kappa light chains — do not treat that as KAPA)",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Lonza": {
+   "name": "Lonza",
+   "domain": "lonza.com (shop: bioscience.lonza.com)",
+   "protein_marker_count": 1,
+   "products": [
+    {
+     "name": "ProSieve QuadColor Protein Marker  (CURRENT)",
+     "catalog": "**00193837** (Lonza internal ID `000000000000193837`)",
+     "type": "**Prestained, 4-color** (four different dyes)",
+     "url": "https://bioscience.lonza.com/lonza_bs/US/en/Electrophoresis/p/000000000000193837/ProSieve-QuadColor-Protein-Marker",
+     "bands": "**12 bands**",
+     "sizes_kda": "**4.6, 10, 15, 25, 40, 55, 70, 100, 140, 170, 250, 300 kDa**",
+     "pdf": "`Lonza_ProSieveQuadColorProteinMarker_Instructions.pdf`"
+    }
+   ]
+  },
+  "Lucigen": {
+   "name": "Lucigen",
+   "domain": "lucigen.com (now part of LGC / Biosearch Technology — redirects to biosearchtech.com/lucigen)",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "MIDSCI": {
+   "name": "MIDSCI",
+   "domain": "midsci.com (storefront at shop.midsci.com)",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "MilliporeSigma": {
+   "name": "MilliporeSigma",
+   "domain": "https://www.sigmaaldrich.com (also https://www.emdmillipore.com)",
+   "protein_marker_count": 0,
+   "products": [
+    {
+     "name": "ColorBurst Electrophoresis Marker",
+     "catalog": "C1992",
+     "type": "Prestained (blue/colored, ready-to-use)",
+     "url": "https://www.sigmaaldrich.com/US/en/product/sigma/c1992 (could not scrape — timed out)",
+     "bands": "~9 (range ~14–220 kDa)",
+     "sizes_kda": "~15, 25, 35, 50, 75, 100, 150, 220 (approximate; lot-calibrated)",
+     "pdf": "Product Information Sheet expected at https://www.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/102/829/c1992pis.pdf (unreachable)"
+    },
+    {
+     "name": "Prestained Protein Marker, Broad Range (Sigma / Novex-style)",
+     "catalog": "M0531 (Prestained Protein Marker, recombinant)",
+     "type": "Prestained",
+     "url": "https://www.sigmaaldrich.com/US/en/product/sigma/m0531 (timed out)",
+     "bands": "~10 (range ~10–180 kDa)",
+     "sizes_kda": "~10, 17, 25, 35, 48, 65, 85, 110, 140, 180 (approximate)",
+     "pdf": "PI sheet unreachable"
+    },
+    {
+     "name": "GE/Amersham / Cytiva HMW & LMW Calibration Kits (distributed by Sigma)",
+     "catalog": "HMW-CEF / CFA (HMW Calibration Kit), LMW-CEF / CFA (LMW Calibration Kit) — also MWGF200 (HMW), MWGF100 (LMW)",
+     "type": "Unstained (size-exclusion / SDS-PAGE calibration standards, natural)",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "Conclusion",
+     "catalog": "",
+     "type": "",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": "catalog numbers should be done manually on sigmaaldrich.com."
+    }
+   ]
+  },
+  "NIPPON_GENE": {
+   "name": "NIPPON_GENE",
+   "domain": "nippongene.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "NZYTech": {
+   "name": "NZYTech",
+   "domain": "nzytech.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "NewEnglandBiolabs": {
+   "name": "NewEnglandBiolabs",
+   "domain": "https://www.neb.com (product pages 301-redirect to neb.cn in this environment; both reachable via curl)",
+   "protein_marker_count": 3,
+   "products": [
+    {
+     "name": "Unstained Protein Standard, Broad Range (10–200 kDa)",
+     "catalog": "P7717 (NEB # P7717; direct replacement of legacy P7706/P7708 lines)",
+     "type": "Unstained (pure recombinant proteins)",
+     "url": "https://www.neb.com/en-us/products/p7717-unstained-protein-standard-broad-range-10-200-kda",
+     "bands": "12 (range 10–200 kDa)",
+     "sizes_kda": "10, 15, 20, 25, 35, 50, 70, 100, 120, 150, 200 (and a small ~3 kDa reference per NEB chart; band set per published spec)",
+     "pdf": "pdfs/NEB_P7717_Unstained_COA.pdf (lot-specific; ~100 KB)"
+    },
+    {
+     "name": "Blue Prestained Protein Standard, Broad Range (11–250 kDa)",
+     "catalog": "P7718 (direct replacement of legacy NEB# P7706, 11–190 kDa)",
+     "type": "Prestained (blue; covalently coupled blue chromophore, recombinant)",
+     "url": "https://www.neb.com/en-us/products/p7718-blue-prestained-protein-standard-broad-range-11-250-kda",
+     "bands": "11 (range 11–250 kDa)",
+     "sizes_kda": "11, 17, 25, 35, 50, 70, 90, 130, 170, 220, 250 (per NEB chart/spec)",
+     "pdf": "pdfs/NEB_P7718_BluePrestained_COA.pdf (~68 KB)"
+    },
+    {
+     "name": "Color Prestained Protein Standard, Broad Range (10–250 kDa)",
+     "catalog": "P7719",
+     "type": "Prestained multicolor (recombinant, multi-chromophore)",
+     "url": "https://www.neb.com/en-us/products/p7719-color-prestained-protein-standard-broad-range-10-250-kda",
+     "bands": "11 (range 10–250 kDa)",
+     "sizes_kda": "10, 15, 25, 35, 50, 70, 100, 140, 180, 220, 250 (per NEB chart/spec; two reference bands intensified)",
+     "pdf": "pdfs/NEB_P7719_ColorPrestained_COA.pdf (~104 KB)"
+    }
+   ]
+  },
+  "OriGene": {
+   "name": "OriGene",
+   "domain": "origene.com",
+   "protein_marker_count": 1,
+   "products": [
+    {
+     "name": "MYC/DDK Tagged Western Blot Molecular Weight Markers",
+     "catalog": "MWM1001",
+     "type": "Western Blot / Immunoprecipitation reagent — antibody-detectable molecular weight markers (NOT a prestained gel ladder). Consists of 5 over-expressed cell lysates with Myc/DDK tags, detected via anti-Myc / anti-DDK antibodies.",
+     "url": "https://www.origene.com/catalog/others/molecular-tools/mwm1001-mycddk-tagged-western-blot-molecular-weight-markers",
+     "bands": "5",
+     "sizes_kda": "Range 23–158 kDa. (Specific 5 band masses shown in western blot image; not enumerated as text in datasheet.)",
+     "pdf": "OriGene_MWM1001_datasheet.pdf"
+    }
+   ]
+  },
+  "PHENIX_Research": {
+   "name": "PHENIX_Research",
+   "domain": "phenixresearch.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "PennState_DNA_Ladders": {
+   "name": "PennState_DNA_Ladders",
+   "domain": "personal.psu.edu (lab page)",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Phage_and_Plasmid_Markers": {
+   "name": "Phage_and_Plasmid_Markers",
+   "domain": "fermentas.com → thermofisher.com (Fermentas brand now under Thermo Fisher)",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "Promega": {
+   "name": "Promega",
+   "domain": "https://www.promega.com (geo-redirects to https://www.promega.com.cn in this environment)",
+   "protein_marker_count": 0,
+   "products": [
+    {
+     "name": "Protein Molecular Weight Marker, Broad Range",
+     "catalog": "V8491 / V849A (also V8495 / V849B pack variants) — primary SKU **V8491**",
+     "type": "Unstained (natural proteins; for SDS-PAGE / Coomassie or silver stain)",
+     "url": "https://www.promega.com/products/protein-analysis/protein-purification-and-detection/protein-molecular-weight-markers/catnum-v8491/",
+     "bands": "~8 (range ~20–120 kDa / 15–150 kDa depending on spec)",
+     "sizes_kda": "~20, 30, 40, 50, 60, 80, 100, 120 (natural-protein mix; verify on current COA)",
+     "pdf": "Product Information sheet (TB-style) — direct PDF host returned 404; not saved."
+    },
+    {
+     "name": "Protein Molecular Weight Marker, Mid Range",
+     "catalog": "V849C (Mid Range) — also packaged as V849A",
+     "type": "Unstained (natural proteins)",
+     "url": "https://www.promega.com/products/protein-analysis/protein-purification-and-detection/protein-molecular-weight-markers/",
+     "bands": "~7 (range ~14–66 kDa)",
+     "sizes_kda": "~14, 21, 31, 45, 66 (BSA/ovalbumin/CA typical mix — confirm on Promega PI)",
+     "pdf": "not retrievable."
+    },
+    {
+     "name": "Protein Molecular Weight Markers, Biotinylated",
+     "catalog": "V8495 (Biotinylated marker set) / also W1501-family variants",
+     "type": "Biotinylated (for use with streptavidin-HRP chemiluminescent western detection)",
+     "url": "https://www.promega.com/products/protein-analysis/protein-purification-and-detection/protein-molecular-weight-markers/",
+     "bands": "variable (~8 across broad range)",
+     "sizes_kda": "broad-range set; confirm on Promega PI",
+     "pdf": "not retrievable."
+    },
+    {
+     "name": "Conclusion",
+     "catalog": "",
+     "type": "",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": "sizes and current catalog numbers must be done manually on www.promega.com (or via the Promega Technical Bulletin / TB PDF for V8491)."
+    }
+   ]
+  },
+  "Qiagen": {
+   "name": "Qiagen",
+   "domain": "qiagen.com",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "SERVA": {
+   "name": "SERVA",
+   "domain": "serva.de (SERVA Electrophoresis GmbH, Heidelberg, Germany)",
+   "protein_marker_count": 12,
+   "products": [
+    {
+     "name": "Protein Test Mixture 6 for SDS PAGE  (unstained, lyophilized)",
+     "catalog": "**39207.01**",
+     "type": "Unstained, lyophilized natural-protein mixture",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "Protein Test Mixture 4 for SDS PAGE  (unstained, lyophilized)",
+     "catalog": "**39208.01**",
+     "type": "Unstained, lyophilized natural-protein mixture",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "Protein Test Mixture 5 for SDS PAGE  (unstained, lyophilized)",
+     "catalog": "**39209.01**",
+     "type": "Unstained, lyophilized natural-protein mixture",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "SERVA Unstained SDS PAGE Protein Marker, 6.5–97 kDa  (liquid mix)",
+     "catalog": "**39214.01**",
+     "type": "**Unstained**, ready-to-use liquid",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "SERVA Unstained Protein Standard IV",
+     "catalog": "**39250.01**",
+     "type": "**Unstained**, ready-to-use liquid",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "SERVA Triple Color Standard I",
+     "catalog": "**39251.01**",
+     "type": "**Prestained, three-color** (covalently stained; for monitoring run +",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "SERVA Triple Color Protein Standard II",
+     "catalog": "**39257.01**",
+     "type": "**Prestained, three-color**",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "SERVA Triple Color Protein Standard III",
+     "catalog": "**39258.01**",
+     "type": "**Prestained, three-color**",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "SERVA Fluo-610 Standard I",
+     "catalog": "**39261.01**",
+     "type": "**Fluorescent** protein standard (for fluorescence staining/labelling",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "Protein Molecular Weight Standards  (native, 8-protein set)",
+     "catalog": "(1 kit; catalog number not isolated in catalog text — set of 8)",
+     "type": "**Unstained, native** proteins (in solution or lyophilized)",
+     "url": "",
+     "bands": "**8 proteins**, range **12.4 – 450 kDa**",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "SERVA Native Marker Liquid Mix for BN/CN PAGE",
+     "catalog": "(size 5 × 50 µL; catalog number not isolated in catalog text)",
+     "type": "**Unstained, native**, ready-to-use liquid mix for Blue/Native PAGE",
+     "url": "",
+     "bands": "**6 native proteins**, range **21 – 720 kDa**",
+     "sizes_kda": "",
+     "pdf": ""
+    },
+    {
+     "name": "SERVA VisiBlot Standard I",
+     "catalog": "**39260.01**",
+     "type": "**Hybrid** — 3 prestained bands + 7 unstained IgG-binding bands for",
+     "url": "",
+     "bands": "**10 recombinant proteins**, range **25 – 150 kDa**",
+     "sizes_kda": "25, 45, 85 (these three are **prestained**); remaining seven at",
+     "pdf": ""
+    }
+   ]
+  },
+  "SMOBIO": {
+   "name": "SMOBIO",
+   "domain": "www.smobio.com",
+   "protein_marker_count": 14,
+   "products": [
+    {
+     "name": "ExcelBand™ All Blue Regular Range Protein Marker (PM1500)",
+     "catalog": "PM1500",
+     "type": "Pre-stained, single color (blue chromophore)",
+     "url": "https://www.smobio.com/shop/product/pm1500-pm1500-excelbandtm-all-blue-regular-range-protein-marker-9-180-kda-250-l-x-2-251?category=10",
+     "bands": "10",
+     "sizes_kda": "180, 140, 100, 72, 60, 45, 35, 25, 15, 10",
+     "pdf": "SMOBIO_PM1500.pdf"
+    },
+    {
+     "name": "ExcelBand™ All Blue Regular Range Plus Protein Marker (PM1600)",
+     "catalog": "PM1600",
+     "type": "Pre-stained, single color (blue)",
+     "url": "https://www.smobio.com/shop/product/pm1600-pm1600-excelbandtm-all-blue-regular-range-plus-protein-marker-9-180-kda-250-l-x-2-249?category=10",
+     "bands": "11",
+     "sizes_kda": "10–180 kDa (range; 11 bands, similar to PM1500 plus an additional band)",
+     "pdf": "SMOBIO_PM1600.pdf"
+    },
+    {
+     "name": "ExcelBand™ All Blue Broad Range Protein Marker (PM1700)",
+     "catalog": "PM1700",
+     "type": "Pre-stained, single color (blue); enhanced reference bands at 25 & 72 kDa",
+     "url": "https://www.smobio.com/shop/product/pm1700-pm1700-excelbandtm-all-blue-broad-range-protein-marker-9-240-kda-250-l-x-2-247?category=10",
+     "bands": "12",
+     "sizes_kda": "240, 180, 140, 100, 72, 60, 45, 35, 25, 20, 15, 10",
+     "pdf": "SMOBIO_PM1700.pdf"
+    },
+    {
+     "name": "ExcelBand™ 3-color Regular Range Protein Marker (PM2500)",
+     "catalog": "PM2500",
+     "type": "Pre-stained, 3-color (blue/red/green); reference bands 25 kDa (green) & 75 kDa (red)",
+     "url": "https://www.smobio.com/shop/product/pm2500-pm2500-excelbandtm-3-color-regular-range-protein-marker-9-180-kda-250-l-x-2-245?category=10",
+     "bands": "10",
+     "sizes_kda": "180, 140, 100, 75 (red), 60, 45, 35, 25 (green), 15, 10",
+     "pdf": "SMOBIO_PM2500.pdf"
+    },
+    {
+     "name": "ExcelBand™ Enhanced 3-color Regular Range Protein Marker (PM2510)",
+     "catalog": "PM2510 (also PM2511)",
+     "type": "Pre-stained, enhanced 3-color",
+     "url": "https://www.smobio.com/shop/product/pm2510-pm2510-excelbandtm-enhanced-3-color-regular-range-protein-marker-9-180-kda-250-l-x-2-257?category=10",
+     "bands": "10",
+     "sizes_kda": "10–180 kDa (range; enhanced-brightness version of PM2500)",
+     "pdf": "SMOBIO_PM2510.pdf"
+    },
+    {
+     "name": "ExcelBand™ 3-color High Range Protein Marker (PM2600)",
+     "catalog": "PM2600",
+     "type": "Pre-stained, 3-color; reference bands 25 kDa (green) & 75 kDa (red)",
+     "url": "https://www.smobio.com/shop/product/pm2600-pm2600-excelbandtm-3-color-high-range-protein-marker-9-245-kda-250-l-x-2-236?category=10",
+     "bands": "12",
+     "sizes_kda": "245, 180, 140, 100, 75 (red), 60, 45, 35, 25 (green), 20, 15, 10",
+     "pdf": "SMOBIO_PM2600.pdf"
+    },
+    {
+     "name": "ExcelBand™ Enhanced 3-color High Range Protein Marker (PM2610)",
+     "catalog": "PM2610 (also PM2611)",
+     "type": "Pre-stained, enhanced 3-color",
+     "url": "https://www.smobio.com/shop/product/pm2610-pm2610-excelbandtm-enhanced-3-color-high-range-protein-marker-9-245-kda-250-l-x-2-254?category=10",
+     "bands": "12",
+     "sizes_kda": "10–245 kDa (range; enhanced-brightness version of PM2600)",
+     "pdf": "SMOBIO_PM2610.pdf"
+    },
+    {
+     "name": "ExcelBand™ 3-color Broad Range Protein Marker (PM2700)",
+     "catalog": "PM2700",
+     "type": "Pre-stained, 3-color; reference bands 25 kDa (green) & 75 kDa (red)",
+     "url": "https://www.smobio.com/shop/product/pm2700-pm2700-excelbandtm-3-color-broad-range-protein-marker-3-5-245-kda-250-l-x-2-232?category=10",
+     "bands": "13",
+     "sizes_kda": "245, 180, 140, 100, 75 (red), 60, 45, 35, 25 (green), 20, 15, 10, ~5",
+     "pdf": "SMOBIO_PM2700.pdf"
+    },
+    {
+     "name": "ExcelBand™ 3-color Extra Range Protein Marker (PM2800)",
+     "catalog": "PM2800",
+     "type": "Pre-stained, 3-color; reference bands 25 kDa (green), 75 kDa & 310 kDa (red)",
+     "url": "https://www.smobio.com/shop/product/pm2800-pm2800-excelbandtm-3-color-extra-range-protein-marker-10-310-kda-250-l-x-2-234?category=10",
+     "bands": "13",
+     "sizes_kda": "~310 (red), 245, 180, 140, 100, 75 (red), 60, 45, 35, 25 (green), 20, 15, 10",
+     "pdf": "SMOBIO_PM2800.pdf"
+    },
+    {
+     "name": "ExcelBand™ 3-color Pre-Stained Protein Ladder, Regular Range (PM5000)",
+     "catalog": "PM5000",
+     "type": "Pre-stained, 3-color ladder",
+     "url": "https://www.smobio.com/shop/product/pm5000-pm5000-excelbandtm-3-color-pre-stained-protein-ladder-regular-range-9-180-kda-250-l-x-2-242?category=10",
+     "bands": "13",
+     "sizes_kda": "10–180 kDa (range; \"Ladder\" series with more bands than the standard markers)",
+     "pdf": "SMOBIO_PM5000.pdf"
+    },
+    {
+     "name": "ExcelBand™ 3-color Pre-Stained Protein Ladder, High Range (PM5100)",
+     "catalog": "PM5100",
+     "type": "Pre-stained, 3-color ladder",
+     "url": "https://www.smobio.com/shop/product/pm5100-pm5100-excelbandtm-3-color-pre-stained-protein-ladder-high-range-9-245-kda-250-l-x-2-241?category=10",
+     "bands": "14",
+     "sizes_kda": "10–245 kDa (range)",
+     "pdf": "SMOBIO_PM5100.pdf"
+    },
+    {
+     "name": "ExcelBand™ 3-color Pre-Stained Protein Ladder, Broad Range (PM5200)",
+     "catalog": "PM5200",
+     "type": "Pre-stained, 3-color ladder; reference bands 40 kDa (green) & 75 kDa (red)",
+     "url": "https://www.smobio.com/shop/product/pm5200-pm5200-excelbandtm-3-color-pre-stained-protein-ladder-broad-range-3-5-245-kda-250-l-x-2-238?category=10",
+     "bands": "15",
+     "sizes_kda": "245, 180, 140, 100, 75 (red), 60, 50, 40 (green), 35, 30, 25, 20, 15, 10, ~5",
+     "pdf": "SMOBIO_PM5200.pdf"
+    },
+    {
+     "name": "ProMetric™ TriColor Low Range Protein Ladder (PM6628)",
+     "catalog": "PM6628",
+     "type": "Pre-stained, tricolor; reference bands 10 kDa (green) & 40 kDa (red). Optimized for Tris-Tricine gels (low-MW range).",
+     "url": "https://www.smobio.com/shop/product/pm6628-pm6628-prometrictm-tricolor-low-range-protein-ladder-2-to-40-kda-250-l-483?category=10",
+     "bands": "6",
+     "sizes_kda": "2–40 kDa (range, 6 bands)",
+     "pdf": "SMOBIO_PM6628.pdf"
+    },
+    {
+     "name": "YesBlot™ Western Marker I (WM1000)",
+     "catalog": "WM1000",
+     "type": "Western blot marker (IgG-binding proteins for chemiluminescent/fluorescent detection) + 4 pre-stained bands. Reference bands 30 & 80 kDa.",
+     "url": "https://www.smobio.com/shop/product/wm1000-wm1000-yesblottm-western-marker-i-250-l-401?category=10",
+     "bands": "14 total (10 IgG-binding Western bands 15–200 kDa + 4 pre-stained bands)",
+     "sizes_kda": "Pre-stained: 10, 25 (green), 45, 70 (pink). Western blot range: 15–200 kDa with enhanced bands at 30 & 80 kDa.",
+     "pdf": "SMOBIO_WM1000.pdf"
+    }
+   ]
+  },
+  "Solis_BioDyne": {
+   "name": "Solis_BioDyne",
+   "domain": "solisbiodyne.com (legacy domain sbd.ee → 301 redirects to solisbiodyne.com)",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "TIANGEN": {
+   "name": "TIANGEN",
+   "domain": "tiangen.com",
+   "protein_marker_count": 4,
+   "products": [
+    {
+     "name": "Proteo三色预染蛋白质Marker (Proteo Three-Color Pre-stained Protein Marker)",
+     "catalog": "MP211 / MP211-01",
+     "type": "预染 / Pre-stained, three-color",
+     "url": "https://www.tiangen.com/content/details_40_28504.html",
+     "bands": "11",
+     "sizes_kda": "10, 15, 20, 25, 30, 40, 50, 72, 100, 130, 180 (25 kDa = green; 72 kDa = orange-red)",
+     "pdf": "TIANGEN_MP211_三色预染.pdf (https://pm-oss.tiangen.top/uploads/4972263.pdf)"
+    },
+    {
+     "name": "蛋白质Marker (Protein Marker, unstained)",
+     "catalog": "MP102",
+     "type": "未染 / Unstained (native, Coomassie R-250 staining)",
+     "url": "https://www.tiangen.com/content/details_40_16421.html",
+     "bands": "5",
+     "sizes_kda": "14.4, 20.0, 45.0, 66.2, 94.0 (range 14.4–94.0 kDa)",
+     "pdf": "TIANGEN_MP102_蛋白质Marker.pdf (https://pm-oss.tiangen.top/uploads/4991390.pdf)"
+    },
+    {
+     "name": "预染蛋白质Marker Ⅲ (Pre-stained Protein Marker III)",
+     "catalog": "MP204",
+     "type": "预染 / Pre-stained, single-color",
+     "url": "https://www.tiangen.com/content/details_40_16419.html",
+     "bands": "5",
+     "sizes_kda": "18, 27, 45, 60, 94 (range 18–94 kDa)",
+     "pdf": "TIANGEN_MP204_预染III.pdf (https://pm-oss.tiangen.top/uploads/4991392.pdf)"
+    },
+    {
+     "name": "宽范围彩色预染蛋白质Marker (Wide Range Color Pre-stained Protein Marker)",
+     "catalog": "MP206",
+     "type": "预染 / Pre-stained, multi-color (wide range)",
+     "url": "https://www.tiangen.com/content/details_40_16417.html",
+     "bands": "11",
+     "sizes_kda": "11, 17, 25, 35, 48, 63, 75, 100, 135, 180, 245 (range 11–245 kDa)",
+     "pdf": "TIANGEN_MP206_宽范围彩色预染.pdf (https://pm-oss.tiangen.top/uploads/4994096.pdf)"
+    }
+   ]
+  },
+  "Takara": {
+   "name": "Takara",
+   "domain": "takarabio.com (USA) / clontech.com (redirects to takarabio.com) / takarabiomed.com.cn (China)",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "ThermoFisher": {
+   "name": "ThermoFisher",
+   "domain": "https://www.thermofisher.com (China mirror served: thermofisher.cn — all thermofisher.com product URLs 301-redirect to thermofisher.cn in this environment)",
+   "protein_marker_count": 11,
+   "products": [
+    {
+     "name": "PageRuler Prestained Protein Ladder",
+     "catalog": "26616",
+     "type": "Prestained (3-color: blue, orange, green; reference bands at 25 & 70 kDa intensified)",
+     "url": "https://www.thermofisher.com/order/catalog/product/26616",
+     "bands": "10",
+     "sizes_kda": "10, 15, 25, 35, 40, 55, 70, 100, 130, 180",
+     "pdf": "pdfs/ThermoFisher_PageRuler_26616_UG.pdf ✓"
+    },
+    {
+     "name": "PageRuler Plus Prestained Protein Ladder",
+     "catalog": "26620",
+     "type": "Prestained (3-color: blue, orange, green)",
+     "url": "https://www.thermofisher.com/order/catalog/product/26620",
+     "bands": "9",
+     "sizes_kda": "10, 15, 25, 35, 55, 70, 100, 130, 250",
+     "pdf": "pdfs/ThermoFisher_PageRulerPlus_26620_UG.pdf ✓"
+    },
+    {
+     "name": "PageRuler Unstained Protein Ladder",
+     "catalog": "26614",
+     "type": "Unstained",
+     "url": "https://www.thermofisher.com/order/catalog/product/26614",
+     "bands": "14",
+     "sizes_kda": "10, 15, 20, 25, 30, 40, 50, 60, 70, 85, 100, 120, 150, 200",
+     "pdf": "pdfs/ThermoFisher_PageRuler_Unstained_26614_UG.pdf ✓"
+    },
+    {
+     "name": "PageRuler Unstained Broad Range Protein Ladder",
+     "catalog": "26630",
+     "type": "Unstained",
+     "url": "https://www.thermofisher.com/order/catalog/product/26630",
+     "bands": "11",
+     "sizes_kda": "5, 10, 15, 20, 30, 40, 50, 70, 100, 150, 250",
+     "pdf": "pdfs/ThermoFisher_PageRuler_Broad_26630_UG.pdf ✓"
+    },
+    {
+     "name": "PageRuler Unstained Low Range Protein Ladder",
+     "catalog": "26632",
+     "type": "Unstained",
+     "url": "https://www.thermofisher.com/order/catalog/product/26632",
+     "bands": "8",
+     "sizes_kda": "3.4, 5, 10, 15, 20, 25, 30, 100",
+     "pdf": "pdfs/ThermoFisher_PageRuler_LowRange_26632_UG.pdf ✓"
+    },
+    {
+     "name": "Spectra Multicolor Broad Range Protein Ladder",
+     "catalog": "26634",
+     "type": "Prestained (4-color)",
+     "url": "https://www.thermofisher.com/order/catalog/product/26634",
+     "bands": "10",
+     "sizes_kda": "10, 15, 25, 35, 40, 50, 70, 100, 140, 260",
+     "pdf": "pdfs/ThermoFisher_Spectra_26634_UG.pdf ✓"
+    },
+    {
+     "name": "Pierce Prestained Protein MW Marker",
+     "catalog": "26612",
+     "type": "Prestained (6 blue-stained natural proteins)",
+     "url": "https://www.thermofisher.com/order/catalog/product/26612",
+     "bands": "6",
+     "sizes_kda": "20, 25, 35, 50, 85, 120",
+     "pdf": "pdfs/ThermoFisher_Pierce_26612_UG.pdf ✓"
+    },
+    {
+     "name": "Novex Sharp Prestained Protein Standard",
+     "catalog": "LC5800",
+     "type": "Prestained",
+     "url": "https://www.thermofisher.com/order/catalog/product/LC5800",
+     "bands": "12",
+     "sizes_kda": "3.5, 10, 15, 20, 30, 40, 50, 60, 80, 110, 160, 260",
+     "pdf": "pdfs/ThermoFisher_NovexSharp_LC5800_UG.pdf ✓"
+    },
+    {
+     "name": "SeeBlue Plus2 Prestained Protein Standard",
+     "catalog": "LC5925",
+     "type": "Prestained (3-color: blue, yellow, pink)",
+     "url": "https://www.thermofisher.com/order/catalog/product/LC5925",
+     "bands": "10 (range 3–250 kDa)",
+     "sizes_kda": "3, 6, 14, 17, 28, 38, 49, 62, 98, 198",
+     "pdf": "pdfs/ThermoFisher_SeeBluePlus2_LC5925_manual.pdf ✓"
+    },
+    {
+     "name": "MagicMark XP Western Protein Standard",
+     "catalog": "LC5602",
+     "type": "Unstained (Western standard; for chemiluminescent/fluorescent detection on western blots)",
+     "url": "https://www.thermofisher.com/order/catalog/product/LC5602",
+     "bands": "9",
+     "sizes_kda": "20, 30, 40, 50, 60, 80, 100, 120, 220",
+     "pdf": "pdfs/ThermoFisher_MagicMarkXP_LC5602_UG.pdf ✓"
+    },
+    {
+     "name": "HiMark Prestained Protein Standard",
+     "catalog": "LC5699",
+     "type": "Prestained (dual-color: purple, pink; for high-MW native/SDS-PAGE)",
+     "url": "https://www.thermofisher.com/order/catalog/product/LC5699",
+     "bands": "9 (range 30–460 kDa)",
+     "sizes_kda": "31, 41, 55, 71, 117, 171, 238, 268, 460",
+     "pdf": "pdfs/ThermoFisher_HiMark_LC5699_manual.pdf ✓"
+    }
+   ]
+  },
+  "Toyobo": {
+   "name": "Toyobo",
+   "domain": "toyobo-global.com (corporate); life-science reagent shop: lifescience.toyobo.co.jp",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "TransGen_Biotech": {
+   "name": "TransGen_Biotech",
+   "domain": "transgenbiotech.com",
+   "protein_marker_count": 8,
+   "products": [
+    {
+     "name": "ProteinRuler® I (12-80 kDa)",
+     "catalog": "DR101-01 / DR101-02",
+     "type": "Unstained recombinant proteins + 1 blue prestained reference band (12 kDa)",
+     "url": "https://www.transgenbiotech.com/unstained_protein_marker/proteinruler_i_12_80_kda.html",
+     "bands": "6",
+     "sizes_kda": "12 (blue prestained), 20, 30, 40 (2x intensity), 60, 80",
+     "pdf": "TransGen_DR101_ProteinRuler_I.pdf (https://www.transgenbiotech.com/download/pdf/1/DR101_400/DR101.pdf)"
+    },
+    {
+     "name": "ProteinRuler® II (12-120 kDa)",
+     "catalog": "DR201-01 / DR201-02",
+     "type": "Unstained recombinant proteins + 1 blue prestained reference band (12 kDa)",
+     "url": "https://www.transgenbiotech.com/unstained_protein_marker/proteinruler_ii_12_120_kda.html",
+     "bands": "9",
+     "sizes_kda": "12 (blue prestained), 20, 30, 40, 50 (2x intensity), 60, 80, 100, 120",
+     "pdf": "TransGen_DR201_ProteinRuler_II.pdf (https://www.transgenbiotech.com/download/pdf/1/DR201_403/DR201.pdf)"
+    },
+    {
+     "name": "ProteinRuler® IV (30-200 kDa)",
+     "catalog": "DR401-01 / DR401-02",
+     "type": "Unstained recombinant proteins + 1 blue prestained reference band (30 kDa)",
+     "url": "https://www.transgenbiotech.com/unstained_protein_marker/proteinruler_iv_30_200_kda.html",
+     "bands": "7",
+     "sizes_kda": "30 (blue prestained), 40, 60, 80, 100 (2x intensity), 150, 200",
+     "pdf": "TransGen_DR401_ProteinRuler_IV.pdf (https://www.transgenbiotech.com/download/pdf/1/DR401_407/DR401.pdf)"
+    },
+    {
+     "name": "Blue Plus® Protein Marker (14-100 kDa)",
+     "catalog": "DM101-01 / DM101-02",
+     "type": "Prestained, multi-color (50 kDa = orange, 14 kDa = yellow, others blue)",
+     "url": "https://www.transgenbiotech.com/prestained_protein_marker/blue_plus_protein_marker_14_100_kda.html",
+     "bands": "7 (range 14–100 kDa; reference bands 14 kDa yellow, 50 kDa orange)",
+     "sizes_kda": "14, 25, 35, 45, 50, 70, 100 (typical Blue Plus I ladder; image-only PDF)",
+     "pdf": "- PDF: TransGen_DM101_BluePlus_I.pdf (https://www.transgenbiotech.com/download/pdf/1/DM101_408/DM101.pdf)"
+    },
+    {
+     "name": "Blue Plus® II Protein Marker (14-120 kDa)",
+     "catalog": "DM111-01 / DM111-02",
+     "type": "Prestained, multi-color (50 & 120 kDa = orange, 14 kDa = yellow, others blue)",
+     "url": "https://www.transgenbiotech.com/prestained_protein_marker/blue_plus_ii_protein_marker_14_120_kda.html",
+     "bands": "8 (range 14–120 kDa)",
+     "sizes_kda": "14, 25, 35, 45, 50, 70, 100, 120",
+     "pdf": "TransGen_DM111_BluePlus_II.pdf (https://www.transgenbiotech.com/download/pdf/1/DM111_411/DM111.pdf)"
+    },
+    {
+     "name": "Blue Plus® V Protein Marker (10-190 kDa)",
+     "catalog": "DM141-01 / DM141-02 / DM141-03",
+     "type": "Prestained, multi-color (70 kDa = orange, 20 kDa = green, others blue)",
+     "url": "https://www.transgenbiotech.com/prestained_protein_marker/blue_plus_v_protein_marker_10_190_kda.html",
+     "bands": "10 (range 10–190 kDa)",
+     "sizes_kda": "10, 20, 30, 40, 50, 70, 100, 130, 170, 190",
+     "pdf": "TransGen_DM141_BluePlus_V.pdf (https://www.transgenbiotech.com/download/pdf/1/DM141_414/DM141.pdf)"
+    },
+    {
+     "name": "Blue Plus® VI Protein Marker (10-250 kDa)",
+     "catalog": "DM151-01 / DM151-02 / DM151-03",
+     "type": "Prestained, multi-color (72 kDa = orange, 25 kDa = green, others blue)",
+     "url": "https://www.transgenbiotech.com/prestained_protein_marker/2630.html",
+     "bands": "11 (range 10–250 kDa)",
+     "sizes_kda": "10, 15, 25, 35, 48, 72, 100, 130, 180, 240, 250",
+     "pdf": "TransGen_DM151_BluePlus_VI.pdf (https://www.transgenbiotech.com/download/pdf/1/DM151_750/DM151.pdf)"
+    },
+    {
+     "name": "EasySee® Western Marker (25-90 kDa)",
+     "catalog": "DM201-01 / DM201-02",
+     "type": "Hybrid — 3 prestained bands (25, 45, 85 kDa) + 5 unstained IgG-binding bands (chemiluminescent/secondary-antibody detectable)",
+     "url": "https://www.transgenbiotech.com/western_protein_marker/easysee_western_marker_25_90_kda.html",
+     "bands": "8 (range 25–90 kDa)",
+     "sizes_kda": "25 (prestained), 30, 40, 45 (prestained), 50, 60, 70, 85 (prestained), 90",
+     "pdf": "TransGen_DM201_EasySee_Western.pdf (https://www.transgenbiotech.com/download/pdf/1/DM201_417/DM201.pdf)"
+    }
+   ]
+  },
+  "UBPBio": {
+   "name": "UBPBio",
+   "domain": "ubpbio.com",
+   "protein_marker_count": 2,
+   "products": [
+    {
+     "name": "M-XStable Prestained Protein Ladder",
+     "catalog": "L2010 (500 µl), L2011 (6 × 500 µl)",
+     "type": "Prestained, three-color protein standard",
+     "url": "https://www.ubpbio.com/index.php/product/dna-protein-ladders/m-xstable-prestained-protein-ladder.html",
+     "bands": "10",
+     "sizes_kda": "Range ~10–180 kDa. Reference bands: green at 25 kDa, red at 75 kDa; remaining 8 bands blue. (Individual band masses depicted in datasheet migration chart.)",
+     "pdf": "UBPBio_MXstable_L2010_Datasheet.pdf, UBPBio_MXstable_L2010_MSDS.pdf"
+    },
+    {
+     "name": "H-XStable Prestained Protein Ladder",
+     "catalog": "L2020 (500 µl), L2021 (6 × 500 µl)",
+     "type": "Prestained, three-color protein standard",
+     "url": "https://www.ubpbio.com/index.php/product/dna-protein-ladders/h-xstable-prestained-protein-ladder.html",
+     "bands": "12",
+     "sizes_kda": "Range ~10–245 kDa. Reference bands: green at 25 kDa, red at 75 kDa; remaining 10 bands blue. (Individual band masses depicted in datasheet migration chart.)",
+     "pdf": "UBPBio_HXstable_L2020_Datasheet.pdf, UBPBio_HXstable_L2020_MSDS.pdf"
+    }
+   ]
+  },
+  "VWR_Peqlab": {
+   "name": "VWR_Peqlab",
+   "domain": "www.vwr.com (Peqlab brand, formerly peqlab.de — now folded into VWR/Avantor)",
+   "protein_marker_count": 0,
+   "products": [
+    {
+     "name": "Attempted catalog / search URLs (all returned 403 to bots)",
+     "catalog": "",
+     "type": "",
+     "url": "",
+     "bands": "",
+     "sizes_kda": "",
+     "pdf": ""
+    }
+   ]
+  },
+  "Vazyme": {
+   "name": "Vazyme",
+   "domain": "bio.vazyme.com (corporate: www.vazyme.com)",
+   "protein_marker_count": 3,
+   "products": [
+    {
+     "name": "250 kDa Plus Prestained Protein Marker",
+     "catalog": "MP202-01 / MP202-02",
+     "type": "Prestained, three-color (25 kDa = green, 70 kDa = orange-red, others blue)",
+     "url": "https://bio.vazyme.com/product/752.html",
+     "bands": "11",
+     "sizes_kda": "12, 15, 20, 25, 35, 40, 55, 70, 100, 130, 250 (range 12–250 kDa)",
+     "pdf": "Vazyme_MP202_250kDa_Plus_Prestained.pdf (https://v4.cecdn.yun300.cn/100001_2005205005/MP202（单页版说明书）V23.1(2).pdf)"
+    },
+    {
+     "name": "180 kDa Plus Prestained Protein Marker",
+     "catalog": "MP201-01 / MP201-02",
+     "type": "Prestained, three-color (25 kDa = green, 70 kDa = orange-red, others blue)",
+     "url": "https://bio.vazyme.com/product/751.html",
+     "bands": "11",
+     "sizes_kda": "12, 15, 20, 25, 35, 40, 55, 70, 100, 130, 180 (range 12–180 kDa)",
+     "pdf": "Vazyme_MP201_180kDa_Plus_Prestained.pdf (https://v4.cecdn.yun300.cn/100001_2005205005/MP201（单页版说明书）V23.1.pdf)"
+    },
+    {
+     "name": "180 kDa Prestained Protein Marker",
+     "catalog": "MP102-01 / MP102-02",
+     "type": "Prestained, three-color (10 kDa = green, 70 kDa = red, others blue)",
+     "url": "https://bio.vazyme.com/product/327.html",
+     "bands": "10",
+     "sizes_kda": "10, 15, 25, 35, 40, 55, 70, 100, 130, 180 (range 10–180 kDa)",
+     "pdf": "Vazyme_MP102_180kDa_Prestained.pdf (https://v1.cecdn.yun300.cn/100001_2005205005/MP102-说明书V20.1.pdf)"
+    }
+   ]
+  },
+  "WATSON": {
+   "name": "WATSON",
+   "domain": "watson.co.jp",
+   "protein_marker_count": 0,
+   "products": []
+  },
+  "biotechrabbit": {
+   "name": "biotechrabbit",
+   "domain": "biotechrabbit.com (biotechrabbit GmbH, Berlin, Germany)",
+   "protein_marker_count": 2,
+   "products": [
+    {
+     "name": "TriColor Broad Protein Ladder (3.5-245 kDa)",
+     "catalog": "BR0900101 (100 lanes, 2 × 250 µl)",
+     "type": "Ready-to-use prestained protein ladder, three-color (tricolor)",
+     "url": "https://www.biotechrabbit.com/products/electrophoresis-ladders/protein-electrophoresis/tricolor-broad-protein-ladder-ready-to-use-3-5-245-kda.html",
+     "bands": "13",
+     "sizes_kda": "Range 3.5–245 kDa. Two colored reference bands at ~25 kDa and ~75 kDa. (Individual 13 band masses shown in migration-chart image in PIN PDF.)",
+     "pdf": "- PDF: biotechrabbit_TriColorBroad_BR0900101_PIN.pdf"
+    },
+    {
+     "name": "TriColor Protein Ladder (10-180 kDa)",
+     "catalog": "BR0900201 (100 lanes, 2 × 250 µl)",
+     "type": "Ready-to-use prestained protein ladder, three-color (tricolor)",
+     "url": "https://www.biotechrabbit.com/products/electrophoresis-ladders/protein-electrophoresis/tricolor-protein-ladder-ready-to-use-10-180-kda.html",
+     "bands": "10",
+     "sizes_kda": "Range 10–180 kDa. Two colored reference bands at ~25 kDa and ~75 kDa. (Individual 10 band masses shown in migration-chart image in PIN PDF.)",
+     "pdf": "- PDF: biotechrabbit_TriColor_BR0900201_PIN.pdf"
+    }
+   ]
+  }
+ }
+}

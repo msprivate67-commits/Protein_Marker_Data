@@ -1,0 +1,1401 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+
+
+<script type="text/javascript">var itemId = "{5E6380CB-EB85-4C69-8ECF-13CDD163EC3D}", templateId = "{83AA1184-D85D-4AA0-AAE6-4DCFD6689530}", userCountry = "CN";</script>
+    <script type="text/javascript">
+    (function (history, location, region) {
+        const match = /^\/(en|en-au|en-gb|en-nz|en-sg|en-us|ja-jp|zh-cn|en-ca|fr-ca|de-de|en-de|fr-fr|en-fr|ko-kr)(\/|$)/.exec(location.pathname)
+        if (!match) {
+            var url = '/' + region + (itemId == "{5E6380CB-EB85-4C69-8ECF-13CDD163EC3D}" ? "" : location.pathname) + location.search + location.hash;
+            if (history.pushState)
+                history.pushState(null, null, url);
+            else
+                location.href = url;
+            return;
+        }
+        var urlRegion = match[1];
+        if (urlRegion === region)
+            return;
+
+        url = location.href.replace(urlRegion, region);
+
+        if (history.pushState)
+            history.pushState(null, null, url);
+        else
+            location.href = url;
+
+    })(window.history, window.location, document.children[0].lang.toLowerCase());
+</script>
+    <script type="text/javascript" src="https://sdk.ceros.com/embedded-player-sdk-v5.min.js"></script>
+
+<script>
+function applyConsent(hasConsent) {
+  var foundExperienceInterval = setInterval(function() {
+    var cerosFrames = document.querySelectorAll("iframe.ceros-experience");
+    if (!cerosFrames || cerosFrames.length == 0) return;
+    var cerosContainer = cerosFrames[0].parentNode;
+    var expId = cerosContainer.getAttribute("id");
+    if (expId) {
+      clearInterval(foundExperienceInterval);
+      // find experience
+      CerosSDK.findExperience(expId)
+        .done(function(experience) {
+          experience.setUserConsentForAnalytics(hasConsent);
+        })
+        .fail(function(error) {
+          console.error(error);
+        });
+    }
+  }, 500);
+}
+
+applyConsent(false);
+</script>
+
+<!-- OneTrust Cookies Consent Notice start for neb.cn -->
+<script src="/scripts/onetrust/cn/scripttemplates/otSDKStub.js" data-language="zh" type="text/javascript" charset="UTF-8" data-domain-script="c8f7581e-698c-492f-ad8a-43f864076dc0"></script>
+<script type="text/javascript">
+function OptanonWrapper() { 
+   applyConsent(OnetrustActiveGroups.indexOf('C0003') !== -1);
+}
+</script>
+<!-- OneTrust Cookies Consent Notice end for neb.cn -->
+
+
+<!-- Google Analytics -->
+<script src='https://www.google-analytics.com/analytics.js' type="text/plain" class="optanon-category-C0002-C0003-C0004"></script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+<script type="text/plain" class="optanon-category-C0002-C0003-C0004">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bb5738f6e5eb3df623cb140358ec2ba8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- Google Tag Manager -->
+<script type="text/plain" class="optanon-category-C0002-C0003-C0004">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNPZZ5V');</script>
+<!-- End Google Tag Manager -->
+
+
+<style>
+@media screen and (min-width: 992px)
+{
+.update-header .site-header__logo{
+width:15% !important;
+}
+}
+-homePage .updated-container .purchase-portal-block .card-body
+{
+min-height:500px !important;
+}
+input#tfa_4, label#tfa_4-L {
+    display: block !important;
+}
+
+</style>
+<style>
+.wForm tbody tr:nth-child(even) {
+        background-color: transparent !important;
+    }
+
+    .wForm table {
+        border: none !important;
+    }
+.wForm .inline .oneField .preField
+{
+min-width:200px !important;
+}
+.wForm .inline div.oneField : not(.offstate)
+{
+display:inline-block !important;
+}
+</style>
+<style>
+input#tfa_4, label#tfa_4-L {
+  display:block!important;
+}
+
+.wForm p, .wForm fieldset, .wForm table {
+	border-bottom:0px solid #EEE;
+	border-top:0px solid #EEE;
+	border-left:0px solid #EEE;
+	border-right:0px solid #EEE;
+}
+
+
+.wForm .label, .wForm .label * {
+    vertical-align: top;
+    font-family: Arial;
+    display: inline-block;
+    margin-bottom: 0px!important;
+}
+.wForm tr,.wForm td,.wForm th {
+    vertical-align: top;
+    background: white !important;
+}
+.wForm br {
+    display: none;
+}
+fieldset#tfa_5
+{
+border:0 !important;
+}
+</style><!--baidu site verification -->
+<meta name="baidu-site-verification" content="codeva-QCPKQru8u7" />
+<!--bing site verification -->
+<meta name="msvalidate.01" content="F6A3C6CD7B9F885B9238E162256EDCCE" />
+
+<link rel="alternate" type="application/rss+xml" title="New England Biolabs" href="https://www.neb.com/nebinspired-blog/feed">
+<style>
+.upcoming-events {
+    height: auto !important;
+}
+.upcoming-events-link{
+position:relative !important;
+}
+.updated-container .purchase-portal-block .card-body
+{
+
+@media (min-width: 992px) {
+min-height:600px !important;
+}
+@media (min-width: 1025px) {
+min-height:500px !important;
+}
+
+}
+</style>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NEB 在分子生物学试剂的探索和研发方面处于领先地位。限制性内切酶、聚合酶、感受态细胞、NGS 文库制备等。" />
+<meta name="keywords" content="NEB，New England Biolabs，分子生物学，生命科学试剂，限制性内切酶，内切酶，酶，聚合酶，修饰酶，核酸，DNA，RNA，PCR，qPCR，RT-PCR，感受态细胞，蛋白质工具，文库制备，二代测序，基因编辑，糖生物学，合成生物学，RNA 分析，克隆，基因表达，细胞成像，&lt;i&gt;E. coli&lt;i&gt; 菌株，表观遗传学。" />
+<meta name="author" content="New England Biolabs" />
+<meta name="robots" content="" />
+<meta name="categories" content="" />
+<meta name="products" />
+<meta name="pmm" />
+<meta property="og:title" content="" />
+<meta property="og:description" />
+<meta property="og:image" />
+<meta name="google-site-verification" content="xghU3QuEVrHPxz7GYD9sGFwMEeqUDV5mJ6trQlDQa10" />
+<meta name="page-classification-for-analytics" content="" />
+<title>生命科学试剂 | NEB</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/content/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/content/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/content/img/favicon-16x16.png">
+<link rel="manifest" href="/content/img/site.webmanifest">
+<link rel="mask-icon" href="/content/img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- Hreflang Tags -->
+        <link rel="alternate" hreflang="x-default" href="https://www.neb.com/en" />
+        <link rel="alternate" hreflang="en-gb" href="https://www.neb.com/en-gb" />
+        <link rel="alternate" hreflang="en-au" href="https://www.neb.com/en-au" />
+        <link rel="alternate" hreflang="en-nz" href="https://www.neb.com/en-nz" />
+        <link rel="alternate" hreflang="ja-jp" href="https://www.neb.com/ja-jp" />
+        <link rel="alternate" hreflang="en-sg" href="https://www.neb.com/en-sg" />
+        <link rel="alternate" hreflang="en-us" href="https://www.neb.com/en-us" />
+        <link rel="alternate" hreflang="en-ca" href="https://www.neb.com/en-ca" />
+        <link rel="alternate" hreflang="zh-cn" href="https://www.neb.cn/zh-cn" />
+<!--MT-3856,when link field target link is empty do not render the link.-->
+    <link rel="canonical" href="https://www.neb.cn/zh-cn" />
+
+    
+    
+<meta name="VIcurrentDateTime" content="639212929999695612" />
+<meta name="VirtualFolder" content="/" />
+<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
+    
+<!-- CSS Bundles -->
+<link href="/bundles/styles.css?v=ZBlkYmd-TAztKacurf0q1b86VmJGKacO_scThCf8FLo1" rel="stylesheet" media="screen,print" />
+
+<link href="/bundles/print.css?v=ApKoXakBSCZneuHldtuZnnRj1VDmMTOzaKVtiZJTmpw1" rel="stylesheet" media="print" />
+
+    <link href="/bundles/vue-css-bundle.css?v=K7WHzH71Z0st2empDOQIiix055SIHuR9MJ6O0WRx8DM1" rel="stylesheet"/>
+
+
+</head>
+<body class="" onunload="">
+	
+	<link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10116/css/CoveoFullSearch.css" />
+<link rel="stylesheet" href="https://static.cloud.coveo.com/coveoforsitecore/ui/v0.64.7/css/CoveoForSitecore.css" />
+<script class="coveo-script" type="text/javascript" src='https://static.cloud.coveo.com/searchui/v2.10116/js/CoveoJsSearch.Lazy.min.js'></script>
+<script class="coveo-for-sitecore-script" type="text/javascript" src='https://static.cloud.coveo.com/coveoforsitecore/ui/v0.64.7/js/CoveoForSitecore.Lazy.min.js'></script>
+<script type="text/javascript" src="https://static.cloud.coveo.com/searchui/v2.10116/js/cultures/zh-cn.js"></script>
+
+<div>
+
+
+    
+    
+    <!-- Resources -->
+    <div id="SearchResourcesProperties_dd9b789c43fd4f6da0ce79b5b3b92c64"
+         class="CoveoForSitecoreContext"
+                    data-sc-should-have-analytics-component='true'
+            data-sc-analytics-enabled='true'
+            data-sc-current-language='zh-CN'
+            data-prebind-sc-language-field-name='fieldTranslator'
+            data-sc-language-field-name='_language'
+            data-sc-labels='{&quot;Ascending&quot; : &quot;Ascending&quot; , &quot;Descending&quot; : &quot;Descending&quot; , &quot;Template&quot; : &quot;Template&quot; , &quot;Updated By&quot; : &quot;Updated by&quot; , &quot;Created&quot; : &quot;Created&quot; , &quot;Language&quot; : &quot;Language&quot; , &quot;Uniform resource identifier&quot; : &quot;URI&quot; , &quot;Last Time Modified&quot; : &quot;Last time modified.&quot; , &quot;Created By&quot; : &quot;Created by&quot; , &quot;Creation Time&quot; : &quot;Creation time.&quot; , &quot;If the problem persists contact the administrator.&quot; : &quot;If the problem persists contact the administrator.&quot; , &quot;Search is currently unavailable&quot; : &quot;Oops! Something went wrong on the server.&quot;}'
+            data-sc-maximum-age='900000'
+            data-sc-page-name='Home'
+            data-sc-page-name-full-path='/sitecore/content/NEB Site/Home'
+            data-sc-index-source-name='Coveo_web_index - PRD-FARM-104'
+            data-sc-is-in-experience-editor='false'
+            data-sc-is-user-anonymous='true'
+            data-sc-item-uri='sitecore://web/{5E6380CB-EB85-4C69-8ECF-13CDD163EC3D}?lang=zh-CN&amp;ver=6'
+            data-sc-item-id='5e6380cb-eb85-4c69-8ecf-13cdd163ec3d'
+            data-prebind-sc-latest-version-field-name='fieldTranslator'
+            data-sc-latest-version-field-name='_latestversion'
+            data-sc-rest-endpoint-uri='/coveo/rest'
+            data-sc-analytics-endpoint-uri='/coveo/rest/ua'
+            data-sc-site-name='neb'
+            data-sc-field-prefix='f'
+            data-sc-field-suffix='86828'
+            data-sc-prefer-source-specific-fields='false'
+            data-sc-external-fields='[{&quot;fieldName&quot;:&quot;permanentid&quot;,&quot;shouldEscape&quot;:false}]'
+            data-sc-source-specific-fields='[{&quot;fieldName&quot;:&quot;attachmentparentid&quot;},{&quot;fieldName&quot;:&quot;author&quot;},{&quot;fieldName&quot;:&quot;clickableuri&quot;},{&quot;fieldName&quot;:&quot;collection&quot;},{&quot;fieldName&quot;:&quot;concepts&quot;},{&quot;fieldName&quot;:&quot;date&quot;},{&quot;fieldName&quot;:&quot;filetype&quot;},{&quot;fieldName&quot;:&quot;indexeddate&quot;},{&quot;fieldName&quot;:&quot;isattachment&quot;},{&quot;fieldName&quot;:&quot;language&quot;},{&quot;fieldName&quot;:&quot;printableuri&quot;},{&quot;fieldName&quot;:&quot;rowid&quot;},{&quot;fieldName&quot;:&quot;size&quot;},{&quot;fieldName&quot;:&quot;source&quot;},{&quot;fieldName&quot;:&quot;title&quot;},{&quot;fieldName&quot;:&quot;topparent&quot;},{&quot;fieldName&quot;:&quot;topparentid&quot;},{&quot;fieldName&quot;:&quot;transactionid&quot;},{&quot;fieldName&quot;:&quot;urihash&quot;}]'
+>
+    </div>
+    <script type="text/javascript">
+        var endpointConfiguration = {
+            itemUri: "sitecore://web/{5E6380CB-EB85-4C69-8ECF-13CDD163EC3D}?lang=zh-CN&amp;ver=6",
+            siteName: "neb",
+            restEndpointUri: "/coveo/rest"
+        };
+        if (typeof (CoveoForSitecore) !== "undefined") {
+            CoveoForSitecore.SearchEndpoint.configureSitecoreEndpoint(endpointConfiguration);
+            CoveoForSitecore.version = "5.0.1368.1";
+            var context = document.getElementById("SearchResourcesProperties_dd9b789c43fd4f6da0ce79b5b3b92c64");
+            if (!!context) {
+                CoveoForSitecore.Context.configureContext(context);
+            }
+        }
+    </script>
+</div>
+	<!-- Begin: #nebVue -->
+	<div id="nebVue" class="neb-vue">
+		<div v-cloak>
+			<div class="v-cloak-hidden">
+				<div class="body-wrapper main-body">
+					<div data-nosnippet class="header-placeholder -homePage "></div>
+					<global-header :component-data="{commerceEnabled:false,isHomePage:true,isFreezerAccount:false,pageTopAlertShown:false,pageTopAlerts:[],notificationsShown:true,notifications:[{id:&quot;220690d8-649e-40a9-ac44-bdfaef7b2897&quot;,title:`Analyze mRNA 5′ Caps`,description:`Learn how RNase 4 enables targeted isolation and LC-MS analysis of mRNA 5&amp;prime; caps.`,url:`https://media.neb.com/asset/a319a27d-b2c7-458a-bf9c-2857d5e72568/RNase4_Targeted_Isolation_Quantitative_Analysis_mRNA_5prime_Cap_AppNote.pdf`,created:`2026年7月27日`,expireDate:`2026-08-10T13:11:00.0000000`}],notificationsNoActiveMessage:`Please check back later for new notifications.`,search:{text:`搜索产品和技术资源`},logos:{light:{small:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0},large:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0}},dark:{small:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0},large:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0}}},siteNav:[{name:`应用 &amp;amp; 产品`,subNav:[{name:`应用`,link:`/zh-cn/applications`,items:[{name:`分子诊断专题`,link:`/zh-cn/supporting-molecular-diagnostics`},{name:`克隆 &amp; 合成生物学`,link:`/zh-cn/applications/cloning-and-synthetic-biology`},{name:`DNA 扩增、PCR 和 qPCR`,link:`/zh-cn/applications/dna-amplification-pcr-and-qpcr`},{name:`基因编辑`,link:`/zh-cn/products/crispr-cas-gene-editing`},{name:`蛋白表达`,link:`/zh-cn/applications/protein-expression`},{name:`蛋白纯化`,link:`/zh-cn/applications/protein-purification`},{name:`蛋白质分析 &amp; 工具`,link:`/zh-cn/applications/protein-analysis-and-tools`},{name:`糖生物学 &amp; 蛋白质组学`,link:`/zh-cn/applications/glycobiology-and-proteomics`},{name:`细胞分析`,link:`/zh-cn/applications/cellular-analysis`}]},{name:`产品`,link:`/zh-cn/products`,items:[{name:`限制性内切酶`,link:`/zh-cn/products/restriction-endonucleases`},{name:`PCR、qPCR &amp; 扩增技术`,link:`/zh-cn/products/pcr-qpcr-and-amplification-technologies`},{name:`DNA 修饰酶`,link:`/zh-cn/products/dna-modifying-enzymes-and-cloning-technologies`},{name:`NGS 文库制备 &amp; 靶向富集`,link:`/zh-cn/products/next-generation-sequencing-library-preparation`},{name:`核酸纯化`,link:`/zh-cn/products/nucleic-acid-purification`},{name:`Markers &amp; Ladders`,link:`/zh-cn/products/markers-and-ladders`},{name:`RNA 试剂`,link:`/zh-cn/products/rna-synthesis-and-modification`},{name:`DNA 组装、克隆和突变试剂盒`,link:`/zh-cn/products/dna-assembly-cloning-and-content-mutagenesis-kits`},{name:`基因编辑`,link:`/zh-cn/products/crispr-cas-gene-editing`},{name:`细胞分析`,link:`/zh-cn/products/cellular-analysis`},{name:`表观遗传学`,link:`/zh-cn/products/epigenetics`},{name:`蛋白表达`,link:`/zh-cn/products/protein-expression`},{name:`蛋白纯化`,link:`/zh-cn/products/protein-purification`},{name:`感受态细胞`,link:`/zh-cn/products/competent-cells`},{name:`蛋白质工具`,link:`/zh-cn/products/protein-tools`},{name:`糖生物学`,link:`/zh-cn/products/glycobiology`},{name:`DNA 质粒`,link:`/zh-cn/products/dna-plasmids-and-substrates`},{name:`缓冲液`,link:`/zh-cn/products/buffers`},{name:`菌株`,link:``},{name:`停产产品`,link:`/zh-cn/products/discontinued`}]}],cta:[{icon:{src:`/zh-cn/-/media/nebus/navigation/icon-cta-new.svg?rev=addc407120dc400eb01b010f06abc9e5`,alt:`new`},name:`最新产品`,link:`/zh-cn/new-products`},{icon:{src:`/zh-cn/-/media/nebus/navigation/icon-cta-sale.svg?rev=22bf9ff7b720460a9b4e835fba5a37c5`,alt:`new`},name:`样品申请&amp;优惠活动`,link:`/zh-cn/samples-and-special-offers`}],richTextTitle:`Monarch&lt;sup&gt;&amp;reg;&lt;/sup&gt; DNA &amp;amp; RNA 纯化试剂盒全面升级！`,richText:`&lt;p&gt;
+&lt;/p&gt;
+&lt;p dir=&quot;auto&quot; style=&quot;margin: 0in; text-align: start;&quot;&gt; &lt;span style=&quot;color: #212121;&quot;&gt;我们的 Monarch&lt;sup&gt;&amp;reg;&lt;/sup&gt; 核酸纯化试剂盒在不断升级，本次升级带来了性能、可持续性以及价值方面的显著提升。了解更多产品信息，找到属于您的全新试剂盒。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn&quot; href=&quot;/zh-cn/monarch/monarch-nucleic-acid-purification-kits-are-evolving&quot;&gt;了解 Monarch&lt;sup&gt;&amp;reg;&lt;/sup&gt; 产品&lt;br /&gt;
+&lt;/a&gt;&lt;/p&gt;`},{name:`工具 &amp; 资源`,link:`/zh-cn/tools-and-resources`,subNav:[{name:`工具`,link:`/zh-cn/tools-and-resources/interactive-tools`,items:[{name:`产品选择工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Product-Selection`},{name:`限制性内切酶工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Restriction-Enzyme-Tools`},{name:`引物设计工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Primer-Design-Tools`},{name:`实验设计工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Experimental-Design`},{name:`计算工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Calculators`},{name:`数据库`,link:`/zh-cn/tools-and-resources/interactive-tools#Databases`},{name:`其它工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Additional-Tools`}]},{name:`资源`,link:`/zh-cn/tools-and-resources`,items:[{name:`应用实例`,link:`/zh-cn/application-notes`},{name:`FAQs`,link:`/zh-cn/tools-and-resources/search?type=FAQ`},{name:`互动工具`,link:`/zh-cn/tools-and-resources/interactive-tools`},{name:`资料`,link:`/zh-cn/support/catalog-and-literature-request`},{name:`NEB Podcast`,link:`/zh-cn/podcasts/nebpodcast`},{name:`NEBInspired 博客`,link:`/zh-cn/nebinspired-blog`},{name:`操作说明`,link:`/zh-cn/tools-and-resources/search?type=Protocol`},{name:`选择指南`,link:`/zh-cn/tools-and-resources/search?type=Chart`},{name:`问题解决指南`,link:`/zh-cn/tools-and-resources/search?type=TroubleshootingGuide`},{name:`使用指南/小技巧`,link:`/zh-cn/tools-and-resources/search?type=UsageGuidelines`},{name:`视频资料库`,link:`/zh-cn/tools-and-resources/video-library`},{name:`网络课堂`,link:`/zh-cn/webinar/neb-tv-webinar-series`}]}],cta:[{icon:{src:`https://media.neb.com/m/2d08fc4194704324/original/Catalog_Literature_megamenu_icon.svg`,alt:`Open book megamenu icon representing NEB catalog and literature request`},name:`产品资料库`,link:`/zh-cn/support/catalog-and-literature-request`},{icon:{src:`https://media.neb.com/m/66c9fe63cf814a99/original/Blog_megamenu_icon.svg`,alt:`Pen or pencil megamenu icon representing blog`},name:`NEBinspired Blog&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`,link:`/zh-cn/nebinspired-blog`}]},{name:`定制化解决方案`,link:`/zh-cn/custom-solutions`,subNav:[{name:``,items:[{name:`定制化解决方案`,link:`/zh-cn/custom-solutions/customized-solutions`},{name:`GMP 级别产品 制造`,link:`/zh-cn/custom-solutions/gmp`},{name:`NEB 冻干科技`,link:`/zh-cn/custom-solutions/lyophilization-solutions`}]},{name:``,items:[{name:`无甘油的冻干制剂`,link:`/zh-cn/custom-solutions/glycerol-free`},{name:`NEB 质量控制`,link:`/zh-cn/about-neb/quality-at-neb`},{name:`NEB 助力分子诊断与治疗方案开发行业创新，加速制造升级`,link:`/zh-cn/supporting-advances-in-diagnostic-and-therapeutic-innovation-and-manufacturing`}]}],cta:[],richTextTitle:`&lt;p /&gt;&lt;a href=&quot;/zh-cn/forms/contact-the-customized-solutions-team&quot;&gt;&lt;img alt=&quot;Tube with cogs megamenu icon representing NEB Customized Solutions&quot; src=&quot;https://media.neb.com/m/2bcdc588b68f78ba/original/Customized_Solutions_megamenu_icon.svg?=&quot; data-damid=&quot;618FD996-974E-440B-8F7E338C3C5CA2A6&quot; style=&quot;margin-right: 8px; vertical-align: middle;&quot; width=&quot;35&quot; height=&quot;35&quot; /&gt;&lt;span style=&quot;color: #ca4a05;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 如何联系定制化解决方案团队&lt;br /&gt;
+&lt;p /&gt;
+
+&lt;/span&gt;&lt;/a&gt;`,richText:`&lt;p&gt;有兴趣可以了解查看更多关于定制化产品、大包装订购、冻干产品或GMP级产品信息&lt;/p&gt;`},{name:`帮助`,link:`/zh-cn/support`,subNav:[{name:``,items:[{name:`技术支持`,link:`/zh-cn/forms/neb-technical-support`},{name:`国际订购 &amp;amp; 支持`,link:`/zh-cn/support/international-ordering-support`},{name:`代理商`,link:`/zh-cn/support/cn-sales-representative-list-by-territory`},{name:`新建实验室`,link:`/zh-cn/support/new-lab-discount`}]},{name:``,items:[{name:`产品资料库`,link:`/zh-cn/support/catalog-and-literature-request`},{name:`支持分子诊断`,link:`/zh-cn/supporting-molecular-diagnostics`},{name:`支持传染病的预防、诊断与研究`,link:`/zh-cn/infectious-disease/supporting-infectious-disease-research-and-development`},{name:`NEB 助力分子诊断与治疗方案开发`,link:`/zh-cn/supporting-advances-in-diagnostic-and-therapeutic-innovation-and-manufacturing`},{name:`支持 COVID-19 研究`,link:`/zh-cn/covid-19/solutions-available-from-new-england-biolabs-supporting-covid-19-research`},{name:`OEM &amp; 客户定制方案`,link:`/zh-cn/custom-solutions/customized-solutions`},{name:`农业支持`,link:`/zh-cn/support/supporting-agricultural-biology`},{name:`科学教育项目`,link:`/zh-cn/promoting-science-education`},{name:`包装 &amp; 运输`,link:`/zh-cn/support/packaging-shipping-and-delivery`},{name:`NEB 质量体系`,link:`/zh-cn/about-neb/quality-at-neb`},{name:`销售条款`,link:`/zh-cn/support/terms-of-sales`}]}],cta:[{icon:{src:`/zh-cn/-/media/nebus/navigation/icon-cta-feedback.png?rev=b72ee87ef07d45898efedb87c84aabd7`,alt:`icon-cta-feedback`},name:`客户建议 &amp; 反馈`,link:`/zh-cn/forms/customer-feedback`},{icon:{src:`https://media.neb.com/m/43575fcb05e084ba/original/Tech_Support_megamenu_icon.svg`,alt:`DNA megamenu icon representing Tech Support`},name:`技术支持`,link:`/zh-cn/forms/neb-technical-support`}],richTextTitle:`联系方式`,richText:`北京市海淀区王庄路 1号&lt;br /&gt;
+清华同方科技广场 B 座 612 室，100083&lt;br /&gt;
+客服热线：400-811-2220 / 400-690-3366 &lt;br /&gt;
+电话：010-82378266&lt;br /&gt;
+咨询: &lt;a href=&quot;mailto:info@neb-china.com&quot;&gt;info@neb-china.com&lt;/a&gt;&lt;br /&gt;
+技术支持：&lt;a href=&quot;mailto:support@neb-china.com&quot;&gt;support@neb-china.com&lt;/a&gt;`},{name:`关于 NEB`,link:`/zh-cn/about-neb`,subNav:[{name:``,items:[{name:`了解 NEB`,link:`/zh-cn/about-neb/neb-overview`},{name:`最新动态`,link:`/zh-cn/about-neb/news-and-press-releases`},{name:`核心团队`,link:`/zh-cn/about-neb/leadership`},{name:`NEB 研究项目`,link:`/zh-cn/research`},{name:`社会责任 &amp; 可持续发展`,link:`/zh-cn/about-neb/corporate-social-responsibility-and-sustainability`}]},{name:``,items:[{name:`ISO 认证`,link:`/zh-cn/about-neb/certifications`},{name:`Passion in Science Awards 奖项`,link:`/zh-cn/about-neb/passion-in-science-awards`},{name:`业务拓展`,link:`/zh-cn/about-neb/business-development-opportunities`},{name:`职业发展`,link:`/zh-cn/about-neb/careers`},{name:`联系我们`,link:`/zh-cn/support/international-ordering-support`}]}],cta:[{icon:{src:`/zh-cn/-/media/nebus/navigation/distributor_china_megamenu_icon.svg?rev=b06b46bed8a54cb4a3d3783accd41ddb&amp;sc_lang=zh-cn`,alt:`distributor icon`},name:`代理商`,link:`/zh-cn/support/cn-sales-representative-list-by-territory`}],richTextTitle:`联系方式`,richText:`北京市海淀区王庄路 1号&lt;br /&gt;
+清华同方科技广场 B 座 612 室，100083&lt;br /&gt;
+客服热线：400-811-2220 / 400-690-3366 &lt;br /&gt;
+电话：010-82378266&lt;br /&gt;
+咨询: &lt;a href=&quot;mailto:info@neb-china.com&quot;&gt;info@neb-china.com&lt;/a&gt;&lt;br /&gt;
+技术支持：&lt;a href=&quot;mailto:support@neb-china.com&quot;&gt;support@neb-china.com&lt;/a&gt;`}],languages:[],legacyShopEnabled:0,forceDarkText:``}"></global-header>
+					<!--global banner_-->
+
+
+
+
+    <style>
+        .hero-carousel .btn--gray:hover {
+            color: ;
+            border-color: #FFFFFF !important;
+            background-color: #FFFFFF !important;
+        }
+    </style>
+
+<div class="updated-banner-anchor-container">
+    <div
+        class="updated-banner-gradient js-home-banner-gradient"
+        style="background-color: transparent; opacity: 0.9"
+    >
+        <div style="background-image: linear-gradient(270deg, rgba(0, 0, 0, 0), #000000); height: 100%; width: 100%;">
+        </div>
+    </div>
+    <section class="updated-banner wrapper site-wrap js-site-wrap js-home-banner" style="background-image:url('https://media.neb.com/asset/0d3b0f52-e621-4986-a420-933050899b9a/Webp_JPG_PSD/Science_of_Tomorrow_Main_1600_820.webp')">
+        <section id="content" data-gtm-nav-type="hero">
+            <div class="column__row column__row--space-after">
+                <div class="page-container">
+                    <section class="homepage-carousel">
+                        <ul class="hero-carousel" id="carousel-list">
+                            <li class="hero-carousel__slide">
+                                <div class="hero-carousel__container">
+                                    <div class="hero-carousel__primary">
+                                        <h2 class="hero-carousel__slide-title" style="color:#FFFFFF" data-gtm-nav-name="为更美好的世界&lt;br /&gt;
+而努力">为更美好的世界<br />
+而努力</h2>
+                                        <h4 class="hero-carousel__slide-description" style="color:#FFFFFF">
+                                            New England Biolabs（NEB）成立 50 年以来，始终将推动科学进步作为核心使命。我们致力于开发高品质的创新产品，这些产品不仅可以支持您的研究，也助力我们自身的发展。我们深知，科学进步对改善人类健康、增进对世界的理解有着不可替代的作用，因此非常荣幸能为您的工作提供支持。期待与您携手，共同为未来的科学发展贡献力量。
+                                        </h4>
+                                    </div>
+                                </div>
+                            </li>
+<a href="/zh-cn/about-neb/corporate-social-responsibility-and-sustainability" class="btn btn--gray" data-gtm-nav-name="Learn More" target="" data-gtm-nav-type="hero" >了解更多</a>                        </ul> 
+                    </section>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="anchor-list" data-gtm-nav-type="home-page-anchors">
+        <div class="page-container">
+            <!--anchor navigation-->
+            <div id="anchorNavigation" class="anchor-container">
+                <div class="anchor-list-item"><a addpadding="-120" href="#neb-footer">联系我们</a></div>
+            </div>
+        </div>
+    </div>
+    <hr class="anchor-hr" />
+</div>
+<div class="container-fluid updated-container">
+    
+
+
+
+    <!--Card List Type 1-->
+    <div class="page-container anchor-list-navigation" id="findsupport" data-anchor-text="帮助和支持" data-anchor-title="需要帮助？">
+        <div class="card-list-type1">
+            <div class="row">
+                <h2 class="col-md-12 col-xs-12 card-list-type1__title">
+                    帮助和支持 
+                </h2>
+            </div>
+            <div class="row card-list">
+                        <div class="col-md-3 col-xs-12 padding-8">
+                            <div class="card" data-gtm-nav-type="card">
+<img src="https://media.neb.com/asset/e8715e85-289f-4d55-af3b-1a20b41da483/Webp_JPG_PSD/Homepage_Literature_290x200.webp" class="card-img" alt="Catalog covers stacked for homepage" title="Homepage_Literature_290x200" />                                <div class="card-body">
+                                    <h5 class="title" data-gtm-nav-name="产品资料">产品资料</h5>
+                                    <p class="text">浏览我们的精选文献，索取 NEB 产品目录和技术资料。</p>
+<a href="/zh-cn/support/catalog-and-literature-request" >查看或索取资料</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 padding-8">
+                            <div class="card" data-gtm-nav-type="card">
+<img src="https://media.neb.com/asset/8a79fb7d-9881-426d-9dd6-5d8dfab47d41/Webp_JPG_PSD/Homepage_Find_Support_Tools.webp" class="card-img" alt="Find the Support You Need: Tools, depicting grid of web tool icons" title="Homepage_Find_Support_Tools" />                                <div class="card-body">
+                                    <h5 class="title" data-gtm-nav-name="工具">工具</h5>
+                                    <p class="text">查看我们为您精选的几种实用的在线工具，可以帮助您的研究和实验设计。</p>
+<a href="/zh-cn/tools-and-resources/interactive-tools" >查找在线工具</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 padding-8">
+                            <div class="card" data-gtm-nav-type="card">
+<img src="https://media.neb.com/m/20115fd34e3181f8/webimage-Homepage_Find_Support_Video_Library.png?h=543&amp;w=800" class="card-img" alt="Find the Support You Need: Video Library, depicting screenshot from tutorial video" title="Homepage_Find_Support_Video_Library" />                                <div class="card-body">
+                                    <h5 class="title" data-gtm-nav-name="视频库">视频库</h5>
+                                    <p class="text">登陆我们的视频库，查找教程、操作步骤和其它实用信息。</p>
+<a href="/zh-cn/tools-and-resources/video-library" >观看视频</a>                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-12 padding-8">
+                            <div class="card" data-gtm-nav-type="card">
+<img src="https://media.neb.com/asset/a364326c-0225-456c-929c-c4ab4c878a37/Webp_JPG_PSD/Homepage_Find_Support_Protocol_Search.webp" class="card-img" alt="Find the Support You Need: Protocol Search, depicting closeup of counting colonies" title="Homepage_Find_Support_Protocol_Search" />                                <div class="card-body">
+                                    <h5 class="title" data-gtm-nav-name="操作步骤查询">操作步骤查询</h5>
+                                    <p class="text">我们的数据库中有 1,000 多份 NEB 操作步骤。</p>
+                                        <form class="form-inline" method="post" action="/">
+                                            <div class="form-group">
+                                                <div class="input-group">
+                                                    <input onkeydown="NEB.keyUp(event)" type="text" class="form-control" id="txtSearchCardListItemOne" placeholder="查询操作步骤" aria-labelledby="btnSearch">
+                                                    <div id="searchdiv" onclick="NEB.search('/zh-cn/tools-and-resources/search?type=Protocol&amp;searchText=', this)" class="input-group-addon">
+                                                        <button type="button" class="protocols-widget__search-submit" id="btnSearch" aria-label="Search">
+                                                            <i class="fa fa-search"></i>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    <a href="/zh-cn/tools-and-resources/search?type=Protocol" >查询操作步骤</a>                                </div>
+                            </div>
+                        </div>
+            </div>
+        </div>
+    </div>
+
+        <!--Purchase Portal-->
+            <hr />
+        <div class="page-container  anchor-list-navigation" id="products" data-anchor-text="浏览产品 &amp; 订购指南" data-anchor-title="浏览产品 &amp; 订购指南">
+            <div class="purchase-portal-block">
+                <div class="row">
+                        <h2 class="col-md-12 col-xs-12 purchase-portal-block__title">
+                            找到您需要的产品
+                        </h2>
+                </div>
+                <div class="row">
+                    
+                <div class="col-md-5 col-xs-12 padding-8">
+                        <div class="card-one" data-gtm-nav-type="card" style=" background-color:#004A64">
+
+                            <div class="card-one__body card-one-padding" style="display:block">
+                                <h4 data-gtm-nav-name="开始使用 " style="color:#FFFFFF; ">开始使用 </h4>
+
+                                <div style="color:#FFFFFF;"> 浏览我们的产品或使用“快速订购”进行产品订购。浏览“新产品和特别优惠”页面，了解 NEB 的最新消息。</div>
+                                <div class="link">
+<br />
+<div style="display: flex;">
+	<div style="text-align: center;">
+		<a href="/zh-cn/products" style="flex: 1 1 auto; justify-content: center; margin-bottom: 0px!important;"><img style="width: 100px; height: 100px;" alt="浏览产品图标" src="https://media.neb.com/asset/76867bfc-f6ca-417f-883a-0bdcd962f082/PNG_from_SVG/Browse_Products_Icon_HP_white.png?=" data-damid="76867BFC-F6CA-417F-883A0BDCD962F082" /></a>
+		<div style="margin-top: 10px; font-size: 12px; color: #ffffff;">浏览产品</div>
+	</div>
+	
+	<div style="text-align: center;">
+		<a href="/zh-cn/support/international-ordering-support" style="flex: 1 1 auto; justify-content: center; margin-bottom: 0px!important;"><img style="width: 88px; height: 88px;" alt="快速订购图标" src="https://media.neb.com/asset/5bfcef1f-f6c0-4020-acba-1efc27ccbbc3/PNG_from_SVG/Quick_Order_Icon_HP_white.png?=" data-damid="5BFCEF1F-F6C0-4020-ACBA1EFC27CCBBC3" /></a>
+		<div style="margin-top: 10px; font-size: 12px; color: #ffffff;">订购指南</div>
+	</div>
+	
+	<div style="text-align: center;">
+		<a href="/zh-cn/new-products" style="flex: 1 1 auto; justify-content: center; margin-bottom: 0px!important;"><img style="width: 110px; height: 110px;" alt="新产品图标" src="https://media.neb.com/asset/9b103991-78d8-4bff-ad2c-76d09fa467e9/PNG_from_SVG/New_Products_Icon_HP_white.png?=" data-damid="9B103991-78D8-4BFF-AD2C76D09FA467E9" /></a>
+		<div style="margin-top: 2px; font-size: 12px; color: #ffffff;">最新产品</div>
+	</div>
+	
+	<div style="text-align: center;">
+		<a href="/zh-cn/samples-and-special-offers" style="flex: 1 1 auto; justify-content: center; margin-bottom: 0px!important;"><img style="width: 100px; height: 100px;" alt="特别优惠图标" src="https://media.neb.com/asset/ee55ab37-7506-48c4-9039-b25f73e64fd3/PNG_from_SVG/Special_Offers_Icon_HP_white.png?=" data-damid="EE55AB37-7506-48C4-9039B25F73E64FD3" /></a>
+		<div style="margin-top: 10px; font-size: 12px; color: #ffffff;">试用装申请</div>
+	</div>
+</div>                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                    
+                <div class="col-md-7 col-xs-12  padding-8">
+                    <div class="card-two" data-gtm-nav-type="card" style="">
+<img src="https://media.neb.com/asset/d8ad906a-af76-40c4-8442-2fdb768e3fdf/Webp_JPG_PSD/Home.webp?h=400&amp;w=689" alt="" title="Home" />                                                <div class="card-two__body card-one-padding" style="display:block; position: absolute; top:0;">
+                                <h4 data-gtm-nav-name="NEB 中国 25 周年“科研四季献礼” ，&lt;br/&gt;专家级克隆方案全面促销正在火热进行中！" style="color:#FFFFFF;  width: 66%;">NEB 中国 25 周年“科研四季献礼” ，<br/>专家级克隆方案全面促销正在火热进行中！</h4>
+                                                            <div style="color:#FFFFFF; width: 66%;"> <br/>&nbsp;<br/></div>
+                            <div class="link">
+<a href="/zh-cn/samples-and-special-offers/2026-q2-promotion" class="btn primary-btn" style=" background-color:#f2661B" >点击了解详情</a>                                                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                </div>
+
+
+                    <div class="row card-list">
+                                <div class="col-md-4 col-xs-12 padding-8">
+                                    <div class="card" data-gtm-nav-type="card">
+                                        <div class="img-holder">
+<img src="/zh-cn/-/media/images/home-page/purchase-portal-block/rnase4_260x140.jpg?rev=ea442953a21c49f0a0e596636e533e0e&amp;sc_lang=zh-cn&amp;la=zh-CN&amp;h=280&amp;w=520&amp;hash=55320795BA715983A8701742753642BF" class="card-img" alt="RNase 4 vials" />                                        </div>
+                                        <div class="card-body">
+
+                                            <h5 data-gtm-nav-name="RNase 4" style="color:">RNase 4</h5>
+                                            <div class="card-text"> RNase 4 是一种单链RNA 内切酶，它在尿苷-嘌呤序列处切割 RNA。它提供有针对性的切割并耐受各种尿苷修饰。与其他RNase相比，它产生更多的异质3'末端寡核苷酸。</div>
+<a href="/zh-cn/products/m1284-rnase-4" class="secondary-black-btn" >链接</a>                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12 padding-8">
+                                    <div class="card" data-gtm-nav-type="card">
+                                        <div class="img-holder">
+<img src="/zh-cn/-/media/images/home-page/purchase-portal-block/monarchmagviralkit_260x140.jpg?rev=1e47df1afa72453eb21b4e901bd3125d&amp;sc_lang=zh-cn&amp;la=zh-CN&amp;h=280&amp;w=520&amp;hash=80272135C4108BB92CB184073884B09F" class="card-img" alt="T4010 box" />                                        </div>
+                                        <div class="card-body">
+
+                                            <h5 data-gtm-nav-name="Monarch&#174; 磁珠法病毒 DNA/RNA 提取试剂盒" style="color:">Monarch<sup>®</sup> 磁珠法病毒 DNA/RNA 提取试剂盒</h5>
+                                            <div class="card-text"> 该试剂盒可用于使用磁珠法操作流程，对病毒核酸进行可靠的高通量提取纯化。经测试可用于唾液和呼吸道拭子样本，并兼容经过富集操作（不提供）的废水样本。</div>
+<a href="/zh-cn/products/t4010-monarch-mag-viral-dna-rna-extraction-kit" class="secondary-black-btn" >链接</a>                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-xs-12 padding-8">
+                                    <div class="card" data-gtm-nav-type="card">
+                                        <div class="img-holder">
+<img src="/zh-cn/-/media/images/home-page/purchase-portal-block/1000007469.jpg?rev=ba6bdba46578402ebd191f2a34815ca3&amp;sc_lang=zh-cn&amp;la=zh-CN&amp;h=390&amp;w=700&amp;hash=58C1AF28B4307AAB3A3CA35B3F276059" class="card-img" alt="NEBNext UltraExpress RNA Library Prep Kit" />                                        </div>
+                                        <div class="card-body">
+
+                                            <h5 data-gtm-nav-name="NEBNext UltraExpress™ 超快速 RNA 文库制备试剂盒" style="color:">NEBNext UltraExpress<sup>™</sup> 超快速 RNA 文库制备试剂盒</h5>
+                                            <div class="card-text"> NEBNext UltraExpress<sup>™</sup> 超快速 RNA 文库制备试剂盒文库制备流程仅需 3 小时，与 Poly(A) mRNA 富集或 rRNA 去除试剂盒配合使用，即可在一天内制备出高质量的 RNA 链特异性文库。该试剂盒使用同一个实验流程，并包含预混试剂，减少了反应时间和纯化步骤，从而减少了反应时间和所需耗材。</div>
+<a href="/zh-cn/products/e3330nebnext-express-rna-library-prep-kit" class="secondary-black-btn" >链接</a>                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+                <div class="row hidden-xs">
+                    <div class="col-md-12 col-xs-12">
+                            <div class="view-all">
+<a href="/zh-cn/products" data-gtm-nav-name="浏览所有产品" data-gtm-nav-type="card" >浏览所有产品</a>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <!--Card List Type 2-->
+    <hr />
+    <div class="page-container  anchor-list-navigation" id="NEB" data-role="" data-anchor-text="查看 NEB 的最新研究" data-anchor-title="最新研究">
+        <div class="card-list-type2">
+            <div class="row">
+                <h2 class="col-md-12 col-xs-12 card-list-type2__title">
+                    查看 NEB 的最新研究
+                </h2>
+            </div>
+            <div class="row">
+                    <div class="col-md-6 col-xs-12 card-box">
+                        <div class="row card" data-gtm-nav-type="card">
+                            <div class="col-md-6 col-xs-12">
+<a href="https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/cpz1.882" target="_blank" rel="noopener noreferrer" ><img src="https://media.neb.com/asset/11e7a1f9-66e4-4a5e-b299-a697c35f9a2d/Webp_JPG_PSD/Cloning_FeatureArticle_Data_260x140.webp" class="card-img" alt="Images used for NEB.com&#39;s homepage  Review NEB&#39;s Latest Research section 0825." title="Cloning_FeatureArticle_Data_260x140" /></a>                            </div>
+                            <div class="col-md-6 col-xs-12 padding-8 card-body">
+                                <h5 class="title" data-gtm-nav-name="特色文章">
+<a href="https://currentprotocols.onlinelibrary.wiley.com/doi/10.1002/cpz1.882" target="_blank" rel="noopener noreferrer" >特色文章</a>                                </h5>
+                                <p class="text">
+                                    了解 NEB 科学家如何使用 Golden Gate 组装、基于数据优化的组装设计 (DAD) 和在线工具来设计中等到高复杂度基因组的一管式组装。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 card-box">
+                        <div class="row card" data-gtm-nav-type="card">
+                            <div class="col-md-6 col-xs-12">
+<a href="https://www.biorxiv.org/content/10.1101/2020.12.22.424019v1" ><img src="/zh-cn/-/media/images/home-page/card-list-type-two/ecoli_rnasei_behindpaper_260x140.jpg?rev=e3069a907032475f912cb579facabdf8&amp;la=zh-CN&amp;h=280&amp;w=520&amp;hash=F9329E0D062EE96FB1A9226EA20586BE" class="card-img" alt="Ecoli_RNaseI_BehindPaper_260x140" /></a>                            </div>
+                            <div class="col-md-6 col-xs-12 padding-8 card-body">
+                                <h5 class="title" data-gtm-nav-name="NEB 技术文献">
+<a href="https://www.biorxiv.org/content/10.1101/2020.12.22.424019v1" >NEB 技术文献</a>                                </h5>
+                                <p class="text">
+                                    NEB 科学家证明 RNase I 具有 Ca2+ 依赖的双链 RNase 活性和 DNA:RNA 杂交酶活性。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 card-box">
+                        <div class="row card" data-gtm-nav-type="card">
+                            <div class="col-md-6 col-xs-12">
+<a href="https://media.neb.com/m/521091ff466bc504/original/A_Streamlined_Cell-Free_Workflow_Using_NEBuilder_AppNote.pdf" target="_blank" rel="noopener noreferrer" ><img src="https://media.neb.com/asset/c8bae39e-f2a8-4861-883e-e3def94b2cc1/Webp_JPG_PSD/RNaseIII_AppNote_Data_260x140.webp?h=280&amp;w=520" class="card-img" alt="Image used for NEB.com&#39;s homepage  Review NEB&#39;s Latest Research section 0726." title="RNaseIII_AppNote_Data_260x140" /></a>                            </div>
+                            <div class="col-md-6 col-xs-12 padding-8 card-body">
+                                <h5 class="title" data-gtm-nav-name="应用案例文章">
+<a href="https://media.neb.com/m/521091ff466bc504/original/A_Streamlined_Cell-Free_Workflow_Using_NEBuilder_AppNote.pdf" target="_blank" rel="noopener noreferrer" >应用案例文章</a>                                </h5>
+                                <p class="text">
+                                    Discover how NEB scientists accelerate protein expression using NEBuilder® HiFi DNA Assembly and RCA, enabling rapid, cell-free synthesis and purification workflows—ideal for synthetic biology and screening.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 card-box">
+                        <div class="row card" data-gtm-nav-type="card">
+                            <div class="col-md-6 col-xs-12">
+<a href="https://media.neb.com/m/6c68c06a47cc781f/original/phi29-Xt_AppNote_0625.pdf" target="_blank" rel="noopener noreferrer" ><img src="https://media.neb.com/asset/8ac30803-7cdd-4933-b9e9-94564adedebb/Webp_JPG_PSD/Q5UniversalAnnealing_AppNote_260x140.webp" class="card-img" alt="Image used for NEB.com&#39;s homepage  Review NEB&#39;s Latest Research section 0925." title="Q5UniversalAnnealing_AppNote_260x140" /></a>                            </div>
+                            <div class="col-md-6 col-xs-12 padding-8 card-body">
+                                <h5 class="title" data-gtm-nav-name="最新文章">
+<a href="https://media.neb.com/m/6c68c06a47cc781f/original/phi29-Xt_AppNote_0625.pdf" target="_blank" rel="noopener noreferrer" >最新文章</a>                                </h5>
+                                <p class="text">
+                                    Explore how the phi29-XT WGA Kit enables rapid, high-yield genome amplification from picogram to single-cell inputs—ideal for NGS, forensics, and low-input applications with minimal bias
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 card-box">
+                        <div class="row card" data-gtm-nav-type="card">
+                            <div class="col-md-6 col-xs-12">
+<a href="https://nebasechanger.neb.com/" target="_blank" rel="noopener noreferrer" ><img src="https://media.neb.com/asset/5d4bdce7-8f27-4b7e-a23e-ea7e3d4d1b46/Webp_JPG_PSD/Homepage_NEBaseChanger_Updates_260x140.webp" class="card-img" alt="Review NEB’s Latest Research: NEBaseChanger® web tool screenshot" title="Homepage_NEBaseChanger_Updates_260x140" /></a>                            </div>
+                            <div class="col-md-6 col-xs-12 padding-8 card-body">
+                                <h5 class="title" data-gtm-nav-name="Web 工具">
+<a href="https://nebasechanger.neb.com/" target="_blank" rel="noopener noreferrer" >Web 工具</a>                                </h5>
+                                <p class="text">
+                                    最新版本的 NEBaseChanger在线工具有助于设计定点突变引物，兼容模糊碱基，根据氨基酸位置进行替换突变，批量上传多个引物组，并在引物尾部引入突变。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-xs-12 card-box">
+                        <div class="row card" data-gtm-nav-type="card">
+                            <div class="col-md-6 col-xs-12">
+<a href="https://media.neb.com/asset/ab52d02c-7d9c-4cf5-9ff0-31d4554f50a1/NEB_Expressions_I_2026.pdf" ><img src="https://media.neb.com/asset/885f6be2-258c-4a90-885b-f99473fd11ed/Webp_JPG_PSD/InteractiveExpressions_2026_IssueI_260x140.webp?h=280&amp;w=520" class="card-img" alt="Thumbnail used on neb.com&#39;s homepage under the Review NEB&#39;s Latest Research section." title="InteractiveExpressions_2026_IssueI_260x140" /></a>                            </div>
+                            <div class="col-md-6 col-xs-12 padding-8 card-body">
+                                <h5 class="title" data-gtm-nav-name="新出版物">
+<a href="https://media.neb.com/asset/ab52d02c-7d9c-4cf5-9ff0-31d4554f50a1/NEB_Expressions_I_2026.pdf" >新出版物</a>                                </h5>
+                                <p class="text">
+                                    Explore NEB Expressions, featuring a precision medicine case study from discovery to targeted therapy, cell-free dbDNA synthesis, enzymatic solutions for circular RNA enrichment, conservation efforts in Costa Rica, RNA workflow products and the 2026 Passion in Science Awards.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-xs-12">
+                    <div class="view-all">
+<a href="/zh-cn/research" data-gtm-nav-name="了解 NEB 相关研究" data-gtm-nav-type="card" >了解 NEB 相关研究</a>                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Card List Type 3-->
+    <hr />
+    <div class="page-container  anchor-list-navigation" id="news" data-anchor-text="了解 NEB 最新资讯" data-anchor-title="趋势热点">
+        <div class="card-list-type3">
+            <div class="row">
+                <h2 class="col-md-12 col-xs-12 card-list-type3__title">
+                    热点话题
+                </h2>
+            </div>
+            <div class="row">
+                    <div class="col-md-4 col-sm-4 col-xs-12 padding-8 active-link">
+                        <div class="card active-hover clearfix" data-gtm-nav-type="card" data-gtm-nav-name="特色播客">
+                            <div class="card-img-gradiant" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), );"> </div>
+                            <img src="https://media.neb.com/asset/991ec0b6-31c5-444c-b777-e80ca5cedcc4/Webp_JPG_PSD/JohnBurns_Podcast_390x470.webp?h=940&amp;w=780" class="card-img img-responsive" alt="Trending Topics photo for Podcast interview with John Burns" title="JohnBurns_Podcast_390x470" />
+
+                            <div class="card-body clearfix">
+                                    <p class="title" style="color:">特色播客</p>
+                                <p class="desc" data-gtm-nav-name="特色播客">Interview with Dr. Carolyn Bertozzi: Nobel Laureate and Serial Entrepreneur</p>
+                            </div>
+                            <div class="card-move-up active">
+                                <div class="card-move-up-body clearfix" style="">
+                                    <p class="title">特色播客</p>
+                                    <p class="desc" data-gtm-nav-name="特色播客"> Interview with Dr. Carolyn Bertozzi: Nobel Laureate and Serial Entrepreneur </p>
+                                    <p class="desc-in-detail">
+                                        In this podcast, hear from Nobel Laureate Dr. Carolyn Bertozzi, whose impact in the field of glycosylation has been profound.
+                                    </p>
+                                    <div class="btn-wrapper" style="">
+<a href="/zh-cn/podcasts/podcast-80-interview-with-john-burns" class="secondary-white-btn" >特色播客</a>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 padding-8 active-link">
+                        <div class="card active-hover clearfix" data-gtm-nav-type="card" data-gtm-nav-name="特色视频">
+                            <div class="card-img-gradiant" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), );"> </div>
+                            <img src="https://media.neb.com/asset/837f2252-4d3c-4174-b7d0-0d1aa6a573f0/Webp_JPG_PSD/dbDNA_Animation_390x470.webp?h=940&amp;w=780" class="card-img img-responsive" alt="Trending Topics screenshot from One-day Workflow for synthesizing dbDNA using the EnClose Cell-free dbDNA Synthesis Kit video." title="dbDNA_Animation_390x470" />
+
+                            <div class="card-body clearfix">
+                                    <p class="title" style="color:">特色视频</p>
+                                <p class="desc" data-gtm-nav-name="特色视频">IIS 型限制性内切酶的功能和应用</p>
+                            </div>
+                            <div class="card-move-up active">
+                                <div class="card-move-up-body clearfix" style="">
+                                    <p class="title">特色视频</p>
+                                    <p class="desc" data-gtm-nav-name="特色视频"> IIS 型限制性内切酶的功能和应用 </p>
+                                    <p class="desc-in-detail">
+                                        了解 IIS 型限制性内切酶的功能及其在分子克隆、RNA 治疗和疫苗开发中的作用。
+                                    </p>
+                                    <div class="btn-wrapper" style="">
+<a href="/zh-cn/tools-and-resources/video-library/one-day-workflow-for-synthesizing-dbdna--using-the-enclose-cell-free-dbdna-synthesis-kit" class="secondary-white-btn" >特色视频</a>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-4 col-xs-12 padding-8 active-link">
+                        <div class="card active-hover clearfix" data-gtm-nav-type="card" data-gtm-nav-name="特色讲座">
+                            <div class="card-img-gradiant" style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), );"> </div>
+                            <img src="https://media.neb.com/asset/82962caf-fff9-44d8-bc51-44c1c60d8762/Webp_JPG_PSD/Accelerating_RNA_and_DNA_Therapeutics_Webinar_390x470.webp?h=940&amp;w=780" class="card-img img-responsive" alt="Trending Topics photo of Eric Hunt for Accelerating RNA &amp; DNA Therapeutics with Cell-free DNA Synthesis webinar." title="Accelerating_RNA_and_DNA_Therapeutics_Webinar_390x470" />
+
+                            <div class="card-body clearfix">
+                                    <p class="title" style="color:">特色讲座</p>
+                                <p class="desc" data-gtm-nav-name="特色讲座">Breaking Through Bias to Redefine Precision in Small RNA Library Prep</p>
+                            </div>
+                            <div class="card-move-up active">
+                                <div class="card-move-up-body clearfix" style="">
+                                    <p class="title">特色讲座</p>
+                                    <p class="desc" data-gtm-nav-name="特色讲座"> Breaking Through Bias to Redefine Precision in Small RNA Library Prep </p>
+                                    <p class="desc-in-detail">
+                                        Discover how bias in small RNA library prep is a hidden obstacle that can distort your results—especially when analyzing rare RNA species. This webinar explores how you can get more accurate, representative libraries.
+                                    </p>
+                                    <div class="btn-wrapper" style="">
+<a href="/zh-cn/webinar/neb-tv-webinar-series" class="secondary-white-btn" >特色讲座</a>                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="social-media-wrapper container-fluid" data-gtm-nav-type="body">
+    <div class="page-container update-social-media">
+        <div class="row social-media-layout-50-50">
+    <!-- UPDATED -->
+    <!-- Begin: Column with Twitter Feed -->
+    <div class="col-md-6 col-sm-12 padding-8 china-social-media">
+        
+
+            <section class="qr-social">
+                <div class="qr-social__row">
+                    <div class="qr-social__item">
+                            <div class="qr-social__item-container">
+                                <span class="qr-social__item-content">
+                                    <h4 class="qr-social__item-title">微信公众号</h4>
+                                    <p class="qr-social__item-description">NEB 最新资讯、产品促销信息、产品订购信息、产品技术资料、在线答疑、现货查询、诚聘英才，关注 NEB 微信公众号： NEBiolabs</p>
+                                </span>
+
+                                <picture class="qr-social__item-media">
+                                    <img src="/zh-cn/-/media/nebcn/qr-codes/qrcode1.png?rev=2dbde898d3da44b898eaea070903f390&amp;hash=E6C26225C4A11BDFDAA8AA4ED6DB5198" class="qr-social__item-image" alt="微信公众号">
+                                </picture>
+                            </div>
+                    </div>
+                    <div class="qr-social__item">
+                            <div class="qr-social__item-container">
+                                <span class="qr-social__item-content">
+                                    <h4 class="qr-social__item-title">NEB 技术资料站</h4>
+                                    <p class="qr-social__item-description">产品信息查询，实验技术流程，热点技术问题，关注 NEB 微信订阅号：NEB 技术资料站</p>
+                                </span>
+
+                                <picture class="qr-social__item-media">
+                                    <img src="/zh-cn/-/media/nebcn/qr-codes/qrcode2.png?rev=4047d10ad69545668ad064ec84c4abdb&amp;hash=7EF759A2F4BC75FCF1AC39AD3BADE4B3" class="qr-social__item-image" alt="NEB 技术资料站">
+                                </picture>
+                            </div>
+                    </div>
+                    <div class="qr-social__item">
+                             <a href="https://m.bilibili.com/space/643619763" class="qr-social__item-container" target="_blank">
+                                <span class="qr-social__item-content">
+                                    <h4 class="qr-social__item-title">NEB 视频学习站</h4>
+                                    <p class="qr-social__item-description">观看全面详细的产品介绍及实验操作技巧视频，重温在线专题讲座，登陆 NEB Bilibili 官方账号：Nebiolabs-China</p>
+                                </span>
+                                
+                                <picture class="qr-social__item-media">
+                                    <img src="/zh-cn/-/media/nebcn/qr-codes/qrcode3.png?rev=a7b2fcd3a27240c4b099cd4d5b5eb2a4&amp;hash=4670599FB4C2BBEB03947791C8DAE42E" class="qr-social__item-image" alt="NEB 视频学习站">
+                                </picture>
+                             </a>
+                    </div>
+                </div>
+            </section>
+
+
+    </div>
+
+
+    <div class="col-md-6 col-sm-12 social-media-right">
+        <!-- UPDATED -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12 padding-8 right-column">
+                
+<div class="section blog-list" data-gtm-nav-type="body">
+    <div class="row">
+        <h2 class="col-md-12 title">
+            NEBinspired Blog
+        </h2>
+    </div>
+    <hr>
+        <div class="row">
+            <div class="col-md-12">
+
+                <div>
+                    <h5 data-gtm-nav-name="NEBinspired Blog" class="title blog-list__title">RNase III Protocol Modification Can Enable Safe dsRNA Removal from IVT Samples</h5>
+                    <p></p>
+                    <div>
+                        <em>Posted on  <span class="blog-detail__posteddate">2026年7月20日</span></em>
+                        <span class="blog-detail__author blog-detail__subContent">
+                            By
+                            Iris Martinez, Illustrations by Tasha Jos&eacute;&nbsp;
+                        </span>
+                    </div>
+                    <p></p>
+                    <span class="blog-list__content" style="display:-webkit-box !important">
+                        High-quality and pure RNA is a requirement for RNA therapeutics to avoid unwanted immune responses, not just a &ldquo;nice to have.&rdquo; <em>In vitro</em> transcription can be optimized, but additional cleanup may be needed. Enzymatic removal of dsRNA using RNase III preserves ssRNA integrity when refined using a protocol developed by NEB scientists.
+                    </span>
+                    <p></p>
+                    <p class="blog-list__readmore"><a class="blog-widget__url" href="/zh-cn/nebinspired-blog/rnase-iii-protocol-modification-can-enable-safe-dsrna-removal-from-ivt-samples">Read More ></a></p>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+
+                <div>
+                    <h5 data-gtm-nav-name="NEBinspired Blog" class="title blog-list__title">Cell-free Protein Synthesis Enables Rapid Single-chain Fragment Production and Analysis</h5>
+                    <p></p>
+                    <div>
+                        <em>Posted on  <span class="blog-detail__posteddate">2026年7月9日</span></em>
+                        <span class="blog-detail__author blog-detail__subContent">
+                            By
+                            Iris Martinez, Illustrations by Tasha Jos&eacute;
+                        </span>
+                    </div>
+                    <p></p>
+                    <span class="blog-list__content" style="display:-webkit-box !important">
+                        Cell-free protein synthesis (CFPS) workflows allow for fast, scalable and cost-effective single-chain antibody fragment production. NEB scientists have outlined approaches to quickly and efficiently screen the discovery and initial characterization of novel antibody fragments with CFPS.
+                    </span>
+                    <p></p>
+                    <p class="blog-list__readmore"><a class="blog-widget__url" href="/zh-cn/nebinspired-blog/cell-free-protein-synthesis-enables-rapid-single-chain-fragment-production-and-analysis">Read More ></a></p>
+                </div>
+            </div>
+        </div>
+        <hr />
+        <div class="row">
+            <div class="col-md-12">
+
+                <div>
+                    <h5 data-gtm-nav-name="NEBinspired Blog" class="title blog-list__title">Growing Plants on the Moon: Plants for Space (P4S) Aims to Transform Food Sustainability in Space and on Earth</h5>
+                    <p></p>
+                    <div>
+                        <em>Posted on  <span class="blog-detail__posteddate">2026年6月8日</span></em>
+                        <span class="blog-detail__author blog-detail__subContent">
+                            By
+                            Iris Martinez, Illustrations by Tasha Jos&eacute;
+                        </span>
+                    </div>
+                    <p></p>
+                    <span class="blog-list__content" style="display:-webkit-box !important">
+                        <p>The Australian Research Council (ARC) Centre of Excellence in Plants for Space (P4S) is a consortium of international research partners working toward a future where plants support off-Earth habitation and on-Earth sustainability through the production of food, medicine and other materials.&nbsp;In this blog post, research fellow Dr. Marta Peirats-Llobet talks about P4S and the consortium's LEAF project which, in collaboration with NASA, aims to study the impact of the lunar environment on plant growth in a growth chamber.</p>
+                    </span>
+                    <p></p>
+                    <p class="blog-list__readmore"><a class="blog-widget__url" href="/zh-cn/nebinspired-blog/growing-plants-on-the-moon">Read More ></a></p>
+                </div>
+            </div>
+        </div>
+        <hr />
+    <!--//MT-3856,when link field target link is empty do not render the link. -->
+        <div class="row">
+            <div class="col-md-12 upcoming-events-link">
+                <p><a href="/zh-cn/nebinspired-blog">View All Posts</a></p>
+            </div>
+        </div>
+</div>
+            </div>
+        </div>
+    </div>
+</div>
+    </div>
+</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fakeVueHeader">
+		<!-- desktop -->
+		<header class="global-header js-global-header not-scrolled fake-header__desktop" style="margin-top: 0px; color: white !important">
+			<div class="container" style="height: 167px">
+				<div data-v-3bb7adf2="" class="global-header__desktop-header large-site-nav">
+					<div data-v-3bb7adf2="" class="large-site-nav__grid-container">
+						<section data-v-3bb7adf2="" class="grid-logo">
+							<div data-v-3bb7adf2="" class="global-header__logo">
+								<a href="/" class="global-header__logo-link">
+									<picture class="global-header__logo--dark">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+									<picture class="global-header__logo--light">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+								</a>
+							</div>
+						</section>
+						<section data-v-3bb7adf2="" class="col grid-search">
+							<div data-v-3bb7adf2="" id="_5870A13F-F6E7-45C5-84FE-7BDE738FF6F4" data-search-interface-id="coveoddb0ca74"
+								 class="vue-header-coveo-search-container">
+								<div class="coveo-search-section"></div>
+							</div>
+						</section>
+						<section data-v-3bb7adf2="" class="grid-top-bar text-right">
+							<a data-v-528fe100=""
+							   data-v-3bb7adf2="" class="large-site-navigation__item-secondary-link notificationsLink">
+								<i data-v-528fe100="" class="large-site-navigation__item-icon">
+									<svg data-v-528fe100="" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="bell-icon">
+										<path data-v-528fe100=""
+											  d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+											  stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path data-v-528fe100=""
+											  d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+											  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</i>
+							</a>
+						</section>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- mobile -->
+		<header class="global-header js-global-header not-scrolled fake-header__mobile">
+			<div class="container">
+				<div data-v-71cd6da6="" class="global-header__mobile-header js-mobile-header" style="border-bottom: none;">
+					<div data-v-71cd6da6="" class="row js-global-mobile-header">
+						<div data-v-71cd6da6="" class="col-auto global-header__hamburger-container">
+							<button data-v-71cd6da6=""
+									class="global-header__hamburger">
+								<span data-v-71cd6da6=""
+									  class="global-header__hamburger-bar"></span>
+							</button>
+						</div>
+						<div data-v-71cd6da6="" class="col px-0 mobile-header-logo-height">
+							<div data-v-71cd6da6="" class="global-header__logo">
+								<a href="/" class="global-header__logo-link">
+									<picture class="global-header__logo--dark">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+									<picture class="global-header__logo--light">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+								</a>
+							</div>
+						</div>
+						<div data-v-71cd6da6="" class="col">
+							<div data-v-71cd6da6="" class="row justify-content-end h-100 mobile-header-icons-container">
+								<div data-v-71cd6da6="" class="mobile-header-icon align-items-center international-notifications-bell">
+									<a data-v-528fe100="" data-v-71cd6da6=""
+									   class="large-site-navigation__item-secondary-link notificationsLink" target="_blank">
+										<i data-v-528fe100="" class="large-site-navigation__item-icon">
+											<svg data-v-528fe100="" width="24"
+												 height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="bell-icon">
+												<path data-v-528fe100=""
+													  d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+													  stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path data-v-528fe100=""
+													  d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+													  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="height: 2px; background-color: white"></div>
+				</div>
+			</div>
+	</div>
+	</header>
+	</div>
+
+	
+
+	<!-- End:   #nebVue -->
+	
+    <!-- FooterVue.cshtml-->
+<footer class="updated-footer site-footer js-site-footer" id="neb-footer" data-gtm-nav-type="footer">
+        <div class="page-container container">
+            <div class="row footer-contact d-flex site-footer__top-row">
+                <div class="col-12 col-lg-8 px-0 site-footer__grid-in-content">
+                    <!-- Begin: Partial/Footer/ToRequestTechnicalSupport -->
+                    <div class="col-sm-12 col-md-6 footer-contact-info">
+<h3>获取技术支持帮助</h3>
+<p>
+请填写<a href="/zh-cn/forms/neb-technical-support">技术支持表格</a>, <a href="/cdn-cgi/l/email-protection#2c5f595c5c435e586c42494e014f4445424d024f4341">发送邮件</a>,
+<br />
+或拨打 400&nbsp;811&nbsp;2220/ 400&nbsp;690&nbsp;3366。
+</p>
+<h3>国外客户</h3>
+<p>
+请联系<a href="/zh-cn/support/international-ordering-support">当地办事处或代理商.</a></p>
+</div>
+<div class="col-sm-12 col-md-6 footer-contact-info">
+<h3>订购帮助</h3>
+<p>
+订购产品请联系当地<a href="/zh-cn/support/cn-sales-representative-list-by-territory">代理商
+</a></p>
+</div>
+                    <!-- End:   Partial/Footer/ToRequestTechnicalSupport -->
+                </div>
+
+                                        <div class="col-12 col-md-12 col-lg-4 form-news">
+                            
+    <h3>想了解更多最新产品？</h3>
+    <p class="news-letter">邮件订阅</p>
+<form action="/" class="form-horizontal" id="email-pref" method="post"><input name="__RequestVerificationToken" type="hidden" value="GdkF6zblr8FEZbleoxsniwR1BmwlwkzZA4WT8egnQTB14zZeNEmaHROlwjLeocJMyOcQSOhBgVawV4-07GQBb3u3agg1" /><input id="scController" name="scController" type="hidden" value="Account" /><input id="scAction" name="scAction" type="hidden" value="GoToNewsletterForm" />            <form id="homeSubscribe" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-12">
+
+                        <input aria-labelledby="emailSubscriptionSubscribeButton" class="form-control text-box single-line" data-val="true" data-val-regex="Email Address was not valid." data-val-regex-pattern="^(([^&lt;>()[\]\\.,;:\s@&quot;]+(\.[^&lt;>()[\]\\.,;:\s@&quot;]+)*)|(&quot;.+&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$" data-val-required="Profile Email Address must be filled in." id="EmailAddress" maxlength="80" name="EmailAddress" placeholder="Email" type="email" value="" />
+                        <span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="true"></span>
+                        <input id="ButtonUrl" name="ButtonUrl" type="hidden" value="zh-cn/forms/newsletters" />
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                            <button id="emailSubscriptionSubscribeButton" type="submit" class="btn primary-btn">订阅</button>
+                    </div>
+                </div>
+            </form>
+</form>
+                        </div>
+
+            </div>
+        </div>
+    <section class="column__row column__row--padded site-footer__nav-section">
+        <div class="page-container nav-container">
+            <nav class="footer-nav footer-nav">
+                
+        <div class="footer-nav__row" data-gtm-nav-type="footer">
+
+  <a href="/zh-cn/support" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="帮助">帮助</a>
+
+  <a href="/zh-cn/about-neb/neb-overview" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="关于 NEB">关于 NEB</a>
+
+  <a href="/zh-cn/support/international-ordering-support" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="联系我们">联系我们</a>
+
+  <a href="/zh-cn/about-neb/careers" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="职业发展">职业发展</a>
+
+  <a href="/zh-cn/site-map" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="网站地图">网站地图</a>
+
+  <a href="/zh-cn/terms-of-use" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="使用条款">使用条款</a>
+
+        </div>
+        <div class="footer-nav__row" data-gtm-nav-type="footer">
+
+  <a href="/zh-cn/cookie-policy" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="Cookie 政策">Cookie 政策</a>
+
+  <a href="/zh-cn/trademarks" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="注册商标">注册商标</a>
+
+  <a href="/zh-cn/support/terms-of-sales" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="销售条款">销售条款</a>
+
+  <a href="/zh-cn/privacy-policy" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="隐私政策">隐私政策</a>
+
+
+                <label for="countrySelectionModal" class="footer-nav__item country-selection__trigger-link js-country-selection-trigger">
+                    <span class="modal-trigger">选择地区</span>
+                </label>
+        </div>
+    <h2 style="color:transparent; padding:0; margin:0;height:0;">CN</h2>
+
+            </nav>
+        </div>
+    </section>
+
+    <div class="page-container site-footer__lower-container">
+            <section class="site-footer__bcorp">
+                        <a href="https://bcorporation.net/about-b-corps" class="site-footer__bcorp-link">
+                            <img src="/zh-cn/-/media/nebus/b-corp/b-corp_logo_wtagline_white_72h.svg?rev=6f2d3e1c3e9b4255ac4c67ed40177cbd&amp;sc_lang=zh-cn&amp;hash=0D87ECF933D2C999448A555B16C265F5"
+                                 alt="Certified B Corporation"
+                                 height="100"
+                                 width="199"
+                                 class="site-footer__bcorp-logo" />
+                        </a>
+            </section>
+
+        <section class="column__row column__row--padded site-footer__middle-section">
+        <div class="footer-social">
+                <ul class="footer-social__list">
+                </ul>
+        </div>
+        </section>
+
+        <section class="column__row column__row--padded site-footer__copy-section">
+            &copy; Copyright 2026 New England Biolabs. All Rights Reserved.
+            <a class="sc-1ko78hw-0 fiVZLH" href="https://beian.miit.gov.cn/" title="https://beian.miit.gov.cn/" data-renderer-mark="true" style="color:#fff !important">京ICP备12043865号-2</a>
+        </section>
+    </div>
+</footer>
+    <!-- Begin: Country Selection Modal -->
+    <div data-gtm-nav-type="utility" class="refills-modal country-selection-modal js-refills-modal">
+        <input class="modal-state" id="countrySelectionModal" type="checkbox" autocomplete="off" />
+
+        <div class="modal-fade-screen country-selection-modal__fade-screen">
+            <div class="modal-inner country-selection-modal__inner">
+
+                <div class="country-selection-modal__header">
+                    <div class="modal-close country-selection-modal__close" for="countrySelectionModal"></div>
+                    <h2 class="country-selection-modal__header-title">Choose your country</h2>
+                </div>
+
+                <div class="country-selection-modal__body">
+                    <div class="country-selection-modal__row">
+                                <div class="country-selection-modal__column">
+                                    <h4 class="country-selection-modal__column-title">North America</h4>
+                                    <nav class="country-selection-modal__region-nav ">
+                                            <a href="https://www.neb.com/en-ca/?country=en-ca" data-gtm-nav-name="Country Selector - Canada" target="_self" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/121d15873050c40e/original/Canada.svg" alt="Canada flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Canada</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-us/?country=en-us" data-gtm-nav-name="Country Selector - United States" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/usa.svg?rev=60b77079658e4e239433e2676e3b4faa&amp;hash=500177DCAA3C52E6466A0044CE18FBA3" alt="USA" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">United States</span>
+                                            </a>
+                                    </nav>
+                                </div>
+                                <div class="country-selection-modal__column">
+                                    <h4 class="country-selection-modal__column-title">Europe</h4>
+                                    <nav class="country-selection-modal__region-nav ">
+                                            <a href="https://www.neb-online.fr" data-gtm-nav-name="Country Selector - France" target="_blank" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/38a20fce6abb3ee2/original/France.svg" alt="France flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">France</span>
+                                            </a>
+                                            <a href="https://www.neb-online.de" data-gtm-nav-name="Country Selector - Germany" target="_blank" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/germany.svg?rev=c1939979587a47d08e219901d1b81609&amp;hash=51E6E0AF3C8D8B95C8356F2625DC6965" alt="Germany" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Germany</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-gb/?country=en-gb" data-gtm-nav-name="Country Selector - United Kingdom" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/unitedkingdom.svg?rev=06ffaae2104249058ea5fe346b479476&amp;hash=62564170D0AF10E2BF699AD7727C9D38" alt="UK" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">United Kingdom</span>
+                                            </a>
+                                    </nav>
+                                </div>
+                                <div class="country-selection-modal__column">
+                                    <h4 class="country-selection-modal__column-title">Asia-Pacific</h4>
+                                    <nav class="country-selection-modal__region-nav country-selection-modal__region-nav-two">
+                                            <a href="https://www.neb.com/en-au/?country=en-au" data-gtm-nav-name="Country Selector - Australia" target="_self" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/118813984cba1250/original/Australia.svg" alt="Australia flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Australia</span>
+                                            </a>
+                                            <a href="https://www.neb.cn/zh-cn/?country=zh-cn" data-gtm-nav-name="Country Selector - China" target="_self" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/138c4842f6ea7c37/original/China.svg" alt="China flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">China</span>
+                                            </a>
+                                            <a href="/en?country=en&amp;location=in" data-gtm-nav-name="Country Selector - India" target="" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/india.svg?rev=9f0916e9e413467c8b171a5ce11632e4&amp;hash=A4A78BEDE9764181B5DE807A9A00C5EC" alt="Inida" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">India</span>
+                                            </a>
+                                            <a href="https://www.neb.com/ja-jp/?country=ja-jp" data-gtm-nav-name="Country Selector - Japan" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/japan.svg?rev=b170c508003b4f5b80faabfd412cc6b7&amp;hash=F54410B1771B15D505FAA97991E3D2AE" alt="Japan" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Japan</span>
+                                            </a>
+                                            <a href="/en?country=en&amp;location=kr" data-gtm-nav-name="Country Selector - Korea" target="" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/korea.svg?rev=ab92ad82f31243918b93a53498ca4e2f&amp;hash=E98DC2D1C8274E758B72185A66340984" alt="Korea" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Korea</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-nz/?country=en-nz" data-gtm-nav-name="Country Selector - New Zealand" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/newzealand.svg?rev=35b643f59f9c47189486ce23e9144115&amp;hash=8329707A5B004496E5062FD814F1EE89" alt="NewZealand" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">New Zealand</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-sg/?country=en-sg" data-gtm-nav-name="Country Selector - Singapore" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/singapore.svg?rev=8e491815cb5f46e3954c50bc89d98894&amp;hash=8953FCEFEE0FE11AB666CFBB4019233E" alt="Singapore" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Singapore</span>
+                                            </a>
+                                    </nav>
+                                </div>
+                    </div>
+                </div>
+
+                <div class="country-selection-modal__footer">
+                    
+                    <p>
+                        If you don&#39;t see your country above, please visit our 
+                        <a data-gtm-nav-name="Country Selector - International" href="https://www.neb.com/en?country=en&amp;location=" target="_self">
+                            international site
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End:   Country Selection Modal -->
+
+	
+
+<section class="class">
+
+    </section>
+
+
+	<input id="UserCountry" name="UserCountry" type="hidden" value="CN" />
+	<input id="HiddenForceSignOut" name="HiddenForceSignOut" type="hidden" value="False" />
+	<input id="HiddenIsUserAuthenticated" name="HiddenIsUserAuthenticated" type="hidden" value="False" />
+	<input id="AuthenticatedUserName" name="AuthenticatedUserName" type="hidden" value="Anonymous" />
+	<input id="HiddenSessionTimeoutMinutes" name="HiddenSessionTimeoutMinutes" type="hidden" value="1" />
+	<input id="HiddenValidSessionTimeoutMinutes" name="HiddenValidSessionTimeoutMinutes" type="hidden" value="1" />
+	<input id="HiddenIsPunchoutUser" name="HiddenIsPunchoutUser" type="hidden" value="False" />
+	<input id="CoveoBoxMaxLength" name="CoveoBoxMaxLength" type="hidden" value="200" />
+	<input id="regioncode" name="regioncode" type="hidden" value="CN" />
+
+	<div class="pardot-keyword-iframe__wrapper">
+    <iframe id="iframeSearch" class="pardot-keyword-iframe" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+</div>
+	
+<!-- Begin: Loading Spinner -->
+<section class="loading-spinner js-loading-spinner">
+    <figure class="loading-spinner__wrap">
+        <img class="loading-spinner__image" src="/content/img/ajax-loader-ring-alt.gif" alt="Loading Spinner" />
+    </figure>
+</section>
+<!-- End:   Loading Spinner -->
+
+	
+<!-- Dev Notes:
+        To use this modal, call this global JS function:
+
+        NEB.alertModal("TYPE","TITLE", "MESSAGE");
+
+        Where TYPE = one of 3 string types, "error, warning, info".  Each type shows a different icon.
+        Where TITLE = a string containing the TITLE of the modal you wish to show.
+        Where MESSAGE = a string containing the message you wish your modal to convey.
+        
+        example:
+        NEB.alertModal("warning", "Warning Title Test", "This is a test of the emergency broadcast system.  If there were not a test, panic would ensue.");
+
+        The above will launch a modal with the warning icon (black circle with white ! inside) and the message specified above.
+-->
+<div class="refills-modal alert-modal js-refills-modal js-alert-modal">
+    <label for="alert-modal" class="alert-modal--trigger js-alert-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="alert-modal" type="checkbox" autocomplete="off" />
+    
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close" for="alert-modal"></div>
+            
+            <!--NOTE: if a style is added or removed from the class attribute, you need to update the "defaultCssClassesForTitle" variable in the alert-modal.js file so that it matches the value in the class attribute-->
+            <div id="alert-modal-title" class="h1 alert-modal__title js-alert-modal__title"></div>
+
+            <p class="alert-modal__message js-alert-modal__message"></p>
+        
+            <p class="alert-modal__message"><input class="js-alert-modal__continue" type="button" value="Continue" /></p>
+        </div>
+    </div>
+</div>
+
+	
+
+<div class="refills-modal expired-modal js-refills-modal js-expired-modal">
+    <label for="expired-modal" class="expired-modal--trigger js-expired-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="expired-modal" type="checkbox" autocomplete="off" />
+
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div id="expired-modal-close" class="modal-close" for="expired-modal"></div>
+            <div class="h1 expired-modal__title js-expired-modal__title">Session Expired</div>
+            <div class="h1 expired-modal__title js-invalid-modal__title" style="display: none;">Your session has expired</div>
+
+                <p class="expired-modal__message js-expired-modal__message">You have been idle for more than 20 minutes, for your security you have been logged out.  Please sign back in to continue your session.</p>
+                <p class="expired-modal__message js-invalid-modal__message" style="display: none;">Please sign in to continue shopping.</p>
+
+                <div class="expired-modal__buttons">
+                    <button class="btn btn--orange js-expired-modal__sign-in">Sign In</button>
+                </div>
+        </div>
+    </div>
+</div>
+
+	<div class="refills-modal expired-modal js-refills-modal js-expired-modal">
+    <label for="account-change-modal" class="expired-modal--trigger js-account-changed-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="account-change-modal" type="checkbox" autocomplete="off" />
+
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close js-refresh-parent" for="account-change-modal"></div>
+            <div class="h1 expired-modal__title js-expired-modal__title">Institution Changed</div>
+
+            <p class="expired-modal__message js-expired-modal__message">
+                Your profile has been mapped to an Institution, please sign back for your profile updates to be completed.
+
+            </p>
+
+            <div class="expired-modal__buttons">
+                <button class="btn btn--orange js-expired-modal__sign-in">Sign In</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!-- Begin: Nag Modal -->
+<div class="refills-modal nag-modal js-refills-modal js-nag-modal">
+    <label for="nag-modal" class="nag-modal--trigger js-nag-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="nag-modal" type="checkbox" autocomplete="off" />
+
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close" for="alert-modal"></div>
+
+            <!-- Begin:  Nag Modal Content -->
+            <div class="h1 nag-modal__title">Sign in to your NEB account</div>
+
+            <div class="nag-modal__content">
+                <p>To save your cart and view previous orders, sign in to your NEB account. Adding products to your cart without being signed in will result in a loss of your cart when you do sign in or leave the site.</p>
+            </div>
+
+            <div class="nag-modal__buttons">
+                <button class="btn btn--orange js-nag-modal__sign-in nag-modal__sign-in">Sign In</button>
+                <a data-gtm-nav-type="utility" data-gtm-nav-name="Sign In" href="/account/sign-in" class="btn btn--orange nag-modal__sign-in-mobile">Sign In</a>
+                <span class="nag-modal__line-break-mobile"><br /><br /></span>
+                <button class="btn btn--gray js-nag-modal__continue">Continue as Guest</button>
+            </div>
+
+            <div class="nag-modal__dont-show">
+                <input type="checkbox" autocomplete="off" id="pdpNagHideOption" name="pdpNagHideOption" class="nag-modal__hide-option js-nag-modal__hide-option" />
+                <label for="pdpNagHideOption">Don&#39;t show me again</label>
+            </div>
+            <!-- End:    Nag Modal Content -->
+        </div>
+    </div>
+</div>
+<!-- End:   Nag Modal -->
+
+	
+
+<!--Â GoogleÂ AnalyticsÂ EnhancedÂ EcommerceÂ TrackingÂ Page Load STARTÂ -->
+<input id="hdn-gae-tracking-visitor-id" name="hdn-gae-tracking-visitor-id" type="hidden" value="" />
+<input id="hdn-gae-tracking-visit" name="hdn-gae-tracking-visit" type="hidden" value="" />
+<input id="hdn-gae-tracking-punchout-partner" name="hdn-gae-tracking-punchout-partner" type="hidden" value="" />
+<input id="hdn-gae-tracking-institution-id" name="hdn-gae-tracking-institution-id" type="hidden" value="" />
+<input id="hdn-gae-tracking-punchout-cart-id" name="hdn-gae-tracking-punchout-cart-id" type="hidden" value="" />
+<input id="hdn-gae-tracking-punchout-display-name" name="hdn-gae-tracking-punchout-display-name" type="hidden" value="" />
+<input id="hdn-gae-tracking-account-type" name="hdn-gae-tracking-account-type" type="hidden" value="Anonymous" />
+<input id="hdn-gae-tracking-acting-on-behalf-of" name="hdn-gae-tracking-acting-on-behalf-of" type="hidden" value="Self" />
+<input id="hdn-gae-tracking-cart-type" name="hdn-gae-tracking-cart-type" type="hidden" value="Direct" />
+<input id="hdn-gae-tracking-user-name" name="hdn-gae-tracking-user-name" type="hidden" value="" />
+<input id="hdn-gae-tracking-inst-name" name="hdn-gae-tracking-inst-name" type="hidden" value="" />
+<!--Â GoogleÂ AnalyticsÂ EnhancedÂ EcommerceÂ TrackingÂ Page Load ENDÂ -->
+
+	<!--Footer bundles-->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/bundles/jquery-scripts.js?v=EvizqPEkBXVD1DY0ciZXLuvpOD5VX8ON9rvMWiVslrw1"></script>
+
+<script src="/bundles/vendor-scripts.js?v=pLrb-YdWkveXqwDjvuWFmbNfdP4J50OV74SjASo5n5U1" defer></script>
+
+<script src="/bundles/custom-scripts.js?v=jMZBbIXl9x_5emnY_Dz7nlCmCpCUNK2-uCv3i0voWHQ1" defer></script>
+
+<!--Footer bundles end-->
+	
+<input id="HiddenPunchoutSapDownEnableSubmitAlertMessage" name="HiddenPunchoutSapDownEnableSubmitAlertMessage" type="hidden" value="You may access and view the PunchOut NEB.com site, but unfortunately you will not be able to submit an order at this time. Please try again later. We apologize for the inconvenience." /><input id="HiddenPunchoutSapDownAlertMessage" name="HiddenPunchoutSapDownAlertMessage" type="hidden" value="You may access and view the PunchOut NEB.com site, but unfortunately you will not be able to submit an order at this time. Please try again later. We apologize for the inconvenience." /><input id="HiddenPunchoutSapDownAlertHeaderMessage" name="HiddenPunchoutSapDownAlertHeaderMessage" type="hidden" value="NEB.com is experiencing technical issues" />
+
+	<!-- section used to suppress onetrust banner on ceros iframes -->
+<script  type="text/javascript">
+var urlParams = new URLSearchParams(location.search);
+if (urlParams.has('ceros_account_slug')) {
+     OneTrust.Close();
+    OneTrust.SetAlertBoxClosed();}
+</script>
+<!-- End section used to suppress onetrust banner on ceros iframes --><script>
+    if (window.document.documentMode) {
+        if (!Array.prototype.includes) {
+            Array.prototype.includes = function (el) {
+                for (var i = 0; i < this.length; i++)
+                    if (this[i] === el) return true;
+                return false;
+            };
+        }
+        $(".twitter-timeline").before('Our inline Twitter feed is not supported by this browser. Please try switching to another browser, or ');
+        $(".twitter-timeline")
+            .text('click here to access NEB\'s Twitter page.')
+            .after('<br/><br/><img alt="" draggable="true" src="https://pbs.twimg.com/profile_images/524945252361064448/_LCu1G5a_400x400.png" style="border-radius: 50%; height:50%">');
+        $(".social-media .center-iframe").css("font-size", "16px").css("font-weight", "bold").css("padding-right", "40px");
+    }
+</script>
+<!-- begin hide social media block if empty -->
+<script type="text/javascript">
+   $('.social-media-wrapper .update-social-media .row').html().trim() == '' && $('.social-media-wrapper').hide();
+</script>
+<!-- end hide social media block if empty -->
+
+<!-- begin hide twitter embed link -->
+<script>
+$(document).ready( function() {
+    $('.social-media .center-iframe').append('<div style="height: 40px;background: transparent;width: 60px;bottom: 0;position: absolute;"></div>');
+});
+</script>
+<!-- end hide twitter embed link -->
+	<script src="/bundles/vue-scripts.js?v=Ws6PL_9lRBedJ-h1E3t1JPdcg0IreUZrvTBYcgEWrG81"></script>
+
+</body>
+</html>

@@ -1,0 +1,2402 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+
+
+<script type="text/javascript">var itemId = "{0A54E711-932B-4ADD-A800-84F738335F46}", templateId = "{2D3C3B12-F31B-462B-A95F-5C5C4B4EE113}", userCountry = "CN";</script>
+    <script type="text/javascript">
+    (function (history, location, region) {
+        const match = /^\/(en|en-au|en-gb|en-nz|en-sg|en-us|ja-jp|zh-cn|en-ca|fr-ca|de-de|en-de|fr-fr|en-fr|ko-kr)(\/|$)/.exec(location.pathname)
+        if (!match) {
+            var url = '/' + region + (itemId == "{5E6380CB-EB85-4C69-8ECF-13CDD163EC3D}" ? "" : location.pathname) + location.search + location.hash;
+            if (history.pushState)
+                history.pushState(null, null, url);
+            else
+                location.href = url;
+            return;
+        }
+        var urlRegion = match[1];
+        if (urlRegion === region)
+            return;
+
+        url = location.href.replace(urlRegion, region);
+
+        if (history.pushState)
+            history.pushState(null, null, url);
+        else
+            location.href = url;
+
+    })(window.history, window.location, document.children[0].lang.toLowerCase());
+</script>
+    <script type="text/javascript" src="https://sdk.ceros.com/embedded-player-sdk-v5.min.js"></script>
+
+<script>
+function applyConsent(hasConsent) {
+  var foundExperienceInterval = setInterval(function() {
+    var cerosFrames = document.querySelectorAll("iframe.ceros-experience");
+    if (!cerosFrames || cerosFrames.length == 0) return;
+    var cerosContainer = cerosFrames[0].parentNode;
+    var expId = cerosContainer.getAttribute("id");
+    if (expId) {
+      clearInterval(foundExperienceInterval);
+      // find experience
+      CerosSDK.findExperience(expId)
+        .done(function(experience) {
+          experience.setUserConsentForAnalytics(hasConsent);
+        })
+        .fail(function(error) {
+          console.error(error);
+        });
+    }
+  }, 500);
+}
+
+applyConsent(false);
+</script>
+
+<!-- OneTrust Cookies Consent Notice start for neb.cn -->
+<script src="/scripts/onetrust/cn/scripttemplates/otSDKStub.js" data-language="zh" type="text/javascript" charset="UTF-8" data-domain-script="c8f7581e-698c-492f-ad8a-43f864076dc0"></script>
+<script type="text/javascript">
+function OptanonWrapper() { 
+   applyConsent(OnetrustActiveGroups.indexOf('C0003') !== -1);
+}
+</script>
+<!-- OneTrust Cookies Consent Notice end for neb.cn -->
+
+
+<!-- Google Analytics -->
+<script src='https://www.google-analytics.com/analytics.js' type="text/plain" class="optanon-category-C0002-C0003-C0004"></script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+<script type="text/plain" class="optanon-category-C0002-C0003-C0004">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bb5738f6e5eb3df623cb140358ec2ba8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- Google Tag Manager -->
+<script type="text/plain" class="optanon-category-C0002-C0003-C0004">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNPZZ5V');</script>
+<!-- End Google Tag Manager -->
+
+
+<style>
+@media screen and (min-width: 992px)
+{
+.update-header .site-header__logo{
+width:15% !important;
+}
+}
+-homePage .updated-container .purchase-portal-block .card-body
+{
+min-height:500px !important;
+}
+input#tfa_4, label#tfa_4-L {
+    display: block !important;
+}
+
+</style>
+<style>
+.wForm tbody tr:nth-child(even) {
+        background-color: transparent !important;
+    }
+
+    .wForm table {
+        border: none !important;
+    }
+.wForm .inline .oneField .preField
+{
+min-width:200px !important;
+}
+.wForm .inline div.oneField : not(.offstate)
+{
+display:inline-block !important;
+}
+</style>
+<style>
+input#tfa_4, label#tfa_4-L {
+  display:block!important;
+}
+
+.wForm p, .wForm fieldset, .wForm table {
+	border-bottom:0px solid #EEE;
+	border-top:0px solid #EEE;
+	border-left:0px solid #EEE;
+	border-right:0px solid #EEE;
+}
+
+
+.wForm .label, .wForm .label * {
+    vertical-align: top;
+    font-family: Arial;
+    display: inline-block;
+    margin-bottom: 0px!important;
+}
+.wForm tr,.wForm td,.wForm th {
+    vertical-align: top;
+    background: white !important;
+}
+.wForm br {
+    display: none;
+}
+fieldset#tfa_5
+{
+border:0 !important;
+}
+</style>
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="NEB offers protein analysis tools such as proteases, phosphatases, kinases, protein standards, tools for phage display and protein labeling" />
+<meta name="keywords" content="Protein tools, phage display, protease, kinase, phosphatase, protein ladder, protein marker, proteomics" />
+<meta name="author" content="New England Biolabs" />
+<meta name="robots" content="" />
+<meta name="categories" content="Protein Tools" />
+<meta name="products" />
+<meta name="pmm" content="9" />
+<meta property="og:title" content="" />
+<meta property="og:description" />
+<meta property="og:image" />
+<meta name="google-site-verification" content="xghU3QuEVrHPxz7GYD9sGFwMEeqUDV5mJ6trQlDQa10" />
+<meta name="page-classification-for-analytics" content="" />
+<title>蛋白质工具 | NEB</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/content/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/content/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/content/img/favicon-16x16.png">
+<link rel="manifest" href="/content/img/site.webmanifest">
+<link rel="mask-icon" href="/content/img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- Hreflang Tags -->
+        <link rel="alternate" hreflang="x-default" href="https://www.neb.com/en/products/protein-tools" />
+        <link rel="alternate" hreflang="en-gb" href="https://www.neb.com/en-gb/products/protein-tools" />
+        <link rel="alternate" hreflang="en-au" href="https://www.neb.com/en-au/products/protein-tools" />
+        <link rel="alternate" hreflang="en-nz" href="https://www.neb.com/en-nz/products/protein-tools" />
+        <link rel="alternate" hreflang="ja-jp" href="https://www.neb.com/ja-jp/products/protein-tools" />
+        <link rel="alternate" hreflang="en-sg" href="https://www.neb.com/en-sg/products/protein-tools" />
+        <link rel="alternate" hreflang="en-us" href="https://www.neb.com/en-us/products/protein-tools" />
+        <link rel="alternate" hreflang="en-ca" href="https://www.neb.com/en-ca/products/protein-tools" />
+        <link rel="alternate" hreflang="zh-cn" href="https://www.neb.cn/zh-cn/products/protein-tools" />
+<!--MT-3856,when link field target link is empty do not render the link.-->
+    <link rel="canonical" href="https://www.neb.cn/zh-cn/products/protein-tools" />
+
+    
+    
+<meta name="VIcurrentDateTime" content="639212929964428564" />
+<meta name="VirtualFolder" content="/" />
+<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
+    
+<!-- CSS Bundles -->
+<link href="/bundles/styles.css?v=ZBlkYmd-TAztKacurf0q1b86VmJGKacO_scThCf8FLo1" rel="stylesheet" media="screen,print" />
+
+<link href="/bundles/print.css?v=ApKoXakBSCZneuHldtuZnnRj1VDmMTOzaKVtiZJTmpw1" rel="stylesheet" media="print" />
+
+    <link href="/bundles/vue-css-bundle.css?v=K7WHzH71Z0st2empDOQIiix055SIHuR9MJ6O0WRx8DM1" rel="stylesheet"/>
+
+
+</head>
+<body class="" onunload="">
+	
+	<link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10116/css/CoveoFullSearch.css" />
+<link rel="stylesheet" href="https://static.cloud.coveo.com/coveoforsitecore/ui/v0.64.7/css/CoveoForSitecore.css" />
+<script class="coveo-script" type="text/javascript" src='https://static.cloud.coveo.com/searchui/v2.10116/js/CoveoJsSearch.Lazy.min.js'></script>
+<script class="coveo-for-sitecore-script" type="text/javascript" src='https://static.cloud.coveo.com/coveoforsitecore/ui/v0.64.7/js/CoveoForSitecore.Lazy.min.js'></script>
+<script type="text/javascript" src="https://static.cloud.coveo.com/searchui/v2.10116/js/cultures/zh-cn.js"></script>
+
+<div>
+
+
+    
+    
+    <!-- Resources -->
+    <div id="SearchResourcesProperties_c93e6406405742f9a10f5e5097e92054"
+         class="CoveoForSitecoreContext"
+                    data-sc-should-have-analytics-component='true'
+            data-sc-analytics-enabled='true'
+            data-sc-current-language='zh-CN'
+            data-prebind-sc-language-field-name='fieldTranslator'
+            data-sc-language-field-name='_language'
+            data-sc-labels='{&quot;Ascending&quot; : &quot;Ascending&quot; , &quot;Descending&quot; : &quot;Descending&quot; , &quot;Template&quot; : &quot;Template&quot; , &quot;Updated By&quot; : &quot;Updated by&quot; , &quot;Created&quot; : &quot;Created&quot; , &quot;Language&quot; : &quot;Language&quot; , &quot;Uniform resource identifier&quot; : &quot;URI&quot; , &quot;Last Time Modified&quot; : &quot;Last time modified.&quot; , &quot;Created By&quot; : &quot;Created by&quot; , &quot;Creation Time&quot; : &quot;Creation time.&quot; , &quot;If the problem persists contact the administrator.&quot; : &quot;If the problem persists contact the administrator.&quot; , &quot;Search is currently unavailable&quot; : &quot;Oops! Something went wrong on the server.&quot;}'
+            data-sc-maximum-age='900000'
+            data-sc-page-name='protein-tools'
+            data-sc-page-name-full-path='/sitecore/content/NEB Site/Home/products/protein-tools'
+            data-sc-index-source-name='Coveo_web_index - PRD-FARM-104'
+            data-sc-is-in-experience-editor='false'
+            data-sc-is-user-anonymous='true'
+            data-sc-item-uri='sitecore://web/{0A54E711-932B-4ADD-A800-84F738335F46}?lang=zh-CN&amp;ver=7'
+            data-sc-item-id='0a54e711-932b-4add-a800-84f738335f46'
+            data-prebind-sc-latest-version-field-name='fieldTranslator'
+            data-sc-latest-version-field-name='_latestversion'
+            data-sc-rest-endpoint-uri='/coveo/rest'
+            data-sc-analytics-endpoint-uri='/coveo/rest/ua'
+            data-sc-site-name='neb'
+            data-sc-field-prefix='f'
+            data-sc-field-suffix='86828'
+            data-sc-prefer-source-specific-fields='false'
+            data-sc-external-fields='[{&quot;fieldName&quot;:&quot;permanentid&quot;,&quot;shouldEscape&quot;:false}]'
+            data-sc-source-specific-fields='[{&quot;fieldName&quot;:&quot;attachmentparentid&quot;},{&quot;fieldName&quot;:&quot;author&quot;},{&quot;fieldName&quot;:&quot;clickableuri&quot;},{&quot;fieldName&quot;:&quot;collection&quot;},{&quot;fieldName&quot;:&quot;concepts&quot;},{&quot;fieldName&quot;:&quot;date&quot;},{&quot;fieldName&quot;:&quot;filetype&quot;},{&quot;fieldName&quot;:&quot;indexeddate&quot;},{&quot;fieldName&quot;:&quot;isattachment&quot;},{&quot;fieldName&quot;:&quot;language&quot;},{&quot;fieldName&quot;:&quot;printableuri&quot;},{&quot;fieldName&quot;:&quot;rowid&quot;},{&quot;fieldName&quot;:&quot;size&quot;},{&quot;fieldName&quot;:&quot;source&quot;},{&quot;fieldName&quot;:&quot;title&quot;},{&quot;fieldName&quot;:&quot;topparent&quot;},{&quot;fieldName&quot;:&quot;topparentid&quot;},{&quot;fieldName&quot;:&quot;transactionid&quot;},{&quot;fieldName&quot;:&quot;urihash&quot;}]'
+>
+    </div>
+    <script type="text/javascript">
+        var endpointConfiguration = {
+            itemUri: "sitecore://web/{0A54E711-932B-4ADD-A800-84F738335F46}?lang=zh-CN&amp;ver=7",
+            siteName: "neb",
+            restEndpointUri: "/coveo/rest"
+        };
+        if (typeof (CoveoForSitecore) !== "undefined") {
+            CoveoForSitecore.SearchEndpoint.configureSitecoreEndpoint(endpointConfiguration);
+            CoveoForSitecore.version = "5.0.1368.1";
+            var context = document.getElementById("SearchResourcesProperties_c93e6406405742f9a10f5e5097e92054");
+            if (!!context) {
+                CoveoForSitecore.Context.configureContext(context);
+            }
+        }
+    </script>
+</div>
+	<!-- Begin: #nebVue -->
+	<div id="nebVue" class="neb-vue">
+		<div v-cloak>
+			<div class="v-cloak-hidden">
+				<div class="body-wrapper main-body">
+					<div data-nosnippet class="header-placeholder  "></div>
+					<global-header :component-data="{commerceEnabled:false,isHomePage:false,isFreezerAccount:false,pageTopAlertShown:false,pageTopAlerts:[],notificationsShown:true,notifications:[{id:&quot;220690d8-649e-40a9-ac44-bdfaef7b2897&quot;,title:`Analyze mRNA 5′ Caps`,description:`Learn how RNase 4 enables targeted isolation and LC-MS analysis of mRNA 5&amp;prime; caps.`,url:`https://media.neb.com/asset/a319a27d-b2c7-458a-bf9c-2857d5e72568/RNase4_Targeted_Isolation_Quantitative_Analysis_mRNA_5prime_Cap_AppNote.pdf`,created:`2026年7月27日`,expireDate:`2026-08-10T13:11:00.0000000`}],notificationsNoActiveMessage:`Please check back later for new notifications.`,search:{text:`搜索产品和技术资源`},logos:{light:{small:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0},large:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0}},dark:{small:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0},large:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0}}},siteNav:[{name:`应用 &amp;amp; 产品`,subNav:[{name:`应用`,link:`/zh-cn/applications`,items:[{name:`分子诊断专题`,link:`/zh-cn/supporting-molecular-diagnostics`},{name:`克隆 &amp; 合成生物学`,link:`/zh-cn/applications/cloning-and-synthetic-biology`},{name:`DNA 扩增、PCR 和 qPCR`,link:`/zh-cn/applications/dna-amplification-pcr-and-qpcr`},{name:`基因编辑`,link:`/zh-cn/products/crispr-cas-gene-editing`},{name:`蛋白表达`,link:`/zh-cn/applications/protein-expression`},{name:`蛋白纯化`,link:`/zh-cn/applications/protein-purification`},{name:`蛋白质分析 &amp; 工具`,link:`/zh-cn/applications/protein-analysis-and-tools`},{name:`糖生物学 &amp; 蛋白质组学`,link:`/zh-cn/applications/glycobiology-and-proteomics`},{name:`细胞分析`,link:`/zh-cn/applications/cellular-analysis`}]},{name:`产品`,link:`/zh-cn/products`,items:[{name:`限制性内切酶`,link:`/zh-cn/products/restriction-endonucleases`},{name:`PCR、qPCR &amp; 扩增技术`,link:`/zh-cn/products/pcr-qpcr-and-amplification-technologies`},{name:`DNA 修饰酶`,link:`/zh-cn/products/dna-modifying-enzymes-and-cloning-technologies`},{name:`NGS 文库制备 &amp; 靶向富集`,link:`/zh-cn/products/next-generation-sequencing-library-preparation`},{name:`核酸纯化`,link:`/zh-cn/products/nucleic-acid-purification`},{name:`Markers &amp; Ladders`,link:`/zh-cn/products/markers-and-ladders`},{name:`RNA 试剂`,link:`/zh-cn/products/rna-synthesis-and-modification`},{name:`DNA 组装、克隆和突变试剂盒`,link:`/zh-cn/products/dna-assembly-cloning-and-content-mutagenesis-kits`},{name:`基因编辑`,link:`/zh-cn/products/crispr-cas-gene-editing`},{name:`细胞分析`,link:`/zh-cn/products/cellular-analysis`},{name:`表观遗传学`,link:`/zh-cn/products/epigenetics`},{name:`蛋白表达`,link:`/zh-cn/products/protein-expression`},{name:`蛋白纯化`,link:`/zh-cn/products/protein-purification`},{name:`感受态细胞`,link:`/zh-cn/products/competent-cells`},{name:`蛋白质工具`,link:`/zh-cn/products/protein-tools`},{name:`糖生物学`,link:`/zh-cn/products/glycobiology`},{name:`DNA 质粒`,link:`/zh-cn/products/dna-plasmids-and-substrates`},{name:`缓冲液`,link:`/zh-cn/products/buffers`},{name:`菌株`,link:``},{name:`停产产品`,link:`/zh-cn/products/discontinued`}]}],cta:[{icon:{src:`/zh-cn/-/media/nebus/navigation/icon-cta-new.svg?rev=addc407120dc400eb01b010f06abc9e5`,alt:`new`},name:`最新产品`,link:`/zh-cn/new-products`},{icon:{src:`/zh-cn/-/media/nebus/navigation/icon-cta-sale.svg?rev=22bf9ff7b720460a9b4e835fba5a37c5`,alt:`new`},name:`样品申请&amp;优惠活动`,link:`/zh-cn/samples-and-special-offers`}],richTextTitle:`Monarch&lt;sup&gt;&amp;reg;&lt;/sup&gt; DNA &amp;amp; RNA 纯化试剂盒全面升级！`,richText:`&lt;p&gt;
+&lt;/p&gt;
+&lt;p dir=&quot;auto&quot; style=&quot;margin: 0in; text-align: start;&quot;&gt; &lt;span style=&quot;color: #212121;&quot;&gt;我们的 Monarch&lt;sup&gt;&amp;reg;&lt;/sup&gt; 核酸纯化试剂盒在不断升级，本次升级带来了性能、可持续性以及价值方面的显著提升。了解更多产品信息，找到属于您的全新试剂盒。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn&quot; href=&quot;/zh-cn/monarch/monarch-nucleic-acid-purification-kits-are-evolving&quot;&gt;了解 Monarch&lt;sup&gt;&amp;reg;&lt;/sup&gt; 产品&lt;br /&gt;
+&lt;/a&gt;&lt;/p&gt;`},{name:`工具 &amp; 资源`,link:`/zh-cn/tools-and-resources`,subNav:[{name:`工具`,link:`/zh-cn/tools-and-resources/interactive-tools`,items:[{name:`产品选择工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Product-Selection`},{name:`限制性内切酶工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Restriction-Enzyme-Tools`},{name:`引物设计工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Primer-Design-Tools`},{name:`实验设计工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Experimental-Design`},{name:`计算工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Calculators`},{name:`数据库`,link:`/zh-cn/tools-and-resources/interactive-tools#Databases`},{name:`其它工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Additional-Tools`}]},{name:`资源`,link:`/zh-cn/tools-and-resources`,items:[{name:`应用实例`,link:`/zh-cn/application-notes`},{name:`FAQs`,link:`/zh-cn/tools-and-resources/search?type=FAQ`},{name:`互动工具`,link:`/zh-cn/tools-and-resources/interactive-tools`},{name:`资料`,link:`/zh-cn/support/catalog-and-literature-request`},{name:`NEB Podcast`,link:`/zh-cn/podcasts/nebpodcast`},{name:`NEBInspired 博客`,link:`/zh-cn/nebinspired-blog`},{name:`操作说明`,link:`/zh-cn/tools-and-resources/search?type=Protocol`},{name:`选择指南`,link:`/zh-cn/tools-and-resources/search?type=Chart`},{name:`问题解决指南`,link:`/zh-cn/tools-and-resources/search?type=TroubleshootingGuide`},{name:`使用指南/小技巧`,link:`/zh-cn/tools-and-resources/search?type=UsageGuidelines`},{name:`视频资料库`,link:`/zh-cn/tools-and-resources/video-library`},{name:`网络课堂`,link:`/zh-cn/webinar/neb-tv-webinar-series`}]}],cta:[{icon:{src:`https://media.neb.com/m/2d08fc4194704324/original/Catalog_Literature_megamenu_icon.svg`,alt:`Open book megamenu icon representing NEB catalog and literature request`},name:`产品资料库`,link:`/zh-cn/support/catalog-and-literature-request`},{icon:{src:`https://media.neb.com/m/66c9fe63cf814a99/original/Blog_megamenu_icon.svg`,alt:`Pen or pencil megamenu icon representing blog`},name:`NEBinspired Blog&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`,link:`/zh-cn/nebinspired-blog`}]},{name:`定制化解决方案`,link:`/zh-cn/custom-solutions`,subNav:[{name:``,items:[{name:`定制化解决方案`,link:`/zh-cn/custom-solutions/customized-solutions`},{name:`GMP 级别产品 制造`,link:`/zh-cn/custom-solutions/gmp`},{name:`NEB 冻干科技`,link:`/zh-cn/custom-solutions/lyophilization-solutions`}]},{name:``,items:[{name:`无甘油的冻干制剂`,link:`/zh-cn/custom-solutions/glycerol-free`},{name:`NEB 质量控制`,link:`/zh-cn/about-neb/quality-at-neb`},{name:`NEB 助力分子诊断与治疗方案开发行业创新，加速制造升级`,link:`/zh-cn/supporting-advances-in-diagnostic-and-therapeutic-innovation-and-manufacturing`}]}],cta:[],richTextTitle:`&lt;p /&gt;&lt;a href=&quot;/zh-cn/forms/contact-the-customized-solutions-team&quot;&gt;&lt;img alt=&quot;Tube with cogs megamenu icon representing NEB Customized Solutions&quot; src=&quot;https://media.neb.com/m/2bcdc588b68f78ba/original/Customized_Solutions_megamenu_icon.svg?=&quot; data-damid=&quot;618FD996-974E-440B-8F7E338C3C5CA2A6&quot; style=&quot;margin-right: 8px; vertical-align: middle;&quot; width=&quot;35&quot; height=&quot;35&quot; /&gt;&lt;span style=&quot;color: #ca4a05;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 如何联系定制化解决方案团队&lt;br /&gt;
+&lt;p /&gt;
+
+&lt;/span&gt;&lt;/a&gt;`,richText:`&lt;p&gt;有兴趣可以了解查看更多关于定制化产品、大包装订购、冻干产品或GMP级产品信息&lt;/p&gt;`},{name:`帮助`,link:`/zh-cn/support`,subNav:[{name:``,items:[{name:`技术支持`,link:`/zh-cn/forms/neb-technical-support`},{name:`国际订购 &amp;amp; 支持`,link:`/zh-cn/support/international-ordering-support`},{name:`代理商`,link:`/zh-cn/support/cn-sales-representative-list-by-territory`},{name:`新建实验室`,link:`/zh-cn/support/new-lab-discount`}]},{name:``,items:[{name:`产品资料库`,link:`/zh-cn/support/catalog-and-literature-request`},{name:`支持分子诊断`,link:`/zh-cn/supporting-molecular-diagnostics`},{name:`支持传染病的预防、诊断与研究`,link:`/zh-cn/infectious-disease/supporting-infectious-disease-research-and-development`},{name:`NEB 助力分子诊断与治疗方案开发`,link:`/zh-cn/supporting-advances-in-diagnostic-and-therapeutic-innovation-and-manufacturing`},{name:`支持 COVID-19 研究`,link:`/zh-cn/covid-19/solutions-available-from-new-england-biolabs-supporting-covid-19-research`},{name:`OEM &amp; 客户定制方案`,link:`/zh-cn/custom-solutions/customized-solutions`},{name:`农业支持`,link:`/zh-cn/support/supporting-agricultural-biology`},{name:`科学教育项目`,link:`/zh-cn/promoting-science-education`},{name:`包装 &amp; 运输`,link:`/zh-cn/support/packaging-shipping-and-delivery`},{name:`NEB 质量体系`,link:`/zh-cn/about-neb/quality-at-neb`},{name:`销售条款`,link:`/zh-cn/support/terms-of-sales`}]}],cta:[{icon:{src:`/zh-cn/-/media/nebus/navigation/icon-cta-feedback.png?rev=b72ee87ef07d45898efedb87c84aabd7`,alt:`icon-cta-feedback`},name:`客户建议 &amp; 反馈`,link:`/zh-cn/forms/customer-feedback`},{icon:{src:`https://media.neb.com/m/43575fcb05e084ba/original/Tech_Support_megamenu_icon.svg`,alt:`DNA megamenu icon representing Tech Support`},name:`技术支持`,link:`/zh-cn/forms/neb-technical-support`}],richTextTitle:`联系方式`,richText:`北京市海淀区王庄路 1号&lt;br /&gt;
+清华同方科技广场 B 座 612 室，100083&lt;br /&gt;
+客服热线：400-811-2220 / 400-690-3366 &lt;br /&gt;
+电话：010-82378266&lt;br /&gt;
+咨询: &lt;a href=&quot;mailto:info@neb-china.com&quot;&gt;info@neb-china.com&lt;/a&gt;&lt;br /&gt;
+技术支持：&lt;a href=&quot;mailto:support@neb-china.com&quot;&gt;support@neb-china.com&lt;/a&gt;`},{name:`关于 NEB`,link:`/zh-cn/about-neb`,subNav:[{name:``,items:[{name:`了解 NEB`,link:`/zh-cn/about-neb/neb-overview`},{name:`最新动态`,link:`/zh-cn/about-neb/news-and-press-releases`},{name:`核心团队`,link:`/zh-cn/about-neb/leadership`},{name:`NEB 研究项目`,link:`/zh-cn/research`},{name:`社会责任 &amp; 可持续发展`,link:`/zh-cn/about-neb/corporate-social-responsibility-and-sustainability`}]},{name:``,items:[{name:`ISO 认证`,link:`/zh-cn/about-neb/certifications`},{name:`Passion in Science Awards 奖项`,link:`/zh-cn/about-neb/passion-in-science-awards`},{name:`业务拓展`,link:`/zh-cn/about-neb/business-development-opportunities`},{name:`职业发展`,link:`/zh-cn/about-neb/careers`},{name:`联系我们`,link:`/zh-cn/support/international-ordering-support`}]}],cta:[{icon:{src:`/zh-cn/-/media/nebus/navigation/distributor_china_megamenu_icon.svg?rev=b06b46bed8a54cb4a3d3783accd41ddb&amp;sc_lang=zh-cn`,alt:`distributor icon`},name:`代理商`,link:`/zh-cn/support/cn-sales-representative-list-by-territory`}],richTextTitle:`联系方式`,richText:`北京市海淀区王庄路 1号&lt;br /&gt;
+清华同方科技广场 B 座 612 室，100083&lt;br /&gt;
+客服热线：400-811-2220 / 400-690-3366 &lt;br /&gt;
+电话：010-82378266&lt;br /&gt;
+咨询: &lt;a href=&quot;mailto:info@neb-china.com&quot;&gt;info@neb-china.com&lt;/a&gt;&lt;br /&gt;
+技术支持：&lt;a href=&quot;mailto:support@neb-china.com&quot;&gt;support@neb-china.com&lt;/a&gt;`}],languages:[],legacyShopEnabled:0,forceDarkText:``}"></global-header>
+					
+<!-- TwoColumnStructure -->
+<div class="content-wrap">
+    <div class="column__row column__row--padded content group">
+        <div class="page-container">
+            <section class="column__100 primary" role="main">
+                
+
+<!-- Begin: Breadcrumbs -->
+<section class="column_row column__row--padded column__row--space-after breadcrumbs" data-gtm-nav-type="breadcrumb">
+    <div class="page-container">
+                    <span class="breadcrumbs__item"><a href="/zh-cn/">Home</a></span>
+                    <span class="breadcrumbs__item"><a href="/zh-cn/products">Reagents and Molecular Biology Products</a></span>
+                <span class="breadcrumbs__item">蛋白质工具</span>
+    </div>
+</section>
+<!-- End: Breadcrumbs -->
+<!-- Begin: Breadcrumbs JSONLD -->
+
+<!-- End: Breadcrumbs JSONLD -->
+<header class="group">
+    
+
+
+        <span class="hero" data-gtm-nav-type="hero">
+<img src="/zh-cn/-/media/nebus/page-images/products/banners/pt_product_hero.jpg?rev=bdb23128f14a41cf8ac8217f591fb947&amp;la=zh-CN&amp;h=350&amp;w=1500&amp;hash=08201D9723B0CE8702F7EBAB28DC7233" alt="PT_Product_Hero" />        </span>
+
+<h1>蛋白质工具</h1>
+
+
+
+
+<nav class="legacy-tabs" data-gtm-nav-type="horizontal-tab">
+    <a href="#Overview" class="legacy-tabs__item" data-gtm-nav-name="Product Overview">
+        <span>Product Overview</span>
+    </a>
+    <a href="#ProductListing" class="legacy-tabs__item" data-gtm-nav-name="Product Listing">
+        <span>Product Listing</span>
+    </a>
+</nav>
+</header>
+
+<!-- Begin: 2 column example - 66 & 33 -->
+<div class="column__row column__row--padded">
+    <div class="page-container">
+        <div class="column__66">
+            
+<section class="paragraph content-widget  " data-gtm-nav-type="body">
+    
+</section><section data-gtm-nav-type="body">
+    <div id="OverviewContent" class="category-tab-content">
+        <p>New England Biolabs offers an array of protein tools for all of your protein analysis needs. </p>
+<h2>Proteome Analysis</h2>
+<p>
+Trypsin-digested BSA MS Standard (CAM-modified) (<a href="/zh-cn/products/p8108-trypsin-digested-bsa-ms-standard-cam-modified">NEB #P8108</a>) is a complex mixture of peptides that can be used to calibrate mass spectrometers.</p>
+<h2>Proteases</h2>
+<p>
+NEB offers several proteases for proteomics applications, including Trypsin (<a href="/zh-cn/products/p8119-trypsin-ultra-mass-spectrometry-grade-recombinant">NEB #P8119</a>), AspN (<a href="/zh-cn/products/p8104-endoproteinase-aspn">NEB #P8104</a>), GluC (<a href="/zh-cn/products/p8100-endoproteinase-gluc">NEB #P8100</a>), Furin (<a href="/zh-cn/products/p8077-furin">NEB #P8077</a>), and Endoproteinase LysC (<a href="/zh-cn/products/p8109-endoproteinase-lysc">NEB #P8109</a>).</p>
+<h2>Protein Labeling</h2>
+<p>
+New England Biolabs provides the SNAP-tag&reg;,&nbsp;CLIP-tag&trade; and&nbsp;ACP/MCP-tag protein labeling systems that facilitate the attachment of virtually any molecule to a protein of interest, and can be used for studying the function and localization of proteins in living and fixed cells, as well as protein&nbsp;immobilization.&nbsp;</p>
+<h2>Phage Display</h2>
+<p>
+The&nbsp;Ph.D.&trade; libraries&nbsp;from New England Biolabs have become the preeminent tools in this field, with hundreds of publications describing applications, including epitope mapping/vaccine development, mapping protein-protein contacts&nbsp;and identification of peptide mimics of non-peptide ligands. Bioactive peptides, which can be used as cell-targeting or gene delivery agents, have been identified either by panning against purified receptors&nbsp;or against intact cells or tissue samples, both&nbsp;<em>in vitro</em>&nbsp;and&nbsp;<em>in vivo</em>. NEB offers displayed peptide libraries of 7 (<a href="/zh-cn/products/e8211-phd-7-phage-display-peptide-library-kit-v2">NEB #E8211S</a>) and 12 (<a href="/zh-cn/products/e8210-phd-12-phage-display-peptide-library-kit-v2">NEB #E8210S</a>) residues, as well as a disulfide-contrained 7-residue library (<a href="/zh-cn/products/e8212-phd-c7c-phage-display-peptide-library-kit-v2">NEB #E8212S</a>). </p>
+<h2>Protein Kinases</h2>
+<p>The reversible addition of phosphate groups to proteins is important for the transmission of signals within eukaryotic cells and, as a result, protein phosphorylation and dephosphorylation regulate many diverse cellular processes. As the number of known protein kinases has increased at an ever-accelerating pace, it has become more challenging to determine which protein kinases interact with which substrates in the cell. The determination of consensus phosphorylation site motifs by amino acid sequence alignment of known substrates has proven useful in this pursuit. These motifs can be helpful for predicting phosphorylation sites for specific protein kinases within a potential protein substrate. NEB offers a line of several protein kinases&nbsp;to aid in this research.</p>
+<h2>Protein Phosphatases</h2>
+<p>Protein phosphorylation plays a role in the regulation of the function and activity of protein factors and enzymes. Protein phosphorylation can be found on tyrosine, histidine, serine and threonine residues. Analysis of the presence of such phosphorylation, and its attendant effects, is often aided by removal of the protein phosphate groups by phosphatases. NEB offers several protein phosphatases&nbsp;that remove phosphate groups from different subsets of these residues.</p>
+<h2>Protein Standards</h2>
+<p>New England Biolabs offers a selection of highly pure protein standards. Sizes range from 10&nbsp;to 250&nbsp;kDa which is ideal for accurate molecular weight determination for a wide range of expressed proteins. We offer a blue prestained protein standard, as well as a colored prestained protein standard with multi-colored bands for easy identification. Standards are provided pre-mixed with loading buffer and reducing agent.</p>
+    </div>
+    <div id="ProductListingContent" class="category-tab-content">
+        New England Biolabs offers proteases, phosphatases, kinases, chitinases and protein markers and ladders, as well as tools for phage display and protein labeling.
+    </div>
+    <div id="ProductEducationContent" class="category-tab-content">
+        
+    </div>
+</section>
+<!-- ProductListTabWidget -->
+
+<div id="ProductListingWidget" class="category-tab-content">
+    <!-- Google Analytics Enhanced Ecommerce Tracking ProductListTabWidges START -->
+    <script>
+var dataLayer = window.dataLayer || [];
+dataLayer.push({
+  'ecommerce': {
+    'currencyCode': 'USD',
+    'impressions': [
+  {
+    "name": "Cold-Active TEV Protease",
+    "id": "P8118",
+    "brand": "NEB",
+    "category": "Protein Purification,Protein Tools,Protein Expression Purification Technologies,Proteases",
+    "list": "Products Category",
+    "position": 1
+  },
+  {
+    "name": "NEBExpress® Salt Active Nuclease, GMP Grade",
+    "id": "G8024",
+    "brand": "NEB",
+    "category": "DNA Modifying Enzymes and Cloning Technologies,Protein Tools,Protein Expression & Purification Technologies Buffers & Diluents",
+    "list": "Products Category",
+    "position": 2
+  },
+  {
+    "name": "NEBExpress® 耐高盐全能核酸酶",
+    "id": "M0764",
+    "brand": "NEB",
+    "category": "Exonucleases and Non-specific Endonucleases,Protein Tools",
+    "list": "Products Category",
+    "position": 3
+  },
+  {
+    "name": "O-糖蛋白酶（IMPa）",
+    "id": "P0761",
+    "brand": "NEB",
+    "category": "Glycobiology,Protein Tools,Proteases,Proteome Analysis",
+    "list": "Products Category",
+    "position": 4
+  },
+  {
+    "name": "Ph.D.™-7 噬菌体展示肽库试剂盒 v2",
+    "id": "E8211",
+    "brand": "NEB",
+    "category": "Phage Display,Protein Tools",
+    "list": "Products Category",
+    "position": 5
+  },
+  {
+    "name": "Ph.D.™-C7C 噬菌体展示肽库试剂盒 v2",
+    "id": "E8212",
+    "brand": "NEB",
+    "category": "Phage Display,Protein Tools",
+    "list": "Products Category",
+    "position": 6
+  },
+  {
+    "name": "Ph.D™.-12 噬菌体展示肽库试剂盒 v2",
+    "id": "E8210",
+    "brand": "NEB",
+    "category": "Phage Display,Protein Tools",
+    "list": "Products Category",
+    "position": 7
+  },
+  {
+    "name": "蛋白酶 K，分子生物学级",
+    "id": "P8107",
+    "brand": "NEB",
+    "category": "Protein Tools",
+    "list": "Products Category",
+    "position": 8
+  },
+  {
+    "name": "热敏蛋白酶 K",
+    "id": "P8111",
+    "brand": "NEB",
+    "category": "Protein Tools",
+    "list": "Products Category",
+    "position": 9
+  },
+  {
+    "name": "M13KO7 辅助噬菌体",
+    "id": "N0315",
+    "brand": "NEB",
+    "category": "cDNA Synthesis Reverse Transcriptases,Other,Phage Display",
+    "list": "Products Category",
+    "position": 10
+  }
+]
+   }
+});</script>
+    <!-- Google Analytics Enhanced Ecommerce Tracking ProductListTabWidges END -->
+    <div class="grey-tabbed-area-mobile">
+        <hr />
+        <h4>Choose Product:</h4>
+        <select class="grey-tabbed-area-mobile__select js-select-applications-mobile">
+
+            <option href="#s_0A54E711932B4ADDA80084F738335F46">
+                蛋白质工具
+            </option>
+                    <option href="#s_982D0BFA40824A3A96C2157B0267AAA2">
+                        Phage Display
+                    </option>
+                    <option href="#s_F7B9397653CE4DC58F630AD480BEE3EE">
+                        Proteases
+                    </option>
+                    <option href="#s_6D34F03D239A4504A9C6664BF9C833F6">
+                        Protein Kinases
+                    </option>
+                    <option href="#s_DB8880D994B74CB7AB48A21159141A11">
+                        Protein Labeling
+                    </option>
+                    <option href="#s_88A7E215995A4ACB96BE19CE2154A5A4">
+                        Protein Standards
+                    </option>
+                    <option href="#s_57D0716D9F474FE28EF8A3455CA098D4">
+                        Protein Phosphatases
+                    </option>
+                    <option href="#s_21C40553061941F3A483225C87DF7380">
+                        Proteome Analysis
+                    </option>
+                    <option href="#s_CA209E4EC041438F9CBB4A2DBB362E22">
+                        Protein Tools Buffers and Diluents
+                    </option>
+        </select>
+    </div>
+
+
+    <section class="tabs list group ui-tabs-vertical ui-helper-clearfix products">
+            <ul class="nav-tabs grey-tabbed-area-mobile__navtabs">
+<input id="HiddenPageType" name="HiddenPageType" type="hidden" value="Categories" />                    <li><a href="#s_0A54E711932B4ADDA80084F738335F46">蛋白质工具</a></li>
+
+                            <li><a href="#s_982D0BFA40824A3A96C2157B0267AAA2">Phage Display</a></li>
+                            <li><a href="#s_F7B9397653CE4DC58F630AD480BEE3EE">Proteases</a></li>
+                            <li><a href="#s_6D34F03D239A4504A9C6664BF9C833F6">Protein Kinases</a></li>
+                            <li><a href="#s_DB8880D994B74CB7AB48A21159141A11">Protein Labeling</a></li>
+                            <li><a href="#s_88A7E215995A4ACB96BE19CE2154A5A4">Protein Standards</a></li>
+                            <li><a href="#s_57D0716D9F474FE28EF8A3455CA098D4">Protein Phosphatases</a></li>
+                            <li><a href="#s_21C40553061941F3A483225C87DF7380">Proteome Analysis</a></li>
+                            <li><a href="#s_CA209E4EC041438F9CBB4A2DBB362E22">Protein Tools Buffers and Diluents</a></li>
+            </ul>
+            <section class="pane purchase ui-tabs-section" id="s_0A54E711932B4ADDA80084F738335F46">
+                <div class="h1">蛋白质工具</div>
+                                    <section class="category">
+                                <section class="purchase-options">
+                                    <h3>
+                                        <a href="/zh-cn/products/p8118-cold-active-tev-protease" class="gae-racking-prod-listing" name="Cold-Active TEV Protease" category="Protein Purification,Protein Tools,Protein Expression Purification Technologies,Proteases" cid="P8118" pos="1">Cold-Active TEV Protease</a>
+                                    </h3>
+                                </section>
+                                <section class="purchase-options">
+                                    <h3>
+                                        <a href="/zh-cn/products/g8024-nebexpress-salt-active-nuclease-gmp-grade" class="gae-racking-prod-listing" name="NEBExpress® Salt Active Nuclease, GMP Grade" category="DNA Modifying Enzymes and Cloning Technologies,Protein Tools,Protein Expression & Purification Technologies Buffers & Diluents" cid="G8024" pos="2">NEBExpress<sup>&reg;</sup> Salt Active Nuclease, GMP Grade</a>
+                                    </h3>
+                                </section>
+                                <section class="purchase-options">
+                                    <h3>
+                                        <a href="/zh-cn/products/m0764-nebexpress-salt-active-nuclease" class="gae-racking-prod-listing" name="NEBExpress® 耐高盐全能核酸酶" category="Exonucleases and Non-specific Endonucleases,Protein Tools" cid="M0764" pos="3">NEBExpress<sup>&reg;</sup> 耐高盐全能核酸酶</a>
+                                    </h3>
+                                </section>
+                                <section class="purchase-options">
+                                    <h3>
+                                        <a href="/zh-cn/products/p0761-o-glycoprotease" class="gae-racking-prod-listing" name="O-糖蛋白酶（IMPa）" category="Glycobiology,Protein Tools,Proteases,Proteome Analysis" cid="P0761" pos="4">O-糖蛋白酶（IMPa）</a>
+                                    </h3>
+                                </section>
+                                <section class="purchase-options">
+                                    <h3>
+                                        <a href="/zh-cn/products/e8211-phd-7-phage-display-peptide-library-kit-v2" class="gae-racking-prod-listing" name="Ph.D.™-7 噬菌体展示肽库试剂盒 v2" category="Phage Display,Protein Tools" cid="E8211" pos="5">Ph.D.&trade;-7 噬菌体展示肽库试剂盒 v2</a>
+                                    </h3>
+                                </section>
+                                <section class="purchase-options">
+                                    <h3>
+                                        <a href="/zh-cn/products/e8212-phd-c7c-phage-display-peptide-library-kit-v2" class="gae-racking-prod-listing" name="Ph.D.™-C7C 噬菌体展示肽库试剂盒 v2" category="Phage Display,Protein Tools" cid="E8212" pos="6">Ph.D.&trade;-C7C 噬菌体展示肽库试剂盒 v2</a>
+                                    </h3>
+                                </section>
+                                <section class="purchase-options">
+                                    <h3>
+                                        <a href="/zh-cn/products/e8210-phd-12-phage-display-peptide-library-kit-v2" class="gae-racking-prod-listing" name="Ph.D™.-12 噬菌体展示肽库试剂盒 v2" category="Phage Display,Protein Tools" cid="E8210" pos="7">Ph.D&trade;.-12 噬菌体展示肽库试剂盒 v2</a>
+                                    </h3>
+                                </section>
+                                <section class="purchase-options">
+                                    <h3>
+                                        <a href="/zh-cn/products/p8107-proteinase-k-molecular-biology-grade" class="gae-racking-prod-listing" name="蛋白酶 K，分子生物学级" category="Protein Tools" cid="P8107" pos="8">蛋白酶 K，分子生物学级</a>
+                                    </h3>
+                                </section>
+                                <section class="purchase-options">
+                                    <h3>
+                                        <a href="/zh-cn/products/p8111-thermolabile-proteinase-k" class="gae-racking-prod-listing" name="热敏蛋白酶 K" category="Protein Tools" cid="P8111" pos="9">热敏蛋白酶 K</a>
+                                    </h3>
+                                </section>
+                    </section>
+                                            <section class="category">
+                                <h2>Phage Display</h2>
+
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/n0315-m13ko7-helper-phage" class="gae-racking-prod-listing" name="M13KO7 辅助噬菌体" category="cDNA Synthesis Reverse Transcriptases,Other,Phage Display" cid="N0315" pos="1">M13KO7 辅助噬菌体</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/e8101-phd-peptide-display-cloning-system" class="gae-racking-prod-listing" name="Ph.D.™ 多肽展示克隆系统" category="Phage Display" cid="E8101" pos="1">Ph.D.&trade; 多肽展示克隆系统</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/e8111-phd-12-phage-display-peptide-library" class="gae-racking-prod-listing" name="Ph.D.™-12 噬菌体展示肽库" category="Phage Display" cid="E8111" pos="1">Ph.D.&trade;-12 噬菌体展示肽库</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/e8211-phd-7-phage-display-peptide-library-kit-v2" class="gae-racking-prod-listing" name="Ph.D.™-7 噬菌体展示肽库试剂盒 v2" category="Phage Display,Protein Tools" cid="E8211" pos="1">Ph.D.&trade;-7 噬菌体展示肽库试剂盒 v2</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/e8212-phd-c7c-phage-display-peptide-library-kit-v2" class="gae-racking-prod-listing" name="Ph.D.™-C7C 噬菌体展示肽库试剂盒 v2" category="Phage Display,Protein Tools" cid="E8212" pos="1">Ph.D.&trade;-C7C 噬菌体展示肽库试剂盒 v2</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/e8210-phd-12-phage-display-peptide-library-kit-v2" class="gae-racking-prod-listing" name="Ph.D™.-12 噬菌体展示肽库试剂盒 v2" category="Phage Display,Protein Tools" cid="E8210" pos="1">Ph.D&trade;.-12 噬菌体展示肽库试剂盒 v2</a>
+                                            </h3>
+                                        </section>
+
+                            </section>
+                            <section class="category">
+                                <h2>Proteases</h2>
+
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8118-cold-active-tev-protease" class="gae-racking-prod-listing" name="Cold-Active TEV Protease" category="Protein Purification,Protein Tools,Protein Expression Purification Technologies,Proteases" cid="P8118" pos="2">Cold-Active TEV Protease</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8104-endoproteinase-aspn" class="gae-racking-prod-listing" name="Endoproteinase AspN" category="Proteases,Proteome Analysis" cid="P8104" pos="2">Endoproteinase AspN</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8100-endoproteinase-gluc" class="gae-racking-prod-listing" name="Endoproteinase GluC" category="Proteases,Proteome Analysis" cid="P8100" pos="2">Endoproteinase GluC</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8109-endoproteinase-lysc" class="gae-racking-prod-listing" name="Endoproteinase LysC" category="Proteases,Proteome Analysis" cid="P8109" pos="2">Endoproteinase LysC</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8070-enterokinase-light-chain" class="gae-racking-prod-listing" name="Enterokinase, light chain" category="Proteases" cid="P8070" pos="2">Enterokinase, light chain</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8010-factor-xa-protease" class="gae-racking-prod-listing" name="Factor Xa Protease" category="Proteases" cid="P8010" pos="2">Factor Xa Protease</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8077-furin" class="gae-racking-prod-listing" name="Furin" category="Proteases" cid="P8077" pos="2">Furin</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0770-idez-protease-igg-specific" class="gae-racking-prod-listing" name="IdeZ Protease (IgG-specific)" category="Proteases,Proteome Analysis" cid="P0770" pos="2">IdeZ Protease (IgG-specific)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0761-o-glycoprotease" class="gae-racking-prod-listing" name="O-糖蛋白酶（IMPa）" category="Glycobiology,Protein Tools,Proteases,Proteome Analysis" cid="P0761" pos="2">O-糖蛋白酶（IMPa）</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8112-tev-protease" class="gae-racking-prod-listing" name="TEV Protease" category="Proteases,Protein Expression,Bacterial E. coli Protein Expression,NEBExpress MBP Fusion and Purification System,Protein Purification,Nickel Purification (His-tag)" cid="P8112" pos="2">TEV Protease</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8101-modified-trypsin-tpck-treated" class="gae-racking-prod-listing" name="Trypsin-ultra™, Mass Spectrometry Grade" category="Proteases,Proteome Analysis" cid="P8101" pos="2">Trypsin-ultra&trade;, Mass Spectrometry Grade</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8119-trypsin-ultra-mass-spectrometry-grade-recombinant" class="gae-racking-prod-listing" name="Trypsin-ultra™, Mass Spectrometry Grade (Recombinant)" category="Proteases,Proteome Analysis" cid="P8119" pos="2">Trypsin-ultra<sup>&trade;</sup>, Mass Spectrometry Grade (Recombinant)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8113-a-lytic-protease" class="gae-racking-prod-listing" name="α-Lytic Protease" category="Proteases,Proteome Analysis" cid="P8113" pos="2">&alpha;-Lytic Protease</a>
+                                            </h3>
+                                        </section>
+
+                            </section>
+                            <section class="category">
+                                <h2>Protein Kinases</h2>
+
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p6000-camp-dependent-protein-kinase-pka-catalytic-subunit" class="gae-racking-prod-listing" name="cAMP-dependent Protein Kinase (PKA), catalytic subunit" category="Protein Kinases" cid="P6000" pos="3">cAMP-dependent Protein Kinase (PKA), catalytic subunit</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p6010-casein-kinase-ii-ck2" class="gae-racking-prod-listing" name="Casein Kinase II (CK2)" category="Protein Kinases" cid="P6010" pos="3">Casein Kinase II (CK2)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0758-sodium-orthovanadate-activated-vanadate" class="gae-racking-prod-listing" name="Sodium Orthovanadate (Vanadate)" category="Protein Kinases,Protein Phosphatases" cid="P0758" pos="3">Sodium Orthovanadate (Vanadate)</a>
+                                            </h3>
+                                        </section>
+
+                            </section>
+                            <section class="category">
+                                <h2>Protein Labeling</h2>
+
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9151-bg-gla-nhs" class="gae-racking-prod-listing" name="BG-GLA-NHS" category="Building Blocks,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9151" pos="4">BG-GLA-NHS</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9153-bg-maleimide" class="gae-racking-prod-listing" name="BG-Maleimide" category="Building Blocks,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9153" pos="4">BG-Maleimide</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9150-bg-peg-nh2" class="gae-racking-prod-listing" name="BG-PEG-NH2" category="Building Blocks,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9150" pos="4">BG-PEG-NH<sub>2</sub></a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9221-clip-biotin" class="gae-racking-prod-listing" name="CLIP-Biotin" category="Biotin Labels,CLIP-tag&trade; Substrates,Protein Labeling" cid="S9221" pos="4">CLIP-Biotin</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9217-clip-cell-505" class="gae-racking-prod-listing" name="CLIP-Cell™ 505" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9217" pos="4">CLIP-Cell&trade; 505</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9219-clip-cell-tmr-star" class="gae-racking-prod-listing" name="CLIP-Cell™ TMR-Star" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9219" pos="4">CLIP-Cell&trade; TMR-Star</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9232-clip-surface-488" class="gae-racking-prod-listing" name="CLIP-Surface™ 488" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9232" pos="4">CLIP-Surface&trade; 488</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9233-clip-surface-547" class="gae-racking-prod-listing" name="CLIP-Surface™ 547" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9233" pos="4">CLIP-Surface&trade; 547</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9234-clip-surface-647" class="gae-racking-prod-listing" name="CLIP-Surface™ 647" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9234" pos="4">CLIP-Surface&trade; 647</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/e6901-impact-kit" class="gae-racking-prod-listing" name="IMPACT™ Kit" category="IMPACT&trade;,Protein Labeling,Protein Expression,Bacterial E. coli Protein Expression,IMPACT System,Protein Purification,Affinity Purification,Chitin Purification (CBD-tag)" cid="E6901" pos="4">IMPACT&trade; Kit</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/n9215-pclipf-vector" class="gae-racking-prod-listing" name="pCLIPf 载体" category="Cellular Analysis Vectors,DNA Plasmids & Substrates,Protein Labeling" cid="N9215" pos="4">pCLIP<sub>f</sub> 载体</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/n9183-psnapf-vector" class="gae-racking-prod-listing" name="pSNAPf 载体" category="Cellular Analysis Vectors,DNA Plasmids & Substrates,Protein Labeling" cid="N9183" pos="4">pSNAP<sub>f</sub> 载体</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/n9181-psnap-tag-t7-2-vector" class="gae-racking-prod-listing" name="pSNAP-tag® (T7)-2 载体" category="Cellular Analysis Vectors,DNA Plasmids & Substrates,Protein Labeling" cid="N9181" pos="4">pSNAP-tag<sup>&reg;</sup> (T7)-2 载体</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9110-snap-biotin" class="gae-racking-prod-listing" name="SNAP-Biotin®" category="Biotin Labels,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9110" pos="4">SNAP-Biotin<sup>&reg;</sup></a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9103-snap-cell-505" class="gae-racking-prod-listing" name="SNAP-Cell® 505-Star" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9103" pos="4">SNAP-Cell<sup>&reg;</sup> 505-Star</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9104-snap-cell-oregon-green" class="gae-racking-prod-listing" name="SNAP-Cell® Oregon Green®" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9104" pos="4">SNAP-Cell<sup>&reg;</sup> Oregon Green<sup>&reg;</sup></a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9105-snap-cell-tmr-star" class="gae-racking-prod-listing" name="SNAP-Cell® TMR-Star" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9105" pos="4">SNAP-Cell<sup>&reg;</sup> TMR-Star</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9106-snap-cell-block" class="gae-racking-prod-listing" name="SNAP-Cell® 阻断剂" category="Blocking Agents,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9106" pos="4">SNAP-Cell<sup>&reg;</sup> 阻断剂</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9109-snap-cell-430" class="gae-racking-prod-listing" name="SNAP-Cell® 430" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9109" pos="4">SNAP-Cell<sup>&reg;</sup>&nbsp;430</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9102-snap-cell-647-sir" class="gae-racking-prod-listing" name="SNAP-Cell® 647-SiR" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9102" pos="4">SNAP-Cell<sup>&reg;</sup>&nbsp;647-SiR</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9124-snap-surface-488" class="gae-racking-prod-listing" name="SNAP-Surface® 488" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9124" pos="4">SNAP-Surface<sup>&reg;</sup> 488</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9112-snap-surface-549" class="gae-racking-prod-listing" name="SNAP-Surface® 549" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9112" pos="4">SNAP-Surface<sup>&reg;</sup> 549</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9134-snap-surface-594" class="gae-racking-prod-listing" name="SNAP-Surface® 594" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9134" pos="4">SNAP-Surface<sup>&reg;</sup> 594</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9159-snap-surface-649" class="gae-racking-prod-listing" name="SNAP-Surface® 649" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9159" pos="4">SNAP-Surface<sup>&reg;</sup> 649</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9129-snap-surface-alexa-fluor-488" class="gae-racking-prod-listing" name="SNAP-Surface® Alexa Fluor® 488" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9129" pos="4">SNAP-Surface<sup>&reg;</sup> Alexa Fluor<sup>&reg;</sup> 488</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9132-snap-surface-alexa-fluor-546" class="gae-racking-prod-listing" name="SNAP-Surface® Alexa Fluor® 546" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9132" pos="4">SNAP-Surface<sup>&reg;</sup> Alexa Fluor<sup>&reg;</sup> 546</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9136-snap-surface-alexa-fluor-647" class="gae-racking-prod-listing" name="SNAP-Surface® Alexa Fluor® 647" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9136" pos="4">SNAP-Surface<sup>&reg;</sup> Alexa Fluor<sup>&reg;</sup> 647</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9143-snap-surface-block" class="gae-racking-prod-listing" name="SNAP-Surface® Block" category="Blocking Agents,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9143" pos="4">SNAP-Surface<sup>&reg;</sup> Block</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p9312-snap-tag-purified-protein" class="gae-racking-prod-listing" name="SNAP-tag® Purified Protein" category="Protein Labeling,SNAP-tag Other" cid="P9312" pos="4">SNAP-tag<sup>&reg;</sup> Purified Protein</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9145-snap-capture-magnetic-beads" class="gae-racking-prod-listing" name="SNAP-捕获磁珠" category="Resins, Magnetic Beads & Racks,Protein Labeling,Proteome Analysis,SNAP-Capture" cid="S9145" pos="4">SNAP-捕获磁珠</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p9310-anti-snap-tag-antibody-polyclonal" class="gae-racking-prod-listing" name="抗 SNAP-tag®（多克隆抗体）" category="Antibodies,Protein Labeling,SNAP-tag Other" cid="P9310" pos="4">抗 SNAP-tag<sup>&reg;</sup>（多克隆抗体）</a>
+                                            </h3>
+                                        </section>
+
+                            </section>
+                            <section class="category">
+                                <h2>Protein Standards</h2>
+
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p7718-blue-prestained-protein-standard-broad-range-11-250-kda" class="gae-racking-prod-listing" name="Blue Prestained Protein Standard, Broad Range (11-250 kDa)" category="Protein Standards,Markers & Ladders,Protein Markers & Ladders,Protein Markers Ladders" cid="P7718" pos="5">Blue Prestained Protein Standard, Broad Range (11-250 kDa)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p7719-color-prestained-protein-standard-broad-range-10-250-kda" class="gae-racking-prod-listing" name="Color Prestained Protein Standard, Broad Range (10-250 kDa)" category="Protein Standards,Markers & Ladders,Protein Markers & Ladders,Protein Markers Ladders" cid="P7719" pos="5">Color Prestained Protein Standard, Broad Range (10-250 kDa)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p7717-unstained-protein-standard-broad-range-10-200-kda" class="gae-racking-prod-listing" name="Unstained Protein Standard, Broad Range (10-200 kDa)" category="Protein Standards,Markers & Ladders,Protein Markers & Ladders,Protein Markers Ladders" cid="P7717" pos="5">Unstained Protein Standard, Broad Range (10-200 kDa)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/b7703-blue-protein-loading-dye" class="gae-racking-prod-listing" name="蓝色蛋白上样染料" category="Buffers,Gel Loading Buffers,Protein Markers Ladders,Protein Markers & Ladders,Protein Tools Buffers Diluents" cid="B7703" pos="5">蓝色蛋白上样染料</a>
+                                            </h3>
+                                        </section>
+
+                            </section>
+                            <section class="category">
+                                <h2>Protein Phosphatases</h2>
+
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0753-lambda-protein-phosphatase-lambda-pp" class="gae-racking-prod-listing" name="Lambda Protein Phosphatase (Lambda PP)" category="Protein Phosphatases" cid="P0753" pos="6">Lambda Protein Phosphatase (Lambda PP)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0757-p-nitrophenyl-phosphate-pnpp" class="gae-racking-prod-listing" name="p-Nitrophenyl Phosphate (PNPP)" category="Protein Phosphatases" cid="P0757" pos="6"><em>p</em>-Nitrophenyl Phosphate (PNPP)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0758-sodium-orthovanadate-activated-vanadate" class="gae-racking-prod-listing" name="Sodium Orthovanadate (Vanadate)" category="Protein Kinases,Protein Phosphatases" cid="P0758" pos="6">Sodium Orthovanadate (Vanadate)</a>
+                                            </h3>
+                                        </section>
+
+                            </section>
+                            <section class="category">
+                                <h2>Proteome Analysis</h2>
+
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0771-endo-f3" class="gae-racking-prod-listing" name="Endo F3" category="Endoglycosidases,Proteome Analysis" cid="P0771" pos="7">Endo F3</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0702-endo-h" class="gae-racking-prod-listing" name="Endo H" category="Endoglycosidases,Proteome Analysis" cid="P0702" pos="7">Endo H</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0703-endo-hf" class="gae-racking-prod-listing" name="Endo Hf" category="Endoglycosidases,Proteome Analysis" cid="P0703" pos="7">Endo H<sub>f</sub></a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0741r-emove-it-endo-s" class="gae-racking-prod-listing" name="Endo S" category="Endoglycosidases,Proteome Analysis" cid="P0741" pos="7">Endo S</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8104-endoproteinase-aspn" class="gae-racking-prod-listing" name="Endoproteinase AspN" category="Proteases,Proteome Analysis" cid="P8104" pos="7">Endoproteinase AspN</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8100-endoproteinase-gluc" class="gae-racking-prod-listing" name="Endoproteinase GluC" category="Proteases,Proteome Analysis" cid="P8100" pos="7">Endoproteinase GluC</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8109-endoproteinase-lysc" class="gae-racking-prod-listing" name="Endoproteinase LysC" category="Proteases,Proteome Analysis" cid="P8109" pos="7">Endoproteinase LysC</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0770-idez-protease-igg-specific" class="gae-racking-prod-listing" name="IdeZ Protease (IgG-specific)" category="Proteases,Proteome Analysis" cid="P0770" pos="7">IdeZ Protease (IgG-specific)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0872-n-glycopeptide-binding-protein" class="gae-racking-prod-listing" name="N-糖肽结合蛋白" category="Glycobiology,Proteome Analysis" cid="P0872" pos="7">N-糖肽结合蛋白</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0733-o-glycosidase" class="gae-racking-prod-listing" name="O-Glycosidase" category="Endoglycosidases,Proteome Analysis" cid="P0733" pos="7"><em>O</em>-Glycosidase</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0761-o-glycoprotease" class="gae-racking-prod-listing" name="O-糖蛋白酶（IMPa）" category="Glycobiology,Protein Tools,Proteases,Proteome Analysis" cid="P0761" pos="7">O-糖蛋白酶（IMPa）</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0707-pngase-a" class="gae-racking-prod-listing" name="PNGase A" category="Endoglycosidases,Proteome Analysis" cid="P0707" pos="7">PNGase A</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0704-pngase-f" class="gae-racking-prod-listing" name="PNGase F" category="Endoglycosidases,Proteome Analysis" cid="P0704" pos="7">PNGase F</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0705-pngase-f-glycerol-free" class="gae-racking-prod-listing" name="PNGase F (Glycerol-free)" category="Endoglycosidases,Proteome Analysis" cid="P0705" pos="7">PNGase F (Glycerol-free)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0709-pngase-f-glycerol-free-recombinant" class="gae-racking-prod-listing" name="PNGase F (Glycerol-free), Recombinant" category="Endoglycosidases,Proteome Analysis" cid="P0709" pos="7">PNGase F (Glycerol-free), Recombinant</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0708-pngase-f-recombinant" class="gae-racking-prod-listing" name="PNGase F, Recombinant" category="Endoglycosidases,Proteome Analysis" cid="P0708" pos="7">PNGase F, Recombinant</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0710-rapid-pngase-f" class="gae-racking-prod-listing" name="Rapid™ 快速 PNGase F" category="Endoglycosidases,Proteome Analysis" cid="P0710" pos="7">Rapid&trade; 快速 PNGase F</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0711-rapid-pngase-f-non-reducing-format" class="gae-racking-prod-listing" name="Rapid™ 快速 PNGase F（非还原剂型）" category="Endoglycosidases,Proteome Analysis" cid="P0711" pos="7">Rapid&trade; 快速&nbsp;PNGase F（非还原剂型）</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0706-remove-it-pngase-f" class="gae-racking-prod-listing" name="Remove-iT® PNGase F" category="Endoglycosidases,Proteome Analysis" cid="P0706" pos="7">Remove-iT<sup>&reg;</sup> PNGase F</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p7817rnase-b" class="gae-racking-prod-listing" name="RNase B（对照底物）" category="Glycoprotein Substrates,Proteome Analysis" cid="P7817" pos="7">RNase B（对照底物）</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/s9145-snap-capture-magnetic-beads" class="gae-racking-prod-listing" name="SNAP-捕获磁珠" category="Resins, Magnetic Beads & Racks,Protein Labeling,Proteome Analysis,SNAP-Capture" cid="S9145" pos="7">SNAP-捕获磁珠</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8108-trypsin-digested-bsa-ms-standard-cam-modified" class="gae-racking-prod-listing" name="Trypsin-digested BSA MS Standard (CAM-modified)" category="Proteome Analysis" cid="P8108" pos="7">Trypsin-digested BSA MS Standard (CAM-modified)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8101-modified-trypsin-tpck-treated" class="gae-racking-prod-listing" name="Trypsin-ultra™, Mass Spectrometry Grade" category="Proteases,Proteome Analysis" cid="P8101" pos="7">Trypsin-ultra&trade;, Mass Spectrometry Grade</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8119-trypsin-ultra-mass-spectrometry-grade-recombinant" class="gae-racking-prod-listing" name="Trypsin-ultra™, Mass Spectrometry Grade (Recombinant)" category="Proteases,Proteome Analysis" cid="P8119" pos="7">Trypsin-ultra<sup>&trade;</sup>, Mass Spectrometry Grade (Recombinant)</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0768-a-1-2-3-6-mannosidase" class="gae-racking-prod-listing" name="α1-2,3,6 甘露糖苷酶" category="Exoglycosidases,Proteome Analysis" cid="P0768" pos="7">&alpha;1-2,3,6 甘露糖苷酶</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0749-a1-2-4-6-fucosidase-o" class="gae-racking-prod-listing" name="α1-2,4,6 岩藻糖苷酶 O" category="Exoglycosidases,Proteome Analysis" cid="P0749" pos="7">&alpha;1-2,4,6 岩藻糖苷酶 O</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0769-a1-3-4-fucosidase" class="gae-racking-prod-listing" name="α1-3,4 岩藻糖苷酶" category="Exoglycosidases,Proteome Analysis" cid="P0769" pos="7">&alpha;1-3,4 岩藻糖苷酶</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0747-a1-3-4-6-galactosidase" class="gae-racking-prod-listing" name="α1-3,4,6 半乳糖苷酶" category="Exoglycosidases,Proteome Analysis" cid="P0747" pos="7">&alpha;1-3,4,6 半乳糖苷酶</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0720-a2-3-6-8-neuraminidase" class="gae-racking-prod-listing" name="α2-3,6,8 神经氨酸苷酶" category="Exoglycosidases,Proteome Analysis" cid="P0720" pos="7">&alpha;2-3,6,8 神经氨酸苷酶</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0722-a2-3-6-8-9-neuraminidase-a" class="gae-racking-prod-listing" name="α2-3,6,8,9 神经氨酸苷酶 A" category="Exoglycosidases,Proteome Analysis" cid="P0722" pos="7">&alpha;2-3,6,8,9 神经氨酸苷酶 A</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p8113-a-lytic-protease" class="gae-racking-prod-listing" name="α-Lytic Protease" category="Proteases,Proteome Analysis" cid="P8113" pos="7">&alpha;-Lytic Protease</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0734-n-acetylgalactosaminidase" class="gae-racking-prod-listing" name="α-N-乙酰半乳糖胺酶" category="Exoglycosidases,Proteome Analysis" cid="P0734" pos="7">&alpha;-<em>N</em>-乙酰半乳糖胺酶</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0744-b-n-acetylglucosaminidase-s" class="gae-racking-prod-listing" name="β-N-乙酰氨基葡糖苷酶 S" category="Exoglycosidases,Proteome Analysis" cid="P0744" pos="7">&beta;-<em>N</em>-乙酰氨基葡糖苷酶 S</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p6044-protein-deglycosylation-mix-ii" class="gae-racking-prod-listing" name="蛋白去糖基化混合液 II" category="Endoglycosidases,Exoglycosidases,Proteome Analysis" cid="P6044" pos="7">蛋白去糖基化混合液 II</a>
+                                            </h3>
+                                        </section>
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/p0742-remove-it-endo-d" class="gae-racking-prod-listing" name="糖苷内切酶 D" category="Endoglycosidases,Proteome Analysis" cid="P0742" pos="7">糖苷内切酶 D</a>
+                                            </h3>
+                                        </section>
+
+                            </section>
+                            <section class="category">
+                                <h2>Protein Tools Buffers and Diluents</h2>
+
+                                        <section class="purchase-options">
+                                            <h3>
+                                                <a href="/zh-cn/products/b7703-blue-protein-loading-dye" class="gae-racking-prod-listing" name="蓝色蛋白上样染料" category="Buffers,Gel Loading Buffers,Protein Markers Ladders,Protein Markers & Ladders,Protein Tools Buffers Diluents" cid="B7703" pos="8">蓝色蛋白上样染料</a>
+                                            </h3>
+                                        </section>
+
+                            </section>
+
+            </section>
+
+                    <section class="pane purchase ui-tabs-section" id="s_982D0BFA40824A3A96C2157B0267AAA2">
+                        <div class="h1">Phage Display</div>
+                        <section class="category">
+
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/n0315-m13ko7-helper-phage" class="gae-racking-prod-listing" name="M13KO7 辅助噬菌体" category="cDNA Synthesis Reverse Transcriptases,Other,Phage Display" cid="N0315" pos="1">M13KO7 辅助噬菌体</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/e8101-phd-peptide-display-cloning-system" class="gae-racking-prod-listing" name="Ph.D.™ 多肽展示克隆系统" category="Phage Display" cid="E8101" pos="1">Ph.D.&trade; 多肽展示克隆系统</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/e8111-phd-12-phage-display-peptide-library" class="gae-racking-prod-listing" name="Ph.D.™-12 噬菌体展示肽库" category="Phage Display" cid="E8111" pos="1">Ph.D.&trade;-12 噬菌体展示肽库</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/e8211-phd-7-phage-display-peptide-library-kit-v2" class="gae-racking-prod-listing" name="Ph.D.™-7 噬菌体展示肽库试剂盒 v2" category="Phage Display,Protein Tools" cid="E8211" pos="1">Ph.D.&trade;-7 噬菌体展示肽库试剂盒 v2</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/e8212-phd-c7c-phage-display-peptide-library-kit-v2" class="gae-racking-prod-listing" name="Ph.D.™-C7C 噬菌体展示肽库试剂盒 v2" category="Phage Display,Protein Tools" cid="E8212" pos="1">Ph.D.&trade;-C7C 噬菌体展示肽库试剂盒 v2</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/e8210-phd-12-phage-display-peptide-library-kit-v2" class="gae-racking-prod-listing" name="Ph.D™.-12 噬菌体展示肽库试剂盒 v2" category="Phage Display,Protein Tools" cid="E8210" pos="1">Ph.D&trade;.-12 噬菌体展示肽库试剂盒 v2</a>
+                                        </h3>
+                                    </section>
+
+                        </section>
+                    </section>
+                    <section class="pane purchase ui-tabs-section" id="s_F7B9397653CE4DC58F630AD480BEE3EE">
+                        <div class="h1">Proteases</div>
+                        <section class="category">
+
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8118-cold-active-tev-protease" class="gae-racking-prod-listing" name="Cold-Active TEV Protease" category="Protein Purification,Protein Tools,Protein Expression Purification Technologies,Proteases" cid="P8118" pos="1">Cold-Active TEV Protease</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8104-endoproteinase-aspn" class="gae-racking-prod-listing" name="Endoproteinase AspN" category="Proteases,Proteome Analysis" cid="P8104" pos="1">Endoproteinase AspN</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8100-endoproteinase-gluc" class="gae-racking-prod-listing" name="Endoproteinase GluC" category="Proteases,Proteome Analysis" cid="P8100" pos="1">Endoproteinase GluC</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8109-endoproteinase-lysc" class="gae-racking-prod-listing" name="Endoproteinase LysC" category="Proteases,Proteome Analysis" cid="P8109" pos="1">Endoproteinase LysC</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8070-enterokinase-light-chain" class="gae-racking-prod-listing" name="Enterokinase, light chain" category="Proteases" cid="P8070" pos="1">Enterokinase, light chain</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8010-factor-xa-protease" class="gae-racking-prod-listing" name="Factor Xa Protease" category="Proteases" cid="P8010" pos="1">Factor Xa Protease</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8077-furin" class="gae-racking-prod-listing" name="Furin" category="Proteases" cid="P8077" pos="1">Furin</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0770-idez-protease-igg-specific" class="gae-racking-prod-listing" name="IdeZ Protease (IgG-specific)" category="Proteases,Proteome Analysis" cid="P0770" pos="1">IdeZ Protease (IgG-specific)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0761-o-glycoprotease" class="gae-racking-prod-listing" name="O-糖蛋白酶（IMPa）" category="Glycobiology,Protein Tools,Proteases,Proteome Analysis" cid="P0761" pos="1">O-糖蛋白酶（IMPa）</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8112-tev-protease" class="gae-racking-prod-listing" name="TEV Protease" category="Proteases,Protein Expression,Bacterial E. coli Protein Expression,NEBExpress MBP Fusion and Purification System,Protein Purification,Nickel Purification (His-tag)" cid="P8112" pos="1">TEV Protease</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8101-modified-trypsin-tpck-treated" class="gae-racking-prod-listing" name="Trypsin-ultra™, Mass Spectrometry Grade" category="Proteases,Proteome Analysis" cid="P8101" pos="1">Trypsin-ultra&trade;, Mass Spectrometry Grade</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8119-trypsin-ultra-mass-spectrometry-grade-recombinant" class="gae-racking-prod-listing" name="Trypsin-ultra™, Mass Spectrometry Grade (Recombinant)" category="Proteases,Proteome Analysis" cid="P8119" pos="1">Trypsin-ultra<sup>&trade;</sup>, Mass Spectrometry Grade (Recombinant)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8113-a-lytic-protease" class="gae-racking-prod-listing" name="α-Lytic Protease" category="Proteases,Proteome Analysis" cid="P8113" pos="1">&alpha;-Lytic Protease</a>
+                                        </h3>
+                                    </section>
+
+                        </section>
+                    </section>
+                    <section class="pane purchase ui-tabs-section" id="s_6D34F03D239A4504A9C6664BF9C833F6">
+                        <div class="h1">Protein Kinases</div>
+                        <section class="category">
+
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p6000-camp-dependent-protein-kinase-pka-catalytic-subunit" class="gae-racking-prod-listing" name="cAMP-dependent Protein Kinase (PKA), catalytic subunit" category="Protein Kinases" cid="P6000" pos="1">cAMP-dependent Protein Kinase (PKA), catalytic subunit</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p6010-casein-kinase-ii-ck2" class="gae-racking-prod-listing" name="Casein Kinase II (CK2)" category="Protein Kinases" cid="P6010" pos="1">Casein Kinase II (CK2)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0758-sodium-orthovanadate-activated-vanadate" class="gae-racking-prod-listing" name="Sodium Orthovanadate (Vanadate)" category="Protein Kinases,Protein Phosphatases" cid="P0758" pos="1">Sodium Orthovanadate (Vanadate)</a>
+                                        </h3>
+                                    </section>
+
+                        </section>
+                    </section>
+                    <section class="pane purchase ui-tabs-section" id="s_DB8880D994B74CB7AB48A21159141A11">
+                        <div class="h1">Protein Labeling</div>
+                        <section class="category">
+
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9151-bg-gla-nhs" class="gae-racking-prod-listing" name="BG-GLA-NHS" category="Building Blocks,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9151" pos="1">BG-GLA-NHS</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9153-bg-maleimide" class="gae-racking-prod-listing" name="BG-Maleimide" category="Building Blocks,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9153" pos="1">BG-Maleimide</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9150-bg-peg-nh2" class="gae-racking-prod-listing" name="BG-PEG-NH2" category="Building Blocks,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9150" pos="1">BG-PEG-NH<sub>2</sub></a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9221-clip-biotin" class="gae-racking-prod-listing" name="CLIP-Biotin" category="Biotin Labels,CLIP-tag&trade; Substrates,Protein Labeling" cid="S9221" pos="1">CLIP-Biotin</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9217-clip-cell-505" class="gae-racking-prod-listing" name="CLIP-Cell™ 505" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9217" pos="1">CLIP-Cell&trade; 505</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9219-clip-cell-tmr-star" class="gae-racking-prod-listing" name="CLIP-Cell™ TMR-Star" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9219" pos="1">CLIP-Cell&trade; TMR-Star</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9232-clip-surface-488" class="gae-racking-prod-listing" name="CLIP-Surface™ 488" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9232" pos="1">CLIP-Surface&trade; 488</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9233-clip-surface-547" class="gae-racking-prod-listing" name="CLIP-Surface™ 547" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9233" pos="1">CLIP-Surface&trade; 547</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9234-clip-surface-647" class="gae-racking-prod-listing" name="CLIP-Surface™ 647" category="CLIP-tag&trade; Substrates,Protein Labeling" cid="S9234" pos="1">CLIP-Surface&trade; 647</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/e6901-impact-kit" class="gae-racking-prod-listing" name="IMPACT™ Kit" category="IMPACT&trade;,Protein Labeling,Protein Expression,Bacterial E. coli Protein Expression,IMPACT System,Protein Purification,Affinity Purification,Chitin Purification (CBD-tag)" cid="E6901" pos="1">IMPACT&trade; Kit</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/n9215-pclipf-vector" class="gae-racking-prod-listing" name="pCLIPf 载体" category="Cellular Analysis Vectors,DNA Plasmids & Substrates,Protein Labeling" cid="N9215" pos="1">pCLIP<sub>f</sub> 载体</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/n9183-psnapf-vector" class="gae-racking-prod-listing" name="pSNAPf 载体" category="Cellular Analysis Vectors,DNA Plasmids & Substrates,Protein Labeling" cid="N9183" pos="1">pSNAP<sub>f</sub> 载体</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/n9181-psnap-tag-t7-2-vector" class="gae-racking-prod-listing" name="pSNAP-tag® (T7)-2 载体" category="Cellular Analysis Vectors,DNA Plasmids & Substrates,Protein Labeling" cid="N9181" pos="1">pSNAP-tag<sup>&reg;</sup> (T7)-2 载体</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9110-snap-biotin" class="gae-racking-prod-listing" name="SNAP-Biotin®" category="Biotin Labels,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9110" pos="1">SNAP-Biotin<sup>&reg;</sup></a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9103-snap-cell-505" class="gae-racking-prod-listing" name="SNAP-Cell® 505-Star" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9103" pos="1">SNAP-Cell<sup>&reg;</sup> 505-Star</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9104-snap-cell-oregon-green" class="gae-racking-prod-listing" name="SNAP-Cell® Oregon Green®" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9104" pos="1">SNAP-Cell<sup>&reg;</sup> Oregon Green<sup>&reg;</sup></a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9105-snap-cell-tmr-star" class="gae-racking-prod-listing" name="SNAP-Cell® TMR-Star" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9105" pos="1">SNAP-Cell<sup>&reg;</sup> TMR-Star</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9106-snap-cell-block" class="gae-racking-prod-listing" name="SNAP-Cell® 阻断剂" category="Blocking Agents,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9106" pos="1">SNAP-Cell<sup>&reg;</sup> 阻断剂</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9109-snap-cell-430" class="gae-racking-prod-listing" name="SNAP-Cell® 430" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9109" pos="1">SNAP-Cell<sup>&reg;</sup>&nbsp;430</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9102-snap-cell-647-sir" class="gae-racking-prod-listing" name="SNAP-Cell® 647-SiR" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9102" pos="1">SNAP-Cell<sup>&reg;</sup>&nbsp;647-SiR</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9124-snap-surface-488" class="gae-racking-prod-listing" name="SNAP-Surface® 488" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9124" pos="1">SNAP-Surface<sup>&reg;</sup> 488</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9112-snap-surface-549" class="gae-racking-prod-listing" name="SNAP-Surface® 549" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9112" pos="1">SNAP-Surface<sup>&reg;</sup> 549</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9134-snap-surface-594" class="gae-racking-prod-listing" name="SNAP-Surface® 594" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9134" pos="1">SNAP-Surface<sup>&reg;</sup> 594</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9159-snap-surface-649" class="gae-racking-prod-listing" name="SNAP-Surface® 649" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9159" pos="1">SNAP-Surface<sup>&reg;</sup> 649</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9129-snap-surface-alexa-fluor-488" class="gae-racking-prod-listing" name="SNAP-Surface® Alexa Fluor® 488" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9129" pos="1">SNAP-Surface<sup>&reg;</sup> Alexa Fluor<sup>&reg;</sup> 488</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9132-snap-surface-alexa-fluor-546" class="gae-racking-prod-listing" name="SNAP-Surface® Alexa Fluor® 546" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9132" pos="1">SNAP-Surface<sup>&reg;</sup> Alexa Fluor<sup>&reg;</sup> 546</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9136-snap-surface-alexa-fluor-647" class="gae-racking-prod-listing" name="SNAP-Surface® Alexa Fluor® 647" category="Protein Labeling,SNAP-tag&reg; Substrates" cid="S9136" pos="1">SNAP-Surface<sup>&reg;</sup> Alexa Fluor<sup>&reg;</sup> 647</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9143-snap-surface-block" class="gae-racking-prod-listing" name="SNAP-Surface® Block" category="Blocking Agents,Protein Labeling,SNAP-tag&reg; Substrates" cid="S9143" pos="1">SNAP-Surface<sup>&reg;</sup> Block</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p9312-snap-tag-purified-protein" class="gae-racking-prod-listing" name="SNAP-tag® Purified Protein" category="Protein Labeling,SNAP-tag Other" cid="P9312" pos="1">SNAP-tag<sup>&reg;</sup> Purified Protein</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9145-snap-capture-magnetic-beads" class="gae-racking-prod-listing" name="SNAP-捕获磁珠" category="Resins, Magnetic Beads & Racks,Protein Labeling,Proteome Analysis,SNAP-Capture" cid="S9145" pos="1">SNAP-捕获磁珠</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p9310-anti-snap-tag-antibody-polyclonal" class="gae-racking-prod-listing" name="抗 SNAP-tag®（多克隆抗体）" category="Antibodies,Protein Labeling,SNAP-tag Other" cid="P9310" pos="1">抗 SNAP-tag<sup>&reg;</sup>（多克隆抗体）</a>
+                                        </h3>
+                                    </section>
+
+                        </section>
+                    </section>
+                    <section class="pane purchase ui-tabs-section" id="s_88A7E215995A4ACB96BE19CE2154A5A4">
+                        <div class="h1">Protein Standards</div>
+                        <section class="category">
+
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p7718-blue-prestained-protein-standard-broad-range-11-250-kda" class="gae-racking-prod-listing" name="Blue Prestained Protein Standard, Broad Range (11-250 kDa)" category="Protein Standards,Markers & Ladders,Protein Markers & Ladders,Protein Markers Ladders" cid="P7718" pos="1">Blue Prestained Protein Standard, Broad Range (11-250 kDa)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p7719-color-prestained-protein-standard-broad-range-10-250-kda" class="gae-racking-prod-listing" name="Color Prestained Protein Standard, Broad Range (10-250 kDa)" category="Protein Standards,Markers & Ladders,Protein Markers & Ladders,Protein Markers Ladders" cid="P7719" pos="1">Color Prestained Protein Standard, Broad Range (10-250 kDa)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p7717-unstained-protein-standard-broad-range-10-200-kda" class="gae-racking-prod-listing" name="Unstained Protein Standard, Broad Range (10-200 kDa)" category="Protein Standards,Markers & Ladders,Protein Markers & Ladders,Protein Markers Ladders" cid="P7717" pos="1">Unstained Protein Standard, Broad Range (10-200 kDa)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/b7703-blue-protein-loading-dye" class="gae-racking-prod-listing" name="蓝色蛋白上样染料" category="Buffers,Gel Loading Buffers,Protein Markers Ladders,Protein Markers & Ladders,Protein Tools Buffers Diluents" cid="B7703" pos="1">蓝色蛋白上样染料</a>
+                                        </h3>
+                                    </section>
+
+                        </section>
+                    </section>
+                    <section class="pane purchase ui-tabs-section" id="s_57D0716D9F474FE28EF8A3455CA098D4">
+                        <div class="h1">Protein Phosphatases</div>
+                        <section class="category">
+
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0753-lambda-protein-phosphatase-lambda-pp" class="gae-racking-prod-listing" name="Lambda Protein Phosphatase (Lambda PP)" category="Protein Phosphatases" cid="P0753" pos="1">Lambda Protein Phosphatase (Lambda PP)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0757-p-nitrophenyl-phosphate-pnpp" class="gae-racking-prod-listing" name="p-Nitrophenyl Phosphate (PNPP)" category="Protein Phosphatases" cid="P0757" pos="1"><em>p</em>-Nitrophenyl Phosphate (PNPP)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0758-sodium-orthovanadate-activated-vanadate" class="gae-racking-prod-listing" name="Sodium Orthovanadate (Vanadate)" category="Protein Kinases,Protein Phosphatases" cid="P0758" pos="1">Sodium Orthovanadate (Vanadate)</a>
+                                        </h3>
+                                    </section>
+
+                        </section>
+                    </section>
+                    <section class="pane purchase ui-tabs-section" id="s_21C40553061941F3A483225C87DF7380">
+                        <div class="h1">Proteome Analysis</div>
+                        <section class="category">
+
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0771-endo-f3" class="gae-racking-prod-listing" name="Endo F3" category="Endoglycosidases,Proteome Analysis" cid="P0771" pos="1">Endo F3</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0702-endo-h" class="gae-racking-prod-listing" name="Endo H" category="Endoglycosidases,Proteome Analysis" cid="P0702" pos="1">Endo H</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0703-endo-hf" class="gae-racking-prod-listing" name="Endo Hf" category="Endoglycosidases,Proteome Analysis" cid="P0703" pos="1">Endo H<sub>f</sub></a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0741r-emove-it-endo-s" class="gae-racking-prod-listing" name="Endo S" category="Endoglycosidases,Proteome Analysis" cid="P0741" pos="1">Endo S</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8104-endoproteinase-aspn" class="gae-racking-prod-listing" name="Endoproteinase AspN" category="Proteases,Proteome Analysis" cid="P8104" pos="1">Endoproteinase AspN</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8100-endoproteinase-gluc" class="gae-racking-prod-listing" name="Endoproteinase GluC" category="Proteases,Proteome Analysis" cid="P8100" pos="1">Endoproteinase GluC</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8109-endoproteinase-lysc" class="gae-racking-prod-listing" name="Endoproteinase LysC" category="Proteases,Proteome Analysis" cid="P8109" pos="1">Endoproteinase LysC</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0770-idez-protease-igg-specific" class="gae-racking-prod-listing" name="IdeZ Protease (IgG-specific)" category="Proteases,Proteome Analysis" cid="P0770" pos="1">IdeZ Protease (IgG-specific)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0872-n-glycopeptide-binding-protein" class="gae-racking-prod-listing" name="N-糖肽结合蛋白" category="Glycobiology,Proteome Analysis" cid="P0872" pos="1">N-糖肽结合蛋白</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0733-o-glycosidase" class="gae-racking-prod-listing" name="O-Glycosidase" category="Endoglycosidases,Proteome Analysis" cid="P0733" pos="1"><em>O</em>-Glycosidase</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0761-o-glycoprotease" class="gae-racking-prod-listing" name="O-糖蛋白酶（IMPa）" category="Glycobiology,Protein Tools,Proteases,Proteome Analysis" cid="P0761" pos="1">O-糖蛋白酶（IMPa）</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0707-pngase-a" class="gae-racking-prod-listing" name="PNGase A" category="Endoglycosidases,Proteome Analysis" cid="P0707" pos="1">PNGase A</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0704-pngase-f" class="gae-racking-prod-listing" name="PNGase F" category="Endoglycosidases,Proteome Analysis" cid="P0704" pos="1">PNGase F</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0705-pngase-f-glycerol-free" class="gae-racking-prod-listing" name="PNGase F (Glycerol-free)" category="Endoglycosidases,Proteome Analysis" cid="P0705" pos="1">PNGase F (Glycerol-free)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0709-pngase-f-glycerol-free-recombinant" class="gae-racking-prod-listing" name="PNGase F (Glycerol-free), Recombinant" category="Endoglycosidases,Proteome Analysis" cid="P0709" pos="1">PNGase F (Glycerol-free), Recombinant</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0708-pngase-f-recombinant" class="gae-racking-prod-listing" name="PNGase F, Recombinant" category="Endoglycosidases,Proteome Analysis" cid="P0708" pos="1">PNGase F, Recombinant</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0710-rapid-pngase-f" class="gae-racking-prod-listing" name="Rapid™ 快速 PNGase F" category="Endoglycosidases,Proteome Analysis" cid="P0710" pos="1">Rapid&trade; 快速 PNGase F</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0711-rapid-pngase-f-non-reducing-format" class="gae-racking-prod-listing" name="Rapid™ 快速 PNGase F（非还原剂型）" category="Endoglycosidases,Proteome Analysis" cid="P0711" pos="1">Rapid&trade; 快速&nbsp;PNGase F（非还原剂型）</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0706-remove-it-pngase-f" class="gae-racking-prod-listing" name="Remove-iT® PNGase F" category="Endoglycosidases,Proteome Analysis" cid="P0706" pos="1">Remove-iT<sup>&reg;</sup> PNGase F</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p7817rnase-b" class="gae-racking-prod-listing" name="RNase B（对照底物）" category="Glycoprotein Substrates,Proteome Analysis" cid="P7817" pos="1">RNase B（对照底物）</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/s9145-snap-capture-magnetic-beads" class="gae-racking-prod-listing" name="SNAP-捕获磁珠" category="Resins, Magnetic Beads & Racks,Protein Labeling,Proteome Analysis,SNAP-Capture" cid="S9145" pos="1">SNAP-捕获磁珠</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8108-trypsin-digested-bsa-ms-standard-cam-modified" class="gae-racking-prod-listing" name="Trypsin-digested BSA MS Standard (CAM-modified)" category="Proteome Analysis" cid="P8108" pos="1">Trypsin-digested BSA MS Standard (CAM-modified)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8101-modified-trypsin-tpck-treated" class="gae-racking-prod-listing" name="Trypsin-ultra™, Mass Spectrometry Grade" category="Proteases,Proteome Analysis" cid="P8101" pos="1">Trypsin-ultra&trade;, Mass Spectrometry Grade</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8119-trypsin-ultra-mass-spectrometry-grade-recombinant" class="gae-racking-prod-listing" name="Trypsin-ultra™, Mass Spectrometry Grade (Recombinant)" category="Proteases,Proteome Analysis" cid="P8119" pos="1">Trypsin-ultra<sup>&trade;</sup>, Mass Spectrometry Grade (Recombinant)</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0768-a-1-2-3-6-mannosidase" class="gae-racking-prod-listing" name="α1-2,3,6 甘露糖苷酶" category="Exoglycosidases,Proteome Analysis" cid="P0768" pos="1">&alpha;1-2,3,6 甘露糖苷酶</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0749-a1-2-4-6-fucosidase-o" class="gae-racking-prod-listing" name="α1-2,4,6 岩藻糖苷酶 O" category="Exoglycosidases,Proteome Analysis" cid="P0749" pos="1">&alpha;1-2,4,6 岩藻糖苷酶 O</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0769-a1-3-4-fucosidase" class="gae-racking-prod-listing" name="α1-3,4 岩藻糖苷酶" category="Exoglycosidases,Proteome Analysis" cid="P0769" pos="1">&alpha;1-3,4 岩藻糖苷酶</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0747-a1-3-4-6-galactosidase" class="gae-racking-prod-listing" name="α1-3,4,6 半乳糖苷酶" category="Exoglycosidases,Proteome Analysis" cid="P0747" pos="1">&alpha;1-3,4,6 半乳糖苷酶</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0720-a2-3-6-8-neuraminidase" class="gae-racking-prod-listing" name="α2-3,6,8 神经氨酸苷酶" category="Exoglycosidases,Proteome Analysis" cid="P0720" pos="1">&alpha;2-3,6,8 神经氨酸苷酶</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0722-a2-3-6-8-9-neuraminidase-a" class="gae-racking-prod-listing" name="α2-3,6,8,9 神经氨酸苷酶 A" category="Exoglycosidases,Proteome Analysis" cid="P0722" pos="1">&alpha;2-3,6,8,9 神经氨酸苷酶 A</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p8113-a-lytic-protease" class="gae-racking-prod-listing" name="α-Lytic Protease" category="Proteases,Proteome Analysis" cid="P8113" pos="1">&alpha;-Lytic Protease</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0734-n-acetylgalactosaminidase" class="gae-racking-prod-listing" name="α-N-乙酰半乳糖胺酶" category="Exoglycosidases,Proteome Analysis" cid="P0734" pos="1">&alpha;-<em>N</em>-乙酰半乳糖胺酶</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0744-b-n-acetylglucosaminidase-s" class="gae-racking-prod-listing" name="β-N-乙酰氨基葡糖苷酶 S" category="Exoglycosidases,Proteome Analysis" cid="P0744" pos="1">&beta;-<em>N</em>-乙酰氨基葡糖苷酶 S</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p6044-protein-deglycosylation-mix-ii" class="gae-racking-prod-listing" name="蛋白去糖基化混合液 II" category="Endoglycosidases,Exoglycosidases,Proteome Analysis" cid="P6044" pos="1">蛋白去糖基化混合液 II</a>
+                                        </h3>
+                                    </section>
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/p0742-remove-it-endo-d" class="gae-racking-prod-listing" name="糖苷内切酶 D" category="Endoglycosidases,Proteome Analysis" cid="P0742" pos="1">糖苷内切酶 D</a>
+                                        </h3>
+                                    </section>
+
+                        </section>
+                    </section>
+                    <section class="pane purchase ui-tabs-section" id="s_CA209E4EC041438F9CBB4A2DBB362E22">
+                        <div class="h1">Protein Tools Buffers and Diluents</div>
+                        <section class="category">
+
+                                    <section class="purchase-options">
+                                        <h3>
+                                            <a href="/zh-cn/products/b7703-blue-protein-loading-dye" class="gae-racking-prod-listing" name="蓝色蛋白上样染料" category="Buffers,Gel Loading Buffers,Protein Markers Ladders,Protein Markers & Ladders,Protein Tools Buffers Diluents" cid="B7703" pos="1">蓝色蛋白上样染料</a>
+                                        </h3>
+                                    </section>
+
+                        </section>
+                    </section>
+    </section>
+    <input id="HiddenAllSubCategories" name="HiddenAllSubCategories" type="hidden" value="蛋白质工具,,Phage Display,Proteases,Protein Kinases,Protein Labeling,Protein Markers Ladders,Protein Phosphatases,Proteome Analysis,Protein Tools Buffers Diluents,phage-display,proteases,protein-kinases,protein-labeling,protein-markers-and-ladders,protein-phosphatases,proteome-analysis,Protein Tools Buffers &amp; Diluents,Phage Display,phage-display,Proteases,proteases,Protein Kinases,protein-kinases,Protein Labeling,protein-labeling,Protein Markers Ladders,protein-markers-and-ladders,Protein Phosphatases,protein-phosphatases,Proteome Analysis,proteome-analysis,Protein Tools Buffers Diluents,Protein Tools Buffers &amp; Diluents" />
+</div>
+
+
+<!-- ProductDetailTabbedContentWidget -->
+<div id="OverviewWidget" class="category-tab-content">
+    <div class="grey-tabbed-area-mobile">
+        <hr />
+        <h4>Choose Type:</h4>
+        <select class="grey-tabbed-area-mobile__select js-select-applications-mobile">
+
+                    <option class="js-nav-link" value="Subcategories"
+                            href="#t_main_0ctl00">
+                        Subcategories
+                    </option>
+                    <option class="js-nav-link" value="FAQs"
+                            href="#t_main_0ctl01">
+                        FAQs
+                    </option>
+                    <option class="js-nav-link" value="Protocols"
+                            href="#t_main_0ctl02">
+                        Protocols
+                    </option>
+                    <option class="js-nav-link" value="Application Notes"
+                            href="#t_main_0ctl03">
+                        Application Notes
+                    </option>
+                    <option class="js-nav-link" value="Tools &amp; Resources"
+                            href="#t_main_0ctl04">
+                        Tools &amp; Resources
+                    </option>
+                                <option class="js-nav-link" value="Protease Selection Chart"
+                            href="#t_main_0tabs_5">
+                        Protease Selection Chart
+                    </option>
+                            <option class="js-nav-link" value="Legal Information"
+                        href="#t_main_0ctl06">
+                    Legal Information
+                </option>
+        </select>
+    </div>
+    <section class="tabs list group ui-tabs-vertical ui-helper-clearfix product-overview">
+        <ul class="nav-tabs  grey-tabbed-area-mobile__navtabs" data-gtm-nav-type="vertical-tab">
+
+                <li>
+                    <a href="#t_main_0ctl00">Subcategories</a>
+                </li>
+                <li>
+                    <a href="#t_main_0ctl01">FAQs</a>
+                </li>
+                <li>
+                    <a href="#t_main_0ctl02">Protocols</a>
+                </li>
+                <li>
+                    <a href="#t_main_0ctl03">Application Notes</a>
+                </li>
+                <li>
+                    <a href="#t_main_0ctl04">Tools &amp; Resources</a>
+                </li>
+            
+
+                    <li>
+                        <a href="#t_main_0tabs_5">Protease Selection Chart</a>
+                    </li>
+            
+                <li>
+                    <a href="#t_main_0ctl06">Legal Information</a>
+                </li>
+        </ul>
+
+            <section class="pane ui-tabs-section" id="t_main_0ctl00">
+                <div class="h1">
+                    蛋白质工具 includes these subcategories: 
+                </div>
+                <dl class="categories" data-gtm-nav-type="link-box">
+                        <dt><a href="/zh-cn/products/protein-tools/phage-display">Phage Display</a></dt>
+                        <dt><a href="/zh-cn/products/protein-tools/proteases">Proteases</a></dt>
+                        <dt><a href="/zh-cn/products/protein-tools/protein-kinases">Protein Kinases Information</a></dt>
+                        <dt><a href="/zh-cn/products/protein-tools/protein-labeling">Protein Labeling</a></dt>
+                        <dt><a href="/zh-cn/products/protein-tools/protein-markers-and-ladders">Protein Standards</a></dt>
+                        <dt><a href="/zh-cn/products/protein-tools/protein-phosphatases">Protein Phosphatases</a></dt>
+                        <dt><a href="/zh-cn/products/protein-tools/proteome-analysis">Proteome Analysis</a></dt>
+                        <dt><a href="/zh-cn/products/protein-tools/protein-tools-buffers-and-diluents">Protein Tools Buffers &amp; Diluents</a></dt>
+                </dl>
+            </section>
+                    <section class="pane ui-tabs-section" id="t_main_0ctl01">
+                <div class="h1">
+                    FAQs for  蛋白质工具
+                </div><ul>
+                            <li><a href="/zh-cn/faqs/whatisphdphagedisplay">What is Ph.D.&trade; Phage Display?</a></li>
+                            <li><a href="/zh-cn/faqs/what-products-has-neb-developed-from-ongoing-basic-research-in-molecular-parasitology">What products has NEB developed from ongoing basic research in molecular parasitology?</a></li>
+                            <li><a href="/zh-cn/faqs/which-residues-does-endoproteinase-aspn-cut">Which residues does Endoproteinase AspN cut?</a></li>
+                            <li><a href="/zh-cn/faqs/are-there-any-amino-acid-residues-that-inhibit-or-reduce-the-efficiency-of-digestion-of-glutamate">Are there any amino acid residues that inhibit or reduce the efficiency of digestion of glutamate residues in a peptide sequence with Endoproteinase GluC? The site I want to digest has a glutamate residue followed by a proline residue and some enzymes are inhibited by the presence of a proline after the hydrolysis site.</a></li>
+                            <li><a href="/zh-cn/faqs/how-does-one-do-a-trypsin-in-gel-digest">How does one do a Trypsin in-gel digest?</a></li>
+                            <li><a href="/zh-cn/faqs/i-can-rsquo-t-get-endoproteinase-aspn-to-digest-my-protein">I can&rsquo;t get Endoproteinase AspN to digest my protein.</a></li>
+                            <li><a href="/zh-cn/faqs/i-have-a-very-low-concentration-of-protein-and-would-prefer-not-to-denature-as-a-separate-step-wi">I have a very low concentration of protein and would prefer not to denature as a separate step with buffer exchange before digestion. What denaturants can he use in the Trypsin reaction itself?</a></li>
+                            <li><a href="/zh-cn/faqs/what-peptide-libraries-are-available-for-use-with-ph-d-trade-phage-display">What peptide libraries are available for use with Ph.D.&trade; Phage Display?</a></li>
+                            <li><a href="/zh-cn/faqs/what-is-the-proteinase-k-activity-in-commonly-used-buffers">What is the Proteinase K activity in commonly used buffers?</a></li>
+                </ul>
+            </section>
+                    <section class="pane ui-tabs-section" id="t_main_0ctl02">
+                <div class="h1">
+                    Protocols for  蛋白质工具
+                </div><ul>
+                        <li><a href="/zh-cn/protocols/in-solution-trypsin-digestion-using-trypsin-ultra">In-Solution Digestion Using Trypsin-ultra™, Mass Spectrometry Grade (Recombinant) (NEB #P8119)</a></li>
+                        <li><a href="/zh-cn/protocols/filtration-assisted-sample-preparation-fasp-using-trypsin-ultra">Filtration Assisted Sample Preparation (FASP) Using Trypsin-ultra™, Mass Spectrometry Grade (Recombinant) (NEB #P8119)</a></li>
+                </ul>
+            </section>
+                    <section class="pane ui-tabs-section" id="t_main_0ctl03">
+                <div class="h1">
+                    Application Notes for 蛋白质工具
+                </div><ul>
+                        <li><a href="/en/-/media/nebus/files/application-notes/appnote_labeling_of_escherichia_coli_expressed_snap-tag_fusion_proteins.pdf?rev=b2dc7eba64674f389c47d962d2dc9fa3&amp;hash=7FE2FFEEDF02E3436F0DA571C7343B0C" target="_blank">Labeling of <em>Escherichia coli</em> Expressed SNAP-tag<sup>&reg;</sup> Fusion Proteins</a></li>
+                        <li><a href="/en/-/media/nebus/files/application-notes/appnote_phd_peptide_display_cloning-_system.pdf?rev=0c8fd9374c5349d2b0297f752d99b6e4&amp;hash=35DA6C84210D700FF5C587680ECDEE1F" target="_blank">Ph.D.&trade; Peptide Display Cloning System</a></li>
+                        <li><a href="/en/-/media/nebus/files/application-notes/simultaneous-fluorescent-labeling-of-proteins-in-living-cells.pdf?rev=3b998871c1144a1eba950cbb58048c65&amp;hash=2453D7AB323F7F68C2E37FCFE1181F9E" target="_blank">Simultaneous Fluorescent Labeling of Proteins in Living Cells</a></li>
+                        <li><a href="/en/-/media/nebus/files/application-notes/appnote_intein_mediated_protein_ligation_ip_land_labeling_with_impact_kit.pdf?rev=b5b5dbdf87634019a1c9cddc0e9dba1b&amp;hash=4CDEDCD264E2C35DD69FB3A692F67446" target="_blank">Intein-Mediated Protein Ligation IPL and Labeling with the IMPACT&trade; Kit</a></li>
+                        <li><a href="/en/-/media/nebus/files/application-notes/o-glycoprotease_impa.pdf?rev=dea767beee514828b903736e5e35afbd&amp;sc_lang=en&amp;hash=CFCCEA795816BFA7DAA6F0929EF9B173" target="_blank">Comprehensive structural and positional profiling of intact complex O-glycans in biologic drugs using O-Glycoprotease (IMPa)</a></li>
+                </ul>
+            </section>
+                    <section class="pane ui-tabs-section" id="t_main_0ctl04">
+                <ul style="list-style: none;">
+                    <div class="h1">
+                        Tools & Resources
+                    </div>
+                        <section class="category">
+                                <h3>
+                                    Feature Articles
+                                </h3>
+                                                        <li>
+                                    <a href="/zh-cn/tools-and-resources/feature-articles/combating-neglected-diseases-a-genomic-approach-to-identify-potential-drug-targets">Combating Neglected Diseases - a genomic approach to identify potential drug targets
+</a>
+                                                                    <p>
+                                        
+                                    </p>
+                            </li>
+                            <li>
+                                    <a href="/zh-cn/tools-and-resources/feature-articles/parasitic-infections-in-humans">Parasitic Infections in Humans</a>
+                                                                    <p>
+                                         Understand the common types of parasitic infections in humans and why they are still increasing in tropical regions.
+
+                                    </p>
+                            </li>
+                            <li>
+                                    <a href="/zh-cn/tools-and-resources/feature-articles/applications-of-the-phd-phage-display-peptide-libraries">Applications of the Ph.D. Phage Display Peptide Libraries</a>
+                                                                    <p>
+                                        
+                                    </p>
+                            </li>
+                    </section>
+                        <section class="category">
+                                <h3>
+                                    Brochures
+                                </h3>
+                                                        <li>
+                                    <a href="/zh-cn/-/media/nebus/files/brochures/beads_columns_resins.pdf?rev=f749c5dbe62842c2b317daf914adfd3d&amp;la=zh-cn&amp;hash=10861902C7F4C78BFA772455FD710DCF" target="_blank">Purification Beads, Columns and Resins Brochure</a>
+                                                            </li>
+                            <li>
+                                    <a href="/zh-cn/-/media/nebus/files/brochures/glycobiology_tech_guide.pdf?rev=918f458474cd44c381dbbbd2426fd0d3&amp;la=zh-cn&amp;hash=D136E05BB4347280325CF3A7C0C1EB56" target="_blank">Glycoproteomics Technical Guide</a>
+                                                            </li>
+                            <li>
+                                    <a href="/zh-cn/-/media/nebus/files/brochures/glycobiologyposter_0515.pdf?rev=5cd707d48aad4d6dbf57576139144f1b&amp;la=zh-cn&amp;hash=C34625F11DDE7085E3E28B69F52545F7" target="_blank">Glycosylation Poster</a>
+                                                            </li>
+                            <li>
+                                    <a href="/zh-cn/-/media/nebcn/files/brochures/glycosidase.pdf?rev=15ea067285b24f9eaadb7e6a8c3415ec&amp;la=zh-cn&amp;hash=DD4F8B676EFD8E42D1179FC3D3C50CFA" target="_blank">糖蛋白质组学</a>
+                                                            </li>
+                    </section>
+                        <section class="category">
+                                <h3>
+                                    Posters
+                                </h3>
+                                                        <li>
+                                    <a href="https://media.neb.com/asset/454ba58c-aec4-48bd-b94e-8bf6af59d8fd/Poster_Cold-Active-TEV-Protease-Engineered-for-higher.pdf" target="_blank">Cold-Active TEV Protease: Engineered for higher performance at low temperatures</a>
+                                                            </li>
+                    </section>
+                    </ul>
+                </section>
+                                <section class="pane ui-tabs-section" id="t_main_0tabs_5">
+                    <div class="h1">
+                        Protease Selection Chart
+                    </div>
+                    <div class="information">
+                        <figure class="tab-img">
+<div class="decorator">   <a href="/zh-cn/tools-and-resources/selection-charts/snap-tag-and-clip-tag-substrate-selection-chart"><img alt="" src="/zh-cn/-/media/nebus/page-images/selection-chart-thumbnails/protease_selection_thumb.jpg?rev=a20ec1726d194bfeb5861cf4575b052e&amp;hash=6870E252092C13681A6F44CEE9EEAC30"></a>  </div>
+<figcaption>  </figcaption></figure>
+                    </div>
+                </section>
+                    <section class="pane ui-tabs-section" id="t_main_0ctl06">
+                <div class="h1">
+                    Legal Information
+                </div>
+                <div class="information">
+                    <p>
+</p>
+<p>Products and content are covered by one or more patents, <a href="/zh-cn/trademarks">trademarks</a>&nbsp;and/or copyrights owned or controlled by New England Biolabs, Inc (NEB). The use of trademark symbols does not necessarily indicate that the name is trademarked in the country where it is being read; it indicates where the content was originally developed. All other trademarks are the property of their respective owners. The use of this product may require the buyer to obtain additional third-party intellectual property rights for certain applications. For more information, please email&nbsp;<a href="/cdn-cgi/l/email-protection#b3d1c6c0d7d6c5f3ddd6d19dd0dcde9d"><span class="__cf_email__" data-cfemail="9ffdeaecfbfae9dff1fafdb1fcf0f2">[email&#160;protected]</span>.</a></p>
+<p>This product is intended for research purposes only. This product is not intended to be used for therapeutic or diagnostic purposes in humans or animals.</p>
+<p>&nbsp;</p>
+                </div>
+                <div class="information">
+                    <br>
+                    
+                </div>
+            </section>
+        </section>
+    </div>
+        </div>
+            <div class="column__33" data-gtm-nav-type="right-rail">
+                <div id="ProductListingRightRail" class="category-tab-content">
+                    
+
+
+
+
+            <aside data-gtm-nav-type="right-rail">
+                <h2 data-gtm-nav-name="Technical References">
+                    Technical References
+                    
+                </h2>
+
+                
+                <ul class="links">
+                            <li>
+                                <a href="/zh-cn/tools-and-resources/selection-charts/protease-selection-chart" class="pardotTrackClick">Protease Selection Chart</a>
+                            </li>
+                            <li>
+                                <a href="/zh-cn/tools-and-resources/selection-charts/protein-kinase-substrate-recognition" class="pardotTrackClick">Protein Kinase Substrate Recognition</a>
+                            </li>
+                            <li>
+                                <a href="/zh-cn/protocols/using-neb-protein-markers-and-ladders" class="pardotTrackClick">Suggested Protocol for Loading the Unstained Protein Ladder, Broad Range (P7703)</a>
+                            </li>
+	            </ul>
+               
+</aside>
+
+
+                </div>
+                <div id="OverviewRightRail" class="category-tab-content">
+                    
+
+<section class="group" data-gtm-nav-type="right-rail">
+    </section>
+                </div>
+            </div>
+    </div>
+</div>
+<!-- End:   2 column example - 66 & 33 -->
+                
+<div class="refills-modal restock-modal js-refills-modal">
+    <label for="restockModal" class="restock-modal__label js-restock-modal--trigger">
+        <div class="modal-trigger restock-modal__trigger">Submit Restocking Order</div>
+    </label>
+    <input class="modal-state" id="restockModal" type="checkbox" autocomplete="off" />
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close" for="restockModal"></div>
+            <div class="restock-modal__top">
+                <h2 class="restock-modal__title">Ineligible item added to cart</h2>
+<p class="restock-modal__intro">Based on your Freezer Program type, you are trying to add a product to your cart that is either not allowed or not allowed with the existing contents of your cart. Please review and update your order accordingly. If you have any questions, please contact Customer Support at <a href="https://"><span class="__cf_email__" data-cfemail="6c0a1e090916091e1f2c02090e420f0301">[email&#160;protected]</span></a> or 1-800-632-5227 x 8.</p>
+            </div>
+            <div class="restock-modal__bottom">
+                
+            </div>
+            <section class="restock-modal__buttons">
+                    <a href="/zh-cn/" target="" class="btn js-modal-close"></a>
+            </section>
+        </div>
+    </div>
+</div>
+            </section><!-- /.primary -->
+        </div>
+    </div>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fakeVueHeader">
+		<!-- desktop -->
+		<header class="global-header js-global-header  fake-header__desktop" style="margin-top: 0px; color: white !important">
+			<div class="container" style="height: 167px">
+				<div data-v-3bb7adf2="" class="global-header__desktop-header large-site-nav">
+					<div data-v-3bb7adf2="" class="large-site-nav__grid-container">
+						<section data-v-3bb7adf2="" class="grid-logo">
+							<div data-v-3bb7adf2="" class="global-header__logo">
+								<a href="/" class="global-header__logo-link">
+									<picture class="global-header__logo--dark">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+									<picture class="global-header__logo--light">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+								</a>
+							</div>
+						</section>
+						<section data-v-3bb7adf2="" class="col grid-search">
+							<div data-v-3bb7adf2="" id="_5870A13F-F6E7-45C5-84FE-7BDE738FF6F4" data-search-interface-id="coveoddb0ca74"
+								 class="vue-header-coveo-search-container">
+								<div class="coveo-search-section"></div>
+							</div>
+						</section>
+						<section data-v-3bb7adf2="" class="grid-top-bar text-right">
+							<a data-v-528fe100=""
+							   data-v-3bb7adf2="" class="large-site-navigation__item-secondary-link notificationsLink">
+								<i data-v-528fe100="" class="large-site-navigation__item-icon">
+									<svg data-v-528fe100="" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="bell-icon">
+										<path data-v-528fe100=""
+											  d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+											  stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path data-v-528fe100=""
+											  d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+											  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</i>
+							</a>
+						</section>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- mobile -->
+		<header class="global-header js-global-header  fake-header__mobile">
+			<div class="container">
+				<div data-v-71cd6da6="" class="global-header__mobile-header js-mobile-header" style="border-bottom: none;">
+					<div data-v-71cd6da6="" class="row js-global-mobile-header">
+						<div data-v-71cd6da6="" class="col-auto global-header__hamburger-container">
+							<button data-v-71cd6da6=""
+									class="global-header__hamburger">
+								<span data-v-71cd6da6=""
+									  class="global-header__hamburger-bar"></span>
+							</button>
+						</div>
+						<div data-v-71cd6da6="" class="col px-0 mobile-header-logo-height">
+							<div data-v-71cd6da6="" class="global-header__logo">
+								<a href="/" class="global-header__logo-link">
+									<picture class="global-header__logo--dark">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+									<picture class="global-header__logo--light">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+								</a>
+							</div>
+						</div>
+						<div data-v-71cd6da6="" class="col">
+							<div data-v-71cd6da6="" class="row justify-content-end h-100 mobile-header-icons-container">
+								<div data-v-71cd6da6="" class="mobile-header-icon align-items-center international-notifications-bell">
+									<a data-v-528fe100="" data-v-71cd6da6=""
+									   class="large-site-navigation__item-secondary-link notificationsLink" target="_blank">
+										<i data-v-528fe100="" class="large-site-navigation__item-icon">
+											<svg data-v-528fe100="" width="24"
+												 height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="bell-icon">
+												<path data-v-528fe100=""
+													  d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+													  stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path data-v-528fe100=""
+													  d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+													  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="height: 2px; background-color: white"></div>
+				</div>
+			</div>
+	</div>
+	</header>
+	</div>
+
+	
+
+	<!-- End:   #nebVue -->
+	
+    <!-- FooterVue.cshtml-->
+<footer class="updated-footer site-footer js-site-footer" id="neb-footer" data-gtm-nav-type="footer">
+        <div class="page-container container">
+            <div class="row footer-contact d-flex site-footer__top-row">
+                <div class="col-12 col-lg-8 px-0 site-footer__grid-in-content">
+                    <!-- Begin: Partial/Footer/ToRequestTechnicalSupport -->
+                    <div class="col-sm-12 col-md-6 footer-contact-info">
+<h3>获取技术支持帮助</h3>
+<p>
+请填写<a href="/zh-cn/forms/neb-technical-support">技术支持表格</a>, <a href="/cdn-cgi/l/email-protection#61121411110e1315210f04034c0209080f004f020e0c">发送邮件</a>,
+<br />
+或拨打 400&nbsp;811&nbsp;2220/ 400&nbsp;690&nbsp;3366。
+</p>
+<h3>国外客户</h3>
+<p>
+请联系<a href="/zh-cn/support/international-ordering-support">当地办事处或代理商.</a></p>
+</div>
+<div class="col-sm-12 col-md-6 footer-contact-info">
+<h3>订购帮助</h3>
+<p>
+订购产品请联系当地<a href="/zh-cn/support/cn-sales-representative-list-by-territory">代理商
+</a></p>
+</div>
+                    <!-- End:   Partial/Footer/ToRequestTechnicalSupport -->
+                </div>
+
+                                        <div class="col-12 col-md-12 col-lg-4 form-news">
+                            
+    <h3>想了解更多最新产品？</h3>
+    <p class="news-letter">邮件订阅</p>
+<form action="/products/protein-tools" class="form-horizontal" id="email-pref" method="post"><input name="__RequestVerificationToken" type="hidden" value="YTsyMa_IpMeASjnGKJtEPE5Ozp8mdXx0TO9h2vzsYdFVEhBIqucccVc1Go3bOxoTjRGHCRxNLVS2dSe14slvemXNVEQ1" /><input id="scController" name="scController" type="hidden" value="Account" /><input id="scAction" name="scAction" type="hidden" value="GoToNewsletterForm" />            <form id="homeSubscribe" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-12">
+
+                        <input aria-labelledby="emailSubscriptionSubscribeButton" class="form-control text-box single-line" data-val="true" data-val-regex="Email Address was not valid." data-val-regex-pattern="^(([^&lt;>()[\]\\.,;:\s@&quot;]+(\.[^&lt;>()[\]\\.,;:\s@&quot;]+)*)|(&quot;.+&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$" data-val-required="Profile Email Address must be filled in." id="EmailAddress" maxlength="80" name="EmailAddress" placeholder="Email" type="email" value="" />
+                        <span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="true"></span>
+                        <input id="ButtonUrl" name="ButtonUrl" type="hidden" value="zh-cn/forms/newsletters" />
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                            <button id="emailSubscriptionSubscribeButton" type="submit" class="btn primary-btn">订阅</button>
+                    </div>
+                </div>
+            </form>
+</form>
+                        </div>
+
+            </div>
+        </div>
+    <section class="column__row column__row--padded site-footer__nav-section">
+        <div class="page-container nav-container">
+            <nav class="footer-nav footer-nav">
+                
+        <div class="footer-nav__row" data-gtm-nav-type="footer">
+
+  <a href="/zh-cn/support" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="帮助">帮助</a>
+
+  <a href="/zh-cn/about-neb/neb-overview" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="关于 NEB">关于 NEB</a>
+
+  <a href="/zh-cn/support/international-ordering-support" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="联系我们">联系我们</a>
+
+  <a href="/zh-cn/about-neb/careers" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="职业发展">职业发展</a>
+
+  <a href="/zh-cn/site-map" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="网站地图">网站地图</a>
+
+  <a href="/zh-cn/terms-of-use" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="使用条款">使用条款</a>
+
+        </div>
+        <div class="footer-nav__row" data-gtm-nav-type="footer">
+
+  <a href="/zh-cn/cookie-policy" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="Cookie 政策">Cookie 政策</a>
+
+  <a href="/zh-cn/trademarks" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="注册商标">注册商标</a>
+
+  <a href="/zh-cn/support/terms-of-sales" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="销售条款">销售条款</a>
+
+  <a href="/zh-cn/privacy-policy" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="隐私政策">隐私政策</a>
+
+
+                <label for="countrySelectionModal" class="footer-nav__item country-selection__trigger-link js-country-selection-trigger">
+                    <span class="modal-trigger">选择地区</span>
+                </label>
+        </div>
+    <h2 style="color:transparent; padding:0; margin:0;height:0;">CN</h2>
+
+            </nav>
+        </div>
+    </section>
+
+    <div class="page-container site-footer__lower-container">
+            <section class="site-footer__bcorp">
+                        <a href="https://bcorporation.net/about-b-corps" class="site-footer__bcorp-link">
+                            <img src="/zh-cn/-/media/nebus/b-corp/b-corp_logo_wtagline_white_72h.svg?rev=6f2d3e1c3e9b4255ac4c67ed40177cbd&amp;sc_lang=zh-cn&amp;hash=0D87ECF933D2C999448A555B16C265F5"
+                                 alt="Certified B Corporation"
+                                 height="100"
+                                 width="199"
+                                 class="site-footer__bcorp-logo" />
+                        </a>
+            </section>
+
+        <section class="column__row column__row--padded site-footer__middle-section">
+        <div class="footer-social">
+                <ul class="footer-social__list">
+                </ul>
+        </div>
+        </section>
+
+        <section class="column__row column__row--padded site-footer__copy-section">
+            &copy; Copyright 2026 New England Biolabs. All Rights Reserved.
+            <a class="sc-1ko78hw-0 fiVZLH" href="https://beian.miit.gov.cn/" title="https://beian.miit.gov.cn/" data-renderer-mark="true" style="color:#fff !important">京ICP备12043865号-2</a>
+        </section>
+    </div>
+</footer>
+    <!-- Begin: Country Selection Modal -->
+    <div data-gtm-nav-type="utility" class="refills-modal country-selection-modal js-refills-modal">
+        <input class="modal-state" id="countrySelectionModal" type="checkbox" autocomplete="off" />
+
+        <div class="modal-fade-screen country-selection-modal__fade-screen">
+            <div class="modal-inner country-selection-modal__inner">
+
+                <div class="country-selection-modal__header">
+                    <div class="modal-close country-selection-modal__close" for="countrySelectionModal"></div>
+                    <h2 class="country-selection-modal__header-title">Choose your country</h2>
+                </div>
+
+                <div class="country-selection-modal__body">
+                    <div class="country-selection-modal__row">
+                                <div class="country-selection-modal__column">
+                                    <h4 class="country-selection-modal__column-title">North America</h4>
+                                    <nav class="country-selection-modal__region-nav ">
+                                            <a href="https://www.neb.com/en-ca/?country=en-ca" data-gtm-nav-name="Country Selector - Canada" target="_self" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/121d15873050c40e/original/Canada.svg" alt="Canada flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Canada</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-us/?country=en-us" data-gtm-nav-name="Country Selector - United States" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/usa.svg?rev=60b77079658e4e239433e2676e3b4faa&amp;hash=500177DCAA3C52E6466A0044CE18FBA3" alt="USA" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">United States</span>
+                                            </a>
+                                    </nav>
+                                </div>
+                                <div class="country-selection-modal__column">
+                                    <h4 class="country-selection-modal__column-title">Europe</h4>
+                                    <nav class="country-selection-modal__region-nav ">
+                                            <a href="https://www.neb-online.fr" data-gtm-nav-name="Country Selector - France" target="_blank" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/38a20fce6abb3ee2/original/France.svg" alt="France flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">France</span>
+                                            </a>
+                                            <a href="https://www.neb-online.de" data-gtm-nav-name="Country Selector - Germany" target="_blank" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/germany.svg?rev=c1939979587a47d08e219901d1b81609&amp;hash=51E6E0AF3C8D8B95C8356F2625DC6965" alt="Germany" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Germany</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-gb/?country=en-gb" data-gtm-nav-name="Country Selector - United Kingdom" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/unitedkingdom.svg?rev=06ffaae2104249058ea5fe346b479476&amp;hash=62564170D0AF10E2BF699AD7727C9D38" alt="UK" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">United Kingdom</span>
+                                            </a>
+                                    </nav>
+                                </div>
+                                <div class="country-selection-modal__column">
+                                    <h4 class="country-selection-modal__column-title">Asia-Pacific</h4>
+                                    <nav class="country-selection-modal__region-nav country-selection-modal__region-nav-two">
+                                            <a href="https://www.neb.com/en-au/?country=en-au" data-gtm-nav-name="Country Selector - Australia" target="_self" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/118813984cba1250/original/Australia.svg" alt="Australia flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Australia</span>
+                                            </a>
+                                            <a href="https://www.neb.cn/zh-cn/?country=zh-cn" data-gtm-nav-name="Country Selector - China" target="_self" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/138c4842f6ea7c37/original/China.svg" alt="China flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">China</span>
+                                            </a>
+                                            <a href="/en?country=en&amp;location=in" data-gtm-nav-name="Country Selector - India" target="" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/india.svg?rev=9f0916e9e413467c8b171a5ce11632e4&amp;hash=A4A78BEDE9764181B5DE807A9A00C5EC" alt="Inida" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">India</span>
+                                            </a>
+                                            <a href="https://www.neb.com/ja-jp/?country=ja-jp" data-gtm-nav-name="Country Selector - Japan" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/japan.svg?rev=b170c508003b4f5b80faabfd412cc6b7&amp;hash=F54410B1771B15D505FAA97991E3D2AE" alt="Japan" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Japan</span>
+                                            </a>
+                                            <a href="/en?country=en&amp;location=kr" data-gtm-nav-name="Country Selector - Korea" target="" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/korea.svg?rev=ab92ad82f31243918b93a53498ca4e2f&amp;hash=E98DC2D1C8274E758B72185A66340984" alt="Korea" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Korea</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-nz/?country=en-nz" data-gtm-nav-name="Country Selector - New Zealand" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/newzealand.svg?rev=35b643f59f9c47189486ce23e9144115&amp;hash=8329707A5B004496E5062FD814F1EE89" alt="NewZealand" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">New Zealand</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-sg/?country=en-sg" data-gtm-nav-name="Country Selector - Singapore" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/singapore.svg?rev=8e491815cb5f46e3954c50bc89d98894&amp;hash=8953FCEFEE0FE11AB666CFBB4019233E" alt="Singapore" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Singapore</span>
+                                            </a>
+                                    </nav>
+                                </div>
+                    </div>
+                </div>
+
+                <div class="country-selection-modal__footer">
+                    
+                    <p>
+                        If you don&#39;t see your country above, please visit our 
+                        <a data-gtm-nav-name="Country Selector - International" href="https://www.neb.com/en?country=en&amp;location=" target="_self">
+                            international site
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End:   Country Selection Modal -->
+
+	
+
+<section>
+
+    </section>
+
+
+	<input id="UserCountry" name="UserCountry" type="hidden" value="CN" />
+	<input id="HiddenForceSignOut" name="HiddenForceSignOut" type="hidden" value="False" />
+	<input id="HiddenIsUserAuthenticated" name="HiddenIsUserAuthenticated" type="hidden" value="False" />
+	<input id="AuthenticatedUserName" name="AuthenticatedUserName" type="hidden" value="Anonymous" />
+	<input id="HiddenSessionTimeoutMinutes" name="HiddenSessionTimeoutMinutes" type="hidden" value="1" />
+	<input id="HiddenValidSessionTimeoutMinutes" name="HiddenValidSessionTimeoutMinutes" type="hidden" value="1" />
+	<input id="HiddenIsPunchoutUser" name="HiddenIsPunchoutUser" type="hidden" value="False" />
+	<input id="CoveoBoxMaxLength" name="CoveoBoxMaxLength" type="hidden" value="200" />
+	<input id="regioncode" name="regioncode" type="hidden" value="CN" />
+
+	<div class="pardot-keyword-iframe__wrapper">
+    <iframe id="iframeSearch" class="pardot-keyword-iframe" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+</div>
+	
+<!-- Begin: Loading Spinner -->
+<section class="loading-spinner js-loading-spinner">
+    <figure class="loading-spinner__wrap">
+        <img class="loading-spinner__image" src="/content/img/ajax-loader-ring-alt.gif" alt="Loading Spinner" />
+    </figure>
+</section>
+<!-- End:   Loading Spinner -->
+
+	
+<!-- Dev Notes:
+        To use this modal, call this global JS function:
+
+        NEB.alertModal("TYPE","TITLE", "MESSAGE");
+
+        Where TYPE = one of 3 string types, "error, warning, info".  Each type shows a different icon.
+        Where TITLE = a string containing the TITLE of the modal you wish to show.
+        Where MESSAGE = a string containing the message you wish your modal to convey.
+        
+        example:
+        NEB.alertModal("warning", "Warning Title Test", "This is a test of the emergency broadcast system.  If there were not a test, panic would ensue.");
+
+        The above will launch a modal with the warning icon (black circle with white ! inside) and the message specified above.
+-->
+<div class="refills-modal alert-modal js-refills-modal js-alert-modal">
+    <label for="alert-modal" class="alert-modal--trigger js-alert-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="alert-modal" type="checkbox" autocomplete="off" />
+    
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close" for="alert-modal"></div>
+            
+            <!--NOTE: if a style is added or removed from the class attribute, you need to update the "defaultCssClassesForTitle" variable in the alert-modal.js file so that it matches the value in the class attribute-->
+            <div id="alert-modal-title" class="h1 alert-modal__title js-alert-modal__title"></div>
+
+            <p class="alert-modal__message js-alert-modal__message"></p>
+        
+            <p class="alert-modal__message"><input class="js-alert-modal__continue" type="button" value="Continue" /></p>
+        </div>
+    </div>
+</div>
+
+	
+
+<div class="refills-modal expired-modal js-refills-modal js-expired-modal">
+    <label for="expired-modal" class="expired-modal--trigger js-expired-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="expired-modal" type="checkbox" autocomplete="off" />
+
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div id="expired-modal-close" class="modal-close" for="expired-modal"></div>
+            <div class="h1 expired-modal__title js-expired-modal__title">Session Expired</div>
+            <div class="h1 expired-modal__title js-invalid-modal__title" style="display: none;">Your session has expired</div>
+
+                <p class="expired-modal__message js-expired-modal__message">You have been idle for more than 20 minutes, for your security you have been logged out.  Please sign back in to continue your session.</p>
+                <p class="expired-modal__message js-invalid-modal__message" style="display: none;">Please sign in to continue shopping.</p>
+
+                <div class="expired-modal__buttons">
+                    <button class="btn btn--orange js-expired-modal__sign-in">Sign In</button>
+                </div>
+        </div>
+    </div>
+</div>
+
+	<div class="refills-modal expired-modal js-refills-modal js-expired-modal">
+    <label for="account-change-modal" class="expired-modal--trigger js-account-changed-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="account-change-modal" type="checkbox" autocomplete="off" />
+
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close js-refresh-parent" for="account-change-modal"></div>
+            <div class="h1 expired-modal__title js-expired-modal__title">Institution Changed</div>
+
+            <p class="expired-modal__message js-expired-modal__message">
+                Your profile has been mapped to an Institution, please sign back for your profile updates to be completed.
+
+            </p>
+
+            <div class="expired-modal__buttons">
+                <button class="btn btn--orange js-expired-modal__sign-in">Sign In</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!-- Begin: Nag Modal -->
+<div class="refills-modal nag-modal js-refills-modal js-nag-modal">
+    <label for="nag-modal" class="nag-modal--trigger js-nag-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="nag-modal" type="checkbox" autocomplete="off" />
+
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close" for="alert-modal"></div>
+
+            <!-- Begin:  Nag Modal Content -->
+            <div class="h1 nag-modal__title">Sign in to your NEB account</div>
+
+            <div class="nag-modal__content">
+                <p>To save your cart and view previous orders, sign in to your NEB account. Adding products to your cart without being signed in will result in a loss of your cart when you do sign in or leave the site.</p>
+            </div>
+
+            <div class="nag-modal__buttons">
+                <button class="btn btn--orange js-nag-modal__sign-in nag-modal__sign-in">Sign In</button>
+                <a data-gtm-nav-type="utility" data-gtm-nav-name="Sign In" href="/account/sign-in" class="btn btn--orange nag-modal__sign-in-mobile">Sign In</a>
+                <span class="nag-modal__line-break-mobile"><br /><br /></span>
+                <button class="btn btn--gray js-nag-modal__continue">Continue as Guest</button>
+            </div>
+
+            <div class="nag-modal__dont-show">
+                <input type="checkbox" autocomplete="off" id="pdpNagHideOption" name="pdpNagHideOption" class="nag-modal__hide-option js-nag-modal__hide-option" />
+                <label for="pdpNagHideOption">Don&#39;t show me again</label>
+            </div>
+            <!-- End:    Nag Modal Content -->
+        </div>
+    </div>
+</div>
+<!-- End:   Nag Modal -->
+
+	
+
+<!--Â GoogleÂ AnalyticsÂ EnhancedÂ EcommerceÂ TrackingÂ Page Load STARTÂ -->
+<input id="hdn-gae-tracking-visitor-id" name="hdn-gae-tracking-visitor-id" type="hidden" value="" />
+<input id="hdn-gae-tracking-visit" name="hdn-gae-tracking-visit" type="hidden" value="" />
+<input id="hdn-gae-tracking-punchout-partner" name="hdn-gae-tracking-punchout-partner" type="hidden" value="" />
+<input id="hdn-gae-tracking-institution-id" name="hdn-gae-tracking-institution-id" type="hidden" value="" />
+<input id="hdn-gae-tracking-punchout-cart-id" name="hdn-gae-tracking-punchout-cart-id" type="hidden" value="" />
+<input id="hdn-gae-tracking-punchout-display-name" name="hdn-gae-tracking-punchout-display-name" type="hidden" value="" />
+<input id="hdn-gae-tracking-account-type" name="hdn-gae-tracking-account-type" type="hidden" value="Anonymous" />
+<input id="hdn-gae-tracking-acting-on-behalf-of" name="hdn-gae-tracking-acting-on-behalf-of" type="hidden" value="Self" />
+<input id="hdn-gae-tracking-cart-type" name="hdn-gae-tracking-cart-type" type="hidden" value="Direct" />
+<input id="hdn-gae-tracking-user-name" name="hdn-gae-tracking-user-name" type="hidden" value="" />
+<input id="hdn-gae-tracking-inst-name" name="hdn-gae-tracking-inst-name" type="hidden" value="" />
+<!--Â GoogleÂ AnalyticsÂ EnhancedÂ EcommerceÂ TrackingÂ Page Load ENDÂ -->
+
+	<!--Footer bundles-->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/bundles/jquery-scripts.js?v=EvizqPEkBXVD1DY0ciZXLuvpOD5VX8ON9rvMWiVslrw1"></script>
+
+<script src="/bundles/vendor-scripts.js?v=pLrb-YdWkveXqwDjvuWFmbNfdP4J50OV74SjASo5n5U1" defer></script>
+
+<script src="/bundles/custom-scripts.js?v=jMZBbIXl9x_5emnY_Dz7nlCmCpCUNK2-uCv3i0voWHQ1" defer></script>
+
+<!--Footer bundles end-->
+	
+<input id="HiddenPunchoutSapDownEnableSubmitAlertMessage" name="HiddenPunchoutSapDownEnableSubmitAlertMessage" type="hidden" value="You may access and view the PunchOut NEB.com site, but unfortunately you will not be able to submit an order at this time. Please try again later. We apologize for the inconvenience." /><input id="HiddenPunchoutSapDownAlertMessage" name="HiddenPunchoutSapDownAlertMessage" type="hidden" value="You may access and view the PunchOut NEB.com site, but unfortunately you will not be able to submit an order at this time. Please try again later. We apologize for the inconvenience." /><input id="HiddenPunchoutSapDownAlertHeaderMessage" name="HiddenPunchoutSapDownAlertHeaderMessage" type="hidden" value="NEB.com is experiencing technical issues" />
+
+	<!-- section used to suppress onetrust banner on ceros iframes -->
+<script  type="text/javascript">
+var urlParams = new URLSearchParams(location.search);
+if (urlParams.has('ceros_account_slug')) {
+     OneTrust.Close();
+    OneTrust.SetAlertBoxClosed();}
+</script>
+<!-- End section used to suppress onetrust banner on ceros iframes -->
+	<script src="/bundles/vue-scripts.js?v=Ws6PL_9lRBedJ-h1E3t1JPdcg0IreUZrvTBYcgEWrG81"></script>
+
+</body>
+</html>

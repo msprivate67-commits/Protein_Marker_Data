@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "129c7c9491fee2";
+if(window.wcs) {
+  wcs_do();
+}
+</script>
+<title>다인바이오</title>
+<link rel="stylesheet" href="http://dynebio.co.kr/css/default.css?ver=TWQ">
+<link rel="stylesheet" href="http://dynebio.co.kr/skin/latest/dweb_basic/style.css?ver=TWQ">
+<!--[if lte IE 8]>
+<script src="http://dynebio.co.kr/js/html5.js"></script>
+<![endif]-->
+<script>
+// 자바스크립트에서 사용하는 전역변수 선언
+var g5_url       = "http://dynebio.co.kr";
+var g5_bbs_url   = "http://dynebio.co.kr/bbs";
+var g5_is_member = "";
+var g5_is_admin  = "";
+var g5_is_mobile = "";
+var g5_bo_table  = "";
+var g5_sca       = "";
+var g5_editor    = "";
+var g5_cookie_domain = "";
+</script>
+<script src="http://dynebio.co.kr/js/jquery-1.8.3.min.js"></script>
+<script src="http://dynebio.co.kr/js/jquery.menu.js?ver=210420"></script>
+<script src="http://dynebio.co.kr/js/common.js?ver=210420"></script>
+<script src="http://dynebio.co.kr/js/wrest.js?ver=210420"></script>
+<script src="http://dynebio.co.kr/js/placeholders.min.js"></script>
+<script src="http://dynebio.co.kr/js/slick.min.js"></script>
+<script src="http://dynebio.co.kr/js/layout.js"></script>
+<script src="http://dynebio.co.kr/js/jquery-ui.min.js"></script>
+<link rel="stylesheet" href="http://dynebio.co.kr/js/font-awesome/css/font-awesome.min.css">
+
+
+
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "129c719dc7d39a";
+wcs_do();
+</script></head>
+<body>
+
+
+<link href="/css/layout.css?v=TWQ" type="text/css" rel="stylesheet" />
+<link href="/css/sub.css?v=TWQ" type="text/css" rel="stylesheet" />
+<link href="/css/sub1.css?v=TWQ" type="text/css" rel="stylesheet" />
+<link href="/css/slick.css" type="text/css" rel="stylesheet" />
+<link href="/css/slick-theme.css" type="text/css" rel="stylesheet" />
+<link media="screen and (max-width:1220px)" href="/css/layout_n.css?v=TWQ" type="text/css" rel="stylesheet" />
+<link media="screen and (max-width:900px)" href="/css/layout_t.css?v=TWQ" type="text/css" rel="stylesheet" />
+<link media="screen and (max-width:600px)" href="/css/layout_m.css?v=TWQ" type="text/css" rel="stylesheet" />
+<!----------------------------------------------------------------------------------------------------------------------------
+         내용 시작
+------------------------------------------------------------------------------------------------------------------------------>
+
+<div id="wrapper">
+	<div id="hd">
+		<header class="header">
+	<div class="top_logo">
+		<div class="logo_inner">
+			<h1 class="logo">
+				<a href="/index.php">
+					<img src="/img/logo.jpg" alt ="다인바이오 로고">
+				</a>
+			</h1>
+			<ul class="lang">
+				<li class="on"><a href="/index.php">KOR</a></li>
+				<li><a href="/en/index.php">ENG</a></li>
+			</ul>			
+		</div>
+	</div>
+	<article class="mw1200">
+		<ul class="nav">
+			<li>
+				<p>회사소개</p>
+				<ul>
+					<li><a href="/intro.php">인사말</a></li>
+					<li><a href="/management.php">경영이념</a></li>
+					<li><a href="/history.php">연혁</a></li>
+					<li><a href="/bbs/board.php?bo_table=certification">인증 및 수상</a></li>	
+					<li><a href="/ceo.php">대표이사</a></a></li>
+					<li><a href="/way.php">오시는길</a></a></li>
+				</ul>
+			</li>
+			<li>
+				<p>사업소개</p>
+				<ul>
+					<li><a href='/science.php' data-href="/science.php">생명과학사업부</a></li>
+					<li><a href="/rd.php">연구개발본부</a></li>						
+				</ul>
+			</li>
+			<li>
+				<p>다인바이오 소식</p>
+				<ul>
+					<li><a href="/bbs/board.php?bo_table=notice">공지사항</a></li>
+					<li><a href="/bbs/board.php?bo_table=free">언론보도</a></li>
+					<li><a href="/bbs/board.php?bo_table=ir_data">IR 자료</a></li>
+					<li><a href="/bbs/board.php?bo_table=utube">유튜브</a></li>
+				</ul>
+			</li>
+			<li>
+				<p>인재채용</p>
+				<ul>
+					<li><a href="/bbs/board.php?bo_table=hire">채용공고</a></li>
+					<li><a href="/talent.php">인재상</a></li>
+					<li><a href="/process.php">채용프로세스</a></li>
+					<li><a href="/organization.php">조직도</a></li>	
+					<li><a href="/duty.php">직무소개</a></li>
+				</ul>
+			</li>
+		</ul>
+	</article>
+</header>
+
+
+		
+<script>
+function fsearchbox_submit(f)
+{
+	if (f.stx.value.length < 2) {
+		alert("검색어는 두글자 이상 입력하십시오.");
+		f.stx.select();
+		f.stx.focus();
+		return false;
+	}
+
+	// 검색에 많은 부하가 걸리는 경우 이 주석을 제거하세요.
+	var cnt = 0;
+	for (var i=0; i<f.stx.value.length; i++) {
+		if (f.stx.value.charAt(i) == ' ')
+			cnt++;
+	}
+
+	if (cnt > 1) {
+		alert("빠른 검색을 위하여 검색어에 공백은 한개만 입력할 수 있습니다.");
+		f.stx.select();
+		f.stx.focus();
+		return false;
+	}
+
+	return true;
+}
+</script>	</div>
+	
+		<!-- 콘텐츠 시작 -->
+			
+						
+		
+						<div id="container_main">
+			
+
+
+<!-- 상단 시작 { -->
+   
+<!-- } 상단 끝 -->
+
+
+<!-- 팝업레이어 시작 { -->
+<div id="hd_pop">
+    <h2>팝업레이어 알림</h2>
+
+<span class="sound_only">팝업레이어 알림이 없습니다.</span></div>
+
+<script>
+$(function() {
+    $(".hd_pops_reject").click(function() {
+        var id = $(this).attr('class').split(' ');
+        var ck_name = id[1];
+        var exp_time = parseInt(id[2]);
+        $("#"+id[1]).css("display", "none");
+        set_cookie(ck_name, 1, exp_time, g5_cookie_domain);
+    });
+    $('.hd_pops_close').click(function() {
+        var idb = $(this).attr('class').split(' ');
+        $('#'+idb[1]).css('display','none');
+    });
+    $("#hd").css("z-index", 1000);
+});
+</script>
+<!-- } 팝업레이어 끝 -->
+
+
+
+<section class="main" id="bg">
+	<article class="mw1200" id="array">
+		<div class="content1">
+			<div class="left">
+				<h2 class="title">생명과학사업부</h2>		
+
+				<div class="hover">	
+					<a href="/lifescience"  hrefx="http://www.dynebio.co.kr/main.htm" class="dp_block">						
+						<h3>생명과학사업부</h3>
+						<img src="img/scienceicon1.png" alt="과학 아이콘">
+						<p>
+														Roche, Merck 공식대리점 <br>(생명과학 연구용 시약 및 장비 판매)
+
+
+						</p>
+						<!--<a href="http://www.dynebio.co.kr/main.htm">바로가기<span>→</span></a>-->
+					</a>
+				</div>			
+			</div>
+			<div class="right">
+				<h2 class="title">연구개발본부</h2>
+				
+				<div class="hover">
+					<a href="http://www.dynebio.co.kr/lab/" class="dp_block">
+						<h3>연구개발본부</h3>
+						<img src="img/scienceicon2.png" alt="과학 아이콘">
+						<p>
+							글로벌 기능성 바이오 소재 (Dyne-NAO)<br>Organ-on-a-chip 신약소재
+						</p>
+					</a>
+				</div>
+			</div>
+						<div class="video_box">
+				<div class="video"><iframe width="221" height="124" src="https://www.youtube.com/embed/QDOlIO9nVdM?si=ck-yw-dgYOBCw69f" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+				<div class="video"><iframe width="221" height="124" src="https://www.youtube.com/embed/OR-NBoQqXXg" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+				<div class="video"><iframe width="221" height="124" src='https://www.youtube.com/embed/DVCoT_gFQ3Y' frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+				<div class="video"><iframe width="221" height="124" src="https://www.youtube.com/embed/2ZjJz6XzCeo" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div>
+			</div>
+		</div>
+	</article>
+</section>
+<section class="main2">
+	<article class="mw1200" id="array">		
+		<div id="container">
+				<div class="board_W">
+					<h6 class="tit"><a href="http://dynebio.co.kr/bbs/board.php?bo_table=notice" class="dp_block">공지사항 <span>View More &rarr;</span></a></h6>
+					
+<!-- 공지사항 최신글 시작 { -->
+<div class="lt">
+    <ul>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=386"><span>[회사 소식] 한국미생물생명공학회 공헌상 수상</span><span>2026-06-25</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=385"><span>[학회/전시회] 2026 미생물생명공학회 부스전시 안내</span><span>2026-05-28</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=384"><span>[신제품 안내 ]MoniCel MoniQ CQ3 (생물공정 관리용 미생물 신속 정량 측정기) 출시 안내</span><span>2026-05-28</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=383"><span>[학회/전시회] 2026 생화학분자생물학회 부스전시 안내</span><span>2026-05-18</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=382"><span>[학회/전시회] 2026 대한면역학회 부스전시 안내</span><span>2026-04-28</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=380"><span>[회사소식] Merck 제휴 Luminex 기반 Multiplex(다중) ELISA 분석 서비스 개시 안내</span><span>2026-03-04</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=notice&amp;wr_id=377"><span>[회사소식] 2025 한국해양바이오학회 학술대회 포스터 발표</span><span>2025-11-03</span></a>        </li>
+            </ul>
+</div>
+<!-- } 공지사항 최신글 끝 -->					
+				</div>
+				<div class="board_W">
+					<h6 class="tit"><a href="http://dynebio.co.kr/bbs/board.php?bo_table=free" class="dp_block">언론보도 <span>View More &rarr;</span></a></h6>
+					
+<!-- 언론보도 최신글 시작 { -->
+<div class="lt">
+    <ul>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=free&amp;wr_id=53"><span>[언론보도] 2025 성남 국제 바이오 헬스케어 컨벤션 참여 기업 INTERVIEW</span><span>2025-10-23</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=free&amp;wr_id=52"><span>[언론보도] 다인바이오(주), 캐나다 천연건강식품 ‘NF’-‘NHP’ 허가 획득</span><span>2025-04-30</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=free&amp;wr_id=51"><span>[언론보도] 다인바이오, 건강식품원료 '다인나오' 캐나다 'NF'- 'NHP' 허가 획득</span><span>2025-04-15</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=free&amp;wr_id=50"><span>[언론보도] 식품진흥원 &lt;공동기술개발 신기술 인증 제품&gt; 온라인을 타고 전 세계로</span><span>2024-10-17</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=free&amp;wr_id=48"><span>[언론보도] 다인바이오,식품용 신효소 '베타아가라제' 미국 FDA 'GRAS' 인증 획득</span><span>2024-04-24</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=free&amp;wr_id=47"><span>[언론보도] 일본식품화학신문23. 6.1. 다인바이오 효소분해 아가로올리고당 출시</span><span>2023-06-01</span></a>        </li>
+            <li class="overf-h">
+            <a href="http://dynebio.co.kr/bbs/board.php?bo_table=free&amp;wr_id=46"><span>[언론보도] 세계 최초! 바닷속 식물로 만든 신소재를 소개합니다! [다인바이오]</span><span>2023-05-30</span></a>        </li>
+            </ul>
+</div>
+<!-- } 언론보도 최신글 끝 -->					
+				</div>
+		</div>
+		
+				<style>
+	
+
+.product_box { 
+	width: 100%;
+}
+	
+
+
+.product {
+	float:left;
+	width:293px;
+	height:180px;
+	background-size:cover;
+	margin: 0 9px 9px 0px;
+	
+	border:1px #444444 solid;
+	cursor:pointer;
+}
+
+
+.product:nth-child(4) {
+	margin-right:0;
+}
+
+
+#first  { background-image:url("/img/main_banner_4/product1.jpg")}
+#second {	background-image:url("/img/main_banner_4/product2.jpg")}
+#third  {	background-image:url("/img/main_banner_4/product3.jpg")}
+#forth  { background-image:url("/img/main_banner_4/product4.jpg")}
+
+.product {
+	background-size:cover;
+	background-repeat:no-repeat;
+	background-position:center center;
+	font-size:1.2em;
+}
+.product .icon {
+	/*colorx:#fff;*/
+		color:#000;
+    text-align: center;
+    paddingx:54px 0;
+    padding:45px 0;
+    
+    text-shadowx:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;  
+    
+    text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+    -2px 2px 0 #fff,
+    2px 2px 0 #fff;  
+    
+    text-shadow:
+    -1px -1px 0 #fff,
+    1px -1px 0 #fff,
+    -1px 1px 0 #fff,
+    1px 1px 0 #fff;  
+}
+
+.product a {
+	display:block;
+}
+
+#second h3,
+#forth h3
+ { padding-top:60px}
+
+</style>
+				<div class="product_box">
+			<div class="product" id="first">
+				<a href="/lifescience/product/p_helios.htm">				
+					<h3 class="icon">hPL(Human Platelet Lysate)<br>FBS대체<br>Xeno-free supplement</h3>	
+				</a>
+			</div>
+			<div class="product" id="second">
+				<a href="/lifescience/product/p_cellbio.htm">
+					<h3 class="icon">MSC, Primary 세포 분양 및<br>맞춤형 배지 제공</h3>			
+				</a>
+			</div>
+			<div class="product" id="third">
+				<a href="/lifescience/product/p_miRNA_Detection.htm">
+					<h3 class="icon">높은 특이성으로<br> microRNA 검출이 가능한<br>miRNA detection kit</h3>	
+				</a>
+			</div>
+			<div class="product" id="forth">
+				<a href="/lifescience/product/p_AvantiPolarLipids.htm">
+					<h3 class="icon">지질 연구 및 의약품 개발에<br> 필요한 초고순도 지질</h3>	
+				</a>
+			</div>
+		</div>			</article>
+</section>
+
+	</div> <!--container_main-->
+<!-- } 콘텐츠 끝 -->
+
+<footer class="footer">
+	<section class="footer_link">
+		<article class="mw1200">
+			<div class="logo">
+				<img src="/img/logo.jpg" alt="다인바이오 로고">
+			</div>
+			<div class="footer_info">
+				<ul>
+					<li><a href="/intro.php">회사소개<span>/</span></a></li>
+					<li><a href="/science.php">사업소개<span>/</span></a></li>
+					<li><a href="/bbs/board.php?bo_table=notice">다인바이오 소식<span>/</span></a></li>
+					<li><a href="/bbs/board.php?bo_table=hire">인재채용</a></li>
+				</ul>
+				<p class="text">사업자등록번호:  135-81-33747 / 통신판매업신고 제 2007-1187 호 / 대표이사 : 이제현<br>
+본사/연구소 :  경기도 성남시 중원구 사기막골로 45번길 14, B동 B204~B206호 (상대원동, 우림라이온스밸리 2차)<br>
+생명과학사업부 : 경기도 성남시 수정구 위례광장로 5, 314호 (창곡동, 남위례역아이파크)<br>
+Tel : 031-748-8166  / Fax : 031-748-8265 / E-mail : dyne@dynebio.co.kr</p>
+				<span class="copy">Copyright©2018 Dyne Bio Inc. All right reserved.</span>.
+				<br><Br><br><Br><br>
+			</div>
+		</article>
+	</section>
+</footer>
+
+		<style>
+/* 우측 따라다니는 메뉴*/
+#floatRight {
+  position: absolute;
+  width: 150px;
+  right: 2%;
+  top: 230px;
+  z-index:9999;
+}
+
+.height{
+  height:0px;  
+}
+</style>
+
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>    
+<!-- 따라다니는 배너 -->
+<div class="height">
+  <div id="floatRight">
+    <a href="http://www.dynebio.co.kr/lab/business/b_HealthyNAO.htm" target1="_blank()"><img src="/img/banner/mainRBanner1.png" style="width:100px;"/></a><br>
+    <a href="https://smartstore.naver.com/dynebio" target="_blank()"><img src="/img/banner/mainRBanner2.png" style="width:100px;"/></a>
+  </div>
+</div>
+<!-- 따라다니는 배너 -->
+
+<script>
+$(document).ready(function() {
+  // 기존 css에서 플로팅 배너 위치(top)값을 가져와 저장한다.
+  var floatPosition = parseInt($("#floatMenu").css('top'));
+  var floatPosition2 = parseInt($("#floatRight").css('top'));
+  // 250px 이런식으로 가져오므로 여기서 숫자만 가져온다. parseInt( 값 );
+
+  $(window).scroll(function() {
+    // 현재 스크롤 위치를 가져온다.
+    var scrollTop = $(window).scrollTop();
+    var newPosition = scrollTop + floatPosition + "px";
+    var newPosition2 = scrollTop + floatPosition2 + "px";
+
+    /* 애니메이션 없이 바로 따라감
+     $("#floatMenu").css('top', newPosition);
+     */
+
+    $("#floatMenu").stop().animate({
+      "top" : newPosition
+    }, 500);
+
+    $("#floatRight").stop().animate({
+      "top" : newPosition2
+    }, 500);
+
+  }).scroll();
+
+});
+</script>
+<!--
+<div id="aside">
+    <3?php
+    //공지사항
+    // 이 함수가 바로 최신글을 추출하는 역할을 합니다.
+    // 사용방법 : latest(스킨, 게시판아이디, 출력라인, 글자수);
+    // 테마의 스킨을 사용하려면 theme/basic 과 같이 지정
+    echo latest('notice', 'notice', 4, 13);
+    ?>
+    <3?php echo outlogin(); // 외부 로그인, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
+    <3?php echo poll(); // 설문조사, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
+    <3?php echo visit(); // 접속자집계, 테마의 스킨을 사용하려면 스킨을 theme/basic 과 같이 지정 ?>
+</div>
+-->
+<!----------------------------------------------------------------------------------------------------------------------------
+         내용 끝
+------------------------------------------------------------------------------------------------------------------------------>
+
+<script type="text/javascript" src="//wcs.naver.net/wcslog.js"></script>
+<script type="text/javascript">
+if(!wcs_add) var wcs_add = {};
+wcs_add["wa"] = "4dd5b3a3756";
+if(window.wcs) {
+  wcs_do();
+}
+</script>
+<!-- } 하단 끝 -->
+
+<script>
+$(function() {
+    // 폰트 리사이즈 쿠키있으면 실행
+    font_resize("container", get_cookie("ck_font_resize_rmv_class"), get_cookie("ck_font_resize_add_class"));
+});
+</script>
+
+
+
+<!-- ie6,7에서 사이드뷰가 게시판 목록에서 아래 사이드뷰에 가려지는 현상 수정 -->
+<!--[if lte IE 7]>
+<script>
+$(function() {
+    var $sv_use = $(".sv_use");
+    var count = $sv_use.length;
+
+    $sv_use.each(function() {
+        $(this).css("z-index", count);
+        $(this).css("position", "relative");
+        count = count - 1;
+    });
+});
+</script>
+<![endif]-->
+
+</body>
+</html>
+

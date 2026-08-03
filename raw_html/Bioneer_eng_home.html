@@ -1,0 +1,2183 @@
+<!doctype html>
+<html lang="en">
+    <head >
+        <script>
+    var require = {
+        "baseUrl": "https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US"
+    };
+</script>
+        <meta charset="utf-8"/>
+<meta name="description" content="Bioneer E-commerce"/>
+<meta name="keywords" content="Bioneer, Magento, Varien, E-commerce"/>
+<meta name="robots" content="INDEX,FOLLOW"/>
+<meta name="title" content="BIONEER"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+<title>BIONEER</title>
+<link  rel="stylesheet" type="text/css"  media="all" href="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/Bioneer_CustomOrder/css/custom.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/mage/calendar.css" />
+<link  rel="stylesheet" type="text/css"  media="all" href="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/css/styles-m.css" />
+<link  rel="stylesheet" type="text/css"  media="screen and (min-width: 768px)" href="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/css/styles-l.css" />
+<link  rel="stylesheet" type="text/css"  media="print" href="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/css/print.css" />
+<link  rel="icon" sizes="32x32" href="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/icons/favicon.ico" />
+<script  type="text/javascript"  src="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/Bioneer_SequencingCustomOrder/js/xlsx.full.min.js"></script>
+<script  type="text/javascript"  src="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/requirejs/require.js"></script>
+<script  type="text/javascript"  src="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/mage/requirejs/mixins.js"></script>
+<script  type="text/javascript"  src="https://eng.bioneer.com/static/version1776928268/_requirejs/frontend/Bioneer/general/en_US/requirejs-config.js"></script>
+<link  href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900" rel="stylesheet" href="https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US" />
+<link  rel="canonical" href="https://eng.bioneer.com" />
+<link  rel="icon" type="image/x-icon" href="https://eng.bioneer.com/media/favicon/default/favicon.ico" />
+<link  rel="shortcut icon" type="image/x-icon" href="https://eng.bioneer.com/media/favicon/default/favicon.ico" />
+ <!--de96b37aeb54d3a558c8425483bd03b5-->             </head>
+    <body data-container="body" data-mage-init='{"loaderAjax": {}, "loader": { "icon": "https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/images/loader-2.gif"}}' class="cms-home cms-index-index page-layout-1column">
+        
+<script>
+    try {
+        if (!window.localStorage || !window.sessionStorage) {
+            throw new Error();
+        }
+
+        localStorage.setItem('storage_test', 1);
+        localStorage.removeItem('storage_test');
+    } catch(e) {
+        (function () {
+            var Storage = function (type) {
+                    var data;
+
+                    function createCookie(name, value, days) {
+                        var date, expires;
+
+                        if (days) {
+                            date = new Date();
+                            date.setTime(date.getTime()+(days * 24 * 60 * 60 * 1000));
+                            expires = '; expires=' + date.toGMTString();
+                        } else {
+                            expires = '';
+                        }
+                        document.cookie = name + '=' + value+expires+'; path=/';
+                    }
+
+                    function readCookie(name) {
+                        var nameEQ = name + '=',
+                            ca = document.cookie.split(';'),
+                            i = 0,
+                            c;
+
+                        for (i=0; i < ca.length; i++) {
+                            c = ca[i];
+
+                            while (c.charAt(0) === ' ') {
+                                c = c.substring(1,c.length);
+                            }
+
+                            if (c.indexOf(nameEQ) === 0) {
+                                return c.substring(nameEQ.length, c.length);
+                            }
+                        }
+
+                        return null;
+                    }
+
+                    function setData(data) {
+                        data = encodeURIComponent(JSON.stringify(data));
+                        createCookie(type === 'session' ? getSessionName() : 'localStorage', data, 365);
+                    }
+
+                    function clearData() {
+                        createCookie(type === 'session' ? getSessionName() : 'localStorage', '', 365);
+                    }
+
+                    function getData() {
+                        var data = type === 'session' ? readCookie(getSessionName()) : readCookie('localStorage');
+
+                        return data ? JSON.parse(decodeURIComponent(data)) : {};
+                    }
+
+                    function getSessionName() {
+                        if (!window.name) {
+                            window.name = new Date().getTime();
+                        }
+
+                        return 'sessionStorage' + window.name;
+                    }
+
+                    data = getData();
+
+                    return {
+                        length: 0,
+                        clear: function () {
+                            data = {};
+                            this.length = 0;
+                            clearData();
+                        },
+
+                        getItem: function (key) {
+                            return data[key] === undefined ? null : data[key];
+                        },
+
+                        key: function (i) {
+                            var ctr = 0,
+                                k;
+
+                            for (k in data) {
+                                if (ctr.toString() === i.toString()) {
+                                    return k;
+                                } else {
+                                    ctr++
+                                }
+                            }
+
+                            return null;
+                        },
+
+                        removeItem: function (key) {
+                            delete data[key];
+                            this.length--;
+                            setData(data);
+                        },
+
+                        setItem: function (key, value) {
+                            data[key] = value.toString();
+                            this.length++;
+                            setData(data);
+                        }
+                    };
+                };
+
+            window.localStorage.__proto__ = window.localStorage = new Storage('local');
+            window.sessionStorage.__proto__ = window.sessionStorag = new Storage('session');
+        })();
+    }
+</script>    <script>
+        require.config({
+            deps: [
+                'jquery',
+                'mage/translate',
+                'jquery/jquery-storageapi'
+            ],
+            callback: function ($) {
+                'use strict';
+
+                var dependencies = [],
+                    versionObj;
+
+                $.initNamespaceStorage('mage-translation-storage');
+                $.initNamespaceStorage('mage-translation-file-version');
+                versionObj = $.localStorage.get('mage-translation-file-version');
+
+                if (versionObj.version !== '2433a360a167bbbf98f0ee494048f16409ddc71f') {
+                    dependencies.push(
+                        'text!js-translation.json'
+                    );
+
+                }
+
+                require.config({
+                    deps: dependencies,
+                    callback: function (string) {
+                        if (typeof string === 'string') {
+                            $.mage.translate.add(JSON.parse(string));
+                            $.localStorage.set('mage-translation-storage', string);
+                            $.localStorage.set(
+                                'mage-translation-file-version',
+                                {
+                                    version: '2433a360a167bbbf98f0ee494048f16409ddc71f'
+                                }
+                            );
+                        } else {
+                            $.mage.translate.add($.localStorage.get('mage-translation-storage'));
+                        }
+                    }
+                });
+            }
+        });
+    </script>
+
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "mage/cookies": {
+                "expires": null,
+                "path": "/",
+                "domain": ".eng.bioneer.com",
+                "secure": false,
+                "lifetime": "3600"
+            }
+        }
+    }
+</script>
+    <noscript>
+        <div class="message global noscript">
+            <div class="content">
+                <p>
+                    <strong>JavaScript seems to be disabled in your browser.</strong>
+                    <span>For the best experience on our site, be sure to turn on Javascript in your browser.</span>
+                </p>
+            </div>
+        </div>
+    </noscript>
+    <div class="message global cookie" id="notice-cookie-block" style="display: none;">
+        <div class="content">
+<!--                <span>--><!--</span>-->
+<!--                --><!--</p>-->
+            <div>
+                <div style="margin-left:10%; float: left;">
+                    <span style="font-size: larger; font-weight: bold;">Our use of cookies</span><br/>
+                    <span>We use cookies to give you the best online experience. By using our website you agree to our use of cookies in accordance with our </span>
+                    <span><a href="/cookie-policy">Cookie Policy</a></span>
+                </div>
+                
+                <div class="actions" style="width: 100pt; margin-right: 10%; float: right; text-align: right;">
+                    <button id="btn-cookie-allow" class="action allow primary">
+                        <span> I agree </span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/x-magento-init">
+        {
+            "#notice-cookie-block": {
+                "cookieNotices": {
+                    "cookieAllowButtonSelector": "#btn-cookie-allow",
+                    "cookieName": "user_allowed_save_cookie",
+                    "cookieValue": {"1":1},
+                    "cookieLifetime": 31536000,
+                    "noCookiesUrl": "https://eng.bioneer.com/cookie/index/noCookies/"
+                }
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="display: none;" id="paypal-express-in-context-checkout-main"></div>
+<script type="text/x-magento-init">
+    {"*":{"Magento_Paypal\/js\/in-context\/express-checkout":{"id":"paypal-express-in-context-checkout-main","path":"https:\/\/eng.bioneer.com\/paypal\/express\/gettoken\/","merchantId":"8LHKX2LLN7D3J","button":true,"clientConfig":{"locale":"en_US","environment":"production","button":["paypal-express-in-context-checkout-main"]}}}}</script>
+<div class="page-wrapper"><header class="page-header"><div class="panel wrapper"><div class="panel header"><span data-action="toggle-nav" class="action nav-toggle"><span>Toggle Nav</span></span>
+    <strong class="logo">
+        <img src="https://eng.bioneer.com/media/logo/default/bioneer_top-logo.png"
+             alt="Bioneer website"
+             width="131"             height="37"        />
+    </strong>
+<a class="action skip contentarea" href="#contentarea"><span>Skip to Content</span></a>
+
+<div class="switcher language switcher-language" data-ui-id="language-switcher" id="switcher-language">
+    <strong class="label switcher-label"><span>Language</span></strong>
+    <div class="actions dropdown options switcher-options">
+        <div class="action toggle switcher-trigger" id="switcher-language-trigger">
+            <strong class="view-default">
+                <span>ENGLISH</span>
+            </strong>
+        </div>
+        <ul class="dropdown switcher-dropdown"
+            data-mage-init='{"dropdownDialog":{
+                "appendTo":"#switcher-language > .options",
+                "triggerTarget":"#switcher-language-trigger",
+                "closeOnMouseLeave": false,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":null}}'>
+                                                                            <li class="view-jp switcher-option">
+                        <a href="#" data-post='{"action":"https:\/\/eng.bioneer.com\/?___store=jp","data":{"___store":"jp","uenc":"aHR0cHM6Ly9lbmcuYmlvbmVlci5jb20v"}}'>
+                            JAPANESE</a>
+                    </li>
+                                                                <li class="view-es switcher-option">
+                        <a href="#" data-post='{"action":"https:\/\/eng.bioneer.com\/?___store=es","data":{"___store":"es","uenc":"aHR0cHM6Ly9lbmcuYmlvbmVlci5jb20v"}}'>
+                            SPANISH</a>
+                    </li>
+                                    </ul>
+    </div>
+</div>
+<ul class="header links">        <li class="greet welcome" data-bind="scope: 'customer'">
+            <!-- ko if: customer().fullname  -->
+            <img height="16" data-bind="attr: {src: ''}"></img>
+            <span data-bind="text: new String('Welcome !')">
+            </span>
+            <!-- /ko -->
+            <!-- ko ifnot: customer().fullname  -->
+            <span data-bind="html:'Welcome, Bioneer'"></span>
+            <!-- /ko -->
+        </li>
+        <script type="text/x-magento-init">
+        {
+            "*": {
+                "Magento_Ui/js/core/app": {
+                    "components": {
+                        "customer": {
+                            "component": "Magento_Customer/js/view/customer"
+                        }
+                    }
+                }
+            }
+        }
+        </script>
+        
+
+<li class="authorization-link" data-label="">
+    <a href="https://eng.bioneer.com/customer/account/login/referer/aHR0cHM6Ly9lbmcuYmlvbmVlci5jb20v/">
+        Sign In    </a>
+</li><li><a href="https://eng.bioneer.com/customer/account/create/" class="register-link" >Create an Account</a></li><li><a href="https://eng.bioneer.com/contact/" class="custom-link-contact" >Contact</a></li></ul></div></div><div class="header content">    <div class="sections nav-sections">
+                <div class="section-items nav-sections-items" data-mage-init='{"tabs":{"openedState":"active"}}'>
+                                            <div class="section-item-title nav-sections-item-title" data-role="collapsible">
+                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.menu">Menu</a>
+                </div>
+                <div class="section-item-content nav-sections-item-content" id="store.menu" data-role="content">
+
+<nav class="navigation" data-action="navigation">
+<!--        <ul data-mage-init='{"menu":{"responsive":true, "expanded":true, "position":{"my":"left top","at":"left bottom"}}}'>-->
+    <ul id="menu">
+        <li  class="level0 nav-1 first level-top parent"><a href="https://eng.bioneer.com/c-about/c-about-history.html"  class="level-top" ><span>About</span></a><ul class="level0 submenu"><li  class="level1 nav-1-1 first"><a href="https://eng.bioneer.com/c-about/c-about-history.html" ><span>History</span></a></li><li  class="level1 nav-1-2"><a href="https://eng.bioneer.com/c-about/c-about-mission.html" ><span>Mission</span></a></li><li  class="level1 nav-1-3"><a href="https://eng.bioneer.com/c-about/c-about-careers.html" ><span>Careers</span></a></li><li  class="level1 nav-1-4 last"><a href="https://ir.bioneer.co.kr?language=eng" target="blank" ><span>Investor Relations</span></a></li></ul></li><li  class="level0 nav-2 level-top parent"><a href="https://eng.bioneer.com/c-life-science.html"  class="level-top" ><span>Life Science Research</span></a><ul class="level0 submenu"><li  class="level1 nav-2-1 first parent"><a href="https://eng.bioneer.com/c-life-science/pcr-rt-pcr.html" ><span>PCR &amp; RT-PCR</span></a><ul class="level1 submenu"><li  class="level2 nav-2-1-1 first"><a href="https://eng.bioneer.com/c-life-science/pcr-rt-pcr/pcr.html" ><span>PCR</span></a></li><li  class="level2 nav-2-1-2 last"><a href="https://eng.bioneer.com/c-life-science/pcr-rt-pcr/rt-rt-pcr.html" ><span>RT &amp; RT-PCR</span></a></li></ul></li><li  class="level1 nav-2-2 parent"><a href="https://eng.bioneer.com/c-life-science/real-time-pcr.html" ><span>Real-Time PCR</span></a><ul class="level1 submenu"><li  class="level2 nav-2-2-1 first"><a href="https://eng.bioneer.com/c-life-science/real-time-pcr/qpcr.html" ><span>qPCR</span></a></li><li  class="level2 nav-2-2-2"><a href="https://eng.bioneer.com/c-life-science/real-time-pcr/rt-qpcr.html" ><span>RT-qPCR</span></a></li><li  class="level2 nav-2-2-3 last"><a href="https://eng.bioneer.com/c-life-science/real-time-pcr/gene-expression-analysis.html" ><span>Gene Expression Analysis</span></a></li></ul></li><li  class="level1 nav-2-3 parent"><a href="https://eng.bioneer.com/c-life-science/sample-preparation.html" ><span>Sample Preparation</span></a><ul class="level1 submenu"><li  class="level2 nav-2-3-1 first"><a href="https://eng.bioneer.com/c-life-science/sample-preparation/nucleic-acid.html" ><span>Nucleic acid</span></a></li><li  class="level2 nav-2-3-2"><a href="https://eng.bioneer.com/c-life-science/sample-preparation/protein.html" ><span>Protein</span></a></li><li  class="level2 nav-2-3-3 last"><a href="https://eng.bioneer.com/c-life-science/sample-preparation/magnetic-separation-rack.html" ><span>Magnetic Separation Rack</span></a></li></ul></li><li  class="level1 nav-2-4 parent"><a href="https://eng.bioneer.com/c-life-science/rnai.html" ><span>DNA &amp; RNAi</span></a><ul class="level1 submenu"><li  class="level2 nav-2-4-1 first"><a href="https://eng.bioneer.com/catalog/category/view/s/dna-systhesis/id/698/" ><span>DNA systhesis</span></a></li><li  class="level2 nav-2-4-2 parent"><a href="https://eng.bioneer.com/c-life-science/rnai/sirna.html" ><span>RNA Oligo &amp; RNAi</span></a><ul class="level2 submenu"><li  class="level3 nav-2-4-2-1 first last"><a href="https://eng.bioneer.com/catalog/category/view/s/custom-rna-single-strand/id/701/" ><span>Custom RNA(Single Strand)</span></a></li></ul></li><li  class="level2 nav-2-4-3"><a href="https://eng.bioneer.com/c-life-science/rnai/mirna.html" ><span>miRNA</span></a></li><li  class="level2 nav-2-4-4"><a href="https://eng.bioneer.com/c-life-science/rnai/in-vivo-sirna-mirna-delivery.html" ><span>In vivo siRNA &amp; miRNA Delivery</span></a></li><li  class="level2 nav-2-4-5 last"><a href="https://eng.bioneer.com/c-life-science/rnai/gene-expression-analysis.html" ><span>Gene Expression Analysis</span></a></li></ul></li><li  class="level1 nav-2-5 parent"><a href="https://eng.bioneer.com/c-life-science/crispr.html" ><span>CRISPR</span></a><ul class="level1 submenu"><li  class="level2 nav-2-5-1 first"><a href="https://eng.bioneer.com/catalog/category/view/s/custom-design-service-grna-donor/id/702/" ><span>Custom Design Service (gRNA, Donor)</span></a></li><li  class="level2 nav-2-5-2"><a href="https://eng.bioneer.com/catalog/category/view/s/grna-cas9-protein-rnp/id/703/" ><span>gRNA &amp; Cas9 protein (RNP)</span></a></li><li  class="level2 nav-2-5-3"><a href="https://eng.bioneer.com/catalog/category/view/s/grna-cas9-plasmid-sgrna-plasmid-cas9-plasmid/id/708/" ><span>gRNA &amp; Cas9 plasmid (sgRNA plasmid, Cas9 plasmid)</span></a></li><li  class="level2 nav-2-5-4"><a href="https://eng.bioneer.com/catalog/category/view/s/donor-dna-synthesis/id/709/" ><span>Donor DNA synthesis</span></a></li><li  class="level2 nav-2-5-5"><a href="https://eng.bioneer.com/catalog/category/view/s/crispr-validation/id/710/" ><span>CRISPR Validation</span></a></li><li  class="level2 nav-2-5-6"><a href="https://eng.bioneer.com/catalog/category/view/s/crispr-kit/id/714/" ><span>CRISPR Kit</span></a></li><li  class="level2 nav-2-5-7 last"><a href="https://eng.bioneer.com/catalog/category/view/s/cell-transfection/id/718/" ><span>Cell Transfection</span></a></li></ul></li><li  class="level1 nav-2-6 parent"><a href="https://eng.bioneer.com/catalog/category/view/s/gene-synthesis/id/667/" ><span>Gene Synthesis</span></a><ul class="level1 submenu"><li  class="level2 nav-2-6-1 first"><a href="https://eng.bioneer.com/c-life-science/gene-synthesis/gene-synthesis.html" ><span>Gene Synthesis</span></a></li><li  class="level2 nav-2-6-2"><a href="https://eng.bioneer.com/c-life-science/gene-synthesis/cloning.html" ><span>Cloning</span></a></li><li  class="level2 nav-2-6-3"><a href="https://eng.bioneer.com/c-life-science/gene-synthesis/mutagenesis.html" ><span>Mutagenesis</span></a></li><li  class="level2 nav-2-6-4 last"><a href="https://eng.bioneer.com/c-life-science/gene-synthesis/gene-to-protein-synthesis.html" ><span>Gene to Protein Synthesis</span></a></li></ul></li><li  class="level1 nav-2-7 parent"><a href="https://eng.bioneer.com/c-life-science/mrna-synthesis.html" ><span>mRNA Synthesis</span></a><ul class="level1 submenu"><li  class="level2 nav-2-7-1 first"><a href="https://eng.bioneer.com/c-life-science/mrna-synthesis/t7-rna-polymerase.html" ><span>T7 RNA Polymerase</span></a></li><li  class="level2 nav-2-7-2 last"><a href="https://eng.bioneer.com/c-life-science/mrna-synthesis/mrna-synthesis-custom-order.html" ><span>mRNA Synthesis Custom Order</span></a></li></ul></li><li  class="level1 nav-2-8 parent"><a href="https://eng.bioneer.com/c-life-science/protein-synthesis-purification.html" ><span>Protein Synthesis &amp; Purification</span></a><ul class="level1 submenu"><li  class="level2 nav-2-8-1 first"><a href="https://eng.bioneer.com/c-life-science/protein-synthesis-purification/template-preparation.html" ><span>Template Preparation</span></a></li><li  class="level2 nav-2-8-2"><a href="https://eng.bioneer.com/c-life-science/protein-synthesis-purification/protein-synthesis.html" ><span>Protein Synthesis</span></a></li><li  class="level2 nav-2-8-3"><a href="https://eng.bioneer.com/c-life-science/protein-synthesis-purification/protein-purification.html" ><span>Protein Purification</span></a></li><li  class="level2 nav-2-8-4"><a href="https://eng.bioneer.com/c-life-science/protein-synthesis-purification/service.html" ><span>Service</span></a></li><li  class="level2 nav-2-8-5 last"><a href="https://eng.bioneer.com/c-life-science/protein-synthesis-purification/instrument.html" ><span>Instrument</span></a></li></ul></li><li  class="level1 nav-2-9 parent"><a href="https://eng.bioneer.com/c-life-science/gene-cloning.html" ><span>Gene Cloning</span></a><ul class="level1 submenu"><li  class="level2 nav-2-9-1 first"><a href="https://eng.bioneer.com/c-life-science/gene-cloning/cloning-ligation.html" ><span>Cloning &amp; Ligation</span></a></li><li  class="level2 nav-2-9-2"><a href="https://eng.bioneer.com/c-life-science/gene-cloning/pcr.html" ><span>PCR</span></a></li><li  class="level2 nav-2-9-3"><a href="https://eng.bioneer.com/c-life-science/gene-cloning/sample-prep.html" ><span>Sample Prep</span></a></li><li  class="level2 nav-2-9-4"><a href="https://eng.bioneer.com/c-life-science/gene-cloning/chemical.html" ><span>Chemical</span></a></li><li  class="level2 nav-2-9-5 last"><a href="https://eng.bioneer.com/c-life-science/gene-cloning/service.html" ><span>Service</span></a></li></ul></li><li  class="level1 nav-2-10 parent"><a href="https://eng.bioneer.com/c-life-science/s-pombe-knock-out-library.html" ><span>Yeast Engineering</span></a><ul class="level1 submenu"><li  class="level2 nav-2-10-1 first"><a href="https://eng.bioneer.com/c-life-science/s-pombe-knock-out-library/accuyeast-build-strain.html" ><span>AccuYeast™ Build Strain</span></a></li><li  class="level2 nav-2-10-2"><a href="https://eng.bioneer.com/c-life-science/s-pombe-knock-out-library/s-pombe-knock-out-library.html" ><span>S.pombe knock-out library</span></a></li><li  class="level2 nav-2-10-3"><a href="https://eng.bioneer.com/c-life-science/s-pombe-knock-out-library/drug-target-identification.html" ><span>Drug target identification</span></a></li><li  class="level2 nav-2-10-4 last"><a href="https://eng.bioneer.com/c-life-science/s-pombe-knock-out-library/s-cerevisiae-genome-wide-vn-fusion-library.html" ><span>S. cerevisiae Genome-wide VENUS-Fusion Library</span></a></li></ul></li><li  class="level1 nav-2-11 parent"><a href="https://eng.bioneer.com/c-life-science/chemical.html" ><span>Chemical</span></a><ul class="level1 submenu"><li  class="level2 nav-2-11-1 first"><a href="https://eng.bioneer.com/c-life-science/chemical/cloning-expression.html" ><span>Cloning &amp; Expression</span></a></li><li  class="level2 nav-2-11-2"><a href="https://eng.bioneer.com/c-life-science/chemical/dna-rna-synthesis-reagents.html" ><span>DNA &amp; RNA Synthesis Reagents</span></a></li><li  class="level2 nav-2-11-3 last"><a href="https://eng.bioneer.com/c-life-science/chemical/nano-colloid.html" ><span>Nano Colloid</span></a></li></ul></li><li  class="level1 nav-2-12 parent"><a href="https://eng.bioneer.com/c-life-science/fluorescence-dye-quencher.html" ><span>Fluorescence Dye &amp; Quencher</span></a><ul class="level1 submenu"><li  class="level2 nav-2-12-1 first"><a href="https://eng.bioneer.com/c-life-science/fluorescence-dye-quencher/ebq-quencher.html" ><span>EBQ Quencher</span></a></li><li  class="level2 nav-2-12-2"><a href="https://eng.bioneer.com/c-life-science/fluorescence-dye-quencher/quencher.html" ><span>Quencher</span></a></li><li  class="level2 nav-2-12-3"><a href="https://eng.bioneer.com/c-life-science/fluorescence-dye-quencher/reporter-dye.html" ><span>Reporter Dye</span></a></li><li  class="level2 nav-2-12-4 last"><a href="https://eng.bioneer.com/c-life-science/fluorescence-dye-quencher/greenstartm.html" ><span>GreenStar™</span></a></li></ul></li><li  class="level1 nav-2-13 parent"><a href="https://eng.bioneer.com/c-life-science/dnase-rnase-detection.html" ><span>DNase &amp; RNase Detection</span></a><ul class="level1 submenu"><li  class="level2 nav-2-13-1 first"><a href="https://eng.bioneer.com/c-life-science/dnase-rnase-detection/dnase-detection.html" ><span>DNase Detection</span></a></li><li  class="level2 nav-2-13-2 last"><a href="https://eng.bioneer.com/c-life-science/dnase-rnase-detection/rnase-detection.html" ><span>RNase Detection</span></a></li></ul></li><li  class="level1 nav-2-14 parent"><a href="https://eng.bioneer.com/c-life-science/electrophoresis.html" ><span>Electrophoresis</span></a><ul class="level1 submenu"><li  class="level2 nav-2-14-1 first"><a href="https://eng.bioneer.com/c-life-science/electrophoresis/agaros-gel.html" ><span>Agarose Gel</span></a></li><li  class="level2 nav-2-14-2"><a href="https://eng.bioneer.com/c-life-science/electrophoresis/dna-size-marker.html" ><span>DNA Ladder</span></a></li><li  class="level2 nav-2-14-3"><a href="https://eng.bioneer.com/c-life-science/electrophoresis/protein-size-markers.html" ><span>Protein Size Markers</span></a></li><li  class="level2 nav-2-14-4 last"><a href="https://eng.bioneer.com/c-life-science/electrophoresis/instrument.html" ><span>Instrument</span></a></li></ul></li><li  class="level1 nav-2-15 parent"><a href="https://eng.bioneer.com/c-life-science/buffer-solutions.html" ><span>Buffer &amp; Solutions</span></a><ul class="level1 submenu"><li  class="level2 nav-2-15-1 first"><a href="https://eng.bioneer.com/c-life-science/buffer-solutions/reagent-water.html" ><span>Reagent Water</span></a></li><li  class="level2 nav-2-15-2"><a href="https://eng.bioneer.com/c-life-science/buffer-solutions/buffer.html" ><span>Buffer</span></a></li><li  class="level2 nav-2-15-3"><a href="https://eng.bioneer.com/c-life-science/buffer-solutions/salt-solution.html" ><span>Salt Solution</span></a></li><li  class="level2 nav-2-15-4 last"><a href="https://eng.bioneer.com/c-life-science/buffer-solutions/enzyme-powder.html" ><span>Enzyme Powder</span></a></li></ul></li><li  class="level1 nav-2-16 parent"><a href="https://eng.bioneer.com/c-life-science/protein-protein-interaction.html" ><span>Protein-Protein Interaction</span></a><ul class="level1 submenu"><li  class="level2 nav-2-16-1 first last"><a href="https://eng.bioneer.com/c-life-science/protein-protein-interaction/immuno-precipitation.html" ><span>Immuno-Precipitation</span></a></li></ul></li><li  class="level1 nav-2-17 parent"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation.html" ><span>Magnetic Bead</span></a><ul class="level1 submenu"><li  class="level2 nav-2-17-1 first"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/silica.html" ><span>Silica</span></a></li><li  class="level2 nav-2-17-2"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/cooh.html" ><span>COOH</span></a></li><li  class="level2 nav-2-17-3"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/nh2.html" ><span>NH2</span></a></li><li  class="level2 nav-2-17-4"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/epoxy.html" ><span>Epoxy</span></a></li><li  class="level2 nav-2-17-5"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/c18.html" ><span>C18</span></a></li><li  class="level2 nav-2-17-6"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/streptavidin.html" ><span>Streptavidin</span></a></li><li  class="level2 nav-2-17-7"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/biotin.html" ><span>Biotin</span></a></li><li  class="level2 nav-2-17-8"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/ni-nta.html" ><span>Ni-NTA</span></a></li><li  class="level2 nav-2-17-9"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/thiol.html" ><span>Thiol</span></a></li><li  class="level2 nav-2-17-10"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/protein-g.html" ><span>Protein G</span></a></li><li  class="level2 nav-2-17-11"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/protein-a.html" ><span>Protein A</span></a></li><li  class="level2 nav-2-17-12 last"><a href="https://eng.bioneer.com/c-life-science/magnetic-separation/protein-l.html" ><span>Protein L</span></a></li></ul></li><li  class="level1 nav-2-18 parent"><a href="https://eng.bioneer.com/c-life-science/instrument.html" ><span>Instrument</span></a><ul class="level1 submenu"><li  class="level2 nav-2-18-1 first"><a href="https://eng.bioneer.com/c-life-science/instrument/conventional-pcr.html" ><span>Conventional PCR</span></a></li><li  class="level2 nav-2-18-2"><a href="https://eng.bioneer.com/c-life-science/instrument/real-time-pcr.html" ><span>Real-Time PCR</span></a></li><li  class="level2 nav-2-18-3"><a href="https://eng.bioneer.com/c-life-science/instrument/protein-synthesis.html" ><span>Protein Synthesis</span></a></li><li  class="level2 nav-2-18-4"><a href="https://eng.bioneer.com/c-life-science/instrument/sample-prep.html" ><span>Sample Prep</span></a></li><li  class="level2 nav-2-18-5"><a href="https://eng.bioneer.com/c-life-science/instrument/centrifuge-vortex-mixer.html" ><span>Centrifuge &amp; Vortex mixer</span></a></li><li  class="level2 nav-2-18-6 last"><a href="https://eng.bioneer.com/c-life-science/instrument/electrophoresis.html" ><span>Electrophoresis</span></a></li></ul></li><li  class="level1 nav-2-19 last"><a href="https://eng.bioneer.com/c-life-science/plastic-consumables.html" ><span>Plastic Consumables</span></a></li></ul></li><li  class="level0 nav-3 level-top parent"><a href="https://eng.bioneer.com/c-diagnostic.html"  class="level-top" ><span>Molecular Diagnostics</span></a><ul class="level0 submenu"><li  class="level1 nav-3-1 first parent"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-platform-technologies.html" ><span>MDx Technologies</span></a><ul class="level1 submenu"><li  class="level2 nav-3-1-1 first"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-platform-technologies/instrument.html" ><span>MDx Platform</span></a></li><li  class="level2 nav-3-1-2 last"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-platform-technologies/mdx-kit.html" ><span>MDx Kit</span></a></li></ul></li><li  class="level1 nav-3-2 parent"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits.html" ><span>Human diagnostics kits</span></a><ul class="level1 submenu"><li  class="level2 nav-3-2-1 first"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/pox.html" ><span>Pox</span></a></li><li  class="level2 nav-3-2-2"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/covid-19.html" ><span>COVID-19</span></a></li><li  class="level2 nav-3-2-3"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/aids.html" ><span>HIV/AIDS</span></a></li><li  class="level2 nav-3-2-4"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/c-diag-h-d-k-hepatitis.html" ><span>Hepatitis</span></a></li><li  class="level2 nav-3-2-5"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/c-diag-h-d-k-sexually-transmitted-infections.html" ><span>Sexually Transmitted Infections</span></a></li><li  class="level2 nav-3-2-6"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/c-diag-h-d-k-transplantation-screening.html" ><span>Transplantation Screening</span></a></li><li  class="level2 nav-3-2-7"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/c-diag-h-d-k-respiratory-viruses.html" ><span>Respiratory Pathogens</span></a></li><li  class="level2 nav-3-2-8"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/c-diag-h-d-k-tuberculosis.html" ><span>Tuberculosis</span></a></li><li  class="level2 nav-3-2-9"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/c-diag-h-d-k-gastrointestinal-pathogens.html" ><span>Gastrointestinal Pathogens</span></a></li><li  class="level2 nav-3-2-10"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/c-diag-h-d-k-zika-virus.html" ><span>ZIKA Virus</span></a></li><li  class="level2 nav-3-2-11 last"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-human-diagnositcs-kits/c-diag-h-d-k-genotyping-for-personalized-medicine.html" ><span>Genotyping</span></a></li></ul></li><li  class="level1 nav-3-3 parent"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-mdx-extraction-kit.html" ><span>MDx Extraction Kit</span></a><ul class="level1 submenu"><li  class="level2 nav-3-3-1 first"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-mdx-extraction-kit/c-diag-m-e-k-genomic-dna.html" ><span>Genomic DNA</span></a></li><li  class="level2 nav-3-3-2"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-mdx-extraction-kit/c-diag-m-e-k-viral-dna-rna.html" ><span>Viral DNA/RNA</span></a></li><li  class="level2 nav-3-3-3 last"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-mdx-extraction-kit/cell-free-dna.html" ><span>Cell Free DNA</span></a></li></ul></li><li  class="level1 nav-3-4 last parent"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-mdx-instruments.html" ><span>Instruments</span></a><ul class="level1 submenu"><li  class="level2 nav-3-4-1 first"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-mdx-instruments/mdx-system.html" ><span>MDx System</span></a></li><li  class="level2 nav-3-4-2"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-mdx-instruments/sample-preparation.html" ><span>Sample preparation</span></a></li><li  class="level2 nav-3-4-3"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-mdx-instruments/real-time-pcr.html" ><span>Real-Time PCR</span></a></li><li  class="level2 nav-3-4-4 last"><a href="https://eng.bioneer.com/c-diagnostic/c-diag-mdx-instruments/conventional-pcr.html" ><span>Conventional PCR</span></a></li></ul></li></ul></li><li  class="level0 nav-4 level-top parent"><a href="https://eng.bioneer.com/c-industrial.html"  class="level-top" ><span>Industrial &amp; Applied Science</span></a><ul class="level0 submenu"><li  class="level1 nav-4-1 first parent"><a href="https://eng.bioneer.com/c-industrial/c-ind-v-d.html" ><span>Animal Diseases</span></a><ul class="level1 submenu"><li  class="level2 nav-4-1-1 first"><a href="https://eng.bioneer.com/c-industrial/c-ind-v-d/parasite.html" ><span>Parasite</span></a></li><li  class="level2 nav-4-1-2"><a href="https://eng.bioneer.com/c-industrial/c-ind-v-d/bacteria.html" ><span>Bacteria</span></a></li><li  class="level2 nav-4-1-3 last"><a href="https://eng.bioneer.com/c-industrial/c-ind-v-d/virus.html" ><span>Virus</span></a></li></ul></li><li  class="level1 nav-4-2"><a href="https://eng.bioneer.com/c-industrial/animal-diagnostic-kit.html" ><span>Animal Diagnostics Kit</span></a></li><li  class="level1 nav-4-3"><a href="https://eng.bioneer.com/c-industrial/aquatic-bio-disease.html" ><span>Aquatic Bio Disease</span></a></li><li  class="level1 nav-4-4"><a href="https://eng.bioneer.com/c-industrial/mosquito-borne-disease.html" ><span>Mosquito-Borne Disease</span></a></li><li  class="level1 nav-4-5"><a href="https://eng.bioneer.com/c-industrial/plant-disease.html" ><span>Plant Disease</span></a></li><li  class="level1 nav-4-6 parent"><a href="https://eng.bioneer.com/c-industrial/c-ind-f-d.html" ><span>Food Safety</span></a><ul class="level1 submenu"><li  class="level2 nav-4-6-1 first"><a href="https://eng.bioneer.com/c-industrial/c-ind-f-d/food-pathogen.html" ><span>Food pathogen</span></a></li><li  class="level2 nav-4-6-2"><a href="https://eng.bioneer.com/c-industrial/c-ind-f-d/gmo.html" ><span>GMO</span></a></li><li  class="level2 nav-4-6-3 last"><a href="https://eng.bioneer.com/c-industrial/c-ind-f-d/food-allergen.html" ><span>Food Allergen</span></a></li></ul></li><li  class="level1 nav-4-7 parent"><a href="https://eng.bioneer.com/c-industrial/human-pathogen.html" ><span>Human Pathogen</span></a><ul class="level1 submenu"><li  class="level2 nav-4-7-1 first"><a href="https://eng.bioneer.com/c-industrial/human-pathogen/bacteria.html" ><span>Bacteria</span></a></li><li  class="level2 nav-4-7-2 last"><a href="https://eng.bioneer.com/c-industrial/human-pathogen/yeast.html" ><span>Yeast</span></a></li></ul></li><li  class="level1 nav-4-8 last parent"><a href="https://eng.bioneer.com/c-industrial/nano-bio.html" ><span>Nano-Bio</span></a><ul class="level1 submenu"><li  class="level2 nav-4-8-1 first"><a href="https://eng.bioneer.com/c-industrial/nano-bio/cnt-nano-composite.html" ><span>CNT Nano Composite</span></a></li><li  class="level2 nav-4-8-2"><a href="https://eng.bioneer.com/c-industrial/nano-bio/paste.html" ><span>Paste</span></a></li><li  class="level2 nav-4-8-3"><a href="https://eng.bioneer.com/c-industrial/nano-bio/nano-colloid.html" ><span>Nano Colloid</span></a></li><li  class="level2 nav-4-8-4"><a href="https://eng.bioneer.com/c-industrial/nano-bio/nano-filter.html" ><span>Nano Filter</span></a></li><li  class="level2 nav-4-8-5 last"><a href="https://eng.bioneer.com/c-industrial/nano-bio/thermal-interface-material.html" ><span>Thermal Interface Material</span></a></li></ul></li></ul></li><li  class="level0 nav-5 level-top parent"><a href="https://eng.bioneer.com/c-news-events/c-n-e-notices.html"  class="level-top" ><span>Notice</span></a><ul class="level0 submenu"><li  class="level1 nav-5-1 first"><a href="https://eng.bioneer.com/c-news-events/c-n-e-notices.html" ><span>Notices</span></a></li><li  class="level1 nav-5-2"><a href="https://eng.bioneer.com/c-news-events/c-n-e-events.html" ><span>Events</span></a></li><li  class="level1 nav-5-3"><a href="https://eng.bioneer.com/c-news-events/c-n-e-ls-new-products.html" ><span>Research New Products</span></a></li><li  class="level1 nav-5-4"><a href="https://eng.bioneer.com/c-news-events/c-n-e-md-new-products.html" ><span>MDx New Products</span></a></li><li  class="level1 nav-5-5"><a href="https://eng.bioneer.com/c-news-events/c-n-e-conf.html" ><span>Conferences and Exhibitions</span></a></li><li  class="level1 nav-5-6 last"><a href="https://eng.bioneer.com/c-news-events/research-new-product.html" ><span>Research New Product</span></a></li></ul></li><li  class="level0 nav-6 level-top parent"><a href="https://eng.bioneer.com/c-help/c-help-faqs.html"  class="level-top" ><span>Help</span></a><ul class="level0 submenu"><li  class="level1 nav-6-1 first"><a href="https://eng.bioneer.com/c-help/c-help-faqs.html" ><span>FAQs</span></a></li><li  class="level1 nav-6-2"><a href="https://eng.bioneer.com/c-help/c-help-ordering-shipping.html" ><span>Ordering/Shipping</span></a></li><li  class="level1 nav-6-3"><a href="https://eng.bioneer.com/c-help/c-help-account.html" ><span>Account</span></a></li><li  class="level1 nav-6-4"><a href="https://eng.bioneer.com/c-help/c-help-catalogue-download.html" ><span>Catalog Download</span></a></li><li  class="level1 nav-6-5 last"><a href="https://eng.bioneer.com/c-help/c-help-contact.html" ><span>Contact</span></a></li></ul></li><li  class="level0 nav-7 last level-top"><a href="https://ir.bioneer.co.kr?language=eng" target="blank"  class="level-top" ><span>IR</span></a></li>            </ul>
+</nav>
+
+<script>
+    require([
+        'jquery',
+        'Magento_Ui/js/modal/alert',
+        'mage/menu',
+	'rwdImageMap',
+        'domReady!'
+    ], function ($, alert) {
+        var menu = "#menu";
+        var position = {my: "left top", at: "left bottom"};
+
+        $(menu).menu({
+            position: position,
+            responsive: true,
+            expanded: true,
+            blur: function() {
+                $(this).menu("option", "position", position);
+            },
+            focus: function(e, ui) {
+                if ($(menu).get(0) !== $(ui).get(0).item.parent().get(0)) {
+                    $(this).menu("option", "position", {my: "left top", at: "right top"});
+                }
+            }
+        });
+    });
+</script>
+<style>
+    nav ul>li {
+        /*font-family:'NanumSquareWeb';*/
+        margin-bottom:0px !important;
+    }
+
+    .ui-menu-icon {
+        display: none !important;
+    }
+
+    .navigation .level0 {
+        margin-right:2px !important;
+    }
+
+    .navigation .level0 > .level-top {
+        height: 45px !important;
+        padding-right: 12px !important;
+        margin-right: 10px !important;
+    }
+
+    @media only screen and (max-width: 1099px){
+        .modal-popup.modal-slide {
+            left: 0 !important;
+        }
+    }
+
+    .primary:not(.block-minicart .block-content>.actions>.primary) { /* button 크기 변경*/
+        width: 100% !important;
+    }
+
+    /* mini cart design */
+    .minicart-wrapper .minicart-widgets {
+        display: none !important;
+    }
+    .minicart-items-wrapper {
+        margin: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    /* mini cart design */
+
+    /*Alert Design*/
+    .modal-title { /* pop up 타이틀 */
+        font-weight: 500 !important;
+    }
+    .action-primary.action-accept { /* pop up 버튼 위치 변경 */
+        float: right !important;
+        margin-left: 10px !important;
+    }
+    .action-secondary.action-dismiss { /* pop up 버튼 위치 변경 */
+        float: right !important;
+        margin-left: 10px;
+    }
+    /*Alert Design*/
+
+    /*로그인, 회원가입, 문의하기*/
+    .header.panel > .header.links > .authorization-link:before {
+        content: url("/images/main/login-icon.png");
+    }
+    .header.panel > .header.links .custom-link-contact:before {
+        content: url("/images/main/ask-icon.png");
+    }
+    .header.panel > .header.links .register-link:before {
+        content: url("/images/main/join-icon.png");
+    }
+    /*로그인, 회원가입, 문의하기*/
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+                                            <div class="section-item-title nav-sections-item-title" data-role="collapsible">
+                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.links">Account</a>
+                </div>
+                <div class="section-item-content nav-sections-item-content" id="store.links" data-role="content"><!-- Account links --></div>
+                                            <div class="section-item-title nav-sections-item-title" data-role="collapsible">
+                    <a class="nav-sections-item-switch" data-toggle="switch" href="#store.settings">Settings</a>
+                </div>
+                <div class="section-item-content nav-sections-item-content" id="store.settings" data-role="content">
+<div class="switcher language switcher-language" data-ui-id="language-switcher" id="switcher-language-nav">
+    <strong class="label switcher-label"><span>Language</span></strong>
+    <div class="actions dropdown options switcher-options">
+        <div class="action toggle switcher-trigger" id="switcher-language-trigger-nav">
+            <strong class="view-default">
+                <span>ENGLISH</span>
+            </strong>
+        </div>
+        <ul class="dropdown switcher-dropdown"
+            data-mage-init='{"dropdownDialog":{
+                "appendTo":"#switcher-language-nav > .options",
+                "triggerTarget":"#switcher-language-trigger-nav",
+                "closeOnMouseLeave": false,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":null}}'>
+                                                                            <li class="view-jp switcher-option">
+                        <a href="#" data-post='{"action":"https:\/\/eng.bioneer.com\/?___store=jp","data":{"___store":"jp","uenc":"aHR0cHM6Ly9lbmcuYmlvbmVlci5jb20v"}}'>
+                            JAPANESE</a>
+                    </li>
+                                                                <li class="view-es switcher-option">
+                        <a href="#" data-post='{"action":"https:\/\/eng.bioneer.com\/?___store=es","data":{"___store":"es","uenc":"aHR0cHM6Ly9lbmcuYmlvbmVlci5jb20v"}}'>
+                            SPANISH</a>
+                    </li>
+                                    </ul>
+    </div>
+</div>
+</div>
+                    </div>
+    </div>
+
+<div data-block="minicart" class="minicart-wrapper">
+    <a class="action showcart" href="https://eng.bioneer.com/checkout/cart/"
+       data-bind="scope: 'minicart_content'">
+        <span class="text">My Cart</span>
+        <span class="counter qty empty"
+              data-bind="css: { empty: !!getCartParam('summary_count') == false }, blockLoader: isLoading">
+            <span class="counter-number"><!-- ko text: getCartParam('summary_count') --><!-- /ko --></span>
+            <span class="counter-label">
+            <!-- ko if: getCartParam('summary_count') -->
+                <!-- ko text: getCartParam('summary_count') --><!-- /ko -->
+                <!-- ko i18n: 'items' --><!-- /ko -->
+            <!-- /ko -->
+            </span>
+        </span>
+    </a>
+            <div class="block block-minicart"
+             data-role="dropdownDialog"
+             data-mage-init='{"dropdownDialog":{
+                "appendTo":"[data-block=minicart]",
+                "triggerTarget":".showcart",
+                "timeout": "2000",
+                "closeOnMouseLeave": false,
+                "closeOnEscape": true,
+                "triggerClass":"active",
+                "parentClass":"active",
+                "buttons":[]}}'>
+            <div id="minicart-content-wrapper" data-bind="scope: 'minicart_content'">
+                <!-- ko template: getTemplate() --><!-- /ko -->
+            </div>
+                    </div>
+        <script>
+        window.checkout = {"shoppingCartUrl":"https:\/\/eng.bioneer.com\/checkout\/cart\/","checkoutUrl":"https:\/\/eng.bioneer.com\/checkout\/","updateItemQtyUrl":"https:\/\/eng.bioneer.com\/checkout\/sidebar\/updateItemQty\/","removeItemUrl":"https:\/\/eng.bioneer.com\/checkout\/sidebar\/removeItem\/","imageTemplate":"Magento_Catalog\/product\/image_with_borders","baseUrl":"https:\/\/eng.bioneer.com\/","minicartMaxItemsVisible":5,"websiteId":"1","maxItemsToDisplay":10,"customerLoginUrl":"https:\/\/eng.bioneer.com\/customer\/account\/login\/referer\/aHR0cHM6Ly9lbmcuYmlvbmVlci5jb20v\/","isRedirectRequired":false,"autocomplete":"off","captcha":{"user_login":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/eng.bioneer.com\/captcha\/refresh\/","isRequired":false},"guest_checkout":{"isCaseSensitive":false,"imageHeight":50,"imageSrc":"","refreshUrl":"https:\/\/eng.bioneer.com\/captcha\/refresh\/","isRequired":false}}};
+    </script>
+    <script type="text/x-magento-init">
+    {
+        "[data-block='minicart']": {
+            "Magento_Ui/js/core/app": {"components":{"minicart_content":{"children":{"subtotal.container":{"children":{"subtotal":{"children":{"subtotal.totals":{"config":{"display_cart_subtotal_incl_tax":0,"display_cart_subtotal_excl_tax":1,"template":"Magento_Tax\/checkout\/minicart\/subtotal\/totals"},"children":{"subtotal.totals.msrp":{"component":"Magento_Msrp\/js\/view\/checkout\/minicart\/subtotal\/totals","config":{"displayArea":"minicart-subtotal-hidden","template":"Magento_Msrp\/checkout\/minicart\/subtotal\/totals"}}},"component":"Magento_Tax\/js\/view\/checkout\/minicart\/subtotal\/totals"}},"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/subtotal"}}},"component":"uiComponent","config":{"displayArea":"subtotalContainer"}},"item.renderer":{"component":"uiComponent","config":{"displayArea":"defaultRenderer","template":"Magento_Checkout\/minicart\/item\/default"},"children":{"item.image":{"component":"Magento_Catalog\/js\/view\/image","config":{"template":"Magento_Catalog\/product\/image","displayArea":"itemImage"}},"checkout.cart.item.price.sidebar":{"component":"uiComponent","config":{"template":"Magento_Checkout\/minicart\/item\/price","displayArea":"priceSidebar"}}}},"extra_info":{"component":"uiComponent","config":{"displayArea":"extraInfo"}},"promotion":{"component":"uiComponent","config":{"displayArea":"promotion"}}},"config":{"itemRenderer":{"default":"defaultRenderer","simple":"defaultRenderer","virtual":"defaultRenderer"},"template":"Magento_Checkout\/minicart\/content"},"component":"Magento_Checkout\/js\/view\/minicart"}},"types":[]}        },
+        "*": {
+            "Magento_Ui/js/block-loader": "https://eng.bioneer.com/static/version1776928268/frontend/Bioneer/general/en_US/images/loader-1.gif"
+        }
+    }
+    </script>
+</div>
+
+
+<div class="block block-search">
+    <div class="block block-title"><strong>Search</strong></div>
+    <div class="block block-content">
+        <form class="form minisearch" id="search_mini_form" action="https://eng.bioneer.com/catalogsearch/result/" method="get">
+            <div class="field search">
+                <label class="label" for="search" data-role="minisearch-label">
+                    <span>Search</span>
+                </label>
+                <div class="control">
+                    <input id="search"
+                           data-mage-init='{"quickSearch":{
+                                "formSelector":"#search_mini_form",
+                                "url":"https://eng.bioneer.com/search/ajax/suggest/",
+                                "destinationSelector":"#search_autocomplete"}
+                           }'
+                           type="text"
+                           name="q"
+                           value=""
+                           placeholder="Search store here..."
+                           class="input-text"
+                           maxlength="128"
+                           role="combobox"
+                           aria-haspopup="false"
+                           aria-autocomplete="both"
+                           autocomplete="off"/>
+                    <div id="search_autocomplete" class="search-autocomplete"></div>
+                    <div class="nested">
+    <a class="action advanced" href="https://eng.bioneer.com/catalogsearch/advanced/" data-action="advanced-search">
+        Advanced Search    </a>
+</div>
+                </div>
+            </div>
+            <div class="actions">
+                <button type="submit"
+                        title="Search"
+                        class="action search">
+                    <span>Search</span>
+                    <style>
+                        .action.search {
+                            right: 20px !important;
+                        }
+                    </style>
+                </button>
+                <div>
+                    <a class="action advancedSearch" href="/catalogsearch/advanced/" ><img src="/images/main/advanced_search.jpg" style="margin-top:7px"/></a>
+                    <style>
+                        .action.advancedSearch {
+                            display: inline-block;
+                            background: none;
+                            -moz-box-sizing: content-box;
+                            border: 0;
+                            box-shadow: none;
+                            line-height: inherit;
+                            margin: 0;
+                            padding: 0;
+                            text-decoration: none;
+                            text-shadow: none;
+                            font-weight: 400;
+                            position: absolute;
+                            right: 5px;
+                            top: 0;
+                            z-index: 1;
+                        }
+                    </style>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+<ul class="compare wrapper"><li class="item link compare" data-bind="scope: 'compareProducts'" data-role="compare-products-link">
+    <a class="action compare no-display" title="Compare Products"
+       data-bind="attr: {'href': compareProducts().listUrl}, css: {'no-display': !compareProducts().count}"
+    >
+        Compare Products        <span class="counter qty" data-bind="text: compareProducts().countCaption"></span>
+    </a>
+</li>
+<script type="text/x-magento-init">
+{"[data-role=compare-products-link]": {"Magento_Ui/js/core/app": {"components":{"compareProducts":{"component":"Magento_Catalog\/js\/view\/compare-products"}}}}}
+</script>
+</ul></div></header>
+<script>
+    require([
+        'jquery',
+        'Magento_Ui/js/modal/alert',
+        'rwdImageMap',
+        'domReady!'
+    ], function ($, alert) {
+        // 실행 할 팝업이 존재하면 출력
+        if("0">0) preventCookie();
+
+        function setCookie(name, value, expiredays){
+            var todayDate = new Date();
+            todayDate.setDate (todayDate.getDate() + expiredays);
+            document.cookie = name + "=" + escape(value) + "; path=/; expires=" + todayDate.toGMTString() + ";";
+        }
+
+        function preventCookie() {
+            function getCookie(name){
+                var matches = document.cookie.match(new RegExp("(?:^|; )" + name.replace(/([\.$?*|{}\(\)\[\]\\\/\+^])/g, '\\$1') + "=([^;]*)"
+                ));
+                return matches ? decodeURIComponent(matches[1]) : "";
+            }
+
+            if (getCookie("closecookiebanner") !== "done"){
+                $('#divCookiesBanner').css('display', 'block');
+            }
+
+            /* popup */
+            /* modal Style*/
+            var modalStyle = "<style>";
+            if("0"<=1){
+                if (window.outerWidth > 600) {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 540px;}";
+                } else if (window.outerWidth < 501 && window.outerWidth >= 470) {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 462px;} .popup-img{width: 452px; height: 600px;} .modal-popup .modal-content{padding-left:0 !important; margin: 0 auto;}";
+                } else if (window.outerWidth < 470 && window.outerWidth >= 330) {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 320px;} .popup-img{width: 302px; height: 400px;} .modal-popup .modal-content{padding-left:0 !important; margin: 0 auto;}"; //.modal-content{overflow-y: scroll; height: 75vh !important;}
+                } else {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 280px;} .popup-img{width: 302px; height: 400px;} .modal-popup .modal-content{padding-left:0 !important; margin: 0 auto;}"; //.modal-content{overflow-y: scroll; height: 75vh !important;}
+                }
+            }else if("0"==2){
+                if (window.outerWidth > 1200) {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 1100px;} .popup-img{display: block; margin: 0 0.5% 1% 0.5%; float: left; width: 49%;}";
+                } else if (window.outerWidth <= 1200 && window.outerWidth > 800) {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 90%;} .popup-img{display: block; margin: 0 0.5% 1% 0.5%; float: left; width: 49%;}";
+                } else if (window.outerWidth <= 800 && window.outerWidth > 501) {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 462px;} .popup-img{width: 452px; height: 600px;} .modal-popup .modal-content{padding-left:0 !important; margin: 0 auto;}";
+                } else {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 320px;} .popup-img{width: 302px; height: 400px;} .modal-popup .modal-content{padding-left:0 !important; margin: 0 auto;}";
+                }
+            }else{
+                if (window.outerWidth > 1800) {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 1600px;} .popup-img{display: block; margin: 0 0.5% 1% 0.5%; float: left; width: 32.3%;}"
+                } else if (window.outerWidth <= 1800 && window.outerWidth > 1000) {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 90%;} .popup-img{display: block; margin: 0 0.5% 1% 0.5%; float: left; width: 32.3%;}";
+                } else if (window.outerWidth <= 1000 && window.outerWidth > 501) {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 462px;} .popup-img{width: 452px; height: 600px;} .modal-popup .modal-content{padding-left:0 !important; margin: 0 auto;}";
+                } else {
+                    modalStyle += ".modal-popup.confirm .modal-inner-wrap{width: 320px;} .popup-img{width: 302px; height: 400px;} .modal-popup .modal-content{padding-left:0 !important; margin: 0 auto;}";
+                }
+            }
+            modalStyle += ".modal-popup .modal-header{padding-top:2rem;} ";
+            modalStyle += ".modal-title{display:none;} ";
+            modalStyle += ".modal-popup .action-close{padding: 1rem;} ";
+            modalStyle += ".modal-popup .modal-content{padding-left:0; padding-right:0;} ";
+            modalStyle += ".modal-popup .modal-footer{padding:1rem; margin-left:90%;} ";
+            modalStyle += ".action-primary.action-accept{float:right;}";
+            modalStyle += "</style>";
+
+            conSour = "";
+            if ("0">1 && window.outerWidth <= 1000) {
+                conSour += "<style>";
+                conSour += ".mySlides {display: none;}";
+                conSour += ".dot {cursor: pointer; height: 12px; width: 12px; margin: 0 1rem; background-color: #bbb; border-radius: 50%; display: inline-block; transition: background-color 0.6s ease;}";
+                conSour += ".active {background-color: #717171;}";
+                conSour += ".fade {-webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s;}";
+                conSour += "@-webkit-keyframes fade {from {opacity: .4} to {opacity: 1}}";
+                conSour += "@keyframes fade {from {opacity: .4} to {opacity: 1}}";
+                conSour += "</style>";
+
+                conSour += "<script>";
+                conSour += "var slideIndex = 0;";
+                conSour += "showSlidesAuto();";
+                conSour += "function currentSlide(n) {";
+                conSour += "  var i;";
+                conSour += "  var slides = document.getElementsByClassName('mySlides');";
+                conSour += "  var dots = document.getElementsByClassName('dot');";
+                conSour += "  slideIndex = n;";
+                conSour += "  if (n > slides.length) {slideIndex = 1}";
+                conSour += "  if (n < 1) {slideIndex = slides.length}";
+                conSour += "  for (i = 0; i < slides.length; i++) {";
+                conSour += "      slides[i].style.display = 'none';";
+                conSour += "  }";
+                conSour += "  for (i = 0; i < dots.length; i++) {";
+                conSour += "      dots[i].className = dots[i].className.replace(' active', '');";
+                conSour += "  }";
+                conSour += "  slides[slideIndex-1].style.display = 'block';";
+                conSour += "  dots[slideIndex-1].className += ' active';";
+                conSour += "} ";
+                conSour += "function showSlidesAuto() {";
+                conSour += "  slideIndex++;";
+                conSour += "  currentSlide(slideIndex);";
+                conSour += "  setTimeout(showSlidesAuto, 4000);";
+                conSour += "}";
+                conSour += "<\/script>";
+            }
+
+            /* modal content Source */
+            if ($(location).attr('pathname') === '/' || $(location).attr('pathname') === '/index.php/' || $(location).attr('pathname') === '/c-diagnostic.html' || $(location).attr('pathname') === '/index.php/c-diagnostic.html') {
+                if (getCookie("closepopup") !== "done") {
+                    alert({
+                        title: modalStyle,
+                        content: ""+conSour,
+                        actions: {
+                            always: function () {
+                                if ($("input:checkbox[id='PopupCheck']").is(":checked")) {
+                                    setCookie("closepopup", "done", 1);
+                                }
+                                return false;
+                            }
+                        }
+                    });
+                    $('img[usemap]').rwdImageMaps();
+                }
+            }
+
+        }
+    });
+</script>
+<style>
+    @media only screen and (max-width: 1099px){
+        .modal-popup.modal-slide {
+            left: 0 !important;
+        }
+    }
+    /*Alert Design*/
+    .modal-title {
+        font-weight: 500 !important;
+    }
+    .action-primary.action-accept {
+        float: right !important;
+    }
+    .action-secondary.action-dismiss { /* pop up 버튼 위치 변경 */
+        float: right !important;
+        margin-left: 10px;
+    }
+    /*Alert Design*/
+
+    /* 이미지 + 링크 오버레이 컨테이너 (관리자 content 의 <a> 태그가 이 안에 렌더됨) */
+    .popup-container {
+        position: relative;
+        display: inline-block;
+        line-height: 0;
+        font-size: 0;
+    }
+    /* img 를 block 으로 만들어 inline baseline gap 제거 → 컨테이너 크기 = 이미지 크기 정확히 일치 */
+    .popup-container > .popup-img {
+        display: block;
+    }
+    /* 오버레이 <a class="link-area"> 공통 - 위치/크기는 관리자 content 안 인라인 style 로 지정
+       (예: <a class='link-area' href='...' style='top:64.6%; left:50%; width:7.5%; height:2.3%;'></a>)
+       link-area 클래스가 없는 일반 링크는 이 규칙 적용 안 됨 */
+    .popup-container a.link-area {
+        position: absolute;
+        display: block;
+    }
+    /* 개발 중 위치 확인용 - 필요 시 관리자 content 에서 background 추가 */
+</style>
+<main id="maincontent" class="page-main"><a id="contentarea" tabindex="-1"></a>
+<div class="page-title-wrapper">
+    <h1 class="page-title"
+                >
+        <span class="base" data-ui-id="page-title-wrapper" >Home Page</span>    </h1>
+    </div>
+    
+<div class="page messages"><div data-placeholder="messages"></div>
+<div data-bind="scope: 'messages'">
+    <div data-bind="foreach: { data: cookieMessages, as: 'message' }" class="messages">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text"></div>
+        </div>
+    </div>
+    <div data-bind="foreach: { data: messages().messages, as: 'message' }" class="messages">
+        <div data-bind="attr: {
+            class: 'message-' + message.type + ' ' + message.type + ' message',
+            'data-ui-id': 'message-' + message.type
+        }">
+            <div data-bind="html: message.text"></div>
+        </div>
+    </div>
+</div>
+<script type="text/x-magento-init">
+    {
+        "*": {
+            "Magento_Ui/js/core/app": {
+                "components": {
+                        "messages": {
+                            "component": "Magento_Theme/js/view/messages"
+                        }
+                    }
+                }
+            }
+    }
+</script>
+</div><div class="columns"><div class="column main"><input name="form_key" type="hidden" value="hkIzD6qUkzc1Rt0T" /><div id="authenticationPopup" data-bind="scope:'authenticationPopup'" style="display: none;">
+    <script>
+        window.authenticationPopup = {"autocomplete":"off","customerRegisterUrl":"https:\/\/eng.bioneer.com\/customer\/account\/create\/","customerForgotPasswordUrl":"https:\/\/eng.bioneer.com\/customer\/account\/forgotpassword\/","baseUrl":"https:\/\/eng.bioneer.com\/"};
+    </script>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+    <script type="text/x-magento-init">
+        {
+            "#authenticationPopup": {
+                "Magento_Ui/js/core/app": {"components":{"authenticationPopup":{"component":"Magento_Customer\/js\/view\/authentication-popup","children":{"messages":{"component":"Magento_Ui\/js\/view\/messages","displayArea":"messages"},"captcha":{"component":"Magento_Captcha\/js\/view\/checkout\/loginCaptcha","displayArea":"additional-login-form-fields","formId":"user_login","configSource":"checkout"}}}}}            },
+            "*": {
+                "Magento_Ui/js/block-loader": "https\u003A\u002F\u002Feng.bioneer.com\u002Fstatic\u002Fversion1776928268\u002Ffrontend\u002FBioneer\u002Fgeneral\u002Fen_US\u002Fimages\u002Floader\u002D1.gif"
+            }
+        }
+    </script>
+</div>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/section-config":{"sections":{"stores\/store\/switch":"*","directory\/currency\/switch":"*","customorder\/cart\/add":["cart"],"*":["messages"],"customer\/account\/logout":"*","customer\/account\/loginpost":"*","customer\/account\/createpost":"*","customer\/ajax\/login":["checkout-data","cart"],"catalog\/product_compare\/add":["compare-products"],"catalog\/product_compare\/remove":["compare-products"],"catalog\/product_compare\/clear":["compare-products"],"sales\/guest\/reorder":["cart"],"sales\/order\/reorder":["cart"],"checkout\/cart\/add":["cart"],"checkout\/cart\/delete":["cart"],"checkout\/cart\/updatepost":["cart"],"checkout\/cart\/updateitemoptions":["cart"],"checkout\/cart\/couponpost":["cart"],"checkout\/cart\/estimatepost":["cart"],"checkout\/cart\/estimateupdatepost":["cart"],"checkout\/onepage\/saveorder":["cart","checkout-data","last-ordered-items"],"checkout\/sidebar\/removeitem":["cart"],"checkout\/sidebar\/updateitemqty":["cart"],"rest\/*\/v1\/carts\/*\/payment-information":["cart","checkout-data","last-ordered-items"],"rest\/*\/v1\/guest-carts\/*\/payment-information":["cart","checkout-data"],"rest\/*\/v1\/guest-carts\/*\/selected-payment-method":["cart","checkout-data"],"rest\/*\/v1\/carts\/*\/selected-payment-method":["cart","checkout-data"],"multishipping\/checkout\/overviewpost":["cart"],"authorizenet\/directpost_payment\/place":["cart","checkout-data"],"paypal\/express\/placeorder":["cart","checkout-data"],"paypal\/payflowexpress\/placeorder":["cart","checkout-data"],"review\/product\/post":["review"],"braintree\/paypal\/placeorder":["cart","checkout-data"],"wishlist\/index\/add":["wishlist"],"wishlist\/index\/remove":["wishlist"],"wishlist\/index\/updateitemoptions":["wishlist"],"wishlist\/index\/update":["wishlist"],"wishlist\/index\/cart":["wishlist","cart"],"wishlist\/index\/fromcart":["wishlist","cart"],"wishlist\/index\/allcart":["wishlist","cart"],"wishlist\/shared\/allcart":["wishlist","cart"],"wishlist\/shared\/cart":["cart"]},"clientSideSections":["checkout-data"],"baseUrls":["https:\/\/eng.bioneer.com\/"]}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/customer-data":{"sectionLoadUrl":"https:\/\/eng.bioneer.com\/customer\/section\/load\/","cookieLifeTime":"3600","updateSessionUrl":"https:\/\/eng.bioneer.com\/customer\/account\/updateSession\/"}}}</script>
+<script type="text/x-magento-init">
+{"*":{"Magento_Customer\/js\/invalidation-processor":{"invalidationRules":{"website-rule":{"Magento_Customer\/js\/invalidation-rules\/website-rule":{"scopeConfig":{"websiteId":1}}}}}}}</script>
+<script type="text/x-magento-init">
+    {
+        "body": {
+            "pageCache": {"url":"https:\/\/eng.bioneer.com\/page_cache\/block\/render\/","handles":["default","cms_index_index","cms_page_view","cms_index_index_id_home"],"originalRequest":{"route":"cms","controller":"index","action":"index","uri":"\/"},"versionCookieName":"private_content_version"}        }
+    }
+</script>
+<div id="krMainPage"><!-- ========== HERO ========== -->
+<section class="bn-hero" aria-label="메인 배너">
+<ul id="bnTrack" class="bn-hero-track"><!-- 슬라이드 1 : EcoQprep -->
+<li class="has-band"><img class="bn-bg" src="/images/main/RB_main01-EcoQprep_mRNA_Kit.jpg" alt="EcoQprep mRNA Kit" />
+<div class="bn-hero-tx">
+<div class="bn-inner">
+<div class="bn-copy">
+<h4>EcoQprep&trade; mRNA Kit</h4>
+<h2>High-Purity <span class="hl">mRNA</span> Capture</h2>
+<p>Selectively purifies mRNA using oligo(dT) magnetic beads.</p>
+<img class="bn-icons" src="/images/main/RB_main_text_01_EcoQprep_mRNA_Kit_en.png" alt="10 min Extraction / Magnetic Bead-Based / No Centrifugation / Selective mRNA Purification" /> <a class="bn-more" href="/20-k-3708.html" target="_self">Learn More<i></i></a></div>
+</div>
+</div>
+</li>
+<!-- 슬라이드 2 : ExiCycler V5 -->
+<li class="has-band"><img class="bn-bg" src="/images/main/RB_main02-ExiCyclerV5.jpg" alt="ExiCycler V5" />
+<div class="bn-hero-tx">
+<div class="bn-inner">
+<div class="bn-copy">
+<h4><i>ExiCycler</i>&trade; V5</h4>
+<h2>Simultaneous <span class="hl">6-Target</span> Detection</h2>
+<p>Analyze up to six targets in a single run for more comprehensive results.</p>
+<img class="bn-icons" style="max-width: 85% !important;" src="/images/main/RB_main_text_02_ExiCyclerV5_en.png" alt="True 6-Channel Multiplex / Max. 10℃/sec Ramp Rate / 40-Min Range Run Time / &plusmn;0.3℃ Well-to-Well Uniformity" /> <a class="bn-more" href="/20-a-2065-ruo.html" target="_self">Learn More<i></i></a></div>
+</div>
+</div>
+</li>
+<!-- 슬라이드 3 : ExiProgen -->
+<li class="has-band"><img class="bn-bg" src="/images/main/RB_main03-ExiProgen.jpg" alt="ExiProgen" />
+<div class="bn-hero-tx">
+<div class="bn-inner">
+<div class="bn-copy">
+<h4><i>ExiProgen</i>&trade;</h4>
+<h2><span class="hl">DNA-to-Protein</span> Workflow</h2>
+<p>Automates protein synthesis and purification using a cell-free expression system.</p>
+<img class="bn-icons" src="/images/main/RB_main_text_03_ExiProgen_en.png" alt="Cell-Free Expression / 6 Hours Expression &amp; Purification / Up to 16 Proteins Simultaneously / Affinity-Based Purification" /> <a class="bn-more" href="/20-a-5041.html" target="_self">Learn More<i></i></a></div>
+</div>
+</div>
+</li>
+<!-- 슬라이드 4 : EcoQprep -->
+<li><img class="bn-bg" src="/images/main/RB_main04-EcoQprep_mRNA_Kit.jpg" alt="EcoQprep mRNA Kit" />
+<div class="bn-hero-tx">
+<div class="bn-inner">
+<div class="bn-copy">
+<h4>EcoQprep&trade; mRNA Kit</h4>
+<h2>High-Purity <span class="hl">mRNA</span> Capture</h2>
+<p>Selectively purifies mRNA using oligo(dT) magnetic beads.</p>
+<img class="bn-icons" src="/images/main/RB_main_text_01_EcoQprep_mRNA_Kit_en.png" alt="10 min Extraction / Magnetic Bead-Based / No Centrifugation / Selective mRNA Purification" /> <a class="bn-more" href="/20-k-3708.html" target="_self">Learn More<i></i></a></div>
+</div>
+</div>
+</li>
+<!-- 슬라이드 5 : ExiCycler V5 -->
+<li><img class="bn-bg" src="/images/main/RB_main05-ExiCyclerV5.jpg" alt="ExiCycler V5" />
+<div class="bn-hero-tx">
+<div class="bn-inner">
+<div class="bn-copy">
+<h4><i>ExiCycler</i>&trade; V5</h4>
+<h2>Simultaneous <span class="hl">6-Target</span> Detection</h2>
+<p>Analyze up to six targets in a single run for more comprehensive results.</p>
+<img class="bn-icons bn-icons-exp" style="max-width: 85% !important;" src="/images/main/RB_main_text_02_ExiCyclerV5_en.png" alt="True 6-Channel Multiplex / Max. 10℃/sec Ramp Rate / 40-Min Range Run Time / &plusmn;0.3℃ Well-to-Well Uniformity" /> <a class="bn-more" href="/20-a-2065-ruo.html" target="_self">Learn More<i></i></a></div>
+</div>
+</div>
+</li>
+<!-- 슬라이드 6 : ExiProgen -->
+<li><img class="bn-bg" src="/images/main/RB_main06-ExiProgen.jpg" alt="ExiProgen" />
+<div class="bn-hero-tx">
+<div class="bn-inner">
+<div class="bn-copy">
+<h4><i>ExiProgen</i>&trade;</h4>
+<h2><span class="hl">DNA-to-Protein</span> Workflow</h2>
+<p>Automates protein synthesis and purification using a cell-free expression system.</p>
+<img class="bn-icons" src="/images/main/RB_main_text_03_ExiProgen_en.png" alt="Cell-Free Expression / 6 Hours Expression &amp; Purification / Up to 16 Proteins Simultaneously / Affinity-Based Purification" /> <a class="bn-more" href="/20-a-5041.html" target="_self">Learn More<i></i></a></div>
+</div>
+</div>
+</li>
+</ul>
+<!-- arrows --> <button id="bnPrev" class="bn-arrow bn-prev" type="button" aria-label="prev">&lsaquo;</button> <button id="bnNext" class="bn-arrow bn-next" type="button" aria-label="next">&rsaquo;</button> <!-- dots (JS 생성) -->
+<div id="bnDots" class="bn-hero-dots"></div>
+</section>
+<!-- ========== SERVICE ========== -->
+<section class="bn-service">
+<div class="bn-inner">
+<h3 class="bn-sec-title">SERVICE</h3>
+<ul class="bn-svc-list">
+<li><a href="/c-life-science/service/oligo-synthesis.html"><img src="/images/main/service_olg.png" alt="Oligo" /><span>Oligo<br />(DNA / RNA)</span></a></li>
+<li><a href="/c-life-science/service/sequencing.html"><img src="/images/main/service_sqc.png" alt="Sequencing" /><span>Sanger<br />Sequencing</span></a></li>
+<li><a href="/c-life-science/service/crispr.html"><img src="/images/main/service_crs.png" alt="CRISPR" /><span>CRISPR</span></a></li>
+<li><a href="/gene/gene_bioneer.html"><img src="/images/main/service_gns.png" alt="유전자 합성" /><span>Gene/mRNA<br />Synthesis</span></a></li>
+<li><a href="/c-life-science/service/gene-expression-analysis.html"><img src="/images/main/service_gna.png" alt="" /><span>Gene Expression<br />Analysis</span></a></li>
+<li><a href="/c-life-science/service/protein-synthesis.html"><img src="/images/main/service_pro.png" alt="" /><span>Protein<br />Synthesis</span></a></li>
+</ul>
+</div>
+</section>
+<!-- ========== PRODUCT ========== -->
+<section class="bn-product">
+<div class="bn-inner">
+<h3 class="bn-sec-title">PRODUCT</h3>
+<ul class="bn-prd-grid">
+<li><a href="/gene-amplification"><img src="/images/main/product/gene_mout.png" alt="" /><span>Gene Amplification</span></a></li>
+<li><a href="/c-life-science/sample-preparation.html"><img src="/images/main/product/prep_mout.png" alt="" /><span>Prep &amp; Purification</span></a></li>
+<li><a href="/c-life-science/gene-cloning.html"><img src="/images/main/product/clon_mout.png" alt="" /><span>Cloning</span></a></li>
+<li><a href="/c-life-science/electrophoresis.html"><img src="/images/main/product/ladd_mout.png" alt="" /><span>Ladder &amp; Markers</span></a></li>
+<li><a href="/c-life-science/protein-synthesis-purification.html"><img src="/images/main/product/cell_mout.png" alt="" /><span>Cell-free Protein Expression</span></a></li>
+<li><a href="/yeast-engineering"><img src="/images/main/product/yeng_mout.png" alt="" /><span>Yeast Engineering</span></a></li>
+<li><a href="/buffer-chemicals"><img src="/images/main/product/buff_mout.png" alt="" /><span>Buffer &amp; Chemicals</span></a></li>
+<li><a href="/c-life-science/instrument.html"><img src="/images/main/product/istm_mout.png" alt="" /><span>Instruments</span></a></li>
+<li><a href="/veterinary-diagnostics"><img src="/images/main/product/vdig_mout.png" alt="" /><span>Veterinary Diagnostics</span></a></li>
+<li><a href="/aquatic-diagnostics"><img src="/images/main/product/adig_mout.png" alt="" /><span>Aquatic Diagnostics</span></a></li>
+<li><a href="/food-env-diagnostics"><img src="/images/main/product/food_mout.png" alt="" /><span>Food &amp; Environmental Diagnostics</span></a></li>
+<li><a href="/c-industrial/human-pathogen.html"><img src="/images/main/product/hpth_mout.png" alt="" /><span>Human Pathogens</span></a></li>
+</ul>
+</div>
+</section>
+<!-- ========== EVENT ========== -->
+<section class="bn-event">
+<div class="bn-inner">
+<h3 class="bn-sec-title">EVENT</h3>
+<div class="bn-event-wrap" data-slider=""><input id="bnE1" checked="checked" name="bnE" type="radio" /> <!-- <input id="bnE2" name="bnE" type="radio" /> --> <!-- 이벤트 개수만큼 추가-->
+<ul class="bn-event-track">
+<li><a href="/catalogsearch/result/?q=EcoQprep"><img src="/images/main/RB_event_banner_2026_EcoQprep_mRNA_Kit_en.png" alt="VIP GOLD MEMBERSHIP" /></a></li>
+</ul>
+<!-- <label class="bn-arrow bn-prev" data-target="bnE" data-dir="prev">&lsaquo;</label> --> <!-- <label class="bn-arrow bn-next" data-target="bnE" data-dir="next">&rsaquo;</label> -->
+<div class="bn-event-dots"><label for="bnE1"></label> <!-- <label for="bnE2"></label> --> <!-- 이벤트 개수만큼 추가--></div>
+</div>
+</div>
+</section>
+<!-- ========== NEWS ========== -->
+<section class="bn-news">
+<div class="bn-inner">
+<h3 class="bn-sec-title">NEWS</h3>
+<ul class="bn-news-list">
+            <li><a href="/c-news-events/c-n-e-notices.html"><span>[Notice] Temporary Unavailability due to Network Equipment Work</span><i class="bn-arr"></i></a></li>
+            <li><a href="/c-news-events/c-n-e-notices.html"><span>[Notice] Scheduled Maintenance Notice (March 14th, GMT +9)</span><i class="bn-arr"></i></a></li>
+            <li><a href="/c-news-events/c-n-e-notices.html"><span>[Notice] Korean Thanksgiving Day (3rd ~ 10th Oct., GMT +9)</span><i class="bn-arr"></i></a></li>
+            <li><a href="/c-news-events/c-n-e-notices.html"><span>[Notice] AccuTarget™ Predesigned siRNA Update Notice</span><i class="bn-arr"></i></a></li>
+    </ul>
+</div>
+</section>
+</div>
+<script type="text/javascript" xml="space">// <![CDATA[
+require(["jquery", "domReady!"], function ($) {
+
+  /* ===== EVENT 슬라이더 (라디오 방식 유지) ===== */
+  function move(name, dir) {
+    var $list = $('input[name="' + name + '"]');
+    if (!$list.length) return;
+    var i = $list.index($list.filter(':checked'));
+    if (i < 0) i = 0;
+    var next = dir === 'prev'
+      ? (i - 1 + $list.length) % $list.length
+      : (i + 1) % $list.length;
+    $list.prop('checked', false).eq(next).prop('checked', true);
+  }
+  // data-target 가진 화살표(=EVENT)만 처리
+  $('.bn-arrow[data-target]').on('click', function () {
+    move($(this).data('target'), $(this).data('dir'));
+  });
+  setInterval(function () { move('bnE', 'next'); }, 6000);
+
+  /* ===== HERO 슬라이더 (li 6개 / 인덱스 방식) ===== */
+/* ===== HERO 슬라이더 (무한 루프 : 1→2→3→4→5→6→1→2 …) ===== */
+(function () {
+  var $track = $('#bnTrack');
+  if (!$track.length) return;
+
+  var $slides = $track.children('li');
+  var total = $slides.length;          // 실제 슬라이드 수 (6)
+  if (total < 2) return;
+
+  // 무한 루프용 : 첫 슬라이드 복제해 맨 뒤에 추가
+  $track.append($slides.eq(0).clone(true));
+
+  var idx = 0, timer = null, DELAY = 6000, DUR = 900, locked = false;
+
+  var $dots = $('#bnDots');
+  for (var d = 0; d < total; d++) {
+    $dots.append('<button type="button" data-idx="' + d + '" aria-label="' + (d + 1) + '번 슬라이드"></button>');
+  }
+  var $dotBtns = $dots.children('button');
+
+  function move(n, anim) {
+    $track.css('transition', anim ? 'transform ' + (DUR / 1000) + 's cubic-bezier(.4,0,.15,1)' : 'none');
+    idx = n;
+    $track.css('transform', 'translateX(' + (-idx * 100) + '%)');
+    $dotBtns.removeClass('on').eq(((idx % total) + total) % total).addClass('on');
+  }
+
+  function unlockAfter() {
+    setTimeout(function () {
+      if (idx >= total) {          // 클론 도착 → 진짜 첫 슬라이드로 순간이동
+        move(0, false);
+        $track[0].offsetHeight;    // 강제 리플로우
+      }
+      locked = false;
+    }, DUR);
+  }
+
+  function next() {
+    if (locked) return;
+    locked = true;
+    move(idx + 1, true);
+    unlockAfter();
+  }
+  function prev() {
+    if (locked) return;
+    locked = true;
+    if (idx === 0) {               // 1번에서 이전 → 클론 위치로 순간이동 후 뒤로
+      move(total, false);
+      $track[0].offsetHeight;
+    }
+    move(idx - 1, true);
+    unlockAfter();
+  }
+  function goTo(n) {
+    if (locked || n === idx % total) return;
+    locked = true;
+    move(n, true);
+    unlockAfter();
+  }
+
+  function play() { stop(); timer = setInterval(next, DELAY); }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
+
+  $('#bnNext').on('click', function () { next(); play(); });
+  $('#bnPrev').on('click', function () { prev(); play(); });
+  $dots.on('click', 'button', function () { goTo(+$(this).data('idx')); play(); });
+
+  var $hero = $track.closest('.bn-hero');
+  $hero.on('mouseenter', stop).on('mouseleave', play);
+
+  var sx = 0;
+  $hero.on('touchstart', function (e) { sx = e.originalEvent.touches[0].clientX; stop(); });
+  $hero.on('touchend', function (e) {
+    var dx = e.originalEvent.changedTouches[0].clientX - sx;
+    if (dx < -40) next(); else if (dx > 40) prev();
+    play();
+  });
+
+  move(0, false);
+  play();
+})();
+
+  /* ===== PRODUCT 아이콘 hover (_mout <-> _move) ===== */
+  $('.bn-prd-grid a').on('mouseenter', function () {
+    var $img = $(this).find('img');
+    $img.attr('src', $img.attr('src').replace('_mout.png', '_move.png'));
+  }).on('mouseleave', function () {
+    var $img = $(this).find('img');
+    $img.attr('src', $img.attr('src').replace('_move.png', '_mout.png'));
+  });
+
+});
+// ]]></script>
+<style type="text/css" xml="space"><!--
+#krMainPage {
+  font-family: 'Malgun Gothic', Arial, sans-serif;
+  color: #333;
+  background: #fff;
+}
+#krMainPage *,
+#krMainPage *::before,
+#krMainPage *::after {
+  box-sizing: border-box;
+}
+#krMainPage a {
+  color: inherit;
+  text-decoration: none;
+}
+#krMainPage ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#krMainPage img {
+  max-width: 100%;
+  display: block;
+}
+
+.page-title-wrapper {
+  display: none;
+}
+#maincontent {
+  max-width: none;
+  padding: 0;
+}
+
+/* 공통 가운데 래퍼 */
+.bn-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* 섹션 타이틀 */
+.bn-sec-title {
+  text-align: center;
+  font-family: 'Malgun Gothic', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 30px;
+  letter-spacing: .02em;
+  color: #2d3748;
+  margin: 0 0 36px;
+}
+
+/* ============================================================
+   HERO (신규)
+   ============================================================ */
+.bn-hero {
+  position: relative;
+  overflow: hidden;
+}
+.bn-hero-track {
+  display: flex;
+  transition: transform .9s cubic-bezier(.4, 0, .15, 1);
+}
+.bn-hero-track > li {
+  position: relative;
+  flex: 0 0 100%;
+  height: clamp(430px, 44vw, 600px);
+  overflow: hidden;
+  background: #e9f0ea;
+}
+
+/* 하단 연두색 밴드 (버튼이 놓이는 영역) */
+.bn-hero-track > li.has-band::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 22%;              /* 밴드 높이 - 원하는 만큼 조절 */
+  background: rgba(64, 209, 57, 0.5); /* #40d139 투명도50% */
+  z-index: 1;              /* 배경 이미지(z-index:1) 위, 카피(z-index:2) 아래 */
+  pointer-events: none;
+}
+
+/* 배경 이미지 */
+.bn-hero .bn-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background: #e9f0ea;
+  z-index: 1;
+}
+
+/* 카피 : 위쪽 정렬 + 버튼은 아래(밴드)로 밀어내기 */
+.bn-hero-tx {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  align-items: stretch;
+  text-align: left;
+  color: #20272b;
+  padding: 0;
+}
+.bn-hero-tx .bn-inner {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+}
+.bn-hero-tx .bn-copy {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  padding: clamp(40px, 9vh, 90px) 0 clamp(28px, 5vh, 52px);  
+}
+.bn-hero-tx h4 {
+  margin: 0 0 2vh;
+  font-family: 'Montserrat', 'Paperlogy', sans-serif;
+  font-weight: 900;
+  font-size: clamp(20px, 2.2vw, 30px);
+  color: #4BA948;
+  letter-spacing: .01em;
+}
+.bn-hero-tx h2 {
+  margin: 0;
+  font-family: 'Paperlogy', sans-serif;
+  font-weight: 600;
+  font-size: clamp(30px, 4.3vw, 58px);
+  line-height: 1.18;
+  letter-spacing: -.01em;
+  color: #20272b;
+}
+.bn-hero-tx h2 .hl {
+  color: #4BA948;
+}
+.bn-hero-tx p {
+  margin: 2vh 0 0;
+  font-family: 'NanumSquare', sans-serif;
+  font-weight: 400;
+  font-size: clamp(14px, 1.15vw, 18px);
+  line-height: 1.7;
+  color: #5b6167;
+}
+
+/* 아이콘 스트립 이미지 */
+.bn-hero .bn-icons {
+  /* height: clamp(46px, 5.2vw, 64px); */
+  width: auto;
+  max-width: 100%;
+  margin: 5vh 0 0;
+}
+
+/* Learn More 버튼 */
+.bn-hero .bn-more {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  /* margin-top: auto; */
+  position: absolute;
+  bottom: 11%;
+  left: max(40px, calc((100% - 1440px) / 2 + 40px));  /* 24 → 40 : 왼쪽 여백 더 */
+  transform: translateY(50%);
+
+  padding: 10px 30px;
+  border-radius: 40px;
+  background: #4BA948;
+  color: #fff !important;
+  font-size: 18px;
+  transition: .2s;
+  box-shadow: 0 6px 16px rgba(75, 169, 72, .28);
+}
+.bn-hero .bn-more:hover {
+  background: #3d9a3b;
+  transform: translateY(calc(50% - 2px));   /* 배치(50%) 유지 + 2px만 살짝 위로 */
+}
+.bn-hero .bn-more::after {
+  content: "\203A";
+  margin-left: 8px;
+  font-weight: 700;
+}
+
+/* 화살표 (공통) */
+.bn-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, .15);
+  color: #fff;
+  font-size: 28px;
+  line-height: 1;
+  cursor: pointer;
+  user-select: none;
+  transition: background .2s;
+  z-index: 5;
+}
+.bn-arrow:hover {
+  background: rgba(255, 255, 255, .35);
+}
+.bn-prev {
+  left: 28px;
+}
+.bn-next {
+  right: 28px;
+}
+
+/* HERO 화살표만 밝은 배경용 override */
+.bn-hero > .bn-arrow {
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgba(75, 169, 72, .25);
+  border-radius: 50%;
+  background: #fff;
+  color: #4BA948;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, .14);
+  transition: background .2s, color .2s, box-shadow .2s, transform .2s;
+}
+/* SVG 없이 CSS로 그린 셰브론 (CMS에서 안 지워짐) */
+.bn-hero > .bn-arrow::before {
+  content: "";
+  display: block;
+  width: 8px;
+  height: 8px;
+  border: solid currentColor;
+  border-width: 0 2px 2px 0;
+}
+.bn-hero > .bn-prev::before {
+  transform: translateX(2px) rotate(135deg);
+}
+.bn-hero > .bn-next::before {
+  transform: translateX(-2px) rotate(-45deg);
+}
+.bn-hero > .bn-arrow:hover {
+  background: #4BA948;
+  color: #fff;
+  box-shadow: 0 8px 20px rgba(75, 169, 72, .38);
+  transform: translateY(-50%) scale(1.06);
+}
+
+/* 점 (공통 위치) */
+.bn-hero-dots,
+.bn-event-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 24px;
+  text-align: center;
+  z-index: 4;
+}
+.bn-event-dots label {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .4);
+  margin: 0 4px;
+  cursor: pointer;
+  transition: all .2s;
+}
+/* HERO 점 (JS 생성 button) */
+.bn-hero-dots button {
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin: 0 4px;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(60, 80, 55, .32);
+  cursor: pointer;
+  transition: .25s;
+  vertical-align: middle;
+}
+.bn-hero-dots button.on {
+  width: 22px;
+  border-radius: 5px;
+  background: #4BA948;
+}
+
+/* ============================================================
+   SERVICE (원본)
+   ============================================================ */
+.bn-service {
+  background: #fff;
+  padding: 64px 0 56px;
+}
+.bn-svc-list {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 8px;
+}
+.bn-svc-list a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  padding: 8px 4px;
+}
+.bn-svc-list img {
+  height: 78px;
+  object-fit: contain;
+}
+.bn-svc-list span {
+  font-family: 'Malgun Gothic', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #333A46;
+  text-align: center;
+}
+.bn-svc-list a:hover span {
+  color: #48BB34;
+  font-weight: bold;
+}
+
+/* ============================================================
+   PRODUCT (원본)
+   ============================================================ */
+.bn-product {
+  background: #f2f2f2;
+  padding: 64px 0 72px;
+}
+.bn-prd-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.bn-prd-grid li {
+  display: flex;
+}
+.bn-prd-grid a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 8px;
+  padding: 28px 18px;
+  min-height: 180px;
+  height: 100%;
+  width: 100%;
+  transition: all .2s;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, .03);
+}
+.bn-prd-grid a:hover {
+  background: #48BB34;
+  border-color: #48BB34;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(72, 187, 52, .25);
+}
+.bn-prd-grid img {
+  height: 97px;
+  object-fit: contain;
+  transition: opacity .2s;
+}
+.bn-prd-grid span {
+  font-family: 'Malgun Gothic', Arial, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  color: #48BB34;
+  text-align: center;
+  transition: color .2s;
+  min-height: 2.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bn-prd-grid a:hover span {
+  color: #fff;
+}
+
+/* ============================================================
+   EVENT (원본)
+   ============================================================ */
+.bn-event {
+  background: #eaf5d8;
+  padding: 56px 0 64px;
+}
+.bn-event .bn-inner {
+  max-width: 1440px;
+  padding: 0 24px;
+}
+.bn-event-wrap {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+  width: 100%;
+}
+.bn-event-wrap input[type="radio"] {
+  display: none;
+}
+.bn-event-track {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  transition: transform 1s ease;
+}
+.bn-event-track > li {
+  flex: 0 0 33.3333%;
+  height: 100%;
+}
+.bn-event-track > li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.bn-event-track > li img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+#bnE1:checked ~ .bn-event-track {
+  transform: translateX(0);
+}
+#bnE2:checked ~ .bn-event-track {
+  transform: translateX(-33.3333%);
+}
+#bnE3:checked ~ .bn-event-track {
+  transform: translateX(-66.6667%);
+}
+.bn-event-dots {
+  bottom: 14px;
+}
+#bnE1:checked ~ .bn-event-dots label[for="bnE1"],
+#bnE2:checked ~ .bn-event-dots label[for="bnE2"],
+#bnE3:checked ~ .bn-event-dots label[for="bnE3"] {
+  background: #5fa22b;
+  border-radius: 4px;
+}
+
+/* ============================================================
+   NEWS (원본 그대로 : 단순 목록)
+   ============================================================ */
+.bn-news {
+  background: #fff;
+  padding: 64px 0 72px;
+}
+/* Magento 블록에서 렌더링되는 리스트 전체에 적용 (ul 구조가 어떻든 커버) */
+.bn-news ul {
+  border-top: 1px solid #e6e6e6;
+}
+.bn-news li,
+.bn-news-list li {
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 0;
+  list-style: none;
+}
+.bn-news a,
+.bn-news-list a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 18px;
+  font-family: 'Malgun Gothic', Arial, sans-serif;
+  font-size: 18px;
+  color: #333;
+  text-decoration: none;
+  transition: color .15s;
+}
+.bn-news a:hover,
+.bn-news a:focus,
+.bn-news a:active,
+.bn-news-list a:hover,
+.bn-news-list a:focus,
+.bn-news-list a:active {
+  color: #48BB34 !important;
+  text-decoration: none;
+}
+.bn-news a:hover *,
+.bn-news-list a:hover * {
+  color: #48BB34 !important;
+}
+.bn-news a:hover .bn-arr,
+.bn-news a:focus .bn-arr,
+.bn-news-list a:hover .bn-arr,
+.bn-news-list a:focus .bn-arr {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12'%3E%3Cpath fill='none' stroke='%2348BB34' stroke-width='1.5' d='M1 1l5 5-5 5'/%3E%3C/svg%3E");
+  transform: translateX(-4px);
+}
+.bn-arr {
+  display: inline-block;
+  width: 7px;
+  height: 12px;
+  flex-shrink: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7' height='12' viewBox='0 0 7 12'%3E%3Cpath fill='none' stroke='%23999' stroke-width='1.5' d='M1 1l5 5-5 5'/%3E%3C/svg%3E") no-repeat center / contain;
+  transition: background-image .15s, transform .2s ease;
+}
+/* 이미지2 형태를 위해 : 위젯이 뿌리는 앞쪽 체크박스만 숨김 (신규) */
+.bn-news input[type="checkbox"],
+.bn-news input[type="radio"] {
+  display: none;
+}
+
+/* ============================================================
+   RESPONSIVE
+   ============================================================ */
+@media (max-width: 1100px) {
+  .bn-svc-list span,
+  .bn-prd-grid span {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .bn-hero .bn-more {
+    position: static;      /* 절대배치 해제 */
+    bottom: auto;
+    left: auto;
+    transform: none;
+    margin-top: auto;      /* 카피 흐름 맨 아래로 */
+    align-self: flex-start;
+  }
+  /* hover 도 흐름 배치용으로 되돌림 */
+  .bn-hero .bn-more:hover {
+    transform: translateY(-1px);
+  }
+
+  .bn-svc-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 8px;
+  }
+  .bn-svc-list img {
+    height: 68px;
+  }
+  .bn-prd-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+  .bn-prd-grid a {
+    min-height: 150px;
+    padding: 22px 12px;
+  }
+  .bn-prd-grid img {
+    height: 80px;
+  }
+  /* HERO: 좁은 화면에서 강제 줄바꿈 해제 */
+  .bn-hero-tx h2 br,
+  .bn-hero-tx p br {
+    display: none;
+  }
+  .bn-arrow {
+    width: 36px;
+    height: 36px;
+    font-size: 22px;
+  }
+  .bn-prev,
+  .bn-next {
+    display: none;
+  }
+}
+
+@media (max-width: 590px) {
+  /* HERO 모바일 : li 자동 높이 + 위쪽 정렬 */
+  .bn-hero-track > li {
+    height: auto;
+    min-height: 480px;
+  }
+  .bn-hero-tx {
+    align-items: stretch;
+  }
+  .bn-hero-tx .bn-copy {
+    max-width: none;
+    /* padding: 40px 0 40px; */
+  }
+  /* .bn-hero .bn-more {
+    margin-top: 28px;
+  } */
+  .bn-hero .bn-icons {
+    margin: 2vh 0 0;
+  }
+
+  .bn-sec-title {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 24px;
+  }
+  .bn-svc-list span,
+  .bn-prd-grid span {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .bn-svc-list img {
+    height: 56px;
+  }
+  .bn-prd-grid img {
+    height: 64px;
+  }
+  .bn-service {
+    padding: 40px 0 32px;
+  }
+  .bn-product {
+    padding: 40px 0 44px;
+  }
+  .bn-event {
+    padding: 36px 0 36px;
+  }
+  .bn-event-wrap {
+    aspect-ratio: 16 / 9;
+    max-height: none;
+  }
+  .bn-news {
+    padding: 40px 0 44px;
+  }
+  .bn-inner {
+    padding: 0 16px;
+  }
+
+  /* 배너 폰트 */
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('/media/fonts/Montserrat-Bold.woff2') format('woff2'),
+         url('/media/fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 900;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Paperlogy';
+    src: url('/media/fonts/Paperlogy-6SemiBold.woff2') format('woff2'),
+         url('/media/fonts/Paperlogy-6SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'NanumSquare';
+    src: url('/media/fonts/NanumSquareR.woff2') format('woff2'),
+         url('/media/fonts/NanumSquareR.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+  }
+}
+--></style></div></div></main><footer class="page-footer"><div class="footer content"><div
+    class="field-recaptcha"
+    id="msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container"
+    data-bind="scope:'msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef'"
+>
+    <!-- ko template: getTemplate() --><!-- /ko -->
+</div>
+
+<script type="text/javascript">
+    require(['jquery', 'domReady!'], function ($) {
+        $('#msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container')
+            .appendTo('#newsletter-validate-detail');
+    });
+</script>
+
+<script type="text/x-magento-init">
+{
+    "#msp-recaptcha-58312e2256fb5bcda606e9b5046e00ef-container": {
+        "Magento_Ui/js/core/app": {"components":{"msp-recaptcha":{"component":"MSP_ReCaptcha\/js\/reCaptcha","reCaptchaId":"msp-recaptcha-newsletter","zone":"newsletter","badge":"bottomright","settings":{"size":"invisible"}}}}    }
+}
+</script>
+</div><div class="widget block block-static-block">
+    <!-- Font Awesome 아이콘 -->
+<p></p>
+<style xml="space"><!--
+/* ── 상단 바 ── */
+.JH_footer-topbar {
+  background-color: #f8f8f8;
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+.JH_footer-topbar-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.JH_footer-topbar-links {
+  display: flex;
+  gap: 0;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.JH_footer-topbar-links a {
+  color: #777;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 12px;
+  border-right: 1px solid #bbb;
+  line-height: 1;
+}
+.JH_footer-topbar-links a:first-child {
+  padding-left: 0;
+}
+.JH_footer-topbar-links a:last-child {
+  border-right: none;
+}
+.JH_footer-topbar-links a:hover {
+  font-weight: bold;
+}
+.JH_footer-topbar-right {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.JH_footer-sns {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+.JH_footer-sns a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background-color: #888;
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  transition: background-color 0.2s;
+}
+.JH_footer-sns a:hover {
+  background-color: #C0C4C5;
+}
+.JH_footer-sns a img {
+  width: 17px;
+  height: 17px;
+  object-fit: contain;
+}
+
+/* 패밀리 사이트 드롭다운 */
+.JH_family-dropdown {
+  position: relative;
+}
+.JH_family-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  border: 1px solid #bbb;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #777;
+  cursor: pointer;
+  white-space: nowrap;
+  user-select: none;
+}
+.JH_family-btn:hover {
+  border-color: #555;
+  background: #ebebeb;
+  color: #111;
+}
+.JH_family-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 4px);
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-width: 160px;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.JH_family-menu a {
+  display: block;
+  padding: 9px 14px;
+  font-size: 13px;
+  color: #777;
+  text-decoration: none;
+}
+.JH_family-menu a:hover {
+  font-weight: bold;
+}
+.JH_family-dropdown.open .JH_family-menu {
+  display: block;
+}
+
+.JH_family-btn .JH_family-arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
+  transform: rotate(180deg);
+}
+.JH_family-dropdown.open .JH_family-arrow {
+  transform: rotate(0deg);
+}
+
+/* ── 메인 푸터 ── */
+footer {
+  background-color: #f8f8f8;
+  border-top: 1px solid #ddd;
+  padding: 40px 0 0;
+  font-family: NanumSquare;
+  font-size: 14px;
+  color: #777;
+}
+.JH_footer-wrapper {
+  max-width: 1440px;
+  margin: 0 auto 2em auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: nowrap;
+}
+
+/* 로고 */
+.JH_footer-logo {
+  flex: 0 0 160px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.JH_footer-logo img {
+  max-width: 130px;
+}
+.JH_footer-logo-tagline {
+  font-size: 11px;
+  color: #888;
+  margin-top: 6px;
+  white-space: nowrap;
+}
+
+/* 고객센터 정보 */
+.JH_footer-center {
+  flex: 1 1 400px;
+  min-width: 0;
+}
+.JH_footer-center-label {
+  font-size: 22px;
+  font-weight: bold;
+  color: #777;
+  letter-spacing: 0.05em;
+  margin-bottom: 4px;
+}
+.JH_footer-phone {
+  font-size: 40px;
+  font-weight: bold;
+  color: #777;
+  line-height: 1.1;
+  margin-bottom: 10px;
+}
+/*.JH_footer-hours {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 14px;
+  line-height: 1.8;
+}*/
+/*.JH_footer-hours strong {
+  color: #777;
+}*/
+.JH_footer-address {
+  font-size: 15px;
+  color: #555;
+  line-height: 1.9;
+  white-space: nowrap;
+}
+.JH_footer-address strong {
+  color: #777;
+}
+.JH_footer-corp-info {
+  margin-top: 14px;
+  font-size: 16px;
+  color: #888;
+  line-height: 1.9;
+}
+
+/* 부서별 연락처 버튼 */
+.JH_footer-right {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  padding-top: 10px;
+}
+.JH_dept-btn, .JH_dept-btn:visited {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: 1px solid #bbb;
+  background: transparent;
+  border-radius: 4px;
+  font-size: 18px;
+  color: #777;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s;
+}
+.JH_dept-btn:hover {
+  background: #ebebeb;
+  border-color: #555;
+  color: #111;
+  text-decoration: none;
+}
+
+/* 인증 이미지 */
+.JH_cert-img {
+  text-align: center;
+  padding-top: 20px;
+  background-color: #fff;
+}
+.JH_cert-img img {
+  max-width: 100%;
+}
+
+/* 모바일 */
+.JH_footer-float {
+  display: none;
+  text-align: center;
+  padding: 0 20px 20px;
+}
+.JH_summary {
+  background-color: #777;
+  color: #fff;
+  padding: 10px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  list-style: none;
+  user-select: none;
+  text-align: center;
+}
+.JH_summary:hover {
+  background-color: #8dc63f;
+}
+.JH_details ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  text-align: center;
+}
+.JH_details ul li a {
+  display: block;
+  color: #777;
+  text-decoration: none;
+  padding: 6px 0;
+  font-size: 14px;
+}
+.JH_details ul li a:hover { color: #8dc63f; }
+
+.JH_button-link {
+  display: inline-block;
+  width: 100%;
+  padding: 10px 16px;
+  background-color: #777;
+  color: #fff !important;
+  text-decoration: none;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: center;
+  box-sizing: border-box;
+  transition: background-color 0.3s ease;
+}
+.JH_button-link:hover { background-color: #8dc63f; }
+
+@media (max-width: 1100px) {
+  .JH_footer-address {
+    white-space: normal !important;    /* PC의 nowrap 해제*/
+  }
+}
+
+@media (max-width: 768px) {
+  .JH_footer-topbar-inner { 
+    flex-direction: column; 
+    align-items: flex-start; 
+  }
+  .JH_footer-topbar-right { flex-wrap: wrap; }
+
+  .JH_footer-wrapper { 
+    flex-direction: column; 
+    flex-wrap: wrap;        /* ★ PC의 nowrap 해제 */
+    gap: 20px; 
+  }
+  .JH_footer-logo { flex: unset; }
+
+  .JH_footer-center {
+    width: 100%;            /* 부모 폭에 맞춤 */
+    flex: unset;            /* PC의 flex:1 1 0 해제 */
+  }
+
+  .JH_footer-phone { font-size: 28px; }
+
+  /*.JH_footer-hours,*/
+  .JH_footer-address {
+    font-size: 12px;
+    white-space: normal !important;    /* PC의 nowrap 해제*/
+    word-break: keep-all;   /* 한글 단어 중간 끊김 방지 */
+  }
+
+  .JH_footer-right, .JH_family-dropdown { display: none; }   /* PC 버튼 숨김 */
+  .JH_footer-float { display: block; }
+}
+--></style>
+<!-- ── 상단 바 ── -->
+<div class="JH_footer-topbar">
+<div class="JH_footer-topbar-inner"><!-- 이용안내 링크 -->
+<div class="JH_footer-topbar-links"><a href="https://eng.bioneer.com/privacy/" target="_blank" rel="noopener">Privacy Policy</a><br /><a href="https://eng.bioneer.com/cookie-policy/" target="_blank" rel="noopener">Cookie Policy</a><br /><a href="https://eng.bioneer.com/terms/" target="_blank" rel="noopener">Terms &amp; Conditions</a><br /> <a href="https://eng.bioneer.com/legal/" target="_blank" rel="noopener">Trademarks &amp; Legal Notices</a></div>
+<!-- SNS + 패밀리사이트 -->
+<div class="JH_footer-topbar-right">
+<div class="JH_footer-sns"><a title="LinkedIn" href="https://www.linkedin.com/showcase/112434548/admin/dashboard/" target="_blank" rel="noopener"> <img src="/images/main/footer/link-linkedin.svg" alt="LinkedIn" /> </a> <a title="KakaoTalk" href="https://pf.kakao.com/_CrSxaC" target="_blank" rel="noopener"> <img src="/images/main/footer/link-kakaotalk.svg" alt="KakaoTalk" /> </a> <a title="YouTube" href="https://www.youtube.com/c/BIONEERvideos/featured" target="_blank" rel="noopener"> <img src="/images/main/footer/link-youtube.svg" alt="YouTube" /> </a> <a title="Instagram" href="https://www.instagram.com/bioneer_official/" target="_blank" rel="noopener"> <img src="/images/main/footer/link-instagram.svg" alt="Instagram" /> </a></div>
+<!-- 패밀리 사이트 드롭다운 -->
+<div id="familyDropdown" class="JH_family-dropdown">
+<div class="JH_family-btn">Family Site <span class="JH_family-arrow">▲</span></div>
+<div class="JH_family-menu"><a href="https://www.acebiome.com" target="_blank" rel="noopener">AceBiome</a> <a href="https://synnano.com" target="_blank" rel="noopener">Nano Material</a> <a href="http://www.sirnagen.com" target="_blank" rel="noopener">siRNAgen Therapeutics</a> <a href="https://www.cosmerna.com" target="_blank" rel="noopener">CosmeRNA</a></div>
+</div>
+</div>
+</div>
+</div>
+<!-- 모바일 전용 부서별 연락처 -->
+<div class="JH_footer-float"><details class="JH_details"> <summary class="JH_summary">Family Site</summary>
+<ul>
+<li><a href="https://www.acebiome.com" target="_blank" rel="noopener">AceBiome</a></li>
+<li><a href="https://synnano.com" target="_blank" rel="noopener">Nano Material</a></li>
+<li><a href="http://www.sirnagen.com" target="_blank" rel="noopener">siRNAgen Therapeutics</a></li>
+<li><a href="https://www.cosmerna.com" target="_blank" rel="noopener">CosmeRNA</a></li>
+</ul>
+</details>
+<div style="margin-top: 12px;"><a class="JH_button-link" href="/c-help/c-help-contact.html" target="_self" rel="noopener"> <i class="fa-solid fa-building" style="margin-right: 6px;"></i>Contact </a></div>
+</div>
+<!-- ── 메인 푸터 ── --><footer>
+<div class="JH_footer-wrapper"><!-- 로고 -->
+<div class="JH_footer-logo"><img src="/images/main/BIONEER_logo_main.png" alt="BIONEER 로고" /></div>
+<!-- 고객센터 정보 -->
+<div class="JH_footer-center">
+<div class="JH_footer-center-label">CUSTOMER CENTER</div>
+<div class="JH_footer-phone">1588-9788</div>
+<div class="JH_footer-address">Bioneer Global Center, 71, Techno 2-ro, Yuseong-gu, Daejeon 34013, Republic of Korea &nbsp;|&nbsp; FAX:+82-42-939-6400</div>
+<div class="JH_footer-corp-info">Copyright &copy; BIONEER Corp. All Rights Reserved.</div>
+</div>
+<!-- 부서별 연락처 버튼 (PC) -->
+<div class="JH_footer-right"><a class="JH_dept-btn" href="/c-help/c-help-contact.html" target="_self" rel="noopener"> Contact ▶<i class="fa-solid fa-chevron-right"></i> </a></div>
+</div>
+<!-- 인증 이미지 -->
+<div class="JH_cert-img"><img src="/images/main/foot_certification_EN.png" alt="바이오니아 인증 이미지" /></div>
+</footer>
+<script xml="space">// <![CDATA[
+// 패밀리사이트 버튼 클릭 이벤트
+var btn = document.querySelector('.JH_family-btn');
+if (btn) {
+  btn.addEventListener('click', function(e) {
+    e.stopPropagation();
+    document.getElementById('familyDropdown').classList.toggle('open');
+  });
+}
+// 외부 클릭 시 닫기
+document.addEventListener('click', function(e) {
+  var dd = document.getElementById('familyDropdown');
+  if (dd && !dd.contains(e.target)) {
+    dd.classList.remove('open');
+  }
+});
+// ]]></script></div>
+</footer><small class="copyright">
+    <span>Copyright© 2026 BIONEER CORPORATION. All rights reserved.</span>
+</small>
+</div>    </body>
+</html>

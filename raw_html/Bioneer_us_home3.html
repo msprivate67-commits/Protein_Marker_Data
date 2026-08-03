@@ -1,0 +1,654 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="Keywords" content="" />
+<meta name="Description" content="" />
+<title></title>
+
+<!-- BEGIN: header_js_css -->
+
+<script language="javascript" src="/csi/common.js" type="text/javascript"></script>
+<script language="javascript" src="/csi/dropmenu.js" type="text/javascript"></script>
+<script language="javascript" src="/scripts/util.js" type="text/javascript"></script>
+<script language="javascript" src="/scripts/store.js" type="text/javascript"></script>    
+
+<script language="javascript" src="/scripts/jquery.min.js" type="text/javascript"></script>
+<script language="javascript" src="/scripts/jquery.banner.js" type="text/javascript"></script>    
+
+
+<link id="commoncss" rel="Stylesheet" type="text/css" runat="server" href="https://s3.us-west-1.amazonaws.com/resource.bioneer.us/juan2/style/19c/csi/common.css" />
+<link id="productoverviewcss" rel="Stylesheet" type="text/css" runat="server" href="/csi/productoverview.css" />
+<link rel="stylesheet" href="/csi/dropmenu.css" type="text/css" />
+<link rel="stylesheet" href="/csi/srl.css" type="text/css" />  
+
+<link rel="stylesheet" href="https://s3-us-west-1.amazonaws.com/resource.bioneer.us/juan2/style/19c/pagecat1.css" type="text/css" />  
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+<!-- END: header_js_css .. --> 
+
+<style type="" >
+div.post_action_message { min-height:300px; font-size:20px;}
+</style>
+</head>
+<body class="fullwidth"  onload="" >
+<form name="frmMy" method="get" action="/Search.aspx" id="frmMy">
+<div>
+<input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="" />
+<input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTc0NzM0NjUzMw8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmDxYCHgZhY3Rpb24FDC9TZWFyY2guYXNweBYCZg9kFgJmDw8WBB4EVGV4dAURV2VsY29tZTogQ3VzdG9tZXIeC05hdmlnYXRlVXJsZWRkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBR5Ub3BNZW51MSRNYWluTG9naW5TdGF0dXMkY3RsMDEFHlRvcE1lbnUxJE1haW5Mb2dpblN0YXR1cyRjdGwwM+v+4jII/vTqgCRv/u0OoGvB/xQEG0UQ6G0XICNjQaFn" />
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+var theForm = document.forms['frmMy'];
+if (!theForm) {
+    theForm = document.frmMy;
+}
+function __doPostBack(eventTarget, eventArgument) {
+    if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+        theForm.__EVENTTARGET.value = eventTarget;
+        theForm.__EVENTARGUMENT.value = eventArgument;
+        theForm.submit();
+    }
+}
+//]]>
+</script>
+
+
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="24B4F1ED" />
+	<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAIPN692OqpUZjyUSON0yZFhllUn1rIBf5xfYXHSKapIkYmwsMaE+O5un7o31xXmC/Ji11/2G4tmHLXePVEnfDn7" />
+</div>
+
+<input type="hidden" name="MY_route" value="/w/home" />
+<input type="hidden" name="MY_AspxAutoDetectCookieSupport" value="1" />
+ 
+
+
+<script type="text/javascript">
+
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-17352846-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+</script>
+<script type="text/javascript" language="javascript">
+    String.prototype.trim = function() {
+        return this.replace(/^\s\s*/, '').replace(/\s\s*$/, '');
+    }
+    function TopSearchKw() {
+        var sTopSearchKeyword = document.getElementById("TopSearchKeyword");
+        if (sTopSearchKeyword.value.replace(/ /g, "") == "") {
+            alert("Please click search button after input keywords.");
+            sTopSearchKeyword.value = "";
+            sTopSearchKeyword.focus();
+            return false;
+        }
+        else if (sTopSearchKeyword.value.trim().length < 2) {
+            alert("Please enter at least 2 letters.");
+            sTopSearchKeyword.focus();
+            return false;
+        }
+        else {
+            window.location = "/Search.aspx?Type=&Search=" + sTopSearchKeyword.value;
+        }
+
+    }
+</script>
+<div id="HeaderWrapper">
+	<div id="Logo"><a href="/page/w/home"><img src="/images/logo.png" border="0" alt="" /></a>
+	<!-- 111219 겨울용로고 <a href="/home.aspx"><img src="/images/logo_blank.gif" border="0" alt="" /></a> --></div>
+	<div id="Right">
+		<div id="Greeting">
+             <a id="TopMenu1_EditProfileHyperLink" disabled="disabled">Welcome: Customer</a> 
+        </div>
+        
+		<div id="EMenu">		
+            <a id="TopMenu1_MainLoginStatus" href="javascript:__doPostBack(&#39;TopMenu1$MainLoginStatus$ctl02&#39;,&#39;&#39;)">LOGIN</a>			
+			&nbsp;&nbsp;I&nbsp;&nbsp;
+			<a href="/myaccount/editcontactinfo.aspx" >MY ACCOUNT</a> &nbsp;&nbsp;I&nbsp;&nbsp;
+			<a href="/products/products/quickordering.aspx" >QUICK ORDER</a> &nbsp;&nbsp;I&nbsp;&nbsp;
+			<a href="/store/shoppingcart.aspx" ><img src="/images/products/cart.png"; alt=""; border="0px";/>CART </a>
+		</div>
+ 
+        <div id="right_banner">
+            <div id="rb_txt">
+            <!--
+<a href="/page/promotions/2018/k9-b3g1?ref4=rsb" ><img src="https://s3-us-west-1.amazonaws.com/resource.bioneer.us/juan2/page/promotions/2018/k9-b3g1/web-rightside-banner.png" border="0" ></a>
+
+<div style="width:120px; height:100px;  color:white; background-color:DodgerBlue; font-size:15px; font-weight:bold; padding:5px; text-align:center;">
+	<span style="font-weight:normal;" >Visit</span><br>
+	Booth# 967<br> 
+	AACC<br> 
+	<span style="font-weight:normal;" >Chicago<br> 
+	(July 26-28)</span>
+</div>
+
+<div style="width:118px; height:70px; margin-top: 5px; color:white; border:1px solid DodgerBlue; font-size:15px; font-weight:bold; padding:5px; text-align:center;">
+	<a href="/pagecat1/molecular_diagnostics/bisulfite-conversion" style="color:blue; font-weight:normal;" >Bisulfite Conversion</a>
+	<hr>
+	<a href="/app/inquire/?regarding_to=Bisulfite Conversion" style="color:red; font-weight:bold;" >Inquire</a>
+</div>
+-->
+            </div>
+        </div>
+        <!-- 130830 오른쪽배너 c -->
+        <!--
+        <div id="right_banner">
+            <div id="rb_txt">
+               
+                <a href="#" onclick="window.open('/contact/ExiProgenGuideDown.aspx','new','resizable=no width=750 height=610');return false"><img src="/images/com/banner_exi.jpg" border="0" alt="" /></a>
+                
+                <br /><br />
+                <div style="border:1px solid silver; width:115px; text-align:left; padding-top:5px; padding-left:4px; padding-bottom:5px;font-size:12px;" >
+                <a href="/support/references.aspx" style="color:green;" ><b>Publications</b> Citing<br />Bioneer Products &#187;</a><br />
+                <br />
+                <a href="http://scholar.google.com/scholar?hl=en&q=Accupower&btnG=&as_sdt=1%2C5&as_sdtp=" style="color:blue;" target="_blank">Find more of<br /> Bioneer through<br /> Google Scholar &#187;</a>
+                </div>
+            </div>
+        </div>
+        -->
+		
+        <div id="searchBox">
+            <table width="150px" border="0"cellpadding="3" cellspacing="0" >
+            <tr >    
+                <td class="search" valign="middle" >
+                    <img id="imgTopSearch" style="float:left" name="imgTopSearch" src="/images/products/search.png" onclick="return TopSearchKw();" alt="" border="0" />
+                    <input id="TopSearchKeyword" name="Search" type="text" class="inputtext" onkeypress="if (event.keyCode == 13) {TopSearchKw();}" />
+                </td>
+              
+            </tr>
+            <tr>
+                <td class="Countryspan"  width="150px">United States&nbsp;<a href="http://www.bioneer.com">[Change Country]</a></td>
+            </tr>
+            </table>
+        </div>
+	</div>
+</div>
+
+<div id="BodyWrapper">
+    
+    <!-- BEGIN: MainMenu -->
+	<div id="MainNav">
+		<div id="MainNavMenubar">
+		<ul>
+			<li>
+				<a href="/page/w/home" onmouseover="ddm_hide();MM_swapImage('iMM6','');" onmouseout="MM_swapImgRestore();">Home</a>  
+			</li>
+			<li>
+				<a href="/us/home/support/about/history" onmouseover="ddm_show(this, 'oM2', 'iMM7', '/images/products/mm_about_1.gif');" onmouseout="ddm_closetime();">About</a>
+				<div class="singlecolumn1" id="oM2" onmouseover="ddm_cancelclosetime();" onmouseout="ddm_closetime();">
+					<a href="/us/home/support/about/history">History</a>
+					<a href="/us/home/support/about/mission">Mission</a>
+					<!--
+					<a href="/about/partners.aspx">Partners</a>
+					<a href="/about/careers.aspx">Careers</a>
+					-->
+				</div>
+			</li>
+			<li>
+				<a href="/page/w/products" onmouseover="ddm_show(this, 'oM3', 'iMM6', '/images/products/product_hover.gif');" onmouseout="ddm_closetime();">Products</a>
+				<div class="doublecolumn" id="oM3" onmouseover="ddm_cancelclosetime();" onmouseout="ddm_closetime();">
+					<div class="column1">
+						<a href="#" class="MenuItemHeader">Products &amp; Services</a>
+						<!-- <a href="/pagecat1/diagnostic/AccuPower-SARS-CoV2-Multiplex-RealTime-RT-PCR-Kit">Molecular Diagnostics</a>  -->
+						<a href="/pagecat1/dnarna_amplification/amplification">DNA/RNA Amplification</a>
+						<a href="/products/accuprep/accuprep-overview.aspx">DNA/RNA Prep</a>
+						<a href="/products/DNARNASynthesisReagents/phosphoramiditesoverview.aspx">DNA/RNA Synthesis Reagents</a>
+						<a href="/products/enzyme/enzymeoverview.aspx">Enzymes</a>
+						<a href="/products/Protein/Protein-overview.aspx">Protein expression and purification</a>
+						<a href="/products/GeneSynthesis/geneoverview.aspx">Gene Synthesis Service</a>
+						<a href="/us/home/life_science_research/electrophoresis">Ladders &amp; Markers</a>
+						<a href="/products/Oligonucleotides/oligooverview.aspx">Oligonucleotides</a>
+						<a href="/products/rnai/rnaioverview.aspx">RNAi</a>
+						<a href="/us/catalog/s_pombe_haploid_deletion_mutant_set_ver_6">S.pombe knock-out library</a>
+						<a href="/products/instrument/overview.aspx">Instruments</a>
+						<a href="/us/home/life_science_research/plastic_consumables">Consumables</a>
+						<a href="/products/GPScreen/GPScreen-overview.aspx">Drug Target & Toxicity Identification Services</a>
+					</div>
+					<div class="column2">
+						<a href="/products/products/accubucks.aspx" class="MenuItemHeader">Accubucks</a>
+						<!--
+						<div class="clear"></div>					
+						<a href="/products/products/newproducts.aspx" class="MenuItemHeader">What's new</a>
+						<a href="/products/products/newproducts.aspx">New products</a>
+						<a href="/page/promotions/">Promotions</a>
+						-->
+						<div class="clear"></div>
+						<a href="/products/products/samples.aspx" class="MenuItemHeader">Qualify for a sample</a>
+						<div class="clear"></div>
+						<a href="/products/products/ordering.aspx" class="MenuItemHeader">Ordering</a>
+						<a href="/products/products/ordering.aspx">How to order</a>
+						<a href="/products/products/quickordering.aspx">Quick order</a>Quick order</a>
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="/us/home/industrial_applied_science/animal_diseases" onmouseover="ddm_show(this, 'oM7', 'iMM9', '/images/products/supporthover.gif');" onmouseout="ddm_closetime();">Industrial & Applied Science</a>
+				<div class="singlecolumn2" id="oM7" onmouseover="ddm_cancelclosetime();" onmouseout="ddm_closetime();">
+					<div class="column1">
+						<a href="/us/home/industrial_applied_science/animal_diseases"  class="MenuItemHeader">Animal Diseases</a>
+						<a href="/us/home/industrial_applied_science/animal_diseases/parasite" >Parasite</a>
+						<a href="/us/home/industrial_applied_science/animal_diseases/bacteria" >Bacteria</a>
+						<a href="/us/home/industrial_applied_science/animal_diseases/virus" >Virus</a>												
+
+						<div class="clear"></div>
+						<a href="/us/home/industrial_applied_science/mosquito_borne_disease"  class="MenuItemHeader" >Mosquito-Borne Disease</a>
+						
+						<div class="clear"></div>
+						<a href="/us/home/industrial_applied_science/plant_disease"  class="
+						MenuItemHeader" >Plant Disease</a>
+
+						<div class="clear"></div>
+						<a href="/us/home/industrial_applied_science/food_safety"  class="MenuItemHeader" >Food Safety</a>
+						<a href="/us/home/industrial_applied_science/food_safety/food_pathogen" >Food pathogen</a>
+						<a href="/us/home/industrial_applied_science/food_safety/gmo" >GMO</a>
+						<a href="/us/home/industrial_applied_science/food_safety/food_allergen" >Food Allergen</a>
+
+
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="/us/home/support" onmouseover="ddm_show(this, 'oM4', 'iMM9', '/images/products/supporthover.gif');" onmouseout="ddm_closetime();">Support</a>
+				<div class="singlecolumn1" id="oM4" onmouseover="ddm_cancelclosetime();" onmouseout="ddm_closetime();">
+					<div class="column1">
+						<a href="/us/home/support/ordering">Ordering</a>
+						<a href="/us/home/support/terms_conditions">Terms</a>
+						<a href="/us/home/support/shipping_information">Shipping</a>
+						<!-- 
+						<a href="/support/literature.aspx">Literature</a>
+						<a href="/support/catalogue.aspx">Catalogue(PDF)</a>
+						<a href="/support/msds.aspx">MSDS</a>
+						<a href="/support/protocols.aspx">Protocols</a>
+						<a href="/support/faqs.aspx">FAQs</a>
+						<a href="/support/references.aspx">References</a>
+						-->
+					</div>
+				</div>
+			</li>
+			<li>
+				<a href="/NewsandEvents/newproducts.aspx" onmouseover="ddm_show(this, 'oM5', 'iMM10', '/images/products/newshover.gif');" onmouseout="ddm_closetime();">News & Events</a>
+				<div class="singlecolumn3" id="oM5" onmouseover="ddm_cancelclosetime();" onmouseout="ddm_closetime();">
+					<a href="/NewsandEvents/newproducts.aspx">New products</a>
+					<a href="/NewsandEvents/news.aspx">News</a>
+					<a href="/NewsandEvents/events.aspx">Events</a>
+					<!-- <a href="/NewsandEvents/newsevents.aspx">News &amp; Events</a> -->
+					<a href="/NewsandEvents/subscriptions.aspx">Subscriptions</a>
+				</div>
+			</li>
+			<li>
+			 <a href="/us/home/support/about/contact" onmouseover="ddm_show(this, 'oM6', 'iMM11', '/images/products/contacthover.gif');" onmouseout="ddm_closetime();">Contact</a>
+				<div class="singlecolumn1" id="oM6" onmouseover="ddm_cancelclosetime();" onmouseout="ddm_closetime();">
+					<a href="/us/home/support/about/contact">Contact</a>
+					<a href="/us/home/support/about/directions">Directions</a>
+					<a href="/us/home/support/feedback">Feedback</a>
+					<!-- <a href="/contact/literature.aspx">Literature</a> -->
+					<!-- <a href="/contact/SalesRepLocator.aspx">Sales Rep Locator</a> -->
+				</div>
+			</li>
+		  </ul>	
+		</div>
+	</div>
+<!-- END: MainMenu -->	 
+
+    
+    <div id="srlheather"> 
+        <!--
+		<div id="SRL_Wrapper">
+			<input type="text" class="SelectionInput" maxlength="24" onclick="srl_showselection(this);" readonly="readonly" />
+			<br />
+			<div id="SRL_States" onmouseover="srl_clearhide();" onmouseout="srl_delayhide();">
+				<script language="javascript" type="text/javascript">document.write(sList)</script>
+			</div>
+		</div>
+        -->
+        <div id="Breadcrumb"> <!--
+<table border="0" width="100%" ><tr>
+	<td><a href="/home.aspx">Home</a> > <a href="/page/w/contact/contact"> Contact</a> > Contact </td>
+	<td align="right"><i class="fas fa-phone"></i> 1-877-264-4300</td>
+</tr></table>
+--></div>
+	</div>
+    
+    <div id="MainContents">
+
+    <div id="MainSide">
+        <!-- BEGIN: home_side_menu -->
+<ul class="SideMenu"><li class="SideGroupHeader0">Products and Services</li></ul>
+<ul class="SideMenu">
+    <!-- <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/pagecat1/diagnostic/AccuPower-SARS-CoV-2-Variants-ID2-Kit">&nbsp;Molecular Diagnostics</a></li>  -->
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/pagecat1/dnarna_amplification/amplification">&nbsp;DNA/RNA Amplification</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/products/accuprep/accuprep-overview.aspx">&nbsp;DNA/RNA Prep</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/products/DNARNASynthesisReagents/phosphoramiditesoverview.aspx">&nbsp;DNA/RNA Synthesis Reagents</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/products/enzyme/enzymeoverview.aspx">&nbsp;Enzymes</a></li><li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/products/Protein/Protein-overview.aspx">&nbsp;Protein expression and<br />&nbsp;&nbsp;&nbsp;purification</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/products/GeneSynthesis/geneoverview.aspx">&nbsp;Gene Synthesis Service</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/us/home/life_science_research/electrophoresis">&nbsp;Ladders and Markers</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/products/Oligonucleotides/oligooverview.aspx">&nbsp;Oligonucleotides</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/products/rnai/rnaioverview.aspx">&nbsp;RNAi</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/us/catalog/s_pombe_haploid_deletion_mutant_set_ver_6">&nbsp;S.pombe knock-out library</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/products/instrument/overview.aspx">&nbsp;Instruments</a></li><li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/us/home/life_science_research/plastic_consumables">&nbsp;Consumables</a></li>
+    <li class="SideGroupItem0"><img src="/images/products/subarrow.png "><a href="/products/GPScreen/GPScreen-overview.aspx">&nbsp;Drug Target & Toxicity<br/>&nbsp;&nbsp;&nbsp;Identification Service</a></li>
+</ul>
+<ul class="SideMenu"><li class="SideGroupHeader0">Resources</li></ul>
+<ul class="SideMenu">
+    <li class="SideGroupItem0"><i class="fas fa-caret-right"></i> <a href="support/literature.aspx">Product literature</a></li>
+    <li class="SideGroupItem0"><i class="fas fa-caret-right"></i> <a href="support/msds.aspx">MSDS</a></li>
+    <li class="SideGroupItem0"><i class="fas fa-caret-right"></i> <a href="support/protocols.aspx">Protocols</a></li>
+    <li class="SideGroupItem0"><i class="fas fa-caret-right"></i> <a href="support/faqs.aspx">FAQs</a></li>
+    <li class="SideGroupItem0"><i class="fas fa-caret-right"></i> <a href="support/references.aspx">Reference papers</a></li>
+</ul>
+<ul class="SideMenu"><li class="SideGroupHeader">Contact Us</li></ul>
+<br />
+<table class="PromoImage" width="200px">
+    <tr><td align="left">Bioneer, Inc.</td></tr>
+    <tr><td align="left">155 Filbert St, Ste. 216</td></tr>
+    <tr><td align="left">Oakland, CA 94607</td></tr>
+    <tr><td align="left"><i class="fas fa-phone"></i> (510) 865-0330</td></tr>
+    <tr><td align="left"><i class="fas fa-envelope"></i> <a href="mailto:order.usa@bioneer.us.com">order.usa@bioneer.us.com</a></td></tr>
+    <tr><td align="left" style="font-size:24px; " >
+    <a href="http://www.facebook.com/pages/Bioneer/257558237634032" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/#!/Bioneer_Inc" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="http://www.youtube.com/user/BioneerTV" target="_blank"><i class="fab fa-youtube"></i></a></td></tr>
+</table>
+<!-- END: home_side_menu -->
+	</div>
+        
+	<div id="MainArea">
+
+        
+        <div id="ImageBox">
+		</div>
+        <!-- BEGIN: PromotionBanner -->
+<!-- END: PromotionBanner -->
+
+		<!-- div class="tabbody" style="min-height:400px; margin-bottom:5px;" -->
+
+        <!-- BEGIN: home_main_area -->
+<div class="tabbody0">
+
+    <!-- BEGIN: carousel (home_main_area) -->
+<style type="text/css">
+#image_list_3 .clsBannerScreen {overflow: hidden; position: relative; old_height:206px; height:254px; width:663px; cursor:pointer; clear:both; }
+#image_list_3 .clsBannerScreen .images {position:absolute; display:none; margin:0; padding:0;}
+#image_list_3 ul li {list-style:none; margin:0; padding:0; }
+#image_list_3 .clsBannerButton {width:100px; cursor:pointer; padding-left:600px;}
+#image_list_3 .clsBannerButton li {width:12px; float:left; padding:0; margin-right:3px;}
+
+*:first-child+html #image_list_3 {overflow:hidden; position:absolute;}
+*:first-child+html #image_list_3 .clsBannerScreen {position: relative; height:254px; width:663px; cursor:pointer; clear:both; }
+*:first-child+html .clsBannerButton {padding:10px 17px -20px 620px; margin:0;}
+*:first-child+html .featured {margin:225px 0 0 0;}
+</style>    
+
+    <div id="image_list_3">
+        <div class="clsBannerScreen">
+            <div><a href="/us/catalog/ecoqprep_mrna_kit"><img src="https://s3.us-west-1.amazonaws.com/resource.bioneer.us/juan2/page/w/home/2026/0112/banner2_ecoQPrep2.png" border="0" alt=""/></a></div>
+            <div><a href="/us/catalog/dualed_bluewhite_transilluminator"><img src="https://s3-us-west-1.amazonaws.com/resource.bioneer.us/juan2/page/w/home/2025/DUALED/banner2_DUALED-Transilluminator.png" border="0" alt=""/></a></div>
+            <div><a href="/us/catalog/ecoqprep_mrna_kit"><img src="https://s3.us-west-1.amazonaws.com/resource.bioneer.us/juan2/page/w/home/2026/0112/banner2_ecoQPrep2.png" border="0" alt=""/></a></div>
+            <div><a href="/us/catalog/dualed_bluewhite_transilluminator"><img src="https://s3-us-west-1.amazonaws.com/resource.bioneer.us/juan2/page/w/home/2025/DUALED/banner2_DUALED-Transilluminator.png" border="0" alt=""/></a></div>
+        </div>
+    <ul class="clsBannerButton" id="label_3">
+        <li><img src="/images/btn_p_on.gif" oversrc="/images/btn_p_on.gif" outsrc="/images/btn_p.gif" /></li>
+        <li><img src="/images/btn_p.gif" oversrc="/images/btn_p_on.gif" outsrc="/images/btn_p.gif" /></li>
+        <li><img src="/images/btn_p.gif" oversrc="/images/btn_p_on.gif" outsrc="/images/btn_p.gif" /></li>
+        <li><img src="/images/btn_p.gif" oversrc="/images/btn_p_on.gif" outsrc="/images/btn_p.gif" /></li>
+    </ul>
+    </div>
+
+    <br /><br /><br />
+    <!-- END: carousel (home_main_area) -->
+
+    <!-- -->
+
+    <!-- -->
+
+
+    <!-- BEGIN: EcoQprep  -->
+<style >
+td.box_EcoQprep {width:25%; padding:10px;  background-color:YellowGreen; height:100px; cursor:pointer; 
+    border:1px solid #cccccc; border-radius: 10px;
+    }
+td.box_EcoQprep .s1_description {  font-size:16px;  height:50px; }
+td.box_EcoQprep  .s1_ico {text-align: center;  border: none; height:50px; }
+</style>     
+    <div class="featured">EcoQprep Products</div>
+    <table width="662"  style="background-color:#ffffff; border-spacing: 10px;" >
+    <tr>
+        <td valign="top" class="box_EcoQprep" onClick="window.location.href='/us/catalog/ecoqprep_mrna_kit';" >
+            <table  >
+                <tr>
+                <td valign="top" class="s1_description"  ><b>EcoQprep</b><br>mRNA Kit </td>
+                <tr>
+                <tr>
+                <td class="s1_ico">
+                    <a href="/us/catalog/ecoqprep_mrna_kit" ><img src="/s3file/images/btn_home_25a/icons/mRNAKit.png" ></a>
+                </td>
+                </tr>
+            </table>
+        </td>        
+        <td valign="top" class="box_EcoQprep" onClick="window.location.href='/us/catalog/ecoqprep_genomic_dna_kit';" >
+            <table  >
+                <tr>
+                <td valign="top" class="s1_description" ><b>EcoQprep</b><br> Genomic DNA Kit </td>
+                <tr>
+                <tr>
+                <td class="s1_ico">
+                    <a href="/us/catalog/ecoqprep_genomic_dna_kit" ><img src="/s3file/images/btn_home_25a/icons/GenomicDNA.png"  ></a>
+                </td>
+                </tr>
+            </table>
+        </td>
+        <td valign="top" class="box_EcoQprep" onClick="window.location.href='/us/catalog/ecoqprep_plant_genomic_dna_kit';" >
+            <table  >
+                <tr>
+                <td valign="top" class="s1_description"  ><b>EcoQprep</b><br>Plant Genomic DNA Kit </td>
+                <tr>
+                <tr>
+                <td class="s1_ico">
+                    <a href="/us/catalog/ecoqprep_plant_genomic_dna_kit" ><img src="/s3file/images/btn_home_25a/icons/EcoQprep-Plant.png"  ></a>
+                </td>
+                </tr>
+            </table>
+        </td>
+        <td valign="top" class="box_EcoQprep" onClick="window.location.href='/us/catalog/ecoqprep_universal_rna_kit';" >
+            <table  >
+                <tr>
+                <td valign="top" class="s1_description" ><b>EcoQprep</b><br>Universal RNA Kit  </td>
+                <tr>
+                <tr>
+                <td class="s1_ico">
+                    <a href="/us/catalog/ecoqprep_universal_rna_kit" ><img src="/s3file/images/btn_home_25a/icons/UniversalRNA.png"  ></a>
+                </td>
+                </tr>
+            </table>
+        </td>        
+    </tr>
+    </table>       
+    <!-- END: EcoQprep  -->
+   
+
+<br><br>
+
+
+
+<style >
+td.box_6542 {width:33%; padding:10px;  background-color:#cccccc; }
+table.tbl_6542_s1 {width:100%; }
+td.td_6542_s1_description {  font-size:24px; }
+td.td_6542_s1_link { padding-bottom:10px; font-size:10px;  }
+td.td_6542_s1_ico {text-align: right; font-size:13px; }
+</style>
+<br><br>
+    <div class="featured">Services</div>
+    <table width="662"  style="background-color:white; border-spacing: 10px;" >
+    <tr>
+        <td class="box_6542" >
+            <table class="tbl_6542_s1" >
+                <tr>
+                <td class="td_6542_s1_description" colspan="2" >Oligo<br>Synthesis</td>
+                <tr>
+                <tr>
+                <td class="td_6542_s1_link"  valign="bottom">
+                    <a href="/products/Oligonucleotides/oligooverview.aspx" >Detail <i class="fas fa-angle-right"></i></a>
+                </td>
+                <td class="td_6542_s1_ico"><img src="/s3file/images/btn_home_19a/ico-cccccc/Oligo.png" ></td>
+                </tr>
+            </table>
+        </td>
+        <td class="box_6542" >
+            <table class="tbl_6542_s1" >
+                <tr>
+                <td class="td_6542_s1_description" colspan="2" >siRNA<br>miRNA</td>
+                <tr>
+                <tr>
+                <td class="td_6542_s1_link"  valign="bottom">
+                    <a href="/products/rnai/rnaioverview.aspx" >Detail <i class="fas fa-angle-right"></i></a>
+                </td>
+                <td class="td_6542_s1_ico"><img src="/s3file/images/btn_home_19a/ico-cccccc/RNAi.png" ></td>
+                </tr>
+            </table>
+        </td>
+        <td class="box_6542" >
+            <table class="tbl_6542_s1" >
+                <tr>
+                <td class="td_6542_s1_description" colspan="2" >Gene<br>Synthesis</td>
+                <tr>
+                <tr>
+                <td class="td_6542_s1_link"  valign="bottom">
+                    <a href="/products/GeneSynthesis/GeneSynthesisoverview.aspx" >Detail <i class="fas fa-angle-right"></i></a>
+                </td>
+                <td class="td_6542_s1_ico"><img src="/s3file/images/btn_home_19a/ico-cccccc/GeneSynthesis.png" ></td>
+                </tr>
+            </table>
+        </td>        
+    </tr>
+   
+    </table>       
+
+
+    <!-- BEGIN: FeaturedProducts (home_main_area) -->
+     <!--
+    <div class="featured">Featured Products</div>
+    <a href="/page/w/covid-19" ><img src="https://s3-us-west-1.amazonaws.com/resource.bioneer.us/juan2/page/w/home/2020/20201104/bannerB_COVID19-solutions.png"  alt="COVID-19 solutions" border="0"  /></a>
+    -->
+    
+    <!-- END: FeaturedProducts (home_main_area) -->
+    
+
+    
+    <br /><br />
+    <br /><br /><br />
+</div>
+<!-- END: home_main_area -->
+
+		<!-- --> 		
+
+   </div>
+
+</div>
+
+  
+<!-- BEGIN: Footer -->
+<div id="FooterWrapper">
+	<div class="withborder">
+		<a href="/about/history.aspx" class="SectionHeader">About</a><br />
+		<a href="/about/history.aspx">History</a><br />
+		<a href="/about/mission.aspx">Mission</a><br />
+		<a href="/about/partners.aspx">Partners</a><br />
+		<a href="/about/careers.aspx">Careers</a>
+	</div>
+	<div class="noborder">
+		<a href="/page/w/products" class="SectionHeader">Products</a><br />
+		<a href="/page/w/products">Overview</a><br />
+		<a href="/pagecat1/dnarna_amplification/amplification">DNA/RNA Amplification</a><br />
+		<a href="/products/accuprep/accuprep-overview.aspx">DNA/RNA Prep</a><br />
+		<a href="/products/DNARNASynthesisReagents/phosphoramiditesoverview.aspx">DNA/RNA Synthesis Reagents</a><br />
+		<a href="/products/enzyme/enzymeoverview.aspx">Enzymes</a><br />
+		<a href="/products/Protein/Protein-overview.aspx">Protein expression and <br />purification</a><br />
+		<a href="/products/GeneSynthesis/geneoverview.aspx">Gene Synthesis Service</a><br />
+		<a href="/products/LaddersandMarkers/laddersoverview.aspx">Ladders &amp; Markers</a><br />
+		<a href="/products/Oligonucleotides/oligooverview.aspx">Oligonucleotides</a><br />
+		<a href="/products/rnai/rnaioverview.aspx">RNAi</a><br />
+		<a href="/products/spombe/Library-overview.aspx">Yeast Genome-wide Library</a>		
+	</div>
+	<div class="withborder">
+		<br />
+		<a href="/products/instrument/overview.aspx">Instruments</a><br />
+		<a href="/products/Consumables/White8tubePCRtube-overview.aspx">Consumables</a><br />
+		<a href="/products/GPScreen/GPScreen-overview.aspx">Drug Target & Toxicity<br />Identification Services</a><br />		
+		<a href="/products/products/accubucks.aspx">AccuBucks</a><br />
+		<a href="/products/products/newproducts.aspx">New products</a><br />
+		<a href="/products/products/promotions.aspx">Promotions</a><br />
+		<a href="/products/products/samples.aspx">Qualify for a sample</a><br />
+		<a href="/products/products/ordering.aspx">How to order</a><br />
+		<a href="/products/products/quickordering.aspx">Quick order</a><br />
+	</div>
+	<div class="withborder">
+		<a href="/SAMiRNA/products/SAMiRNA.aspx" class="SectionHeader">SAMiRNA Drug Development</a><br />
+		<a href="/SAMiRNA/Platformtechnology.aspx">Platform Technology</a><br />
+		<a href="/SAMiRNA/ProgramsandPipeline.aspx">Programs and Pipeline</a><br />
+		<a href="/SAMiRNA/siRNADrugdevelopmentProgram.aspx">siRNA Drug Development Program</a><br />
+		<a href="/SAMiRNA/IntellectualProperty.aspx">Intellectual Property</a><br />
+		<a href="/SAMiRNA/BusinessDP.aspx">Business Development & Partnerships</a><br />
+	</div>
+	<div class="withborder">
+		<a href="/support/support.aspx" class="SectionHeader">Support</a><br />
+						<a href="/support/support.aspx">Support</a><br />
+						<a href="/support/ordering.aspx">Ordering</a><br />
+						<a href="/support/terms.aspx">Terms</a><br />
+						<a href="/support/shipping.aspx">Shipping</a><br />
+						<a href="/support/literature.aspx">Literature</a><br />
+						<a href="/support/catalogue.aspx">Catalogue</a><br />
+						<a href="/support/msds.aspx">MSDS</a><br />
+						<a href="/support/protocols.aspx">Protocols</a><br />
+						<a href="/support/faqs.aspx">FAQs</a><br />
+						<a href="/support/references.aspx">References</a>
+	</div>
+	<div class="withborder">
+		<a href="/NewsandEvents/newproducts.aspx" class="SectionHeader">News &amp; Events</a><br />
+					<a href="/NewsandEvents/newproducts.aspx">New products</a><br />
+					<a href="/NewsandEvents/news.aspx">News</a><br />
+					<a href="/NewsandEvents/events.aspx">Events</a><br />
+					<!-- <a href="/NewsandEvents/newsevents.aspx">News &amp; Events</a><br /> -->
+					<a href="/NewsandEvents/subscriptions.aspx">Subscriptions</a><br />
+	</div>
+	<div class="noborder">
+		<a href="/page/w/contact/contact" class="SectionHeader">Contact</a><br />
+					<a href="/page/w/contact/contact">Contact</a><br />
+					<a href="/contact/directions.aspx">Directions</a><br />
+					<a href="/page/w/contact/feedback">Feedback</a><br />
+					<!-- <a href="/contact/literature.aspx">Literature</a><br /> -->
+					<a href="/contact/SalesRepLocator.aspx">Sales Rep Locator</a><br /><br />
+		<a href="/sitemap/sitemap.aspx">Site Map</a><br />
+		<a href="/privacy/privacy.aspx">Privacy Policy</a><br />
+		<a href="/support/terms.aspx">Terms &amp; Conditions</a><br />
+		<a href="/legal/legal.aspx">Trademarks &amp; Legal Notices</a><br /><br />
+		<a href="/app/inquire/?regard_to=K-3624" >&nbsp;</a>
+	</div>
+	<div id = "company" class="company2">
+	&copy;2010 Bioneer Corporation
+	</div>
+	
+</div>
+<script language="javascript" type="text/javascript">
+    var ftrc = document.getElementById("company");
+    if (isMinIE7 && !isMinIE8 && ftrc != null) {
+        ftrc.style.marginTop = "200px";
+    }
+</script>
+<!-- END: Footer -->
+</div>
+</form>
+</body>
+</html>

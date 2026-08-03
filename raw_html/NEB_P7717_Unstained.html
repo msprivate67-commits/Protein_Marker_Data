@@ -1,0 +1,1385 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="no-js">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+
+
+
+<script type="text/javascript">var itemId = "{58F8A9E5-DDE3-4834-9CA2-D9CB92A3E8D2}", templateId = "{A643FD44-9658-4B97-8346-1F5301F3A95E}", userCountry = "CN";</script>
+    <script type="text/javascript">
+    (function (history, location, region) {
+        const match = /^\/(en|en-au|en-gb|en-nz|en-sg|en-us|ja-jp|zh-cn|en-ca|fr-ca|de-de|en-de|fr-fr|en-fr|ko-kr)(\/|$)/.exec(location.pathname)
+        if (!match) {
+            var url = '/' + region + (itemId == "{5E6380CB-EB85-4C69-8ECF-13CDD163EC3D}" ? "" : location.pathname) + location.search + location.hash;
+            if (history.pushState)
+                history.pushState(null, null, url);
+            else
+                location.href = url;
+            return;
+        }
+        var urlRegion = match[1];
+        if (urlRegion === region)
+            return;
+
+        url = location.href.replace(urlRegion, region);
+
+        if (history.pushState)
+            history.pushState(null, null, url);
+        else
+            location.href = url;
+
+    })(window.history, window.location, document.children[0].lang.toLowerCase());
+</script>
+    <script type="text/javascript" src="https://sdk.ceros.com/embedded-player-sdk-v5.min.js"></script>
+
+<script>
+function applyConsent(hasConsent) {
+  var foundExperienceInterval = setInterval(function() {
+    var cerosFrames = document.querySelectorAll("iframe.ceros-experience");
+    if (!cerosFrames || cerosFrames.length == 0) return;
+    var cerosContainer = cerosFrames[0].parentNode;
+    var expId = cerosContainer.getAttribute("id");
+    if (expId) {
+      clearInterval(foundExperienceInterval);
+      // find experience
+      CerosSDK.findExperience(expId)
+        .done(function(experience) {
+          experience.setUserConsentForAnalytics(hasConsent);
+        })
+        .fail(function(error) {
+          console.error(error);
+        });
+    }
+  }, 500);
+}
+
+applyConsent(false);
+</script>
+
+<!-- OneTrust Cookies Consent Notice start for neb.cn -->
+<script src="/scripts/onetrust/cn/scripttemplates/otSDKStub.js" data-language="zh" type="text/javascript" charset="UTF-8" data-domain-script="c8f7581e-698c-492f-ad8a-43f864076dc0"></script>
+<script type="text/javascript">
+function OptanonWrapper() { 
+   applyConsent(OnetrustActiveGroups.indexOf('C0003') !== -1);
+}
+</script>
+<!-- OneTrust Cookies Consent Notice end for neb.cn -->
+
+
+<!-- Google Analytics -->
+<script src='https://www.google-analytics.com/analytics.js' type="text/plain" class="optanon-category-C0002-C0003-C0004"></script>
+<!-- End Google Analytics -->
+
+<script type="text/javascript" async src="https://play.vidyard.com/embed/v4.js"></script>
+<script type="text/plain" class="optanon-category-C0002-C0003-C0004">
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?bb5738f6e5eb3df623cb140358ec2ba8";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- Google Tag Manager -->
+<script type="text/plain" class="optanon-category-C0002-C0003-C0004">
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KNPZZ5V');</script>
+<!-- End Google Tag Manager -->
+
+
+<style>
+@media screen and (min-width: 992px)
+{
+.update-header .site-header__logo{
+width:15% !important;
+}
+}
+-homePage .updated-container .purchase-portal-block .card-body
+{
+min-height:500px !important;
+}
+input#tfa_4, label#tfa_4-L {
+    display: block !important;
+}
+
+</style>
+<style>
+.wForm tbody tr:nth-child(even) {
+        background-color: transparent !important;
+    }
+
+    .wForm table {
+        border: none !important;
+    }
+.wForm .inline .oneField .preField
+{
+min-width:200px !important;
+}
+.wForm .inline div.oneField : not(.offstate)
+{
+display:inline-block !important;
+}
+</style>
+<style>
+input#tfa_4, label#tfa_4-L {
+  display:block!important;
+}
+
+.wForm p, .wForm fieldset, .wForm table {
+	border-bottom:0px solid #EEE;
+	border-top:0px solid #EEE;
+	border-left:0px solid #EEE;
+	border-right:0px solid #EEE;
+}
+
+
+.wForm .label, .wForm .label * {
+    vertical-align: top;
+    font-family: Arial;
+    display: inline-block;
+    margin-bottom: 0px!important;
+}
+.wForm tr,.wForm td,.wForm th {
+    vertical-align: top;
+    background: white !important;
+}
+.wForm br {
+    display: none;
+}
+fieldset#tfa_5
+{
+border:0 !important;
+}
+</style><link rel='stylesheet' href='https://cdn.bioz.com/assets/v_widget-2.5.css'>
+<link rel='stylesheet' type='text/css' href='https://cdn.bioz.com/assets/tooltipster.css' />
+<link rel='stylesheet' type='text/css' href='https://cdn.bioz.com/assets/tooltipster-theme2.css' />
+<script src='https://cdn.bioz.com/assets/bioz-w-api-2.0.min.js'></script>
+<script src='https://cdn.bioz.com/assets/v_widget-2.5.neb.js'>
+</script><script src='https://cdn.bioz.com/assets/tooltipster.js'></script>
+
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="A protein ladder made of recombinant proteins that resolve into 13 sharp bands from 10-200 kDa when electrophoresed and stained.
+" />
+<meta name="keywords" content="P7717G, protein marker, protein ladder, protein standard, unstained, unstained protein marker, unstained protein ladder, unstained protein standard, broad range, page ruler, precision plus, protein gel standard, protein gel ladder, Western standard, proteomics, protein gel, SDS-PAGE gel standard, SDS-PAGE protein ladder, SDS-PAGE protein marker, SDS-PAGE, P7702, P7703, P7704, P7717" />
+<meta name="author" content="New England Biolabs" />
+<meta name="robots" content="" />
+<meta name="categories" content="Markers &amp; Ladders" />
+<meta name="products" content="P7717" />
+<meta name="pmm" />
+<meta property="og:title" content="" />
+<meta property="og:description" />
+<meta property="og:image" />
+<meta name="google-site-verification" content="xghU3QuEVrHPxz7GYD9sGFwMEeqUDV5mJ6trQlDQa10" />
+<meta name="page-classification-for-analytics" content="" />
+<title>Unstained Protein Standard, Broad Range (10-200 kDa) | NEB</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/content/img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/content/img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/content/img/favicon-16x16.png">
+<link rel="manifest" href="/content/img/site.webmanifest">
+<link rel="mask-icon" href="/content/img/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="theme-color" content="#ffffff">
+<!-- Hreflang Tags -->
+        <link rel="alternate" hreflang="x-default" href="https://www.neb.com/en/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+        <link rel="alternate" hreflang="en-gb" href="https://www.neb.com/en-gb/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+        <link rel="alternate" hreflang="en-au" href="https://www.neb.com/en-au/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+        <link rel="alternate" hreflang="en-nz" href="https://www.neb.com/en-nz/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+        <link rel="alternate" hreflang="ja-jp" href="https://www.neb.com/ja-jp/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+        <link rel="alternate" hreflang="en-sg" href="https://www.neb.com/en-sg/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+        <link rel="alternate" hreflang="en-us" href="https://www.neb.com/en-us/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+        <link rel="alternate" hreflang="en-ca" href="https://www.neb.com/en-ca/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+        <link rel="alternate" hreflang="zh-cn" href="https://www.neb.cn/zh-cn/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+<!--MT-3856,when link field target link is empty do not render the link.-->
+    <link rel="canonical" href="https://www.neb.cn/zh-cn/products/p7717-unstained-protein-standard-broad-range-10-200-kda" />
+
+    
+    
+<meta name="VIcurrentDateTime" content="639212930223903547" />
+<meta name="VirtualFolder" content="/" />
+<script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
+
+    
+<!-- CSS Bundles -->
+<link href="/bundles/styles.css?v=ZBlkYmd-TAztKacurf0q1b86VmJGKacO_scThCf8FLo1" rel="stylesheet" media="screen,print" />
+
+<link href="/bundles/print.css?v=ApKoXakBSCZneuHldtuZnnRj1VDmMTOzaKVtiZJTmpw1" rel="stylesheet" media="print" />
+
+    <link href="/bundles/vue-css-bundle.css?v=K7WHzH71Z0st2empDOQIiix055SIHuR9MJ6O0WRx8DM1" rel="stylesheet"/>
+
+
+</head>
+<body class="" onunload="">
+	
+	<link rel="stylesheet" href="https://static.cloud.coveo.com/searchui/v2.10116/css/CoveoFullSearch.css" />
+<link rel="stylesheet" href="https://static.cloud.coveo.com/coveoforsitecore/ui/v0.64.7/css/CoveoForSitecore.css" />
+<script class="coveo-script" type="text/javascript" src='https://static.cloud.coveo.com/searchui/v2.10116/js/CoveoJsSearch.Lazy.min.js'></script>
+<script class="coveo-for-sitecore-script" type="text/javascript" src='https://static.cloud.coveo.com/coveoforsitecore/ui/v0.64.7/js/CoveoForSitecore.Lazy.min.js'></script>
+<script type="text/javascript" src="https://static.cloud.coveo.com/searchui/v2.10116/js/cultures/zh-cn.js"></script>
+
+<div>
+
+
+    
+    
+    <!-- Resources -->
+    <div id="SearchResourcesProperties_7e2dac8e346246f79c24a0a5a51a9a28"
+         class="CoveoForSitecoreContext"
+                    data-sc-should-have-analytics-component='true'
+            data-sc-analytics-enabled='true'
+            data-sc-current-language='zh-CN'
+            data-prebind-sc-language-field-name='fieldTranslator'
+            data-sc-language-field-name='_language'
+            data-sc-labels='{&quot;Ascending&quot; : &quot;Ascending&quot; , &quot;Descending&quot; : &quot;Descending&quot; , &quot;Template&quot; : &quot;Template&quot; , &quot;Updated By&quot; : &quot;Updated by&quot; , &quot;Created&quot; : &quot;Created&quot; , &quot;Language&quot; : &quot;Language&quot; , &quot;Uniform resource identifier&quot; : &quot;URI&quot; , &quot;Last Time Modified&quot; : &quot;Last time modified.&quot; , &quot;Created By&quot; : &quot;Created by&quot; , &quot;Creation Time&quot; : &quot;Creation time.&quot; , &quot;If the problem persists contact the administrator.&quot; : &quot;If the problem persists contact the administrator.&quot; , &quot;Search is currently unavailable&quot; : &quot;Oops! Something went wrong on the server.&quot;}'
+            data-sc-maximum-age='900000'
+            data-sc-page-name='P7717 Unstained Protein Standard Broad Range 10 200 kDa'
+            data-sc-page-name-full-path='/sitecore/content/Shared/Products/p/7/P7717 Unstained Protein Standard Broad Range 10 200 kDa'
+            data-sc-index-source-name='Coveo_web_index - PRD-FARM-104'
+            data-sc-is-in-experience-editor='false'
+            data-sc-is-user-anonymous='true'
+            data-sc-item-uri='sitecore://web/{58F8A9E5-DDE3-4834-9CA2-D9CB92A3E8D2}?lang=zh-CN&amp;ver=1'
+            data-sc-item-id='58f8a9e5-dde3-4834-9ca2-d9cb92a3e8d2'
+            data-prebind-sc-latest-version-field-name='fieldTranslator'
+            data-sc-latest-version-field-name='_latestversion'
+            data-sc-rest-endpoint-uri='/coveo/rest'
+            data-sc-analytics-endpoint-uri='/coveo/rest/ua'
+            data-sc-site-name='neb'
+            data-sc-field-prefix='f'
+            data-sc-field-suffix='86828'
+            data-sc-prefer-source-specific-fields='false'
+            data-sc-external-fields='[{&quot;fieldName&quot;:&quot;permanentid&quot;,&quot;shouldEscape&quot;:false}]'
+            data-sc-source-specific-fields='[{&quot;fieldName&quot;:&quot;attachmentparentid&quot;},{&quot;fieldName&quot;:&quot;author&quot;},{&quot;fieldName&quot;:&quot;clickableuri&quot;},{&quot;fieldName&quot;:&quot;collection&quot;},{&quot;fieldName&quot;:&quot;concepts&quot;},{&quot;fieldName&quot;:&quot;date&quot;},{&quot;fieldName&quot;:&quot;filetype&quot;},{&quot;fieldName&quot;:&quot;indexeddate&quot;},{&quot;fieldName&quot;:&quot;isattachment&quot;},{&quot;fieldName&quot;:&quot;language&quot;},{&quot;fieldName&quot;:&quot;printableuri&quot;},{&quot;fieldName&quot;:&quot;rowid&quot;},{&quot;fieldName&quot;:&quot;size&quot;},{&quot;fieldName&quot;:&quot;source&quot;},{&quot;fieldName&quot;:&quot;title&quot;},{&quot;fieldName&quot;:&quot;topparent&quot;},{&quot;fieldName&quot;:&quot;topparentid&quot;},{&quot;fieldName&quot;:&quot;transactionid&quot;},{&quot;fieldName&quot;:&quot;urihash&quot;}]'
+>
+    </div>
+    <script type="text/javascript">
+        var endpointConfiguration = {
+            itemUri: "sitecore://web/{58F8A9E5-DDE3-4834-9CA2-D9CB92A3E8D2}?lang=zh-CN&amp;ver=1",
+            siteName: "neb",
+            restEndpointUri: "/coveo/rest"
+        };
+        if (typeof (CoveoForSitecore) !== "undefined") {
+            CoveoForSitecore.SearchEndpoint.configureSitecoreEndpoint(endpointConfiguration);
+            CoveoForSitecore.version = "5.0.1368.1";
+            var context = document.getElementById("SearchResourcesProperties_7e2dac8e346246f79c24a0a5a51a9a28");
+            if (!!context) {
+                CoveoForSitecore.Context.configureContext(context);
+            }
+        }
+    </script>
+</div>
+	<!-- Begin: #nebVue -->
+	<div id="nebVue" class="neb-vue">
+		<div v-cloak>
+			<div class="v-cloak-hidden">
+				<div class="body-wrapper main-body">
+					<div data-nosnippet class="header-placeholder  "></div>
+					<global-header :component-data="{commerceEnabled:false,isHomePage:false,isFreezerAccount:false,pageTopAlertShown:false,pageTopAlerts:[],notificationsShown:true,notifications:[{id:&quot;220690d8-649e-40a9-ac44-bdfaef7b2897&quot;,title:`Analyze mRNA 5′ Caps`,description:`Learn how RNase 4 enables targeted isolation and LC-MS analysis of mRNA 5&amp;prime; caps.`,url:`https://media.neb.com/asset/a319a27d-b2c7-458a-bf9c-2857d5e72568/RNase4_Targeted_Isolation_Quantitative_Analysis_mRNA_5prime_Cap_AppNote.pdf`,created:`2026年7月27日`,expireDate:`2026-08-10T13:11:00.0000000`}],notificationsNoActiveMessage:`Please check back later for new notifications.`,search:{text:`搜索产品和技术资源`},logos:{light:{small:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0},large:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0}},dark:{small:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0},large:{src:`/zh-cn/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&amp;sc_lang=zh-cn`,alt:`NEB Logo`,height:0,width:0}}},siteNav:[{name:`应用 &amp;amp; 产品`,subNav:[{name:`应用`,link:`/zh-cn/applications`,items:[{name:`分子诊断专题`,link:`/zh-cn/supporting-molecular-diagnostics`},{name:`克隆 &amp; 合成生物学`,link:`/zh-cn/applications/cloning-and-synthetic-biology`},{name:`DNA 扩增、PCR 和 qPCR`,link:`/zh-cn/applications/dna-amplification-pcr-and-qpcr`},{name:`基因编辑`,link:`/zh-cn/products/crispr-cas-gene-editing`},{name:`蛋白表达`,link:`/zh-cn/applications/protein-expression`},{name:`蛋白纯化`,link:`/zh-cn/applications/protein-purification`},{name:`蛋白质分析 &amp; 工具`,link:`/zh-cn/applications/protein-analysis-and-tools`},{name:`糖生物学 &amp; 蛋白质组学`,link:`/zh-cn/applications/glycobiology-and-proteomics`},{name:`细胞分析`,link:`/zh-cn/applications/cellular-analysis`}]},{name:`产品`,link:`/zh-cn/products`,items:[{name:`限制性内切酶`,link:`/zh-cn/products/restriction-endonucleases`},{name:`PCR、qPCR &amp; 扩增技术`,link:`/zh-cn/products/pcr-qpcr-and-amplification-technologies`},{name:`DNA 修饰酶`,link:`/zh-cn/products/dna-modifying-enzymes-and-cloning-technologies`},{name:`NGS 文库制备 &amp; 靶向富集`,link:`/zh-cn/products/next-generation-sequencing-library-preparation`},{name:`核酸纯化`,link:`/zh-cn/products/nucleic-acid-purification`},{name:`Markers &amp; Ladders`,link:`/zh-cn/products/markers-and-ladders`},{name:`RNA 试剂`,link:`/zh-cn/products/rna-synthesis-and-modification`},{name:`DNA 组装、克隆和突变试剂盒`,link:`/zh-cn/products/dna-assembly-cloning-and-content-mutagenesis-kits`},{name:`基因编辑`,link:`/zh-cn/products/crispr-cas-gene-editing`},{name:`细胞分析`,link:`/zh-cn/products/cellular-analysis`},{name:`表观遗传学`,link:`/zh-cn/products/epigenetics`},{name:`蛋白表达`,link:`/zh-cn/products/protein-expression`},{name:`蛋白纯化`,link:`/zh-cn/products/protein-purification`},{name:`感受态细胞`,link:`/zh-cn/products/competent-cells`},{name:`蛋白质工具`,link:`/zh-cn/products/protein-tools`},{name:`糖生物学`,link:`/zh-cn/products/glycobiology`},{name:`DNA 质粒`,link:`/zh-cn/products/dna-plasmids-and-substrates`},{name:`缓冲液`,link:`/zh-cn/products/buffers`},{name:`菌株`,link:``},{name:`停产产品`,link:`/zh-cn/products/discontinued`}]}],cta:[{icon:{src:`/zh-cn/-/media/nebus/navigation/icon-cta-new.svg?rev=addc407120dc400eb01b010f06abc9e5`,alt:`new`},name:`最新产品`,link:`/zh-cn/new-products`},{icon:{src:`/zh-cn/-/media/nebus/navigation/icon-cta-sale.svg?rev=22bf9ff7b720460a9b4e835fba5a37c5`,alt:`new`},name:`样品申请&amp;优惠活动`,link:`/zh-cn/samples-and-special-offers`}],richTextTitle:`Monarch&lt;sup&gt;&amp;reg;&lt;/sup&gt; DNA &amp;amp; RNA 纯化试剂盒全面升级！`,richText:`&lt;p&gt;
+&lt;/p&gt;
+&lt;p dir=&quot;auto&quot; style=&quot;margin: 0in; text-align: start;&quot;&gt; &lt;span style=&quot;color: #212121;&quot;&gt;我们的 Monarch&lt;sup&gt;&amp;reg;&lt;/sup&gt; 核酸纯化试剂盒在不断升级，本次升级带来了性能、可持续性以及价值方面的显著提升。了解更多产品信息，找到属于您的全新试剂盒。&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;btn&quot; href=&quot;/zh-cn/monarch/monarch-nucleic-acid-purification-kits-are-evolving&quot;&gt;了解 Monarch&lt;sup&gt;&amp;reg;&lt;/sup&gt; 产品&lt;br /&gt;
+&lt;/a&gt;&lt;/p&gt;`},{name:`工具 &amp; 资源`,link:`/zh-cn/tools-and-resources`,subNav:[{name:`工具`,link:`/zh-cn/tools-and-resources/interactive-tools`,items:[{name:`产品选择工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Product-Selection`},{name:`限制性内切酶工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Restriction-Enzyme-Tools`},{name:`引物设计工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Primer-Design-Tools`},{name:`实验设计工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Experimental-Design`},{name:`计算工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Calculators`},{name:`数据库`,link:`/zh-cn/tools-and-resources/interactive-tools#Databases`},{name:`其它工具`,link:`/zh-cn/tools-and-resources/interactive-tools#Additional-Tools`}]},{name:`资源`,link:`/zh-cn/tools-and-resources`,items:[{name:`应用实例`,link:`/zh-cn/application-notes`},{name:`FAQs`,link:`/zh-cn/tools-and-resources/search?type=FAQ`},{name:`互动工具`,link:`/zh-cn/tools-and-resources/interactive-tools`},{name:`资料`,link:`/zh-cn/support/catalog-and-literature-request`},{name:`NEB Podcast`,link:`/zh-cn/podcasts/nebpodcast`},{name:`NEBInspired 博客`,link:`/zh-cn/nebinspired-blog`},{name:`操作说明`,link:`/zh-cn/tools-and-resources/search?type=Protocol`},{name:`选择指南`,link:`/zh-cn/tools-and-resources/search?type=Chart`},{name:`问题解决指南`,link:`/zh-cn/tools-and-resources/search?type=TroubleshootingGuide`},{name:`使用指南/小技巧`,link:`/zh-cn/tools-and-resources/search?type=UsageGuidelines`},{name:`视频资料库`,link:`/zh-cn/tools-and-resources/video-library`},{name:`网络课堂`,link:`/zh-cn/webinar/neb-tv-webinar-series`}]}],cta:[{icon:{src:`https://media.neb.com/m/2d08fc4194704324/original/Catalog_Literature_megamenu_icon.svg`,alt:`Open book megamenu icon representing NEB catalog and literature request`},name:`产品资料库`,link:`/zh-cn/support/catalog-and-literature-request`},{icon:{src:`https://media.neb.com/m/66c9fe63cf814a99/original/Blog_megamenu_icon.svg`,alt:`Pen or pencil megamenu icon representing blog`},name:`NEBinspired Blog&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;`,link:`/zh-cn/nebinspired-blog`}]},{name:`定制化解决方案`,link:`/zh-cn/custom-solutions`,subNav:[{name:``,items:[{name:`定制化解决方案`,link:`/zh-cn/custom-solutions/customized-solutions`},{name:`GMP 级别产品 制造`,link:`/zh-cn/custom-solutions/gmp`},{name:`NEB 冻干科技`,link:`/zh-cn/custom-solutions/lyophilization-solutions`}]},{name:``,items:[{name:`无甘油的冻干制剂`,link:`/zh-cn/custom-solutions/glycerol-free`},{name:`NEB 质量控制`,link:`/zh-cn/about-neb/quality-at-neb`},{name:`NEB 助力分子诊断与治疗方案开发行业创新，加速制造升级`,link:`/zh-cn/supporting-advances-in-diagnostic-and-therapeutic-innovation-and-manufacturing`}]}],cta:[],richTextTitle:`&lt;p /&gt;&lt;a href=&quot;/zh-cn/forms/contact-the-customized-solutions-team&quot;&gt;&lt;img alt=&quot;Tube with cogs megamenu icon representing NEB Customized Solutions&quot; src=&quot;https://media.neb.com/m/2bcdc588b68f78ba/original/Customized_Solutions_megamenu_icon.svg?=&quot; data-damid=&quot;618FD996-974E-440B-8F7E338C3C5CA2A6&quot; style=&quot;margin-right: 8px; vertical-align: middle;&quot; width=&quot;35&quot; height=&quot;35&quot; /&gt;&lt;span style=&quot;color: #ca4a05;&quot;&gt;&amp;nbsp;&amp;nbsp;&amp;nbsp; 如何联系定制化解决方案团队&lt;br /&gt;
+&lt;p /&gt;
+
+&lt;/span&gt;&lt;/a&gt;`,richText:`&lt;p&gt;有兴趣可以了解查看更多关于定制化产品、大包装订购、冻干产品或GMP级产品信息&lt;/p&gt;`},{name:`帮助`,link:`/zh-cn/support`,subNav:[{name:``,items:[{name:`技术支持`,link:`/zh-cn/forms/neb-technical-support`},{name:`国际订购 &amp;amp; 支持`,link:`/zh-cn/support/international-ordering-support`},{name:`代理商`,link:`/zh-cn/support/cn-sales-representative-list-by-territory`},{name:`新建实验室`,link:`/zh-cn/support/new-lab-discount`}]},{name:``,items:[{name:`产品资料库`,link:`/zh-cn/support/catalog-and-literature-request`},{name:`支持分子诊断`,link:`/zh-cn/supporting-molecular-diagnostics`},{name:`支持传染病的预防、诊断与研究`,link:`/zh-cn/infectious-disease/supporting-infectious-disease-research-and-development`},{name:`NEB 助力分子诊断与治疗方案开发`,link:`/zh-cn/supporting-advances-in-diagnostic-and-therapeutic-innovation-and-manufacturing`},{name:`支持 COVID-19 研究`,link:`/zh-cn/covid-19/solutions-available-from-new-england-biolabs-supporting-covid-19-research`},{name:`OEM &amp; 客户定制方案`,link:`/zh-cn/custom-solutions/customized-solutions`},{name:`农业支持`,link:`/zh-cn/support/supporting-agricultural-biology`},{name:`科学教育项目`,link:`/zh-cn/promoting-science-education`},{name:`包装 &amp; 运输`,link:`/zh-cn/support/packaging-shipping-and-delivery`},{name:`NEB 质量体系`,link:`/zh-cn/about-neb/quality-at-neb`},{name:`销售条款`,link:`/zh-cn/support/terms-of-sales`}]}],cta:[{icon:{src:`/zh-cn/-/media/nebus/navigation/icon-cta-feedback.png?rev=b72ee87ef07d45898efedb87c84aabd7`,alt:`icon-cta-feedback`},name:`客户建议 &amp; 反馈`,link:`/zh-cn/forms/customer-feedback`},{icon:{src:`https://media.neb.com/m/43575fcb05e084ba/original/Tech_Support_megamenu_icon.svg`,alt:`DNA megamenu icon representing Tech Support`},name:`技术支持`,link:`/zh-cn/forms/neb-technical-support`}],richTextTitle:`联系方式`,richText:`北京市海淀区王庄路 1号&lt;br /&gt;
+清华同方科技广场 B 座 612 室，100083&lt;br /&gt;
+客服热线：400-811-2220 / 400-690-3366 &lt;br /&gt;
+电话：010-82378266&lt;br /&gt;
+咨询: &lt;a href=&quot;mailto:info@neb-china.com&quot;&gt;info@neb-china.com&lt;/a&gt;&lt;br /&gt;
+技术支持：&lt;a href=&quot;mailto:support@neb-china.com&quot;&gt;support@neb-china.com&lt;/a&gt;`},{name:`关于 NEB`,link:`/zh-cn/about-neb`,subNav:[{name:``,items:[{name:`了解 NEB`,link:`/zh-cn/about-neb/neb-overview`},{name:`最新动态`,link:`/zh-cn/about-neb/news-and-press-releases`},{name:`核心团队`,link:`/zh-cn/about-neb/leadership`},{name:`NEB 研究项目`,link:`/zh-cn/research`},{name:`社会责任 &amp; 可持续发展`,link:`/zh-cn/about-neb/corporate-social-responsibility-and-sustainability`}]},{name:``,items:[{name:`ISO 认证`,link:`/zh-cn/about-neb/certifications`},{name:`Passion in Science Awards 奖项`,link:`/zh-cn/about-neb/passion-in-science-awards`},{name:`业务拓展`,link:`/zh-cn/about-neb/business-development-opportunities`},{name:`职业发展`,link:`/zh-cn/about-neb/careers`},{name:`联系我们`,link:`/zh-cn/support/international-ordering-support`}]}],cta:[{icon:{src:`/zh-cn/-/media/nebus/navigation/distributor_china_megamenu_icon.svg?rev=b06b46bed8a54cb4a3d3783accd41ddb&amp;sc_lang=zh-cn`,alt:`distributor icon`},name:`代理商`,link:`/zh-cn/support/cn-sales-representative-list-by-territory`}],richTextTitle:`联系方式`,richText:`北京市海淀区王庄路 1号&lt;br /&gt;
+清华同方科技广场 B 座 612 室，100083&lt;br /&gt;
+客服热线：400-811-2220 / 400-690-3366 &lt;br /&gt;
+电话：010-82378266&lt;br /&gt;
+咨询: &lt;a href=&quot;mailto:info@neb-china.com&quot;&gt;info@neb-china.com&lt;/a&gt;&lt;br /&gt;
+技术支持：&lt;a href=&quot;mailto:support@neb-china.com&quot;&gt;support@neb-china.com&lt;/a&gt;`}],languages:[],legacyShopEnabled:0,forceDarkText:``}"></global-header>
+					<!-- Begin: NEW Product Detail Page HTML -->
+<!-- Begin: Hero Component -->
+<section class="column__row hero-banner">
+    <div class="page-container">
+        
+
+
+    </div>
+</section>
+<!-- End:   Hero Comoponent -->
+
+
+            <!-- Begin: Breadcrumbs -->
+            <section class="column_row column__row--padded column__row--space-after breadcrumbs" data-gtm-nav-type="breadcrumb">
+                <div class="page-container">
+                            <span class="breadcrumbs__item"><a href="/zh-cn/">Home</a></span>
+                            <span class="breadcrumbs__item"><a href="/zh-cn/products/markers-and-ladders">markers-and-ladders</a></span>
+                            <span class="breadcrumbs__item">Unstained Protein Standard, Broad Range (10-200 kDa)</span>
+                </div>
+            </section>
+            <!-- End: Breadcrumbs -->
+            <!-- Begin: Breadcrumbs JSONLD -->
+            <script type="application/ld+json">{"@context":"https://schema.org","@type":"breadcrumblist","itemlistelement":[{"@type":"listitem","position":1,"name":"home","item":"https://www.neb.cn/zh-cn/"},{"@type":"listitem","position":2,"name":"markers-and-ladders","item":"https://www.neb.cn/zh-cn/products/markers-and-ladders"},{"@type":"listitem","position":3,"name":"unstained protein standard, broad range (10-200 kda)","item":null}]};</script>
+            <!-- End: Breadcrumbs JSONLD -->
+
+
+
+
+<!-- Begin: Product Detail Top -->
+<div class="column__row column__row--space-after column__row--padded product-detail__top">
+    <div class="page-container">
+        
+        <div class="pdp-favorite-button-container">
+            <favorite-button ref="pdpFavoriteButton" catalog-number="P7717"></favorite-button>
+        </div>
+        <h1 class="product-detail__title ">
+        <span>
+                Unstained Protein Standard, Broad Range (10-200 kDa)
+            </span>
+
+        </h1>
+        <input type="hidden" id="product-title" value="Unstained Protein Standard, Broad Range (10-200 kDa)" data-img="/zh-cn/-/media/catalog/product-images/p7717.jpg?rev=1014cf92bee54a6d9af7ca415d1866aa" />
+        <p>
+            
+        </p>
+        <section class="product-detail__summary">
+                        <p class="marketing-alerts"><b></b></p>
+
+            
+            
+            
+            
+            
+
+            
+            <section class="product-recognition">
+                
+
+            </section>
+            <section class="link-legend">
+                
+                
+
+
+
+            </section>
+            <div class="product-detail__rich-area view-more js-view-more" data-maxheight="250">
+
+<p>The Unstained Protein Standard, Broad Range is a mixture of highly pure, recombinant proteins that resolves into 13 sharp bands from 10-200 kDa when electrophoresed and stained with Coomassie Brilliant Blue R-250 or other commercially available, ready-to-use protein stains.&nbsp;</p>
+<ul>
+    <li>Allows accurate molecular weight determination when performing SDS-PAGE analysis.</li>
+    <li>Direct loading, additional loading buffer and heat incubation not required</li>
+    <li>Recombinant proteins with no detectable protease contaminating activities</li>
+    <li>Optimal stability for up to 24 months</li>
+</ul>
+<p>&nbsp;</p>
+<p><img alt="Unstained Protein Standard, Broad Range (10-200 kDa)" src="https://media.neb.com/asset/6fb85ba6-1570-49c8-b449-be7a19ebd6a2/Webp/P7717_Unstained_ProteinStandard.webp?=" data-damid="6FB85BA6-1570-49C8-B449BE7A19EBD6A2" width="107" height="500" /></p>
+            </div>
+            <div class="column__row pdp-anchors js-pdp-anchors">
+
+                    <button class="secondary-black-btn pdp-anchors__anchor-link js-tray-anchor" data-tab="产品信息" data-section="产品组分信息">产品组分信息</button>
+                
+                    <button class="secondary-black-btn pdp-anchors__anchor-link js-tray-anchor" data-tab="操作说明、说明书 &amp; 用法"
+                            data-section="操作说明">
+                        操作说明
+                    </button>
+                            </div>
+        </section>
+
+        
+    <section class="product-promo" data-gtm-nav-type="right-rail">
+
+<a href="/zh-cn/nebinspired-blog"><img src="/zh-cn/-/media/nebus/promos/blog_contextualad.jpg?rev=e59865a6aa094972ad1c0b722e81d4bd&amp;hash=26DC6903F186F31011E9B5095250754D" alt="Blog_ContextualAd" /></a>    </section>
+
+    </div>
+</div>
+<!-- End:   Product Detail - Top -->
+<!-- Begin: Product Detail - Tabs -->
+<div class="column__row column__row--space-after column__row--padded product-detail__top">
+    <div class="page-container">
+        
+            <!--Â GoogleÂ AnalyticsÂ EnhancedÂ EcommerceÂ TrackingÂ add to cart STARTÂ -->
+<script>
+var dataLayer = window.dataLayer || [];
+dataLayer.push({
+  "ecommerce": {
+    "detail": {
+      "actionField": {        "list": "Protein Standards,Markers & Ladders,Protein Markers & Ladders,Protein Markers Ladders",},
+      "products": [
+  {
+    "name": "Unstained Protein Standard, Broad Range (10-200 kDa)",
+    "id": "P7717",
+    "price": null,
+    "brand": "NEB",
+    "category": "Protein Standards,Markers & Ladders,Protein Markers & Ladders,Protein Markers Ladders",
+    "variant": "S",
+    "quantity": "0",
+    "dimension1": null
+  },
+  {
+    "name": "Unstained Protein Standard, Broad Range (10-200 kDa)",
+    "id": "P7717",
+    "price": null,
+    "brand": "NEB",
+    "category": "Protein Standards,Markers & Ladders,Protein Markers & Ladders,Protein Markers Ladders",
+    "variant": "L",
+    "quantity": "0",
+    "dimension1": null
+  }
+]
+   }
+ }
+});</script>            <!--Â GoogleÂ AnalyticsÂ EnhancedÂ EcommerceÂ TrackingÂ add to cart ENDÂ -->
+<section class="pdp-product-grid order-grid__table-wrap">
+<form action="/api/sitecore/Product/AddToCartForProducts" method="post"><input id="js-pdp-prod-name" name="js-pdp-prod-name" type="hidden" value="Unstained Protein Standard, Broad Range (10-200 kDa)" /><input id="js-pdp-prod-sku" name="js-pdp-prod-sku" type="hidden" value="P7717" /><input id="js-pdp-prod-category" name="js-pdp-prod-category" type="hidden" value="Protein Standards,Markers &amp; Ladders,Protein Markers &amp; Ladders,Protein Markers Ladders" /><input id="js-pdp-iso-currency-code" name="js-pdp-iso-currency-code" type="hidden" value="CNY" />                <table class="js-pdp-product-grid pdp-product__show-inventory cn-region-hide">
+                    <thead>
+                                <tr class="no-border">
+                                    <th scope="col" colspan="4"></th>
+                                    <th scope="col" colspan="7" class="pdp-product__inventory-header">库存</th>
+                                </tr>
+                            <tr>
+                                <th scope="col" class="pdp-product__catalog-number">货号</th>
+                                <th scope="col" class="pdp-product__catalog-number -mobile">货号</th>
+                                <th scope="col" class="pdp-product__concentration-intl">浓度</th>
+                                <th scope="col" class="pdp-product__concentration-intl -mobile">Conc</th>
+                                <th scope="col" class="pdp-product__size">规格</th>
+
+                                    <th scope="col" class="pdp-product__listprice">目录价</th>
+                                        <th scope="col" class="pdp-product__listprice -mobile">目录价</th>
+                                    <th scope="col"></th>
+                                                                        <th scope="col" class="pdp-product__inventory">北京</th>
+                                        <th scope="col" class="pdp-product__inventory">上海</th>
+                                        <th scope="col" class="pdp-product__inventory">广州</th>
+                                        <th scope="col" class="pdp-product__inventory">成都</th>
+                                        <th scope="col" class="pdp-product__inventory">苏州</th>
+                                        <th scope="col" class="pdp-product__inventory">武汉</th>
+
+                                <th scope="col"></th>
+                            </tr>
+                    </thead>
+
+                    <tbody>
+
+                                <tr>
+                                    <td>
+
+                                        <input id="cartUrl" name="cartUrl" type="hidden" value="/zh-cn/cart/view-cart" />
+                                        <input id="UOM" name="UOM" type="hidden" value="EA" />
+                                        <input id="addToCartModalMessage" name="addToCartModalMessage" type="hidden" value="&lt;h3>{0} item(s) have been added to your cart.&lt;/h3>
+&lt;h4>Continue to checkout or keep shopping?&lt;/h4>" />
+                                        <input id="continueShopping" name="continueShopping" type="hidden" value="Continue Shopping" />
+                                        <input id="viewMyCart" name="viewMyCart" type="hidden" value="View My Cart" />
+
+                                        <span for="" class="product-info__catalognumber" data-externalproductid="9ad6d49c-3dc6-403e-b0de-aa180018cae8">P7717S</span>
+                                    </td>
+                                    <td class="concentration-column">
+                                        <span for="" class="product-info__concentration">150 gel lanes </span>
+                                    </td>
+                                    <td>
+                                            <span for="" class="product-info__size">0.45 ml </span>
+                                    </td>
+
+                                                    <td class="list-price--desktop">
+                                                            <span class="product-info__listprice" data-price="1819.00">&#165;1,819</span>
+                                                    </td>
+                                                        <td class="list-price--mobile">
+                                                                <span class="product-info__listprice -mobile" data-price="1819.00">&#165;1,819</span>
+                                                        </td>
+                                    
+                                            <td></td>
+                                            <td>无</td>
+                                            <td>无</td>
+                                            <td>无</td>
+                                            <td>无</td>
+                                            <td>无</td>
+                                            <td>无</td>
+
+
+
+                                </tr>
+                                <tr>
+                                    <td>
+
+                                        <input id="cartUrl" name="cartUrl" type="hidden" value="/zh-cn/cart/view-cart" />
+                                        <input id="UOM" name="UOM" type="hidden" value="EA" />
+                                        <input id="addToCartModalMessage" name="addToCartModalMessage" type="hidden" value="&lt;h3>{0} item(s) have been added to your cart.&lt;/h3>
+&lt;h4>Continue to checkout or keep shopping?&lt;/h4>" />
+                                        <input id="continueShopping" name="continueShopping" type="hidden" value="Continue Shopping" />
+                                        <input id="viewMyCart" name="viewMyCart" type="hidden" value="View My Cart" />
+
+                                        <span for="" class="product-info__catalognumber" data-externalproductid="d8ab98fe-5e9b-4410-a34d-aa180018cad1">P7717L</span>
+                                    </td>
+                                    <td class="concentration-column">
+                                        <span for="" class="product-info__concentration">750 gel lanes </span>
+                                    </td>
+                                    <td>
+                                            <span for="" class="product-info__size">2.25 ml </span>
+                                    </td>
+
+                                                    <td class="list-price--desktop">
+                                                            <span class="product-info__listprice" data-price="7269.00">&#165;7,269</span>
+                                                    </td>
+                                                        <td class="list-price--mobile">
+                                                                <span class="product-info__listprice -mobile" data-price="7269.00">&#165;7,269</span>
+                                                        </td>
+                                    
+                                            <td></td>
+                                            <td>无</td>
+                                            <td>无</td>
+                                            <td>无</td>
+                                            <td>无</td>
+                                            <td>无</td>
+                                            <td>无</td>
+
+
+
+                                </tr>
+
+                            <tr>
+                                    <td class="product-info__cartbtn" colspan="11">
+                                        <div class="international-buy-btn">
+    To find out how to order this product from your current location, click the button below:
+    <br/>
+    
+	<div class="intnl-buy-button-container">
+				<a href="/zh-cn/support/terms-of-sales" class="btn buy" type="button" target="" data-gtm-nav-type="cta" data-gtm-nav-name="How to Order"> 如何订购 </a>
+
+	</div>
+
+</div>
+
+                                    </td>
+                            </tr>
+
+                        <tr class="js-zero-qty-error hide">
+                            <td colspan="6">
+                                <span class="product-info__zero-error field-validation-error">Please enter a quantity for at least one size
+</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+</form>
+</section>
+
+
+<input id="HiddenQuantityInputFailureMessage" name="HiddenQuantityInputFailureMessage" type="hidden" value="Please make sure quantity is between 1 and 999." />
+    </div>
+</div>
+
+<section class="column__row column__row--space-after column__row product-detail__tabbed-section">
+    <div class="page-container">
+        <div class="jump-links__nav-container">
+            <nav class="jump-links__desktop-nav js-jump-links__desktop-nav" data-gtm-nav-type="tab"></nav>
+            <div class="jump-links__mobile-nav js-jump-links__mobile-nav"></div>
+        </div>
+        <ul class="jump-links product-detail__jump-links">
+
+
+
+<li class="tab-header-and-content">
+    <div id='Product-Information' data-tab='产品信息' class="jump-link" title="产品信息"><h2>产品信息</h2></div>
+    <div class="tab-content">
+        <section class="product-detail__basic-content" data-maxheight="250">
+            
+<p>The Unstained Protein Standard, Broad Range is a mixture of highly pure, recombinant proteins that resolves into 13 sharp bands from 10-200 kDa when electrophoresed and stained with Coomassie Brilliant Blue R-250 (1,2) or other commercially available, ready-to-use protein stains. This standard allows accurate molecular weight determination when performing SDS-PAGE analysis.</p>
+<figure class="brochure"><img alt="Unstained Protein Standard, Broad Range (10-200 kDa)" src="https://media.neb.com/asset/6fb85ba6-1570-49c8-b449-be7a19ebd6a2/Webp/P7717_Unstained_ProteinStandard.webp?=" data-damid="6FB85BA6-1570-49C8-B449BE7A19EBD6A2" width="107" height="500" /><br />
+<br />
+<figcaption><em>Unstained Protein
+Standard, Broad Range
+(10&ndash;200 kDa)
+10&ndash;20% Tris-glycine
+SDS-PAGE Gel</em></figcaption><br />
+<br />
+</figure>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <dl class="horizontal-list">
+                <dt>产品类别:</dt>
+                        <dd>
+                            <a href="/zh-cn/products/protein-tools/protein-markers-and-ladders">Protein Standards, </a>
+                        </dd>
+                        <dd>
+                            <a href="/zh-cn/products/markers-and-ladders">Marker 和 Ladder 产品, </a>
+                        </dd>
+                            <dd>
+                                <a href="/zh-cn/products/markers-and-ladders/protein-markers-and-ladders">蛋白标准品产品</a>
+                            </dd>
+                <span class="hidden-content">
+                </span>
+            </dl>
+
+            <dl class="horizontal-list">
+                <dt>应用: </dt>
+                        <dd>
+                            <a href="/zh-cn/applications/protein-analysis-and-tools/protein-standards">Protein Standards, </a>
+                        </dd>
+                            <dd>
+                                <a href="/zh-cn/applications/protein-analysis-and-tools">Protein Analysis Tools</a>
+                            </dd>
+                <span class="hidden-content test">
+                </span>
+            </dl>
+
+        </section>
+        <ul class="non-expander product-detail__expander">
+                        <li>
+                            <div data-section='产品组分信息' class="expander__title"><h3>产品组分信息</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                        <p id="reagents-desc">本产品提供以下试剂或组分：</p><input id="hdn-pdp-reagenttable-readmore" name="hdn-pdp-reagenttable-readmore" type="hidden" value="展开" /><input id="hdn-pdp-reagenttable-readless" name="hdn-pdp-reagenttable-readless" type="hidden" value="收起" />    <section class="order-grid__table-wrap rs-section no-page-anchor">        <table class="items rs-items" aria-labelledby="reagents-desc">            <thead>                <tr>                    <th scope="col" class="rs-pack">NEB #</th>                    <th scope="col" class="rs-component-name">名称</th>                    <th scope="col" class="rs-component">组分货号</th>                    <th scope="col" class="rs-temp">储存温度</th>                    <th scope="col" class="rs-amount">数量</th>                    <th scope="col" class="rs-concentration">浓度</th>                </tr>            </thead>            <tbody>                        <tr class="variant-fert">                            <td colspan="7" class="rs-header-row">                                <ul class="expander product-detail__expander">                                    <li>                                        <a href="" data-section="Reagents-Supplied" class="expander__title js-inner-accordion-item rs-expander__title">                                            <table class="rs-header-table">                                                <thead>                                                    <tr class="hide">                                                        <th scope="col" class="rs-pack">NEB #</th>                                                        <th scope="col" class="rs-component-name" aria-label="no data"></th>                                                        <th scope="col" class="rs-component" aria-label="no data"></th>                                                        <th scope="col" class="rs-temp">储存温度</th>                                                        <th scope="col" class="rs-amount" aria-label="no data"></th>                                                        <th scope="col" class="rs-concentration" aria-label="no data"></th>                                                    </tr>                                                </thead>                                                <tbody>                                                    <tr>                                                        <td class="rs-pack">P7717S</td>                                                        <td class="rs-component-name" aria-label="no data"></td>                                                        <td class="rs-component" aria-label="no data"></td>                                                            <td class="rs-temp">-20</td>                                                        <td class="rs-amount" aria-label="no data"></td>                                                        <td class="rs-concentration" aria-label="no data"></td>                                                    </tr>                                                </tbody>                                            </table>                                        </a>                                            <div class="submenu">                                                <table class="items rs-inner-items">                                                    <thead>                                                        <tr class="hide">                                                            <th scope="col" class="rs-pack" aria-label="no data"></th>                                                            <th scope="col" class="rs-component-name">名称</th>                                                            <th scope="col" class="rs-component">组分货号</th>                                                            <th scope="col" class="rs-temp">储存温度</th>                                                            <th scope="col" class="rs-amount">数量</th>                                                            <th scope="col" class="rs-concentration">浓度</th>                                                        </tr>                                                    </thead>                                                    <tbody>                                                                <tr class="reagent-fill">                                                                    <td class="rs-pack" aria-label="no data"></td>                                                                        <td class="rs-component-name">Unstained Protein Standard, Broad Range (10-200 kDa)</td>                                                                    <td class="rs-sku rs-component">P7717SVIAL</td>                                                                    <td class="rs-temp">                                                                        -20                                                                    </td>                                                                        <td class="rs-amount">                                                                            1 x 150 gel lanes                                                                        </td>                                                                                                                                            <td class="rs-concentration">Not Applicable</td>                                                                </tr>                                                    </tbody>                                                </table>                                            </div>                                    </li>                                </ul>                            </td>                        </tr>                        <tr class="variant-fert">                            <td colspan="7" class="rs-header-row">                                <ul class="expander product-detail__expander">                                    <li>                                        <a href="" data-section="Reagents-Supplied" class="expander__title js-inner-accordion-item rs-expander__title">                                            <table class="rs-header-table">                                                <thead>                                                    <tr class="hide">                                                        <th scope="col" class="rs-pack">NEB #</th>                                                        <th scope="col" class="rs-component-name" aria-label="no data"></th>                                                        <th scope="col" class="rs-component" aria-label="no data"></th>                                                        <th scope="col" class="rs-temp">储存温度</th>                                                        <th scope="col" class="rs-amount" aria-label="no data"></th>                                                        <th scope="col" class="rs-concentration" aria-label="no data"></th>                                                    </tr>                                                </thead>                                                <tbody>                                                    <tr>                                                        <td class="rs-pack">P7717L</td>                                                        <td class="rs-component-name" aria-label="no data"></td>                                                        <td class="rs-component" aria-label="no data"></td>                                                            <td class="rs-temp">-20</td>                                                        <td class="rs-amount" aria-label="no data"></td>                                                        <td class="rs-concentration" aria-label="no data"></td>                                                    </tr>                                                </tbody>                                            </table>                                        </a>                                            <div class="submenu">                                                <table class="items rs-inner-items">                                                    <thead>                                                        <tr class="hide">                                                            <th scope="col" class="rs-pack" aria-label="no data"></th>                                                            <th scope="col" class="rs-component-name">名称</th>                                                            <th scope="col" class="rs-component">组分货号</th>                                                            <th scope="col" class="rs-temp">储存温度</th>                                                            <th scope="col" class="rs-amount">数量</th>                                                            <th scope="col" class="rs-concentration">浓度</th>                                                        </tr>                                                    </thead>                                                    <tbody>                                                                <tr class="reagent-fill">                                                                    <td class="rs-pack" aria-label="no data"></td>                                                                        <td class="rs-component-name">Unstained Protein Standard, Broad Range (10-200 kDa)</td>                                                                    <td class="rs-sku rs-component">P7717SVIAL</td>                                                                    <td class="rs-temp">                                                                        -20                                                                    </td>                                                                        <td class="rs-amount">                                                                            5 x 150 gel lanes                                                                        </td>                                                                                                                                            <td class="rs-concentration">Not Applicable</td>                                                                </tr>                                                    </tbody>                                                </table>                                            </div>                                    </li>                                </ul>                            </td>                        </tr>            </tbody>        </table>    </section>
+                                </div>
+                            </div>
+                        </li>
+
+
+                <li>
+                    <div data-section='特性和用法' class="expander__title"><h3>特性和用法</h3></div>
+                    <div class="submenu">
+                        <div class="product-detail__expander-content css-properties-and-usage">
+                            
+
+
+
+                <h4>贮存溶液</h4>
+            <p>
+62.5 mM Tris-phosphate                    <br />
+1 mM EDTA                    <br />
+2% SDS                    <br />
+10 mM DTT                    <br />
+1 mM NaN<sub>3</sub>                    <br />
+0.01% bromophenol blue                    <br />
+33% Glycerol                    <br />
+                pH 7.5                 @ -20&deg;C            </p>
+
+
+                        </div>
+                    </div>
+                </li>
+
+                        <li>
+                            <div data-section='优势和特性' class="expander__title" data-gtm-nav-type="related-content" data-gtm-nav-name="优势和特性"><h3>优势和特性</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                        <h4>Features</h4><ul>
+    <li>Allows accurate molecular weight determination when performing SDS-PAGE analysis.</li>
+    <li>Direct loading, additional loading buffer and heat incubation not required</li>
+</ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-section='相关产品' class="expander__title" data-gtm-nav-type="related-content" data-gtm-nav-name="相关产品"><h3>相关产品</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                                <h4>相关产品</h4>            <ul>                        <li>                            <a href="/zh-cn/products/p7718-blue-prestained-protein-standard-broad-range-11-250-kda">Blue Prestained Protein Standard, Broad Range (11-250 kDa)</a>                        </li>                        <li>                            <a href="/zh-cn/products/p7719-color-prestained-protein-standard-broad-range-10-250-kda">Color Prestained Protein Standard, Broad Range (10-250 kDa)</a>                        </li>            </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-section='注意事项' class="expander__title" data-gtm-nav-type="related-content" data-gtm-nav-name="注意事项"><h3>注意事项</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                                        <ol>                                                        <li> To ensure uniform mobility, load an equal volume of 1X Reducing SDS Loading Buffer into any unused wells.</li>                                <li> To maximize shelf life, store at -20&deg;C. Guaranteed stable for 2 years when properly stored.</li>                                <li> It is not necessary to pre-heat the unstained protein standard prior to loading on a gel.</li>                                <li> Recommended mini-gel load: 3 &mu;l.</li>                                <li> Apparent molecular weight values for prestained proteins can be different when run on different gel types and percentages.</li>                    </ol>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div data-section='参考文献' class="expander__title" data-gtm-nav-type="related-content" data-gtm-nav-name="参考文献"><h3>参考文献</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                                <section id="pd-references" class="js-pdp-references">                                <ol>                        <li id="reference-400daff8-7292-431b-abed-51e4d72aa9c4">                            Laemmli, UK (1970). <em>Nature</em>. 227, 680.                        </li>                        <li id="reference-b0e3f1b2-b6b6-48d0-9223-9cf19b5f7ac1">                            Sambrook, J., Fitsch, EF. and Maniatis, T. (2001). <em>Molecular Cloning: A Laboratory Manual. (3rd ed.)</em>. Cold Spring Harbor: Cold Spring Harbor Laboratory Press.                        </li>                </ol>            </section>
+                                </div>
+                            </div>
+                        </li>
+        </ul>
+    </div>
+</li>
+
+    <li class="tab-header-and-content">
+        <div id='Protocols--Manuals-and-Usage' data-tab='操作说明、说明书 & 用法' class="jump-link" title="操作说明、说明书 &amp; 用法"><h2>操作说明、说明书 & 用法</h2></div>
+        <div class="tab-content">
+            <ul class="non-expander product-detail__expander">
+                        <li>
+                            <div id='Protocols--Manuals-and-Usage' data-section='操作说明' class="expander__title"><h3>操作说明</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                        <ol>            <li>                <a href="/zh-cn/protocols/protocol-for-using-the-unstained-protein-standard-broad-range-for-an-sds-page-mini-gel">Protocol for Using the Unstained Protein Standard, Broad Range (10-200 kDa) (P7717) for an SDS-PAGE Mini Gel</a>            </li>    </ol>
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+        </div>
+    </li>
+                        
+    <li class="tab-header-and-content">
+        <div id='FAQs-and-Troubleshooting' data-tab='FAQs & 问题解决指南' class="jump-link" title="FAQs &amp; 问题解决指南"><h2>FAQs & 问题解决指南</h2></div>
+        <div class="tab-content">
+            <ul class="non-expander product-detail__expander">
+                        <li>
+                            <div data-section='FAQs' class="expander__title"><h3>FAQs</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                    <ol>        <li>            <a href="/zh-cn/faqs/how-does-the-unstained-protein-standard-broad-range-differ-from-nebs-previous-unstained-protein">How does the Unstained Protein Standard, Broad Range differ from NEB’s previous Unstained Protein Standard?</a>        </li>        <li>            <a href="/zh-cn/faqs/what-is-the-protein-concentration-of-the-proteins-used-in-the-unstained-protein-standard-broad-range">What is the protein concentration of the proteins used in the Unstained Protein Standard, Broad Range?</a>        </li>        <li>            <a href="/zh-cn/faqs/can-the-unstained-protein-standard-broad-range-be-used-as-a-precise-standard-for-determining-the-exact-molecular-weight-of-a-protein-of-interest">Can the Unstained Protein Standard, Broad Range be used as a precise standard for determining the exact molecular weight of a protein of interest?</a>        </li>        <li>            <a href="/zh-cn/faqs/is-the-unstained-protein-standard-broad-range-compatible-with-various-methods-of-staining-such-as">Is the Unstained Protein Standard, Broad Range compatible with various methods of staining, such as SYPRO&reg; Ruby Protein Gel Stain or Silver Staining?</a>        </li>        <li>            <a href="/zh-cn/faqs/i-accidentally-left-my-protein-standard-out-at-room-temperature-for-a-number-of-days-is-it-still-okay-to-use">I accidentally left my Protein Standard out at room temperature for a number of days. Is it still okay to use?</a>        </li></ol>
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+        </div>
+    </li>
+            
+    <li class="tab-header-and-content">
+        <div id='Citations-and-Technical-Literature' data-tab='引用 & 技术文献' class="jump-link" title="引用 &amp; 技术文献">
+            <h2>引用 & 技术文献</h2>
+        </div>
+        <div class="tab-content">
+            <ul class="non-expander product-detail__expander">
+                        <li>
+                            <div id='产品手册' data-section='产品手册' class="expander__title"><h3>产品手册</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                        <ul>                <li>                    <a href="/zh-cn/-/media/nebcn/files/brochures/protein_expression_brochure_cn.pdf?rev=4ae94e0b87404624843017a37b824ac5&amp;sc_lang=zh-cn&amp;hash=EAA4A64A4A5300EB232691C98CCADA93">蛋白表达与纯化手册</a>                </li>    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id='引用文献' data-section='引用文献' class="expander__title"><h3>引用文献</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                    <div id="pdp-bioz"     data-catalog="P7717"     data-minimum="0"     style="display: none;">        <div id="pdp-citations">                <div id="bioz-citations" style="min-height: auto;">        <h4 class="bioz-citations__title">产品引用文献查找工具</h4>        <object id="wobj-79-q" type="text/html" data="https://www.bioz.com/v_widget_6_0/79/P7717/?lang=zh&cr=1&cdn=cn" style="width:100%; height: 193px"></object> <div id="bioz-w-pb-79-q-div" style="width: 100%"><a id="bioz-w-pb-79-q" style="font-size: 12px;text-decoration:none;color:#ca4a05" href="https://www.bioz.com/" target="_blank"><img src="https://cdn.bioz.com/assets/favicon.png" style="width:11px;height:11px;vertical-align: baseline;padding-bottom:0px;margin-left:0px;margin-bottom:0px;float:none"> Powered by Bioz</a> <a style="font-size: 12px;text-decoration:none;float: right;color:transparent" href="https://www.bioz.com/result/P7717/product/New England Biolabs/?cn=P7717" target="_blank"> See more details on Bioz</a></div>    </div>        </div></div>
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+        </div>
+    </li>
+            
+    <li class="tab-header-and-content">
+        <div id='Quality--Safety-and-Legal' data-tab='质控、安全 &amp; 法规' class="jump-link" title="质控、安全 &amp; 法规"><h2>质控、安全 & 法规</h2></div>
+        <div class="tab-content">
+            <ul class="non-expander product-detail__expander">
+                        <li>
+                            <div id='质控分析' data-section='质控分析' class="expander__title"><h3>质控分析</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                    每一新批次的 NEB 产品都要经过质控，以满足指定的质量标准，对特定产品的质量标准和每一批次的检测数据可以通过产品说明表格、COA、产品信息卡或者产品手册进行查阅或下载。关于 NEB 产品质控的详细信息，可从<a href="https://www.neb.com/about-neb/quality-at-neb" target="_self">此处</a>查阅。
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id='Specification' data-section='产品说明与变更通知' class="expander__title"><h3>产品说明与变更通知</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                    产品说明表包含产品的储存温度、有效期和规格，这些文件的命名规则如下：[货号]_[规格]_[版本]    <ul class="downloads">            <li>                <a href="/zh-cn/-/media/catalog/specifications/p/7/p7717s_l_v1.pdf?rev=4630f0e5cdd340cba89efea5086e26bd&amp;hash=B27C822B68F81600AB2176BD7D735587" target="_blank">P7717S_L_v1</a>            </li>    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id='CoA' data-section='CoA' class="expander__title"><h3>CoA</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                    CoA 文件包含单个批次产品的储存温度、有效期和质控，这些文件的命名规则如下： [货号]_[规格]_[版本]_[Lot#]        <ul class="downloads">                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10040334.pdf?rev=373bda8965574d5f9424bd933e25587b&amp;hash=25A26A73B7ECBC428DB02AADD6488FDC" target="_blank">P7717L_v1_10040334</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10040333.pdf?rev=f1fccfb3fcf542319caa8b41f5c3ed0b&amp;hash=084640B7B5805C0997FAEF54065FC12F" target="_blank">P7717S_v1_10040333</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10055301.pdf?rev=296fcb68f30042348eaa090fdecc4002&amp;hash=97B9D12BD7A3D812261E31F77749B9E5" target="_blank">P7717L_v1_10055301</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10058666.pdf?rev=42ef4c823cea4faa86ea2a747923e7cf&amp;hash=91008A062156C0B55B2C1B2BD6231C34" target="_blank">P7717S_v1_10058666</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10064785.pdf?rev=77d266ceb445488fa3a6262f300893e5&amp;hash=A8D1FE2BD0DB0E46AB3F6B03112259CE" target="_blank">P7717L_v1_10064785</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717g_v1_10065955.pdf?rev=43cce6b6939744198568bb2c494384d0&amp;hash=D2173702C2A4133E372B1F3A286AF48E" target="_blank">P7717G_v1_10065955</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10064786.pdf?rev=ba4ffcff850f41bb830b4cb0b923a041&amp;hash=88CCF4EDEF35CDC748EC77EEBF86A8B4" target="_blank">P7717S_v1_10064786</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10077473.pdf?rev=925d3d42555c460ebcb86cc8f423cfab&amp;hash=5BAAC4C3C859B61FF65CB1BC6A01FDCA" target="_blank">P7717L_v1_10077473</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10077472.pdf?rev=9e4b3eda61c84edfa4f74434e5c62bb5&amp;hash=D56AF6A96C780CC1D17CABCDF1376F3D" target="_blank">P7717S_v1_10077472</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10081864.pdf?rev=8dade158945b47c89bd31d3110ce4130&amp;hash=290CA6A785E155AA66B00D2658BB92C6" target="_blank">P7717L_v1_10081864</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10081863.pdf?rev=a6620c69aaa541ad88f884e4641477c9&amp;hash=FC69ACA38A67E661CE53838EA0344A43" target="_blank">P7717S_v1_10081863</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10089441.pdf?rev=ae0381b206a5424494f7d5ae8536b921&amp;hash=B5DEC8571271AAF6352051FBE365C940" target="_blank">P7717L_v1_10089441</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10097788.pdf?rev=ffe10c432d18443fb883a66f074b4e88&amp;hash=2AA4EE2F53F3C0F9C0DC208639BC0F73" target="_blank">P7717S_v1_10097788</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10101256.pdf?rev=dc8db36740a04de49fb1759596899c10&amp;hash=A0321AF3E35778C312CCCC68FD5B7ED1" target="_blank">P7717S_v1_10101256</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717g_v1_10117402.pdf?rev=8d952c23ba3146de9f9edb792ea79676&amp;hash=AFAFA925D1FBEDBEB967EED48E6B007C" target="_blank">P7717G_v1_10117402</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10100449.pdf?rev=57039d37ecb2408f9be9de833e51e78f&amp;hash=4790535BC3BE24541AB55C164A1019D3" target="_blank">P7717L_v1_10100449</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10119071.pdf?rev=98f88e9218b0411b82370649cafe0480&amp;hash=36FE92B30FD3AF8827668F246DBF1B33" target="_blank">P7717S_v1_10119071</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717g_v1_10122077.pdf?rev=a7c146dca79346c5a48166ffacf5f391&amp;hash=87AA4633AA6AF9A0DB851953FB33AB93" target="_blank">P7717G_v1_10122077</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10130314.pdf?rev=91f349be3c094e19919bc052b39bee3e&amp;hash=B32A020F8032ABF50B739220C8A883B1" target="_blank">P7717L_v1_10130314</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717g_v1_10130315.pdf?rev=71ad0da169144c7e897804d52ed801dd&amp;hash=D9FBF70EF8C0ED1E1C64782298B50F9B" target="_blank">P7717G_v1_10130315</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10140347.pdf?rev=a2b7898f41bc471fad9e3dc41844dab8&amp;hash=47566A8D11135781199E6E9FB97E4483" target="_blank">P7717S_v1_10140347</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10140348.pdf?rev=9a663a4b0f1f48e2b2046fa87de23ba8&amp;hash=E113DC2A1E7C94B8A0674E2CD51B2947" target="_blank">P7717L_v1_10140348</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10148406.pdf?rev=e0acd8fb3c834a4ead6d0b9712f06621&amp;hash=5D83EADDECF3E38BC208C96CBAD328C0" target="_blank">P7717L_v1_10148406</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717g_v1_10142328.pdf?rev=da4ba482b1df4bda873ed9fc5a770483&amp;hash=2017ED0E511ACB081C3D93EEC2882518" target="_blank">P7717G_v1_10142328</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10157359.pdf?rev=64ed21befa514f03b9becce5b43d5315&amp;hash=9948545D65091D562DEF4D8C245F96DB" target="_blank">P7717L_v1_10157359</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10164672.pdf?rev=1344fdebc5e04b7592c3524da0187786&amp;hash=1DECA058E147950A1037F09D63154ECA" target="_blank">P7717L_v1_10164672</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10164842.pdf?rev=0c1a723e164b4e618fb8e25f0904d6b7&amp;hash=0A714961BBA784679CB44BB0B39C9D41" target="_blank">P7717S_v1_10164842</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717g_v1_10173097.pdf?rev=a1932d2fada2439bbc26027257a8bbd7&amp;hash=F0B71929AEF92BB5C7B14EAE32CF7351" target="_blank">P7717G_v1_10173097</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10170603.pdf?rev=d68cd194714a4123b6e1291c169b578b&amp;hash=CB92D7C5E00C8665C218754B7B3A23A8" target="_blank">P7717L_v1_10170603</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10175346.pdf?rev=c6f605bb26fb4ae7865df9ccff8c6b31&amp;hash=4620705D698517806BA1EB2C6CBB0B93" target="_blank">P7717L_v1_10175346</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10191272.pdf?rev=1fbd0f09a91f4c10bace1f3e540436a0&amp;hash=1B0BCB3D981DD6993B4437CB9E575B98" target="_blank">P7717L_v1_10191272</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10212854.pdf?rev=78fdfd90e44f4ce581e6fb3382c8841a&amp;hash=D10DC0D0CD0E79D4850285574803F117" target="_blank">P7717L_v1_10212854</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10223291.pdf?rev=4f495e5e4f2d4adcb50165ffdf6572b6&amp;hash=DF890B775AF4015040FB26D34735B9BD" target="_blank">P7717L_v1_10223291</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10191271.pdf?rev=fc6e3956523345f29341dcf8475fcbd2&amp;hash=C6E1BE10614DC2BE2C4EE7AE1AC642D3" target="_blank">P7717S_v1_10191271</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717g_v1_10230408.pdf?rev=5f6c920094ad4d119c54689afc2d9956&amp;hash=385F81AB059B1BD804AD8DCED957B98E" target="_blank">P7717G_v1_10230408</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10230409.pdf?rev=b3782844c5984987a446d2407aee14cc&amp;hash=A2C3E5EFBC6B7BA77BBD2BA89F21EDAB" target="_blank">P7717S_v1_10230409</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10243972.pdf?rev=9e717bb578af432ca71bea0c880c80cc&amp;hash=84A2DBCB0A49882D16486B9A869B0611" target="_blank">P7717S_v1_10243972</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717g_v1_10251812.pdf?rev=9b35ff3dbee04a7b8894dc793be88c30&amp;hash=E1A931DF5563AF4D795772F694A4EDA1" target="_blank">P7717G_v1_10251812</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10270928.pdf?rev=aa0b3630e42c4a40961b49017aeb008f&amp;hash=32A01948C195426517C92A377AF35F74" target="_blank">P7717L_v1_10270928</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10266084.pdf?rev=3df9eacfad394d7f8f0a322ff476fce9&amp;hash=3226E46E6575A75C6E9AED4F3B76FB62" target="_blank">P7717S_v1_10266084</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717g_v1_10280584.pdf?rev=91bfb51039794eaf9a1dd9cfae4562b5&amp;hash=113DC947A20AB2F711EAECE29CC742EF" target="_blank">P7717G_v1_10280584</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10295160.pdf?rev=d5614857b88c49d7807952038e624a08&amp;hash=A45433AC1D1294C49EE222BBD1C40821" target="_blank">P7717L_v1_10295160</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10301981.pdf?rev=d2e19422c29b450e998adff96d7d29d6&amp;hash=D829EF53CB4812B4EC186A39A661270D" target="_blank">P7717L_v1_10301981</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10302080.pdf?rev=7f7622582316479591e90b4e663a1e07&amp;hash=430442E679277AD1558A847A23AF0DC9" target="_blank">P7717S_v1_10302080</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10306880.pdf?rev=1550aa6d3d41454dbda0ce9250d1fdc9&amp;hash=A25941A775E59BF43D40E01F1B7101F6" target="_blank">P7717L_v1_10306880</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10319332.pdf?rev=984827dca1724fac98566a76c822f979&amp;hash=F879AE0E76A4D228CCA05065F633267B" target="_blank">P7717S_v1_10319332</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10319794.pdf?rev=cc1a0179342a4646843fec29ee5fbcbd&amp;hash=B8B891EA438FFBA5F05D4C8D9863DA71" target="_blank">P7717S_v1_10319794</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10319956.pdf?rev=3f4a516a335740a59d59c46a656d76b0&amp;hash=5107987A5DA71BF57953AD01CFF44310" target="_blank">P7717L_v1_10319956</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717l_v1_10338963.pdf?rev=3ad2a02714894b0f9c982de378e6fe44&amp;hash=B15C421130CBA058FCD1CAADD2391456" target="_blank">P7717L_v1_10338963</a>                </li>                <li>                    <a href="/zh-cn/-/media/catalog/certificates-of-analysis/p/7/p7717s_v1_10343731.pdf?rev=38ee1be3ae2e4b41aa4c7052bf094ff6&amp;hash=148DE99AEC7F51D9F15DEE1C4F39127F" target="_blank">P7717S_v1_10343731</a>                </li>        </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id='Safety-Data-Sheets' data-section='SDS' class="expander__title"><h3>SDS</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                    以下 SDS 文件可以帮助您安全地使用该产品    <ul class="downloads">                <li class="dl-pdf single-column">                    <div class="dropdown-link-wrapper">                        <a href="#" class="dropdown-link" data-select-label="Choose format"                           data-link-map="{&quot;gh&quot;:{&quot;label&quot;:&quot;United States&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/3316a3491a484bdeb680239025ceefd3.pdf?rev=8b53a976fe3548a99409df66a2497c91&amp;hash=E09E544BE9A7998D42D4D3900C30A84A&quot;},&quot;prt&quot;:{&quot;label&quot;:&quot;Portuguese&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/e55b290b5eff4e1dbfee847c5fd9d1e2.pdf?rev=b633391f858e45f28003bcafc36bb064&amp;hash=B9C0E707A06C155B3332D896CA42BBAE&quot;},&quot;cae&quot;:{&quot;label&quot;:&quot;Canadian&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/001e55697b1843e5a43d3c0312b4c008.pdf?rev=ed221811defc40eab6ef2cc2ed32f983&amp;hash=D1487E3C8F7B44141F06E79AD436E77A&quot;},&quot;ukm&quot;:{&quot;label&quot;:&quot;United Kingdom&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/edf55987e138426b92389e90e400babc.pdf?rev=0a64e5cb102d4e269897c5fb4fb934d3&amp;hash=D7364C3946429AB0EDC2B025DA5F0378&quot;},&quot;chn&quot;:{&quot;label&quot;:&quot;Chinese&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/5a2771859a61423486ee225869d53483.pdf?rev=d73a8a5783cc431f8ad2d2d803eac3e4&amp;hash=817D6B495B1553AF032E74D4DC1072BF&quot;},&quot;dch&quot;:{&quot;label&quot;:&quot;Dutch&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/c087ed18dc214799ac939d27496c5c3e.pdf?rev=648baacffbac4fe087fcf10b0e6e04c4&amp;hash=248F8CBEDC9B92948CE997648A660F86&quot;},&quot;eue&quot;:{&quot;label&quot;:&quot;European&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/1f5dc1ba4d4b4fb489e122826f82ed97.pdf?rev=92529c44246b441e83e50023cf06554d&amp;hash=AB4D7F71702526789463CAF2732F3922&quot;},&quot;fra&quot;:{&quot;label&quot;:&quot;French&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/c89478aba0a446028709fd77398d83f8.pdf?rev=f7aa3c5c8ec9478282a584b9239df2a7&amp;hash=1A9541167ADFDD89E3CDB248F6F1B252&quot;},&quot;deu&quot;:{&quot;label&quot;:&quot;German&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/bf5e8b994ac44ba7b732e95b64e24a24.pdf?rev=2bd8f74bf38d483c84b8a06a2252c406&amp;hash=F1F7458684CAC3149FCD842614397527&quot;},&quot;ita&quot;:{&quot;label&quot;:&quot;Italian&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/a55f19f095ef4c0082a845d715801ea8.pdf?rev=5febaab339134f5396f69bfbc2735835&amp;hash=551F550869E3911D4026269E1F1A0E03&quot;},&quot;jpn&quot;:{&quot;label&quot;:&quot;Japanese&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/b379841362cc45419941ff7cd986c733.pdf?rev=7a6762d0e5dc4c4781ce5d13f66e568f&amp;hash=592D9397405B7C96B5CD9979B511BA3D&quot;},&quot;kor&quot;:{&quot;label&quot;:&quot;Korean&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/972dd348eb99481a80068dc4617ef7d8.pdf?rev=2f052d94f28a44de90ea1f080a28df04&amp;hash=BFEB23658902EDF9397A5B619482C5A2&quot;},&quot;nor&quot;:{&quot;label&quot;:&quot;Norwegian&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/133a262957fa49d58fa9db3919269a38.pdf?rev=4bc2b10260954bd09aab60d69130ff4d&amp;hash=1897DC1D072F80709DF911BFE2C0BF76&quot;},&quot;esp&quot;:{&quot;label&quot;:&quot;Spanish&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/be63326660bd45b589ad781ec071bd98.pdf?rev=1dd0222a2e6f4ce69c9b9deef6918797&amp;hash=8DB11707AEFD73ABBA0FC2A8CB46F67F&quot;},&quot;aus&quot;:{&quot;label&quot;:&quot;Australia&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/e2c7db4e5419416d99568154b2117071.pdf?rev=2a8d2c0e27cb4370b35f00f5d8545c3d&amp;hash=4398859F00128A6C5F61AB849794AB62&quot;},&quot;nzl&quot;:{&quot;label&quot;:&quot;New Zealand&quot;,&quot;url&quot;:&quot;/zh-cn/-/media/02487502ff0b4b029acc45385957b6ab.pdf?rev=d6e2b830115943cdbbd964b312405754&amp;hash=12458D8C9379A3EA8E19994EBFB278E2&quot;}}" data-link-label="Download" target="_blank">Unstained Protein Standard, Broad Range (10-200 kDa)</a>                    </div>                </li>    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div id='法律-and-免责声明' data-section='法律 &amp; 免责声明' class="expander__title"><h3>法律 &amp; 免责声明</h3></div>
+                            <div class="submenu">
+                                <div class="product-detail__expander-content">
+                                    产品及内容受 New England Biolabs, Inc（NEB）所拥有或控制的一项或多项专利、<a href="/trademarks">商标</a>和/或版权保护。文中使用商标符号并不一定表明其在出现的国家/地区注册为商标，仅表明已在创始地注册。如将本产品用于特定应用，用户可能需要获取第三方知识产权授权许可。了解更多信息，请邮件咨询 <a href="/cdn-cgi/l/email-protection#aeccdbddcacbd8eec0cbcc80cdc1c3"><span class="__cf_email__" data-cfemail="b8dacdcbdcddcef8d6ddda96dbd7d5">[email&#160;protected]</span></a>。<br /> <br /> 本产品仅用于科研。本产品不适用于人类或动物的治疗或诊断。<br /> <br /> New England Biolabs（NEB）致力于开展合乎伦理的科学研究 &ndash; 我们坚信，作为科研工作者，我们的工作是提出重要问题，解决这些问题，将有助于维护我们的生活质量和我们所生活的世界。然而，研究必须始终以安全且合乎道德的方式进行。<a href="/neb-ethics">了解更多</a>。
+                                </div>
+                            </div>
+                        </li>
+            </ul>
+        </div>
+    </li>
+        </ul>
+    </div>
+</section>
+<div class="column__row column__row--space-after column__row--padded product-detail__top">
+    <div class="page-container">
+        
+
+    </div>
+</div>
+<!-- End:   Product Detail - Tabs -->
+
+
+        <section class="column__row column__row--space-after column__row--padded product-detail__similar-products" data-gtm-carousel-type="related-products">
+            <div class="page-container">
+
+                <pdp-carousel
+                    :items="[{&quot;ItemUrl&quot;:&quot;/zh-cn/products/p7718-blue-prestained-protein-standard-broad-range-11-250-kda&quot;,&quot;Thumbnail&quot;:&quot;/zh-cn/-/media/catalog/product-images/p7718.jpg?rev=4bcfdeea3e814c87853750ace834e2d9&quot;,&quot;FullProductName&quot;:&quot;Blue Prestained Protein Standard, Broad Range (11-250 kDa)&quot;},{&quot;ItemUrl&quot;:&quot;/zh-cn/products/p7719-color-prestained-protein-standard-broad-range-10-250-kda&quot;,&quot;Thumbnail&quot;:&quot;/zh-cn/-/media/catalog/product-images/p7719.jpg?rev=5a28895392a44b4286596c9437610c82&quot;,&quot;FullProductName&quot;:&quot;Color Prestained Protein Standard, Broad Range (10-250 kDa)&quot;},{&quot;ItemUrl&quot;:&quot;/zh-cn/products/b7703-blue-protein-loading-dye&quot;,&quot;Thumbnail&quot;:&quot;/zh-cn/-/media/catalog/product-images/photonotavailable.jpg?rev=267309bbef3140e1b83ca3adfe94aa63&quot;,&quot;FullProductName&quot;:&quot;\u84DD\u8272\u86CB\u767D\u4E0A\u6837\u67D3\u6599&quot;}]"
+                    :title="'其它感兴趣的产品'"
+                    :show-view-all="false"
+                    :is-video="false"
+                ></pdp-carousel>
+
+            </div>
+        </section>
+
+
+
+<div class="refills-modal restock-modal js-refills-modal">
+    <label for="restockModal" class="restock-modal__label js-restock-modal--trigger">
+        <div class="modal-trigger restock-modal__trigger">Submit Restocking Order</div>
+    </label>
+    <input class="modal-state" id="restockModal" type="checkbox" autocomplete="off" />
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close" for="restockModal"></div>
+            <div class="restock-modal__top">
+                <h2 class="restock-modal__title">Ineligible item added to cart</h2>
+<p class="restock-modal__intro">Based on your Freezer Program type, you are trying to add a product to your cart that is either not allowed or not allowed with the existing contents of your cart. Please review and update your order accordingly. If you have any questions, please contact Customer Support at <a href="https://"><span class="__cf_email__" data-cfemail="97f1e5f2f2edf2e5e4d7f9f2f5b9f4f8fa">[email&#160;protected]</span></a> or 1-800-632-5227 x 8.</p>
+            </div>
+            <div class="restock-modal__bottom">
+                
+            </div>
+            <section class="restock-modal__buttons">
+                    <a href="/zh-cn/" target="" class="btn js-modal-close"></a>
+            </section>
+        </div>
+    </div>
+</div>
+
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="fakeVueHeader">
+		<!-- desktop -->
+		<header class="global-header js-global-header  fake-header__desktop" style="margin-top: 0px; color: white !important">
+			<div class="container" style="height: 167px">
+				<div data-v-3bb7adf2="" class="global-header__desktop-header large-site-nav">
+					<div data-v-3bb7adf2="" class="large-site-nav__grid-container">
+						<section data-v-3bb7adf2="" class="grid-logo">
+							<div data-v-3bb7adf2="" class="global-header__logo">
+								<a href="/" class="global-header__logo-link">
+									<picture class="global-header__logo--dark">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+									<picture class="global-header__logo--light">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+								</a>
+							</div>
+						</section>
+						<section data-v-3bb7adf2="" class="col grid-search">
+							<div data-v-3bb7adf2="" id="_5870A13F-F6E7-45C5-84FE-7BDE738FF6F4" data-search-interface-id="coveoddb0ca74"
+								 class="vue-header-coveo-search-container">
+								<div class="coveo-search-section"></div>
+							</div>
+						</section>
+						<section data-v-3bb7adf2="" class="grid-top-bar text-right">
+							<a data-v-528fe100=""
+							   data-v-3bb7adf2="" class="large-site-navigation__item-secondary-link notificationsLink">
+								<i data-v-528fe100="" class="large-site-navigation__item-icon">
+									<svg data-v-528fe100="" width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="bell-icon">
+										<path data-v-528fe100=""
+											  d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+											  stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+										<path data-v-528fe100=""
+											  d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+											  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+									</svg>
+								</i>
+							</a>
+						</section>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- mobile -->
+		<header class="global-header js-global-header  fake-header__mobile">
+			<div class="container">
+				<div data-v-71cd6da6="" class="global-header__mobile-header js-mobile-header" style="border-bottom: none;">
+					<div data-v-71cd6da6="" class="row js-global-mobile-header">
+						<div data-v-71cd6da6="" class="col-auto global-header__hamburger-container">
+							<button data-v-71cd6da6=""
+									class="global-header__hamburger">
+								<span data-v-71cd6da6=""
+									  class="global-header__hamburger-bar"></span>
+							</button>
+						</div>
+						<div data-v-71cd6da6="" class="col px-0 mobile-header-logo-height">
+							<div data-v-71cd6da6="" class="global-header__logo">
+								<a href="/" class="global-header__logo-link">
+									<picture class="global-header__logo--dark">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_notag.svg?rev=468a258a1f5548968326c502b2d61b98&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+									<picture class="global-header__logo--light">
+										<img src="/en-us/-/media/nebus/logo/2024/neb_logo_reversed_notag.svg?rev=0838f66ddf534fad975c0556c67c0045&sc_lang=en-us"
+											 alt="NEB Logo">
+									</picture>
+								</a>
+							</div>
+						</div>
+						<div data-v-71cd6da6="" class="col">
+							<div data-v-71cd6da6="" class="row justify-content-end h-100 mobile-header-icons-container">
+								<div data-v-71cd6da6="" class="mobile-header-icon align-items-center international-notifications-bell">
+									<a data-v-528fe100="" data-v-71cd6da6=""
+									   class="large-site-navigation__item-secondary-link notificationsLink" target="_blank">
+										<i data-v-528fe100="" class="large-site-navigation__item-icon">
+											<svg data-v-528fe100="" width="24"
+												 height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="bell-icon">
+												<path data-v-528fe100=""
+													  d="M18 8C18 6.4087 17.3679 4.88258 16.2426 3.75736C15.1174 2.63214 13.5913 2 12 2C10.4087 2 8.88258 2.63214 7.75736 3.75736C6.63214 4.88258 6 6.4087 6 8C6 15 3 17 3 17H21C21 17 18 15 18 8Z"
+													  stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+												<path data-v-528fe100=""
+													  d="M13.7295 21C13.5537 21.3031 13.3014 21.5547 12.9978 21.7295C12.6941 21.9044 12.3499 21.9965 11.9995 21.9965C11.6492 21.9965 11.3049 21.9044 11.0013 21.7295C10.6977 21.5547 10.4453 21.3031 10.2695 21"
+													  stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+											</svg>
+										</i>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div style="height: 2px; background-color: white"></div>
+				</div>
+			</div>
+	</div>
+	</header>
+	</div>
+
+	
+
+	<!-- End:   #nebVue -->
+	
+    <!-- FooterVue.cshtml-->
+<footer class="updated-footer site-footer js-site-footer" id="neb-footer" data-gtm-nav-type="footer">
+        <div class="page-container container">
+            <div class="row footer-contact d-flex site-footer__top-row">
+                <div class="col-12 col-lg-8 px-0 site-footer__grid-in-content">
+                    <!-- Begin: Partial/Footer/ToRequestTechnicalSupport -->
+                    <div class="col-sm-12 col-md-6 footer-contact-info">
+<h3>获取技术支持帮助</h3>
+<p>
+请填写<a href="/zh-cn/forms/neb-technical-support">技术支持表格</a>, <a href="/cdn-cgi/l/email-protection#04777174746b7670446a616629676c6d6a652a676b69">发送邮件</a>,
+<br />
+或拨打 400&nbsp;811&nbsp;2220/ 400&nbsp;690&nbsp;3366。
+</p>
+<h3>国外客户</h3>
+<p>
+请联系<a href="/zh-cn/support/international-ordering-support">当地办事处或代理商.</a></p>
+</div>
+<div class="col-sm-12 col-md-6 footer-contact-info">
+<h3>订购帮助</h3>
+<p>
+订购产品请联系当地<a href="/zh-cn/support/cn-sales-representative-list-by-territory">代理商
+</a></p>
+</div>
+                    <!-- End:   Partial/Footer/ToRequestTechnicalSupport -->
+                </div>
+
+                                        <div class="col-12 col-md-12 col-lg-4 form-news">
+                            
+    <h3>想了解更多最新产品？</h3>
+    <p class="news-letter">邮件订阅</p>
+<form action="/products/p7717-unstained-protein-standard-broad-range-10-200-kda" class="form-horizontal" id="email-pref" method="post"><input name="__RequestVerificationToken" type="hidden" value="xYK-lxrcBSG870guPPmM6uXo_RIaL121ic8ukHK8ZcGFBXBVuRxEgiyudnK3f4M9HtdnKSlSTupTPPKcy2a21T-fcKY1" /><input id="scController" name="scController" type="hidden" value="Account" /><input id="scAction" name="scAction" type="hidden" value="GoToNewsletterForm" />            <form id="homeSubscribe" class="form-horizontal">
+                <div class="form-group">
+                    <div class="col-sm-12">
+
+                        <input aria-labelledby="emailSubscriptionSubscribeButton" class="form-control text-box single-line" data-val="true" data-val-regex="Email Address was not valid." data-val-regex-pattern="^(([^&lt;>()[\]\\.,;:\s@&quot;]+(\.[^&lt;>()[\]\\.,;:\s@&quot;]+)*)|(&quot;.+&quot;))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$" data-val-required="Profile Email Address must be filled in." id="EmailAddress" maxlength="80" name="EmailAddress" placeholder="Email" type="email" value="" />
+                        <span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="true"></span>
+                        <input id="ButtonUrl" name="ButtonUrl" type="hidden" value="zh-cn/forms/newsletters" />
+
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-sm-12">
+                            <button id="emailSubscriptionSubscribeButton" type="submit" class="btn primary-btn">订阅</button>
+                    </div>
+                </div>
+            </form>
+</form>
+                        </div>
+
+            </div>
+        </div>
+    <section class="column__row column__row--padded site-footer__nav-section">
+        <div class="page-container nav-container">
+            <nav class="footer-nav footer-nav">
+                
+        <div class="footer-nav__row" data-gtm-nav-type="footer">
+
+  <a href="/zh-cn/support" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="帮助">帮助</a>
+
+  <a href="/zh-cn/about-neb/neb-overview" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="关于 NEB">关于 NEB</a>
+
+  <a href="/zh-cn/support/international-ordering-support" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="联系我们">联系我们</a>
+
+  <a href="/zh-cn/about-neb/careers" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="职业发展">职业发展</a>
+
+  <a href="/zh-cn/site-map" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="网站地图">网站地图</a>
+
+  <a href="/zh-cn/terms-of-use" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="使用条款">使用条款</a>
+
+        </div>
+        <div class="footer-nav__row" data-gtm-nav-type="footer">
+
+  <a href="/zh-cn/cookie-policy" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="Cookie 政策">Cookie 政策</a>
+
+  <a href="/zh-cn/trademarks" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="注册商标">注册商标</a>
+
+  <a href="/zh-cn/support/terms-of-sales" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="销售条款">销售条款</a>
+
+  <a href="/zh-cn/privacy-policy" class="footer-nav__item  pardotTrackClick" target="" data-gtm-nav-name="隐私政策">隐私政策</a>
+
+
+                <label for="countrySelectionModal" class="footer-nav__item country-selection__trigger-link js-country-selection-trigger">
+                    <span class="modal-trigger">选择地区</span>
+                </label>
+        </div>
+    <h2 style="color:transparent; padding:0; margin:0;height:0;">CN</h2>
+
+            </nav>
+        </div>
+    </section>
+
+    <div class="page-container site-footer__lower-container">
+            <section class="site-footer__bcorp">
+                        <a href="https://bcorporation.net/about-b-corps" class="site-footer__bcorp-link">
+                            <img src="/zh-cn/-/media/nebus/b-corp/b-corp_logo_wtagline_white_72h.svg?rev=6f2d3e1c3e9b4255ac4c67ed40177cbd&amp;sc_lang=zh-cn&amp;hash=0D87ECF933D2C999448A555B16C265F5"
+                                 alt="Certified B Corporation"
+                                 height="100"
+                                 width="199"
+                                 class="site-footer__bcorp-logo" />
+                        </a>
+            </section>
+
+        <section class="column__row column__row--padded site-footer__middle-section">
+        <div class="footer-social">
+                <ul class="footer-social__list">
+                </ul>
+        </div>
+        </section>
+
+        <section class="column__row column__row--padded site-footer__copy-section">
+            &copy; Copyright 2026 New England Biolabs. All Rights Reserved.
+            <a class="sc-1ko78hw-0 fiVZLH" href="https://beian.miit.gov.cn/" title="https://beian.miit.gov.cn/" data-renderer-mark="true" style="color:#fff !important">京ICP备12043865号-2</a>
+        </section>
+    </div>
+</footer>
+    <!-- Begin: Country Selection Modal -->
+    <div data-gtm-nav-type="utility" class="refills-modal country-selection-modal js-refills-modal">
+        <input class="modal-state" id="countrySelectionModal" type="checkbox" autocomplete="off" />
+
+        <div class="modal-fade-screen country-selection-modal__fade-screen">
+            <div class="modal-inner country-selection-modal__inner">
+
+                <div class="country-selection-modal__header">
+                    <div class="modal-close country-selection-modal__close" for="countrySelectionModal"></div>
+                    <h2 class="country-selection-modal__header-title">Choose your country</h2>
+                </div>
+
+                <div class="country-selection-modal__body">
+                    <div class="country-selection-modal__row">
+                                <div class="country-selection-modal__column">
+                                    <h4 class="country-selection-modal__column-title">North America</h4>
+                                    <nav class="country-selection-modal__region-nav ">
+                                            <a href="https://www.neb.com/en-ca/?country=en-ca" data-gtm-nav-name="Country Selector - Canada" target="_self" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/121d15873050c40e/original/Canada.svg" alt="Canada flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Canada</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-us/?country=en-us" data-gtm-nav-name="Country Selector - United States" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/usa.svg?rev=60b77079658e4e239433e2676e3b4faa&amp;hash=500177DCAA3C52E6466A0044CE18FBA3" alt="USA" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">United States</span>
+                                            </a>
+                                    </nav>
+                                </div>
+                                <div class="country-selection-modal__column">
+                                    <h4 class="country-selection-modal__column-title">Europe</h4>
+                                    <nav class="country-selection-modal__region-nav ">
+                                            <a href="https://www.neb-online.fr" data-gtm-nav-name="Country Selector - France" target="_blank" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/38a20fce6abb3ee2/original/France.svg" alt="France flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">France</span>
+                                            </a>
+                                            <a href="https://www.neb-online.de" data-gtm-nav-name="Country Selector - Germany" target="_blank" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/germany.svg?rev=c1939979587a47d08e219901d1b81609&amp;hash=51E6E0AF3C8D8B95C8356F2625DC6965" alt="Germany" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Germany</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-gb/?country=en-gb" data-gtm-nav-name="Country Selector - United Kingdom" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/unitedkingdom.svg?rev=06ffaae2104249058ea5fe346b479476&amp;hash=62564170D0AF10E2BF699AD7727C9D38" alt="UK" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">United Kingdom</span>
+                                            </a>
+                                    </nav>
+                                </div>
+                                <div class="country-selection-modal__column">
+                                    <h4 class="country-selection-modal__column-title">Asia-Pacific</h4>
+                                    <nav class="country-selection-modal__region-nav country-selection-modal__region-nav-two">
+                                            <a href="https://www.neb.com/en-au/?country=en-au" data-gtm-nav-name="Country Selector - Australia" target="_self" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/118813984cba1250/original/Australia.svg" alt="Australia flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Australia</span>
+                                            </a>
+                                            <a href="https://www.neb.cn/zh-cn/?country=zh-cn" data-gtm-nav-name="Country Selector - China" target="_self" class="country-selection-modal__region-link">
+                                                <img src="https://media.neb.com/m/138c4842f6ea7c37/original/China.svg" alt="China flag" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">China</span>
+                                            </a>
+                                            <a href="/en?country=en&amp;location=in" data-gtm-nav-name="Country Selector - India" target="" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/india.svg?rev=9f0916e9e413467c8b171a5ce11632e4&amp;hash=A4A78BEDE9764181B5DE807A9A00C5EC" alt="Inida" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">India</span>
+                                            </a>
+                                            <a href="https://www.neb.com/ja-jp/?country=ja-jp" data-gtm-nav-name="Country Selector - Japan" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/japan.svg?rev=b170c508003b4f5b80faabfd412cc6b7&amp;hash=F54410B1771B15D505FAA97991E3D2AE" alt="Japan" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Japan</span>
+                                            </a>
+                                            <a href="/en?country=en&amp;location=kr" data-gtm-nav-name="Country Selector - Korea" target="" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/korea.svg?rev=ab92ad82f31243918b93a53498ca4e2f&amp;hash=E98DC2D1C8274E758B72185A66340984" alt="Korea" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Korea</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-nz/?country=en-nz" data-gtm-nav-name="Country Selector - New Zealand" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/newzealand.svg?rev=35b643f59f9c47189486ce23e9144115&amp;hash=8329707A5B004496E5062FD814F1EE89" alt="NewZealand" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">New Zealand</span>
+                                            </a>
+                                            <a href="https://www.neb.com/en-sg/?country=en-sg" data-gtm-nav-name="Country Selector - Singapore" target="_self" class="country-selection-modal__region-link">
+                                                <img src="/zh-cn/-/media/nebus/page-images/about-neb/country-flags/singapore.svg?rev=8e491815cb5f46e3954c50bc89d98894&amp;hash=8953FCEFEE0FE11AB666CFBB4019233E" alt="Singapore" class="country-selection-modal__region-link-img">
+                                                <span class="country-selection-modal__region-link-title">Singapore</span>
+                                            </a>
+                                    </nav>
+                                </div>
+                    </div>
+                </div>
+
+                <div class="country-selection-modal__footer">
+                    
+                    <p>
+                        If you don&#39;t see your country above, please visit our 
+                        <a data-gtm-nav-name="Country Selector - International" href="https://www.neb.com/en?country=en&amp;location=" target="_self">
+                            international site
+                        </a>
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- End:   Country Selection Modal -->
+
+	
+
+<section>
+
+    </section>
+
+
+	<input id="UserCountry" name="UserCountry" type="hidden" value="CN" />
+	<input id="HiddenForceSignOut" name="HiddenForceSignOut" type="hidden" value="False" />
+	<input id="HiddenIsUserAuthenticated" name="HiddenIsUserAuthenticated" type="hidden" value="False" />
+	<input id="AuthenticatedUserName" name="AuthenticatedUserName" type="hidden" value="Anonymous" />
+	<input id="HiddenSessionTimeoutMinutes" name="HiddenSessionTimeoutMinutes" type="hidden" value="1" />
+	<input id="HiddenValidSessionTimeoutMinutes" name="HiddenValidSessionTimeoutMinutes" type="hidden" value="1" />
+	<input id="HiddenIsPunchoutUser" name="HiddenIsPunchoutUser" type="hidden" value="False" />
+	<input id="CoveoBoxMaxLength" name="CoveoBoxMaxLength" type="hidden" value="200" />
+	<input id="regioncode" name="regioncode" type="hidden" value="CN" />
+
+	<div class="pardot-keyword-iframe__wrapper">
+    <iframe id="iframeSearch" class="pardot-keyword-iframe" sandbox="allow-same-origin allow-scripts allow-popups allow-forms"></iframe>
+</div>
+	
+<!-- Begin: Loading Spinner -->
+<section class="loading-spinner js-loading-spinner">
+    <figure class="loading-spinner__wrap">
+        <img class="loading-spinner__image" src="/content/img/ajax-loader-ring-alt.gif" alt="Loading Spinner" />
+    </figure>
+</section>
+<!-- End:   Loading Spinner -->
+
+	
+<!-- Dev Notes:
+        To use this modal, call this global JS function:
+
+        NEB.alertModal("TYPE","TITLE", "MESSAGE");
+
+        Where TYPE = one of 3 string types, "error, warning, info".  Each type shows a different icon.
+        Where TITLE = a string containing the TITLE of the modal you wish to show.
+        Where MESSAGE = a string containing the message you wish your modal to convey.
+        
+        example:
+        NEB.alertModal("warning", "Warning Title Test", "This is a test of the emergency broadcast system.  If there were not a test, panic would ensue.");
+
+        The above will launch a modal with the warning icon (black circle with white ! inside) and the message specified above.
+-->
+<div class="refills-modal alert-modal js-refills-modal js-alert-modal">
+    <label for="alert-modal" class="alert-modal--trigger js-alert-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="alert-modal" type="checkbox" autocomplete="off" />
+    
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close" for="alert-modal"></div>
+            
+            <!--NOTE: if a style is added or removed from the class attribute, you need to update the "defaultCssClassesForTitle" variable in the alert-modal.js file so that it matches the value in the class attribute-->
+            <div id="alert-modal-title" class="h1 alert-modal__title js-alert-modal__title"></div>
+
+            <p class="alert-modal__message js-alert-modal__message"></p>
+        
+            <p class="alert-modal__message"><input class="js-alert-modal__continue" type="button" value="Continue" /></p>
+        </div>
+    </div>
+</div>
+
+	
+
+<div class="refills-modal expired-modal js-refills-modal js-expired-modal">
+    <label for="expired-modal" class="expired-modal--trigger js-expired-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="expired-modal" type="checkbox" autocomplete="off" />
+
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div id="expired-modal-close" class="modal-close" for="expired-modal"></div>
+            <div class="h1 expired-modal__title js-expired-modal__title">Session Expired</div>
+            <div class="h1 expired-modal__title js-invalid-modal__title" style="display: none;">Your session has expired</div>
+
+                <p class="expired-modal__message js-expired-modal__message">You have been idle for more than 20 minutes, for your security you have been logged out.  Please sign back in to continue your session.</p>
+                <p class="expired-modal__message js-invalid-modal__message" style="display: none;">Please sign in to continue shopping.</p>
+
+                <div class="expired-modal__buttons">
+                    <button class="btn btn--orange js-expired-modal__sign-in">Sign In</button>
+                </div>
+        </div>
+    </div>
+</div>
+
+	<div class="refills-modal expired-modal js-refills-modal js-expired-modal">
+    <label for="account-change-modal" class="expired-modal--trigger js-account-changed-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="account-change-modal" type="checkbox" autocomplete="off" />
+
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close js-refresh-parent" for="account-change-modal"></div>
+            <div class="h1 expired-modal__title js-expired-modal__title">Institution Changed</div>
+
+            <p class="expired-modal__message js-expired-modal__message">
+                Your profile has been mapped to an Institution, please sign back for your profile updates to be completed.
+
+            </p>
+
+            <div class="expired-modal__buttons">
+                <button class="btn btn--orange js-expired-modal__sign-in">Sign In</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+	<!-- Begin: Nag Modal -->
+<div class="refills-modal nag-modal js-refills-modal js-nag-modal">
+    <label for="nag-modal" class="nag-modal--trigger js-nag-modal--trigger">
+        <div class="modal-trigger"></div>
+    </label>
+
+    <input class="modal-state" id="nag-modal" type="checkbox" autocomplete="off" />
+
+    <div class="modal-fade-screen">
+        <div class="modal-inner">
+            <div class="modal-close" for="alert-modal"></div>
+
+            <!-- Begin:  Nag Modal Content -->
+            <div class="h1 nag-modal__title">Sign in to your NEB account</div>
+
+            <div class="nag-modal__content">
+                <p>To save your cart and view previous orders, sign in to your NEB account. Adding products to your cart without being signed in will result in a loss of your cart when you do sign in or leave the site.</p>
+            </div>
+
+            <div class="nag-modal__buttons">
+                <button class="btn btn--orange js-nag-modal__sign-in nag-modal__sign-in">Sign In</button>
+                <a data-gtm-nav-type="utility" data-gtm-nav-name="Sign In" href="/account/sign-in" class="btn btn--orange nag-modal__sign-in-mobile">Sign In</a>
+                <span class="nag-modal__line-break-mobile"><br /><br /></span>
+                <button class="btn btn--gray js-nag-modal__continue">Continue as Guest</button>
+            </div>
+
+            <div class="nag-modal__dont-show">
+                <input type="checkbox" autocomplete="off" id="pdpNagHideOption" name="pdpNagHideOption" class="nag-modal__hide-option js-nag-modal__hide-option" />
+                <label for="pdpNagHideOption">Don&#39;t show me again</label>
+            </div>
+            <!-- End:    Nag Modal Content -->
+        </div>
+    </div>
+</div>
+<!-- End:   Nag Modal -->
+
+	
+
+<!--Â GoogleÂ AnalyticsÂ EnhancedÂ EcommerceÂ TrackingÂ Page Load STARTÂ -->
+<input id="hdn-gae-tracking-visitor-id" name="hdn-gae-tracking-visitor-id" type="hidden" value="" />
+<input id="hdn-gae-tracking-visit" name="hdn-gae-tracking-visit" type="hidden" value="" />
+<input id="hdn-gae-tracking-punchout-partner" name="hdn-gae-tracking-punchout-partner" type="hidden" value="" />
+<input id="hdn-gae-tracking-institution-id" name="hdn-gae-tracking-institution-id" type="hidden" value="" />
+<input id="hdn-gae-tracking-punchout-cart-id" name="hdn-gae-tracking-punchout-cart-id" type="hidden" value="" />
+<input id="hdn-gae-tracking-punchout-display-name" name="hdn-gae-tracking-punchout-display-name" type="hidden" value="" />
+<input id="hdn-gae-tracking-account-type" name="hdn-gae-tracking-account-type" type="hidden" value="Anonymous" />
+<input id="hdn-gae-tracking-acting-on-behalf-of" name="hdn-gae-tracking-acting-on-behalf-of" type="hidden" value="Self" />
+<input id="hdn-gae-tracking-cart-type" name="hdn-gae-tracking-cart-type" type="hidden" value="Direct" />
+<input id="hdn-gae-tracking-user-name" name="hdn-gae-tracking-user-name" type="hidden" value="" />
+<input id="hdn-gae-tracking-inst-name" name="hdn-gae-tracking-inst-name" type="hidden" value="" />
+<!--Â GoogleÂ AnalyticsÂ EnhancedÂ EcommerceÂ TrackingÂ Page Load ENDÂ -->
+
+	<!--Footer bundles-->
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/bundles/jquery-scripts.js?v=EvizqPEkBXVD1DY0ciZXLuvpOD5VX8ON9rvMWiVslrw1"></script>
+
+<script src="/bundles/vendor-scripts.js?v=pLrb-YdWkveXqwDjvuWFmbNfdP4J50OV74SjASo5n5U1" defer></script>
+
+<script src="/bundles/custom-scripts.js?v=jMZBbIXl9x_5emnY_Dz7nlCmCpCUNK2-uCv3i0voWHQ1" defer></script>
+
+<!--Footer bundles end-->
+	
+<input id="HiddenPunchoutSapDownEnableSubmitAlertMessage" name="HiddenPunchoutSapDownEnableSubmitAlertMessage" type="hidden" value="You may access and view the PunchOut NEB.com site, but unfortunately you will not be able to submit an order at this time. Please try again later. We apologize for the inconvenience." /><input id="HiddenPunchoutSapDownAlertMessage" name="HiddenPunchoutSapDownAlertMessage" type="hidden" value="You may access and view the PunchOut NEB.com site, but unfortunately you will not be able to submit an order at this time. Please try again later. We apologize for the inconvenience." /><input id="HiddenPunchoutSapDownAlertHeaderMessage" name="HiddenPunchoutSapDownAlertHeaderMessage" type="hidden" value="NEB.com is experiencing technical issues" />
+
+	<!-- section used to suppress onetrust banner on ceros iframes -->
+<script  type="text/javascript">
+var urlParams = new URLSearchParams(location.search);
+if (urlParams.has('ceros_account_slug')) {
+     OneTrust.Close();
+    OneTrust.SetAlertBoxClosed();}
+</script>
+<!-- End section used to suppress onetrust banner on ceros iframes -->
+	<script src="/bundles/vue-scripts.js?v=Ws6PL_9lRBedJ-h1E3t1JPdcg0IreUZrvTBYcgEWrG81"></script>
+
+</body>
+</html>
