@@ -9,8 +9,8 @@ Each entry includes the product name, supplier, catalog number, type (prestained
 | | |
 |---|---|
 | Suppliers surveyed | 56 |
-| Suppliers with protein markers | **26** |
-| Protein marker products | **114** |
+| Suppliers with protein markers | **27** |
+| Protein marker products | **121** |
 | PDFs downloaded (manuals/COA/specs) | 98 |
 | Raw product HTML saved | 208 |
 
