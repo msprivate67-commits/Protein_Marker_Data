@@ -6,10 +6,10 @@ Complete band (molecular weight) profiles for commercial protein markers.
 
 | | |
 |---|---|
-| Suppliers with protein markers | 26 |
-| Products | 114 |
-| All products have band data | **114 / 114** |
-| PDFs | 98 |
+| Suppliers with protein markers | 27 |
+| Products | 121 |
+| All products have band data | **121 / 121** |
+| PDFs | 102 |
 
 ## 按供应商逐条带明细
 
@@ -302,6 +302,68 @@ Complete band (molecular weight) profiles for commercial protein markers.
 - PDF: EURx_E3214_Amber.pdf (https://eurx.com.pl/docs/specs/en/e3214.pdf)
 - 条带数: 12
 - 分子量 (kDa): 11, 15, 20, 25, 36, 50, 58, 75, 110, 115, 180, 255
+
+
+---
+
+### Epizyme
+官网: `epizyme.cn` ｜ 7 款
+
+#### 三色预染蛋白Marker 10 kDa~180 kDa (Tri-Color Prestained)
+- 货号: WJ107 / WJ107L
+- 类型: Prestained, three-color
+- 产品页: https://www.epizyme.cn/Products/Details/25016
+- PDF: pdfs/Epizyme_WJ107_manual.pdf
+- 条带数: 10
+- 分子量 (kDa): 10, 15, 25, 35, 40, 55, 70, 100, 130, 180
+
+#### 双色预染蛋白Marker 15 kDa~150 kDa (Dual-Color Prestained)
+- 货号: WJ101 / WJ101L
+- 类型: Prestained, dual-color
+- 产品页: https://www.epizyme.cn/Products/Details/1070
+- PDF: pdfs/Epizyme_WJ101_manual.pdf
+- 条带数: 9
+- 分子量 (kDa): 15, 20, 25, 35, 40, 50, 70, 100, 150
+
+#### 双色预染蛋白Marker 10 kDa~250 kDa (Dual-Color Prestained)
+- 货号: WJ102 / WJ102L
+- 类型: Prestained, dual-color
+- 产品页: https://www.epizyme.cn/Products/Details/1071
+- PDF: 说明书 171527059154.pdf (与WJ101同册)
+- 条带数: 11
+- 分子量 (kDa): 10, 15, 20, 25, 35, 40, 50, 70, 100, 150, 250
+
+#### 三色预染蛋白Marker 10 kDa~250 kDa (Tri-Color Prestained)
+- 货号: WJ103 / WJ103L
+- 类型: Prestained, three-color
+- 产品页: https://www.epizyme.cn/Products/Details/1073
+- PDF: 说明书 171527059154.pdf (与WJ101同册)
+- 条带数: 11
+- 分子量 (kDa): 10, 15, 20, 25, 35, 40, 50, 70, 100, 150, 250
+
+#### 双色预染蛋白Marker 10kDa~250kDa (近红外荧光成像)
+- 货号: WJ106 / WJ106L
+- 类型: Prestained, dual-color, NIR
+- 产品页: https://www.epizyme.cn/Products/Details/1072
+- PDF: 说明书 171527059154.pdf (与WJ101同册)
+- 条带数: 11
+- 分子量 (kDa): 10, 15, 20, 25, 35, 40, 50, 70, 100, 150, 250
+
+#### 双色预染低分子量蛋白分子量标准 1.2~40 kDa (Tricine)
+- 货号: WJ402 / WJ402L
+- 类型: Prestained, dual-color, low-MW
+- 产品页: https://www.epizyme.cn/Products/Details/26632
+- PDF: pdfs/Epizyme_WJ402_manual.pdf
+- 条带数: 7
+- 分子量 (kDa): 1.2, 4.2, 7.5, 15, 20, 30, 40
+
+#### 非预染蛋白Marker (Unstained Protein Ladder)
+- 货号: WJ201
+- 类型: Unstained
+- 产品页: https://www.epizyme.cn/Products/Details/1075
+- PDF: pdfs/Epizyme_WJ201_manual.pdf
+- 条带数: 10
+- 分子量 (kDa): 10, 15, 20, 25, 35, 50, 70, 100, 150, 235
 
 
 ---
