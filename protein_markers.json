@@ -1,7 +1,7 @@
 {
  "total_suppliers": 56,
- "suppliers_with_protein_markers": 26,
- "total_products": 114,
+ "suppliers_with_protein_markers": 27,
+ "total_products": 121,
  "suppliers": {
   "Accuris": {
    "name": "Accuris",
@@ -758,6 +758,159 @@
    "domain": "www.ecogen.com",
    "protein_marker_count": 0,
    "products": []
+  },
+  "Epizyme": {
+   "name": "Epizyme",
+   "domain": "epizyme.cn",
+   "protein_marker_count": 7,
+   "products": [
+    {
+     "name": "三色预染蛋白Marker 10 kDa~180 kDa (Tri-Color Prestained)",
+     "catalog": "WJ107 / WJ107L",
+     "type": "Prestained, three-color",
+     "url": "https://www.epizyme.cn/Products/Details/25016",
+     "bands": "10",
+     "sizes_kda": "10, 15, 25, 35, 40, 55, 70, 100, 130, 180",
+     "pdf": "pdfs/Epizyme_WJ107_manual.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
+    },
+    {
+     "name": "双色预染蛋白Marker 15 kDa~150 kDa (Dual-Color Prestained)",
+     "catalog": "WJ101 / WJ101L",
+     "type": "Prestained, dual-color",
+     "url": "https://www.epizyme.cn/Products/Details/1070",
+     "bands": "9",
+     "sizes_kda": "15, 20, 25, 35, 40, 50, 70, 100, 150",
+     "pdf": "pdfs/Epizyme_WJ101_manual.pdf",
+     "bands_kda": [
+      15,
+      20,
+      25,
+      35,
+      40,
+      50,
+      70,
+      100,
+      150
+     ]
+    },
+    {
+     "name": "双色预染蛋白Marker 10 kDa~250 kDa (Dual-Color Prestained)",
+     "catalog": "WJ102 / WJ102L",
+     "type": "Prestained, dual-color",
+     "url": "https://www.epizyme.cn/Products/Details/1071",
+     "bands": "11",
+     "sizes_kda": "10, 15, 20, 25, 35, 40, 50, 70, 100, 150, 250",
+     "pdf": "说明书 171527059154.pdf (与WJ101同册)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      35,
+      40,
+      50,
+      70,
+      100,
+      150,
+      250
+     ]
+    },
+    {
+     "name": "三色预染蛋白Marker 10 kDa~250 kDa (Tri-Color Prestained)",
+     "catalog": "WJ103 / WJ103L",
+     "type": "Prestained, three-color",
+     "url": "https://www.epizyme.cn/Products/Details/1073",
+     "bands": "11",
+     "sizes_kda": "10, 15, 20, 25, 35, 40, 50, 70, 100, 150, 250",
+     "pdf": "说明书 171527059154.pdf (与WJ101同册)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      35,
+      40,
+      50,
+      70,
+      100,
+      150,
+      250
+     ]
+    },
+    {
+     "name": "双色预染蛋白Marker 10kDa~250kDa (近红外荧光成像)",
+     "catalog": "WJ106 / WJ106L",
+     "type": "Prestained, dual-color, NIR",
+     "url": "https://www.epizyme.cn/Products/Details/1072",
+     "bands": "11",
+     "sizes_kda": "10, 15, 20, 25, 35, 40, 50, 70, 100, 150, 250",
+     "pdf": "说明书 171527059154.pdf (与WJ101同册)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      35,
+      40,
+      50,
+      70,
+      100,
+      150,
+      250
+     ]
+    },
+    {
+     "name": "双色预染低分子量蛋白分子量标准 1.2~40 kDa (Tricine)",
+     "catalog": "WJ402 / WJ402L",
+     "type": "Prestained, dual-color, low-MW",
+     "url": "https://www.epizyme.cn/Products/Details/26632",
+     "bands": "7",
+     "sizes_kda": "1.2, 4.2, 7.5, 15, 20, 30, 40",
+     "pdf": "pdfs/Epizyme_WJ402_manual.pdf",
+     "bands_kda": [
+      1.2,
+      4.2,
+      7.5,
+      15,
+      20,
+      30,
+      40
+     ]
+    },
+    {
+     "name": "非预染蛋白Marker (Unstained Protein Ladder)",
+     "catalog": "WJ201",
+     "type": "Unstained",
+     "url": "https://www.epizyme.cn/Products/Details/1075",
+     "bands": "10",
+     "sizes_kda": "10, 15, 20, 25, 35, 50, 70, 100, 150, 235",
+     "pdf": "pdfs/Epizyme_WJ201_manual.pdf",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      35,
+      50,
+      70,
+      100,
+      150,
+      235
+     ]
+    }
+   ]
   },
   "Eurogentec": {
    "name": "Eurogentec",
