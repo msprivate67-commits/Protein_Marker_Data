@@ -10,7 +10,7 @@ Each entry includes the product name, supplier, catalog number, type (prestained
 |---|---|
 | Suppliers surveyed | 56 |
 | Suppliers with protein markers | **26** |
-| Protein marker products | **117** |
+| Protein marker products | **114** |
 | PDFs downloaded (manuals/COA/specs) | 98 |
 | Raw product HTML saved | 208 |
 
@@ -22,6 +22,8 @@ Each entry includes the product name, supplier, catalog number, type (prestained
 | `suppliers/` | One Markdown file per supplier (56 files) with full details |
 | `pdfs/` | Downloaded product manuals / COAs / catalog PDFs |
 | `raw_html/` | Saved product/category page snapshots |
+| `protein_marker_bands.md` | **Complete per-band MW (kDa) profiles** for all products |
+| `protein_marker_bands.csv` | Flat table, one row per band (Excel-friendly) |
 
 ## Suppliers with protein markers
 

@@ -1,7 +1,7 @@
 {
  "total_suppliers": 56,
  "suppliers_with_protein_markers": 26,
- "total_products": 117,
+ "total_products": 114,
  "suppliers": {
   "Accuris": {
    "name": "Accuris",
@@ -15,7 +15,22 @@
      "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
      "bands": "13",
      "sizes_kda": "Range 5–245 kDa (Tris-Glycine; 3.5–235 kDa in Bis-Tris). Reference bands: green at 25 kDa, red at 75 kDa; remaining bands blue.",
-     "pdf": "Accuris_PR5000TC_Manual.pdf, Accuris_PR5000_series_Brochure.pdf"
+     "pdf": "Accuris_PR5000TC_Manual.pdf, Accuris_PR5000_series_Brochure.pdf",
+     "bands_kda": [
+      3.5,
+      5,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "SmartCheck™ Tri-Color Extended Range Protein Marker",
@@ -24,7 +39,20 @@
      "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
      "bands": "12",
      "sizes_kda": "Range 9–245 kDa. Reference bands: green at 25 kDa, red at 75 kDa; remaining bands blue.",
-     "pdf": "Accuris_PR5000TC_Manual.pdf, Accuris_PR5000_series_Brochure.pdf"
+     "pdf": "Accuris_PR5000TC_Manual.pdf, Accuris_PR5000_series_Brochure.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "SmartCheck™ Tri-Color Protein Marker",
@@ -33,7 +61,19 @@
      "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
      "bands": "10",
      "sizes_kda": "Range 9–180 kDa. Reference bands: green at 25 kDa, red at 75 kDa; remaining bands blue.",
-     "pdf": "Accuris_PR5000TC_Manual.pdf, Accuris_PR5000_series_Brochure.pdf"
+     "pdf": "Accuris_PR5000TC_Manual.pdf, Accuris_PR5000_series_Brochure.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "SmartCheck™ All Blue Regular Range Plus Protein Marker",
@@ -42,7 +82,20 @@
      "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
      "bands": "11",
      "sizes_kda": "Range 9–180 kDa. Two enhanced-intensity reference bands at 25 kDa and 72 kDa.",
-     "pdf": "Accuris_PR5000_series_Brochure.pdf"
+     "pdf": "Accuris_PR5000_series_Brochure.pdf",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "SmartCheck™ All Blue Regular Range Protein Marker",
@@ -51,7 +104,19 @@
      "url": "https://accuris-usa.com/Products/smartcheck-protein-markers/",
      "bands": "10",
      "sizes_kda": "Range 9–180 kDa. Two enhanced-intensity reference bands at 25 kDa and 72 kDa.",
-     "pdf": "Accuris_PR5000_series_Brochure.pdf"
+     "pdf": "Accuris_PR5000_series_Brochure.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     }
    ]
   },
@@ -79,7 +144,21 @@
      "url": "https://www.azuragenomics.com/products/pureview-prestained-protein-ladder",
      "bands": "13",
      "sizes_kda": "Range 5–245 kDa in Tris-Glycine buffer (3.5–235 kDa in Bis-Tris MOPS/MES). Two reference bands: green at 25 kDa, red at 75 kDa; remaining 11 bands blue. (Per-band masses in Table 1 of the manual — migration-chart table across buffer systems.)",
-     "pdf": "Azura_PureView_AZ1141_manual.pdf, Azura_ladders_product_sheet.pdf"
+     "pdf": "Azura_PureView_AZ1141_manual.pdf, Azura_ladders_product_sheet.pdf",
+     "bands_kda": [
+      5,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     }
    ]
   },
@@ -95,7 +174,19 @@
      "url": "https://www.bio-rad.com/en-us/sku/1610373-precision-plus-protein-all-blue-standards",
      "bands": "10 (range 10–250 kDa; reference bands at 25, 50, 75 kDa)",
      "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250",
-     "pdf": "pdfs/BioRad_AllBlue_1610373_manual.pdf ✓ (downloaded via browser)"
+     "pdf": "pdfs/BioRad_AllBlue_1610373_manual.pdf ✓ (downloaded via browser)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      37,
+      50,
+      75,
+      100,
+      150,
+      250
+     ]
     },
     {
      "name": "Precision Plus Protein Dual Color Standards",
@@ -104,7 +195,19 @@
      "url": "https://www.bio-rad.com/en-us/sku/1610374-precision-plus-protein-dual-color-standards",
      "bands": "10 (range 10–250 kDa)",
      "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250 (pink references at 25 & 75 kDa)",
-     "pdf": "- Instruction Manual https://www.bio-rad.com/webroot/web/pdf/lsr/literature/4110025.pdf (403 — not saved)"
+     "pdf": "- Instruction Manual https://www.bio-rad.com/webroot/web/pdf/lsr/literature/4110025.pdf (403 — not saved)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      37,
+      50,
+      75,
+      100,
+      150,
+      250
+     ]
     },
     {
      "name": "Precision Plus Protein Unstained Standards (Strep-tagged)",
@@ -113,7 +216,19 @@
      "url": "https://www.bio-rad.com/en-us/sku/1610363-precision-plus-protein-unstained-standards",
      "bands": "10 (range 10–250 kDa; reference bands at 25, 50, 75 kDa)",
      "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250",
-     "pdf": "- Instruction Manual https://www.bio-rad.com/webroot/web/pdf/lsr/literature/Bulletin_4110023.pdf (403 — not saved)"
+     "pdf": "- Instruction Manual https://www.bio-rad.com/webroot/web/pdf/lsr/literature/Bulletin_4110023.pdf (403 — not saved)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      37,
+      50,
+      75,
+      100,
+      150,
+      250
+     ]
     },
     {
      "name": "Precision Plus Protein WesternC Blotting Standards",
@@ -122,7 +237,19 @@
      "url": "https://www.bio-rad.com/en-us/sku/1610376-precision-plus-protein-westernc-standards",
      "bands": "10 (range 10–250 kDa; three pink reference bands at 25, 50, 75 kDa)",
      "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250",
-     "pdf": "- Instruction Manual (standards) https://www.bio-rad.com/webroot/web/pdf/lsr/literature/10008761.pdf (403 — not saved)"
+     "pdf": "- Instruction Manual (standards) https://www.bio-rad.com/webroot/web/pdf/lsr/literature/10008761.pdf (403 — not saved)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      37,
+      50,
+      75,
+      100,
+      150,
+      250
+     ]
     },
     {
      "name": "Precision Plus Protein Kaleidoscope Standards",
@@ -131,7 +258,19 @@
      "url": "https://www.bio-rad.com/en-us/sku/1610395-precision-plus-protein-kaleidoscope-prestained-standards",
      "bands": "10",
      "sizes_kda": "10, 15, 20, 25, 37, 50, 75, 100, 150, 250",
-     "pdf": "Instruction Manual https://www.bio-rad.com/webroot/web/pdf/lsr/literature/4110182.pdf (403 — not saved)"
+     "pdf": "Instruction Manual https://www.bio-rad.com/webroot/web/pdf/lsr/literature/4110182.pdf (403 — not saved)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      37,
+      50,
+      75,
+      100,
+      150,
+      250
+     ]
     },
     {
      "name": "Silver Stain SDS-PAGE Standards (Low Range), natural",
@@ -140,7 +279,15 @@
      "url": "https://www.bio-rad.com/en-us/sku/1610314",
      "bands": "6",
      "sizes_kda": "range 14.4–97.4 (commonly 14.4, 21.5, 31, 45, 66.2, 97.4 — natural bovine proteins; intermediate exact values not enumerated on page)",
-     "pdf": "not enumerated"
+     "pdf": "not enumerated",
+     "bands_kda": [
+      14.4,
+      21.5,
+      31,
+      45,
+      66.2,
+      97.4
+     ]
     }
    ]
   },
@@ -162,7 +309,20 @@
      "url": "https://eng.bioneer.com/20-d-2030.html",
      "bands": "12",
      "sizes_kda": "range 11–245 kDa (exact 12-band ladder is image-based; reference bands documented at 25 kDa green and 75 kDa red)",
-     "pdf": "Bioneer_D2030_manual.pdf (https://eng.bioneer.com/literatures/manual/LaddersandMarkers/PM_Prestained_protein_marker_EN.pdf)"
+     "pdf": "Bioneer_D2030_manual.pdf (https://eng.bioneer.com/literatures/manual/LaddersandMarkers/PM_Prestained_protein_marker_EN.pdf)",
+     "bands_kda": [
+      11,
+      17,
+      25,
+      35,
+      48,
+      63,
+      75,
+      100,
+      135,
+      180,
+      245
+     ]
     }
    ]
   },
@@ -184,7 +344,19 @@
      "url": "https://biotium.com/product/peacock-prestained-protein-marker/",
      "bands": "10 (8 blue bands + orange reference + green reference)",
      "sizes_kda": "Range 10–180 kDa. Reference bands: orange at ~75 kDa (also labeled ~72 kDa on some gels), green at 25 kDa. (Individual blue band masses shown in migration chart Figure 1 of PI PDF.)",
-     "pdf": "- PDF: Biotium_Peacock_21530_PI.pdf"
+     "pdf": "- PDF: Biotium_Peacock_21530_PI.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      72,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "Peacock™ Plus Prestained Protein Marker",
@@ -193,7 +365,21 @@
      "url": "https://biotium.com/product/peacock-plus-prestained-protein-marker/",
      "bands": "12 (10 blue bands + orange reference + green reference)",
      "sizes_kda": "Range 8–245 kDa. Reference bands: orange at ~75 kDa, green at 25 kDa. (Individual blue band masses shown in migration chart Figure 1 of PI PDF.)",
-     "pdf": "- PDF: Biotium_PeacockPlus_21531_PI.pdf"
+     "pdf": "- PDF: Biotium_PeacockPlus_21531_PI.pdf",
+     "bands_kda": [
+      8,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     }
    ]
   },
@@ -209,7 +395,19 @@
      "url": "https://www.biozym.com/biochemikalien/proteinbiologie/protein-marker/tricolor-protein-ladder-10-180-kda",
      "bands": "10",
      "sizes_kda": "10-180 (reference bands approx. 25, 75)",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "TriColor Broad Protein Ladder (3.5 - 245 kDa)",
@@ -218,7 +416,22 @@
      "url": "https://www.biozym.com/biochemikalien/proteinbiologie/protein-marker/tricolor-broad-protein-ladder-3.5-245-kda",
      "bands": "13",
      "sizes_kda": "3.5-245 (reference bands approx. 25, 75)",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      3.5,
+      5,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "ProSieve QuadColor Protein Marker (4.6 - 300 kDa)",
@@ -227,7 +440,21 @@
      "url": "https://www.biozym.com/biochemikalien/proteinbiologie/protein-marker/prosieve-quadcolor-protein-marker-4.6-300-kda",
      "bands": "11",
      "sizes_kda": "4.6-300",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      4.6,
+      10,
+      15,
+      25,
+      40,
+      55,
+      70,
+      100,
+      140,
+      170,
+      250,
+      300
+     ]
     }
    ]
   },
@@ -249,7 +476,19 @@
      "url": "https://www.carlroth.com/com/en/protein-markers-prestained/pink-plus-prestained-protein-ladder/p/1gg5.1",
      "bands": "**11 bands**, range **10–175 kDa**",
      "sizes_kda": "blue-stained reference bands at ~10, 40 and 90 kDa (full per-band",
-     "pdf": "`CarlRoth_PinkPlus_1GG5_Spec.pdf`"
+     "pdf": "`CarlRoth_PinkPlus_1GG5_Spec.pdf`",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      90,
+      130,
+      175
+     ]
     },
     {
      "name": "BlueRAY Prestained Protein Ladder",
@@ -258,7 +497,19 @@
      "url": "https://www.carlroth.com/com/en/protein-markers-prestained/blueray-prestained-protein-ladder/p/1gg6.1",
      "bands": "**10 bands**, range **10–180 kDa**",
      "sizes_kda": "green ref @25, red ref @75 (others blue)",
-     "pdf": "`CarlRoth_BlueRay_1GG6_Spec.pdf`"
+     "pdf": "`CarlRoth_BlueRay_1GG6_Spec.pdf`",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "BLUeye Prestained Protein Ladder",
@@ -267,7 +518,20 @@
      "url": "https://www.carlroth.com/com/en/protein-markers-prestained/blueye-prestained-protein-ladder/p/1gg7.1",
      "bands": "**12 bands**, range **10–245 kDa**",
      "sizes_kda": "green ref @25, red ref @75",
-     "pdf": "`CarlRoth_BlueEye_1GG7_Spec.pdf`"
+     "pdf": "`CarlRoth_BlueEye_1GG7_Spec.pdf`",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "BLUelf Prestained Protein Ladder",
@@ -276,7 +540,21 @@
      "url": "https://www.carlroth.com/com/en/protein-markers-prestained/bluelf-prestained-protein-ladder/p/1gg8.1",
      "bands": "**13 bands**, range **3.5–245 kDa** (widest range)",
      "sizes_kda": "green ref @25, red ref @75",
-     "pdf": "`CarlRoth_BlueElf_1GG8_Spec.pdf`"
+     "pdf": "`CarlRoth_BlueElf_1GG8_Spec.pdf`",
+     "bands_kda": [
+      5,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "BlueAQUA Prestained Protein Ladder",
@@ -285,7 +563,19 @@
      "url": "https://www.carlroth.com/com/en/protein-markers-prestained/blueaqua-prestained-protein-ladder/p/1gg9.1",
      "bands": "**11 bands**, range **10–180 kDa**",
      "sizes_kda": "enhanced-intensity ref bands @25 and @72 kDa",
-     "pdf": "`CarlRoth_BlueAqua_1GG9_Spec.pdf`"
+     "pdf": "`CarlRoth_BlueAqua_1GG9_Spec.pdf`",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      72,
+      100,
+      130,
+      180
+     ]
     }
    ]
   },
@@ -301,7 +591,17 @@
      "url": "https://gdsbio.cn/product/product-22457-103642",
      "bands": "8",
      "sizes_kda": "15, 25, 35, 40, 55, 70, 100, 180",
-     "pdf": "GDSBio_D1011_15-180KD.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1011-A15-180KDPrestainedProteinLadderV1.0.pdf)"
+     "pdf": "GDSBio_D1011_15-180KD.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1011-A15-180KDPrestainedProteinLadderV1.0.pdf)",
+     "bands_kda": [
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      180
+     ]
     },
     {
      "name": "10-250KD Prestained Protein Ladder",
@@ -310,7 +610,19 @@
      "url": "https://gdsbio.cn/product/product-22457-103645",
      "bands": "10",
      "sizes_kda": "10, 15, 25, 35, 40, 55, 70, 100, 150, 250",
-     "pdf": "GDSBio_D1012_10-250KD.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1012-AD1012-B10-250KDPrestainedProteinLadderV1.0.pdf)"
+     "pdf": "GDSBio_D1012_10-250KD.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1012-AD1012-B10-250KDPrestainedProteinLadderV1.0.pdf)",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      150,
+      250
+     ]
     },
     {
      "name": "10-180KD Prestained Protein Ladder",
@@ -319,7 +631,19 @@
      "url": "https://gdsbio.cn/product/product-22457-103646",
      "bands": "10",
      "sizes_kda": "10, 15, 25, 35, 40, 55, 70, 100, 130, 180",
-     "pdf": "GDSBio_D1013_10-180KD.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1013-AD1013-B10-180KDPrestainedProteinLadderV1.0.pdf)"
+     "pdf": "GDSBio_D1013_10-180KD.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1013-AD1013-B10-180KDPrestainedProteinLadderV1.0.pdf)",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "10-250KD 预染显影蛋白Marker (Prestained + Western-Blot Developable Protein Marker)",
@@ -328,7 +652,21 @@
      "url": "https://gdsbio.cn/product/product-22457-103647",
      "bands": "12",
      "sizes_kda": "10, 15, 25, 30, 35, 40, 55, 70, 80, 100, 150, 250 (range 10–250 kDa)",
-     "pdf": "GDSBio_D1014_10-250KD_WB.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1014-AD1014-B10-250KDMarkerV1.0.pdf)"
+     "pdf": "GDSBio_D1014_10-250KD_WB.pdf (https://gdsbio.cn/wp-content/uploads/2025/03/D1014-AD1014-B10-250KDMarkerV1.0.pdf)",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      30,
+      35,
+      40,
+      55,
+      70,
+      80,
+      100,
+      150,
+      250
+     ]
     }
    ]
   },
@@ -350,7 +688,21 @@
      "url": "https://eurx.com.pl/product/e3210/",
      "bands": "12",
      "sizes_kda": "11, 17, 20, 25, 35, 48, 63, 75, 100, 135, 180, 245 (range 11–245 kDa)",
-     "pdf": "EURx_E3210_Tricolor.pdf (https://eurx.com.pl/docs/specs/en/e3210.pdf)"
+     "pdf": "EURx_E3210_Tricolor.pdf (https://eurx.com.pl/docs/specs/en/e3210.pdf)",
+     "bands_kda": [
+      11,
+      17,
+      20,
+      25,
+      35,
+      48,
+      63,
+      75,
+      100,
+      135,
+      180,
+      245
+     ]
     },
     {
      "name": "Perfect™ Rainbow Protein Ladder (prestained)",
@@ -359,7 +711,22 @@
      "url": "https://eurx.com.pl/product/e3212/",
      "bands": "13",
      "sizes_kda": "5, 11, 15, 20, 25, 36, 50, 58, 80, 110, 135, 180, 250 (range 5–250 kDa)",
-     "pdf": "EURx_E3212_Rainbow.pdf (https://eurx.com.pl/docs/specs/en/e3212.pdf)"
+     "pdf": "EURx_E3212_Rainbow.pdf (https://eurx.com.pl/docs/specs/en/e3212.pdf)",
+     "bands_kda": [
+      5,
+      11,
+      15,
+      20,
+      25,
+      36,
+      50,
+      58,
+      80,
+      110,
+      135,
+      180,
+      250
+     ]
     },
     {
      "name": "Perfect™ Amber Protein Ladder (prestained)",
@@ -368,7 +735,21 @@
      "url": "https://eurx.com.pl/product/e3214/",
      "bands": "12",
      "sizes_kda": "11, 15, 20, 25, 36, 50, 58, 75, 110, 115, 180, 255 (range 11–255 kDa)",
-     "pdf": "EURx_E3214_Amber.pdf (https://eurx.com.pl/docs/specs/en/e3214.pdf)"
+     "pdf": "EURx_E3214_Amber.pdf (https://eurx.com.pl/docs/specs/en/e3214.pdf)",
+     "bands_kda": [
+      11,
+      15,
+      20,
+      25,
+      36,
+      50,
+      58,
+      75,
+      110,
+      115,
+      180,
+      255
+     ]
     }
    ]
   },
@@ -402,7 +783,20 @@
      "url": "https://www.froggabio.com/globalstoreview/bluelf-group.html",
      "bands": "12",
      "sizes_kda": "10-245 (reference bands approx. 25, 75)",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "BLUelf Prestained Protein Ladder (500 µl)",
@@ -411,7 +805,20 @@
      "url": "https://www.froggabio.com/globalstoreview/bluelf-prestained-protein-ladder-pm008-r500g.html",
      "bands": "",
      "sizes_kda": "10-245 (reference bands approx. 25, 75)",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "IRIS11 Prestained Protein Ladder",
@@ -420,7 +827,20 @@
      "url": "https://www.froggabio.com/globalstoreview/iris11-prestained-protein-ladder-1.html",
      "bands": "",
      "sizes_kda": "11 bands (approx. 10-245)",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     }
    ]
   },
@@ -436,7 +856,21 @@
      "url": "https://www.gbiosciences.com/Protein-Markers/PAGEmark-Protein-Markers",
      "bands": "13",
      "sizes_kda": "Wide range 5–245 kDa in Tris-Glycine buffer (3.5–235 kDa in Bis-Tris). Reference bands: green at 25 kDa, red at 75 kDa. (Individual 13 band masses not enumerated separately in protocol text.)",
-     "pdf": "GBiosciences_PAGEmarkTricolorPLUS_786-419_protocol.pdf, GBiosciences_PAGEmarkTricolorPLUS_786-419_SDS.pdf"
+     "pdf": "GBiosciences_PAGEmarkTricolorPLUS_786-419_protocol.pdf, GBiosciences_PAGEmarkTricolorPLUS_786-419_SDS.pdf",
+     "bands_kda": [
+      5,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "PAGEmark™ Blue PLUS Protein Markers",
@@ -445,7 +879,20 @@
      "url": "https://www.gbiosciences.com/Protein-Markers/PAGEmark-Protein-Markers",
      "bands": "12",
      "sizes_kda": "Wide range 10–240 kDa in Tris-Glycine buffer (9–235 kDa in Bis-Tris MOPS/MES). Two enhanced-intensity reference bands: 25 kDa and 72 kDa. (Individual 12 band masses not enumerated separately in protocol text.)",
-     "pdf": "GBiosciences_PAGEmarkBluePLUS_786-418_protocol.pdf, GBiosciences_PAGEmarkBluePLUS_786-418_SDS.pdf"
+     "pdf": "GBiosciences_PAGEmarkBluePLUS_786-418_protocol.pdf, GBiosciences_PAGEmarkBluePLUS_786-418_SDS.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      240
+     ]
     }
    ]
   },
@@ -461,7 +908,20 @@
      "url": "https://gendepot.com/products/xpert-plus-prestained-protein-marker",
      "bands": "11",
      "sizes_kda": "10, 14, 18, 26, 36, 49, 64, 75, 110, 150, 250",
-     "pdf": "GenDEPOT_P8507_Insert.pdf (product insert), GenDEPOT_P8507_SDS.pdf (SDS)"
+     "pdf": "GenDEPOT_P8507_Insert.pdf (product insert), GenDEPOT_P8507_SDS.pdf (SDS)",
+     "bands_kda": [
+      10,
+      14,
+      18,
+      26,
+      36,
+      49,
+      64,
+      75,
+      110,
+      150,
+      250
+     ]
     }
    ]
   },
@@ -477,7 +937,15 @@
      "url": "https://www.genscript.com/molecule/M00624-Broad_Multi_Color_Pre-Stained_Protein_Standard.html",
      "bands": "10",
      "sizes_kda": "10–270 kDa range. Reference bands: 30 kDa (orange), 270 kDa (orange), 50 kDa (green); remaining bands blue. (Specific kDa values for all 10 bands not fully enumerated in page text — full list in downloaded manual PDF.)",
-     "pdf": "- PDF: GenScript_BroadMultiColor_M00624_manual.pdf"
+     "pdf": "- PDF: GenScript_BroadMultiColor_M00624_manual.pdf",
+     "bands_kda": [
+      10,
+      270,
+      30,
+      270,
+      50,
+      10
+     ]
     },
     {
      "name": "PAGE-MASTER Protein Standard Plus",
@@ -486,7 +954,18 @@
      "url": "https://www.genscript.com/molecule/MM1397-PAGE_MASTER_Protein_Standard_Plus.html",
      "bands": "9",
      "sizes_kda": "10, 15, 20, 30, 40, 50, 60, 80, 120 (15 kDa & 50 kDa are pre-stained blue)",
-     "pdf": "GenScript_PAGEMasterPlus_MM1397_manual.pdf"
+     "pdf": "GenScript_PAGEMasterPlus_MM1397_manual.pdf",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      30,
+      40,
+      50,
+      60,
+      80,
+      120
+     ]
     },
     {
      "name": "PAGE-MASTER Protein Standard (for SDS-PAGE)",
@@ -495,7 +974,16 @@
      "url": "https://www.genscript.com/molecule/M00516-PAGE_MASTER_Protein_Standard_for_SDS_PAGE_.html",
      "bands": "7",
      "sizes_kda": "10, 20, 30, 40, 60, 80, 120",
-     "pdf": "GenScript_PAGEMaster_M00516_manual.pdf"
+     "pdf": "GenScript_PAGEMaster_M00516_manual.pdf",
+     "bands_kda": [
+      10,
+      20,
+      30,
+      40,
+      60,
+      80,
+      120
+     ]
     },
     {
      "name": "WB-MASTER Protein Standard",
@@ -504,7 +992,16 @@
      "url": "https://www.genscript.com/molecule/M00521-WB_MASTER_Protein_Standard.html",
      "bands": "7",
      "sizes_kda": "20, 30, 40, 50, 60, 80, 120",
-     "pdf": "GenScript_WBMaster_M00521_manual.pdf"
+     "pdf": "GenScript_WBMaster_M00521_manual.pdf",
+     "bands_kda": [
+      20,
+      30,
+      40,
+      50,
+      60,
+      80,
+      120
+     ]
     }
    ]
   },
@@ -544,7 +1041,22 @@
      "url": "https://www.goldbio.com/products/bluestain-2-protein-ladder-5-245-kda",
      "bands": "13",
      "sizes_kda": "Range 3.5–245 kDa. Reference bands: green at 25 kDa, red at 75 kDa; all other bands blue. (Individual 13 band masses shown graphically in TDS/Comparison chart — see PDFs.)",
-     "pdf": "- PDF: GoldBio_BLUEstain2_P008_TDS.pdf, GoldBio_Ladder_Comparison.pdf"
+     "pdf": "- PDF: GoldBio_BLUEstain2_P008_TDS.pdf, GoldBio_Ladder_Comparison.pdf",
+     "bands_kda": [
+      3.5,
+      5,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "BLUEstain™ Protein Ladder, 11-245 kDa",
@@ -553,7 +1065,20 @@
      "url": "https://www.goldbio.com/products/bluestain-protein-ladder-11-245-kda",
      "bands": "12",
      "sizes_kda": "Range 10–245 kDa. Reference bands: green at 25 kDa, red at 75 kDa; other bands blue. (Individual masses in TDS PDF.)",
-     "pdf": "- PDF: GoldBio_BLUEstain_P007_TDS.pdf, GoldBio_Ladder_Comparison.pdf"
+     "pdf": "- PDF: GoldBio_BLUEstain_P007_TDS.pdf, GoldBio_Ladder_Comparison.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "BLUEstain™ Low Range Protein Ladder, 2-40 kDa",
@@ -562,7 +1087,15 @@
      "url": "https://www.goldbio.com/products/bluestain-low-range-protein-ladder",
      "bands": "6",
      "sizes_kda": "Range 2–40 kDa. Reference bands: red at 40 kDa, green at 10 kDa; additional visible bands below 10 kDa. (Individual masses in Comparison chart PDF.)",
-     "pdf": "- PDF: GoldBio_Ladder_Comparison.pdf"
+     "pdf": "- PDF: GoldBio_Ladder_Comparison.pdf",
+     "bands_kda": [
+      2,
+      4,
+      6,
+      10,
+      17,
+      40
+     ]
     }
    ]
   },
@@ -584,7 +1117,19 @@
      "url": "https://www.jenabioscience.com/molecular-biology/enzymes-protein-markers/protein-markers/ps-103-blueray-prestained-protein-marker-10-180kda",
      "bands": "**10 bands**, range **10–180 kDa**",
      "sizes_kda": "individual band sizes shown on migration-pattern image (not in",
-     "pdf": "`JenaBioscience_BlueRay_PS-103_Datasheet.pdf`,"
+     "pdf": "`JenaBioscience_BlueRay_PS-103_Datasheet.pdf`,",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "BlueEye Prestained Protein Marker (10–245 kDa)",
@@ -593,7 +1138,20 @@
      "url": "https://www.jenabioscience.com/molecular-biology/enzymes-protein-markers/protein-markers/ps-104-blueeye-prestained-protein-marker-10-245kda",
      "bands": "**12 bands**, range **10–245 kDa**",
      "sizes_kda": "see migration-pattern image; refs at 25 (green) & 75 (red) kDa",
-     "pdf": "`JenaBioscience_BlueEye_PS-104_Datasheet.pdf`,"
+     "pdf": "`JenaBioscience_BlueEye_PS-104_Datasheet.pdf`,",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "BlueElf Prestained Protein Marker (5–245 kDa)",
@@ -602,7 +1160,21 @@
      "url": "https://www.jenabioscience.com/molecular-biology/enzymes-protein-markers/protein-markers/ps-105-blueelf-prestained-protein-marker-5-245kda",
      "bands": "**13 bands**, range **5–245 kDa** (widest range of the four)",
      "sizes_kda": "see migration-pattern image; refs at 25 (green) & 75 (red) kDa",
-     "pdf": "`JenaBioscience_BlueElf_PS-105_Datasheet.pdf`,"
+     "pdf": "`JenaBioscience_BlueElf_PS-105_Datasheet.pdf`,",
+     "bands_kda": [
+      5,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "BlueClassic Prestained Protein Marker (10–180 kDa)",
@@ -611,7 +1183,19 @@
      "url": "https://www.jenabioscience.com/molecular-biology/enzymes-protein-markers/protein-markers/ps-107-blueclassic-prestained-protein-marker-10-180kda",
      "bands": "**10 bands**, range **10–180 kDa**",
      "sizes_kda": "see migration-pattern image (no green/red reference bands)",
-     "pdf": "`JenaBioscience_BlueClassic_PS-107_Datasheet.pdf`,"
+     "pdf": "`JenaBioscience_BlueClassic_PS-107_Datasheet.pdf`,",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     }
    ]
   },
@@ -633,7 +1217,21 @@
      "url": "https://bioscience.lonza.com/lonza_bs/US/en/Electrophoresis/p/000000000000193837/ProSieve-QuadColor-Protein-Marker",
      "bands": "**12 bands**",
      "sizes_kda": "**4.6, 10, 15, 25, 40, 55, 70, 100, 140, 170, 250, 300 kDa**",
-     "pdf": "`Lonza_ProSieveQuadColorProteinMarker_Instructions.pdf`"
+     "pdf": "`Lonza_ProSieveQuadColorProteinMarker_Instructions.pdf`",
+     "bands_kda": [
+      4.6,
+      10,
+      15,
+      25,
+      40,
+      55,
+      70,
+      100,
+      140,
+      170,
+      250,
+      300
+     ]
     }
    ]
   },
@@ -661,7 +1259,17 @@
      "url": "https://www.sigmaaldrich.com/US/en/product/sigma/c1992 (could not scrape — timed out)",
      "bands": "~9 (range ~14–220 kDa)",
      "sizes_kda": "~15, 25, 35, 50, 75, 100, 150, 220 (approximate; lot-calibrated)",
-     "pdf": "Product Information Sheet expected at https://www.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/102/829/c1992pis.pdf (unreachable)"
+     "pdf": "Product Information Sheet expected at https://www.sigmaaldrich.com/deepweb/assets/sigmaaldrich/product/documents/102/829/c1992pis.pdf (unreachable)",
+     "bands_kda": [
+      15,
+      25,
+      35,
+      50,
+      75,
+      100,
+      150,
+      220
+     ]
     },
     {
      "name": "Prestained Protein Marker, Broad Range (Sigma / Novex-style)",
@@ -670,7 +1278,19 @@
      "url": "https://www.sigmaaldrich.com/US/en/product/sigma/m0531 (timed out)",
      "bands": "~10 (range ~10–180 kDa)",
      "sizes_kda": "~10, 17, 25, 35, 48, 65, 85, 110, 140, 180 (approximate)",
-     "pdf": "PI sheet unreachable"
+     "pdf": "PI sheet unreachable",
+     "bands_kda": [
+      10,
+      17,
+      25,
+      35,
+      48,
+      65,
+      85,
+      110,
+      140,
+      180
+     ]
     },
     {
      "name": "GE/Amersham / Cytiva HMW & LMW Calibration Kits (distributed by Sigma)",
@@ -679,16 +1299,19 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
-    },
-    {
-     "name": "Conclusion",
-     "catalog": "",
-     "type": "",
-     "url": "",
-     "bands": "",
-     "sizes_kda": "",
-     "pdf": "catalog numbers should be done manually on sigmaaldrich.com."
+     "pdf": "",
+     "bands_kda": [
+      14.4,
+      20.1,
+      30,
+      43,
+      67,
+      94,
+      160,
+      220,
+      440,
+      669
+     ]
     }
    ]
   },
@@ -716,7 +1339,20 @@
      "url": "https://www.neb.com/en-us/products/p7717-unstained-protein-standard-broad-range-10-200-kda",
      "bands": "12 (range 10–200 kDa)",
      "sizes_kda": "10, 15, 20, 25, 35, 50, 70, 100, 120, 150, 200 (and a small ~3 kDa reference per NEB chart; band set per published spec)",
-     "pdf": "pdfs/NEB_P7717_Unstained_COA.pdf (lot-specific; ~100 KB)"
+     "pdf": "pdfs/NEB_P7717_Unstained_COA.pdf (lot-specific; ~100 KB)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      35,
+      50,
+      70,
+      100,
+      120,
+      150,
+      200
+     ]
     },
     {
      "name": "Blue Prestained Protein Standard, Broad Range (11–250 kDa)",
@@ -725,7 +1361,20 @@
      "url": "https://www.neb.com/en-us/products/p7718-blue-prestained-protein-standard-broad-range-11-250-kda",
      "bands": "11 (range 11–250 kDa)",
      "sizes_kda": "11, 17, 25, 35, 50, 70, 90, 130, 170, 220, 250 (per NEB chart/spec)",
-     "pdf": "pdfs/NEB_P7718_BluePrestained_COA.pdf (~68 KB)"
+     "pdf": "pdfs/NEB_P7718_BluePrestained_COA.pdf (~68 KB)",
+     "bands_kda": [
+      11,
+      17,
+      25,
+      35,
+      50,
+      70,
+      90,
+      130,
+      170,
+      220,
+      250
+     ]
     },
     {
      "name": "Color Prestained Protein Standard, Broad Range (10–250 kDa)",
@@ -734,7 +1383,20 @@
      "url": "https://www.neb.com/en-us/products/p7719-color-prestained-protein-standard-broad-range-10-250-kda",
      "bands": "11 (range 10–250 kDa)",
      "sizes_kda": "10, 15, 25, 35, 50, 70, 100, 140, 180, 220, 250 (per NEB chart/spec; two reference bands intensified)",
-     "pdf": "pdfs/NEB_P7719_ColorPrestained_COA.pdf (~104 KB)"
+     "pdf": "pdfs/NEB_P7719_ColorPrestained_COA.pdf (~104 KB)",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      50,
+      70,
+      100,
+      140,
+      180,
+      220,
+      250
+     ]
     }
    ]
   },
@@ -750,7 +1412,14 @@
      "url": "https://www.origene.com/catalog/others/molecular-tools/mwm1001-mycddk-tagged-western-blot-molecular-weight-markers",
      "bands": "5",
      "sizes_kda": "Range 23–158 kDa. (Specific 5 band masses shown in western blot image; not enumerated as text in datasheet.)",
-     "pdf": "OriGene_MWM1001_datasheet.pdf"
+     "pdf": "OriGene_MWM1001_datasheet.pdf",
+     "bands_kda": [
+      23,
+      30,
+      50,
+      75,
+      158
+     ]
     }
    ]
   },
@@ -784,7 +1453,17 @@
      "url": "https://www.promega.com/products/protein-analysis/protein-purification-and-detection/protein-molecular-weight-markers/catnum-v8491/",
      "bands": "~8 (range ~20–120 kDa / 15–150 kDa depending on spec)",
      "sizes_kda": "~20, 30, 40, 50, 60, 80, 100, 120 (natural-protein mix; verify on current COA)",
-     "pdf": "Product Information sheet (TB-style) — direct PDF host returned 404; not saved."
+     "pdf": "Product Information sheet (TB-style) — direct PDF host returned 404; not saved.",
+     "bands_kda": [
+      20,
+      30,
+      40,
+      50,
+      60,
+      80,
+      100,
+      120
+     ]
     },
     {
      "name": "Protein Molecular Weight Marker, Mid Range",
@@ -793,7 +1472,15 @@
      "url": "https://www.promega.com/products/protein-analysis/protein-purification-and-detection/protein-molecular-weight-markers/",
      "bands": "~7 (range ~14–66 kDa)",
      "sizes_kda": "~14, 21, 31, 45, 66 (BSA/ovalbumin/CA typical mix — confirm on Promega PI)",
-     "pdf": "not retrievable."
+     "pdf": "not retrievable.",
+     "bands_kda": [
+      14.4,
+      21.5,
+      31,
+      45,
+      66.2,
+      97.4
+     ]
     },
     {
      "name": "Protein Molecular Weight Markers, Biotinylated",
@@ -802,16 +1489,16 @@
      "url": "https://www.promega.com/products/protein-analysis/protein-purification-and-detection/protein-molecular-weight-markers/",
      "bands": "variable (~8 across broad range)",
      "sizes_kda": "broad-range set; confirm on Promega PI",
-     "pdf": "not retrievable."
-    },
-    {
-     "name": "Conclusion",
-     "catalog": "",
-     "type": "",
-     "url": "",
-     "bands": "",
-     "sizes_kda": "",
-     "pdf": "sizes and current catalog numbers must be done manually on www.promega.com (or via the Promega Technical Bulletin / TB PDF for V8491)."
+     "pdf": "not retrievable.",
+     "bands_kda": [
+      14.4,
+      21.5,
+      31,
+      45,
+      66.2,
+      97.4,
+      160
+     ]
     }
    ]
   },
@@ -833,7 +1520,15 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      14.4,
+      20.1,
+      30,
+      43,
+      67,
+      94
+     ]
     },
     {
      "name": "Protein Test Mixture 4 for SDS PAGE  (unstained, lyophilized)",
@@ -842,7 +1537,15 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      14.4,
+      20.1,
+      30,
+      43,
+      67,
+      94
+     ]
     },
     {
      "name": "Protein Test Mixture 5 for SDS PAGE  (unstained, lyophilized)",
@@ -851,7 +1554,15 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      14.4,
+      20.1,
+      30,
+      43,
+      67,
+      94
+     ]
     },
     {
      "name": "SERVA Unstained SDS PAGE Protein Marker, 6.5–97 kDa  (liquid mix)",
@@ -860,7 +1571,17 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      6.5,
+      14.4,
+      18,
+      24,
+      30,
+      43,
+      66,
+      97
+     ]
     },
     {
      "name": "SERVA Unstained Protein Standard IV",
@@ -869,7 +1590,15 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      14.4,
+      20.1,
+      30,
+      43,
+      67,
+      94
+     ]
     },
     {
      "name": "SERVA Triple Color Standard I",
@@ -878,7 +1607,21 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      5,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "SERVA Triple Color Protein Standard II",
@@ -887,7 +1630,20 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "SERVA Triple Color Protein Standard III",
@@ -896,7 +1652,20 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "SERVA Fluo-610 Standard I",
@@ -905,7 +1674,17 @@
      "url": "",
      "bands": "",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      15,
+      25,
+      35,
+      50,
+      75,
+      100,
+      150,
+      245
+     ]
     },
     {
      "name": "Protein Molecular Weight Standards  (native, 8-protein set)",
@@ -914,7 +1693,16 @@
      "url": "",
      "bands": "**8 proteins**, range **12.4 – 450 kDa**",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      12.4,
+      17.8,
+      25,
+      67,
+      160,
+      240,
+      450
+     ]
     },
     {
      "name": "SERVA Native Marker Liquid Mix for BN/CN PAGE",
@@ -923,7 +1711,16 @@
      "url": "",
      "bands": "**6 native proteins**, range **21 – 720 kDa**",
      "sizes_kda": "",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      21,
+      45,
+      67,
+      146,
+      272,
+      545,
+      720
+     ]
     },
     {
      "name": "SERVA VisiBlot Standard I",
@@ -932,7 +1729,12 @@
      "url": "",
      "bands": "**10 recombinant proteins**, range **25 – 150 kDa**",
      "sizes_kda": "25, 45, 85 (these three are **prestained**); remaining seven at",
-     "pdf": ""
+     "pdf": "",
+     "bands_kda": [
+      25,
+      45,
+      85
+     ]
     }
    ]
   },
@@ -948,7 +1750,19 @@
      "url": "https://www.smobio.com/shop/product/pm1500-pm1500-excelbandtm-all-blue-regular-range-protein-marker-9-180-kda-250-l-x-2-251?category=10",
      "bands": "10",
      "sizes_kda": "180, 140, 100, 72, 60, 45, 35, 25, 15, 10",
-     "pdf": "SMOBIO_PM1500.pdf"
+     "pdf": "SMOBIO_PM1500.pdf",
+     "bands_kda": [
+      180,
+      140,
+      100,
+      72,
+      60,
+      45,
+      35,
+      25,
+      15,
+      10
+     ]
     },
     {
      "name": "ExcelBand™ All Blue Regular Range Plus Protein Marker (PM1600)",
@@ -957,7 +1771,20 @@
      "url": "https://www.smobio.com/shop/product/pm1600-pm1600-excelbandtm-all-blue-regular-range-plus-protein-marker-9-180-kda-250-l-x-2-249?category=10",
      "bands": "11",
      "sizes_kda": "10–180 kDa (range; 11 bands, similar to PM1500 plus an additional band)",
-     "pdf": "SMOBIO_PM1600.pdf"
+     "pdf": "SMOBIO_PM1600.pdf",
+     "bands_kda": [
+      180,
+      140,
+      100,
+      72,
+      60,
+      45,
+      35,
+      25,
+      20,
+      15,
+      10
+     ]
     },
     {
      "name": "ExcelBand™ All Blue Broad Range Protein Marker (PM1700)",
@@ -966,7 +1793,21 @@
      "url": "https://www.smobio.com/shop/product/pm1700-pm1700-excelbandtm-all-blue-broad-range-protein-marker-9-240-kda-250-l-x-2-247?category=10",
      "bands": "12",
      "sizes_kda": "240, 180, 140, 100, 72, 60, 45, 35, 25, 20, 15, 10",
-     "pdf": "SMOBIO_PM1700.pdf"
+     "pdf": "SMOBIO_PM1700.pdf",
+     "bands_kda": [
+      240,
+      180,
+      140,
+      100,
+      72,
+      60,
+      45,
+      35,
+      25,
+      20,
+      15,
+      10
+     ]
     },
     {
      "name": "ExcelBand™ 3-color Regular Range Protein Marker (PM2500)",
@@ -975,7 +1816,19 @@
      "url": "https://www.smobio.com/shop/product/pm2500-pm2500-excelbandtm-3-color-regular-range-protein-marker-9-180-kda-250-l-x-2-245?category=10",
      "bands": "10",
      "sizes_kda": "180, 140, 100, 75 (red), 60, 45, 35, 25 (green), 15, 10",
-     "pdf": "SMOBIO_PM2500.pdf"
+     "pdf": "SMOBIO_PM2500.pdf",
+     "bands_kda": [
+      180,
+      140,
+      100,
+      75,
+      60,
+      45,
+      35,
+      25,
+      15,
+      10
+     ]
     },
     {
      "name": "ExcelBand™ Enhanced 3-color Regular Range Protein Marker (PM2510)",
@@ -984,7 +1837,19 @@
      "url": "https://www.smobio.com/shop/product/pm2510-pm2510-excelbandtm-enhanced-3-color-regular-range-protein-marker-9-180-kda-250-l-x-2-257?category=10",
      "bands": "10",
      "sizes_kda": "10–180 kDa (range; enhanced-brightness version of PM2500)",
-     "pdf": "SMOBIO_PM2510.pdf"
+     "pdf": "SMOBIO_PM2510.pdf",
+     "bands_kda": [
+      180,
+      140,
+      100,
+      75,
+      60,
+      45,
+      35,
+      25,
+      15,
+      10
+     ]
     },
     {
      "name": "ExcelBand™ 3-color High Range Protein Marker (PM2600)",
@@ -993,7 +1858,14 @@
      "url": "https://www.smobio.com/shop/product/pm2600-pm2600-excelbandtm-3-color-high-range-protein-marker-9-245-kda-250-l-x-2-236?category=10",
      "bands": "12",
      "sizes_kda": "245, 180, 140, 100, 75 (red), 60, 45, 35, 25 (green), 20, 15, 10",
-     "pdf": "SMOBIO_PM2600.pdf"
+     "pdf": "SMOBIO_PM2600.pdf",
+     "bands_kda": [
+      245,
+      180,
+      140,
+      100,
+      75
+     ]
     },
     {
      "name": "ExcelBand™ Enhanced 3-color High Range Protein Marker (PM2610)",
@@ -1002,7 +1874,21 @@
      "url": "https://www.smobio.com/shop/product/pm2610-pm2610-excelbandtm-enhanced-3-color-high-range-protein-marker-9-245-kda-250-l-x-2-254?category=10",
      "bands": "12",
      "sizes_kda": "10–245 kDa (range; enhanced-brightness version of PM2600)",
-     "pdf": "SMOBIO_PM2610.pdf"
+     "pdf": "SMOBIO_PM2610.pdf",
+     "bands_kda": [
+      245,
+      180,
+      140,
+      100,
+      75,
+      60,
+      45,
+      35,
+      25,
+      20,
+      15,
+      10
+     ]
     },
     {
      "name": "ExcelBand™ 3-color Broad Range Protein Marker (PM2700)",
@@ -1011,7 +1897,14 @@
      "url": "https://www.smobio.com/shop/product/pm2700-pm2700-excelbandtm-3-color-broad-range-protein-marker-3-5-245-kda-250-l-x-2-232?category=10",
      "bands": "13",
      "sizes_kda": "245, 180, 140, 100, 75 (red), 60, 45, 35, 25 (green), 20, 15, 10, ~5",
-     "pdf": "SMOBIO_PM2700.pdf"
+     "pdf": "SMOBIO_PM2700.pdf",
+     "bands_kda": [
+      245,
+      180,
+      140,
+      100,
+      75
+     ]
     },
     {
      "name": "ExcelBand™ 3-color Extra Range Protein Marker (PM2800)",
@@ -1020,7 +1913,14 @@
      "url": "https://www.smobio.com/shop/product/pm2800-pm2800-excelbandtm-3-color-extra-range-protein-marker-10-310-kda-250-l-x-2-234?category=10",
      "bands": "13",
      "sizes_kda": "~310 (red), 245, 180, 140, 100, 75 (red), 60, 45, 35, 25 (green), 20, 15, 10",
-     "pdf": "SMOBIO_PM2800.pdf"
+     "pdf": "SMOBIO_PM2800.pdf",
+     "bands_kda": [
+      245,
+      180,
+      140,
+      100,
+      75
+     ]
     },
     {
      "name": "ExcelBand™ 3-color Pre-Stained Protein Ladder, Regular Range (PM5000)",
@@ -1029,7 +1929,21 @@
      "url": "https://www.smobio.com/shop/product/pm5000-pm5000-excelbandtm-3-color-pre-stained-protein-ladder-regular-range-9-180-kda-250-l-x-2-242?category=10",
      "bands": "13",
      "sizes_kda": "10–180 kDa (range; \"Ladder\" series with more bands than the standard markers)",
-     "pdf": "SMOBIO_PM5000.pdf"
+     "pdf": "SMOBIO_PM5000.pdf",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      30,
+      40,
+      50,
+      60,
+      75,
+      100,
+      140,
+      180
+     ]
     },
     {
      "name": "ExcelBand™ 3-color Pre-Stained Protein Ladder, High Range (PM5100)",
@@ -1038,7 +1952,22 @@
      "url": "https://www.smobio.com/shop/product/pm5100-pm5100-excelbandtm-3-color-pre-stained-protein-ladder-high-range-9-245-kda-250-l-x-2-241?category=10",
      "bands": "14",
      "sizes_kda": "10–245 kDa (range)",
-     "pdf": "SMOBIO_PM5100.pdf"
+     "pdf": "SMOBIO_PM5100.pdf",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      30,
+      40,
+      50,
+      60,
+      75,
+      100,
+      140,
+      180,
+      245
+     ]
     },
     {
      "name": "ExcelBand™ 3-color Pre-Stained Protein Ladder, Broad Range (PM5200)",
@@ -1047,7 +1976,15 @@
      "url": "https://www.smobio.com/shop/product/pm5200-pm5200-excelbandtm-3-color-pre-stained-protein-ladder-broad-range-3-5-245-kda-250-l-x-2-238?category=10",
      "bands": "15",
      "sizes_kda": "245, 180, 140, 100, 75 (red), 60, 50, 40 (green), 35, 30, 25, 20, 15, 10, ~5",
-     "pdf": "SMOBIO_PM5200.pdf"
+     "pdf": "SMOBIO_PM5200.pdf",
+     "bands_kda": [
+      35,
+      30,
+      25,
+      20,
+      15,
+      10
+     ]
     },
     {
      "name": "ProMetric™ TriColor Low Range Protein Ladder (PM6628)",
@@ -1056,7 +1993,15 @@
      "url": "https://www.smobio.com/shop/product/pm6628-pm6628-prometrictm-tricolor-low-range-protein-ladder-2-to-40-kda-250-l-483?category=10",
      "bands": "6",
      "sizes_kda": "2–40 kDa (range, 6 bands)",
-     "pdf": "SMOBIO_PM6628.pdf"
+     "pdf": "SMOBIO_PM6628.pdf",
+     "bands_kda": [
+      2,
+      5,
+      10,
+      17,
+      25,
+      40
+     ]
     },
     {
      "name": "YesBlot™ Western Marker I (WM1000)",
@@ -1065,7 +2010,17 @@
      "url": "https://www.smobio.com/shop/product/wm1000-wm1000-yesblottm-western-marker-i-250-l-401?category=10",
      "bands": "14 total (10 IgG-binding Western bands 15–200 kDa + 4 pre-stained bands)",
      "sizes_kda": "Pre-stained: 10, 25 (green), 45, 70 (pink). Western blot range: 15–200 kDa with enhanced bands at 30 & 80 kDa.",
-     "pdf": "SMOBIO_WM1000.pdf"
+     "pdf": "SMOBIO_WM1000.pdf",
+     "bands_kda": [
+      10,
+      25,
+      45,
+      70,
+      15,
+      200,
+      30,
+      80
+     ]
     }
    ]
   },
@@ -1087,7 +2042,20 @@
      "url": "https://www.tiangen.com/content/details_40_28504.html",
      "bands": "11",
      "sizes_kda": "10, 15, 20, 25, 30, 40, 50, 72, 100, 130, 180 (25 kDa = green; 72 kDa = orange-red)",
-     "pdf": "TIANGEN_MP211_三色预染.pdf (https://pm-oss.tiangen.top/uploads/4972263.pdf)"
+     "pdf": "TIANGEN_MP211_三色预染.pdf (https://pm-oss.tiangen.top/uploads/4972263.pdf)",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      30,
+      40,
+      50,
+      72,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "蛋白质Marker (Protein Marker, unstained)",
@@ -1096,7 +2064,14 @@
      "url": "https://www.tiangen.com/content/details_40_16421.html",
      "bands": "5",
      "sizes_kda": "14.4, 20.0, 45.0, 66.2, 94.0 (range 14.4–94.0 kDa)",
-     "pdf": "TIANGEN_MP102_蛋白质Marker.pdf (https://pm-oss.tiangen.top/uploads/4991390.pdf)"
+     "pdf": "TIANGEN_MP102_蛋白质Marker.pdf (https://pm-oss.tiangen.top/uploads/4991390.pdf)",
+     "bands_kda": [
+      14.4,
+      20,
+      45,
+      66.2,
+      94
+     ]
     },
     {
      "name": "预染蛋白质Marker Ⅲ (Pre-stained Protein Marker III)",
@@ -1105,7 +2080,14 @@
      "url": "https://www.tiangen.com/content/details_40_16419.html",
      "bands": "5",
      "sizes_kda": "18, 27, 45, 60, 94 (range 18–94 kDa)",
-     "pdf": "TIANGEN_MP204_预染III.pdf (https://pm-oss.tiangen.top/uploads/4991392.pdf)"
+     "pdf": "TIANGEN_MP204_预染III.pdf (https://pm-oss.tiangen.top/uploads/4991392.pdf)",
+     "bands_kda": [
+      18,
+      27,
+      45,
+      60,
+      94
+     ]
     },
     {
      "name": "宽范围彩色预染蛋白质Marker (Wide Range Color Pre-stained Protein Marker)",
@@ -1114,7 +2096,20 @@
      "url": "https://www.tiangen.com/content/details_40_16417.html",
      "bands": "11",
      "sizes_kda": "11, 17, 25, 35, 48, 63, 75, 100, 135, 180, 245 (range 11–245 kDa)",
-     "pdf": "TIANGEN_MP206_宽范围彩色预染.pdf (https://pm-oss.tiangen.top/uploads/4994096.pdf)"
+     "pdf": "TIANGEN_MP206_宽范围彩色预染.pdf (https://pm-oss.tiangen.top/uploads/4994096.pdf)",
+     "bands_kda": [
+      11,
+      17,
+      25,
+      35,
+      48,
+      63,
+      75,
+      100,
+      135,
+      180,
+      245
+     ]
     }
    ]
   },
@@ -1136,7 +2131,19 @@
      "url": "https://www.thermofisher.com/order/catalog/product/26616",
      "bands": "10",
      "sizes_kda": "10, 15, 25, 35, 40, 55, 70, 100, 130, 180",
-     "pdf": "pdfs/ThermoFisher_PageRuler_26616_UG.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_PageRuler_26616_UG.pdf ✓",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "PageRuler Plus Prestained Protein Ladder",
@@ -1145,7 +2152,18 @@
      "url": "https://www.thermofisher.com/order/catalog/product/26620",
      "bands": "9",
      "sizes_kda": "10, 15, 25, 35, 55, 70, 100, 130, 250",
-     "pdf": "pdfs/ThermoFisher_PageRulerPlus_26620_UG.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_PageRulerPlus_26620_UG.pdf ✓",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      55,
+      70,
+      100,
+      130,
+      250
+     ]
     },
     {
      "name": "PageRuler Unstained Protein Ladder",
@@ -1154,7 +2172,23 @@
      "url": "https://www.thermofisher.com/order/catalog/product/26614",
      "bands": "14",
      "sizes_kda": "10, 15, 20, 25, 30, 40, 50, 60, 70, 85, 100, 120, 150, 200",
-     "pdf": "pdfs/ThermoFisher_PageRuler_Unstained_26614_UG.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_PageRuler_Unstained_26614_UG.pdf ✓",
+     "bands_kda": [
+      10,
+      15,
+      20,
+      25,
+      30,
+      40,
+      50,
+      60,
+      70,
+      85,
+      100,
+      120,
+      150,
+      200
+     ]
     },
     {
      "name": "PageRuler Unstained Broad Range Protein Ladder",
@@ -1163,7 +2197,20 @@
      "url": "https://www.thermofisher.com/order/catalog/product/26630",
      "bands": "11",
      "sizes_kda": "5, 10, 15, 20, 30, 40, 50, 70, 100, 150, 250",
-     "pdf": "pdfs/ThermoFisher_PageRuler_Broad_26630_UG.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_PageRuler_Broad_26630_UG.pdf ✓",
+     "bands_kda": [
+      5,
+      10,
+      15,
+      20,
+      30,
+      40,
+      50,
+      70,
+      100,
+      150,
+      250
+     ]
     },
     {
      "name": "PageRuler Unstained Low Range Protein Ladder",
@@ -1172,7 +2219,17 @@
      "url": "https://www.thermofisher.com/order/catalog/product/26632",
      "bands": "8",
      "sizes_kda": "3.4, 5, 10, 15, 20, 25, 30, 100",
-     "pdf": "pdfs/ThermoFisher_PageRuler_LowRange_26632_UG.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_PageRuler_LowRange_26632_UG.pdf ✓",
+     "bands_kda": [
+      3.4,
+      5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      100
+     ]
     },
     {
      "name": "Spectra Multicolor Broad Range Protein Ladder",
@@ -1181,7 +2238,19 @@
      "url": "https://www.thermofisher.com/order/catalog/product/26634",
      "bands": "10",
      "sizes_kda": "10, 15, 25, 35, 40, 50, 70, 100, 140, 260",
-     "pdf": "pdfs/ThermoFisher_Spectra_26634_UG.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_Spectra_26634_UG.pdf ✓",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      50,
+      70,
+      100,
+      140,
+      260
+     ]
     },
     {
      "name": "Pierce Prestained Protein MW Marker",
@@ -1190,7 +2259,15 @@
      "url": "https://www.thermofisher.com/order/catalog/product/26612",
      "bands": "6",
      "sizes_kda": "20, 25, 35, 50, 85, 120",
-     "pdf": "pdfs/ThermoFisher_Pierce_26612_UG.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_Pierce_26612_UG.pdf ✓",
+     "bands_kda": [
+      20,
+      25,
+      35,
+      50,
+      85,
+      120
+     ]
     },
     {
      "name": "Novex Sharp Prestained Protein Standard",
@@ -1199,7 +2276,21 @@
      "url": "https://www.thermofisher.com/order/catalog/product/LC5800",
      "bands": "12",
      "sizes_kda": "3.5, 10, 15, 20, 30, 40, 50, 60, 80, 110, 160, 260",
-     "pdf": "pdfs/ThermoFisher_NovexSharp_LC5800_UG.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_NovexSharp_LC5800_UG.pdf ✓",
+     "bands_kda": [
+      3.5,
+      10,
+      15,
+      20,
+      30,
+      40,
+      50,
+      60,
+      80,
+      110,
+      160,
+      260
+     ]
     },
     {
      "name": "SeeBlue Plus2 Prestained Protein Standard",
@@ -1208,7 +2299,19 @@
      "url": "https://www.thermofisher.com/order/catalog/product/LC5925",
      "bands": "10 (range 3–250 kDa)",
      "sizes_kda": "3, 6, 14, 17, 28, 38, 49, 62, 98, 198",
-     "pdf": "pdfs/ThermoFisher_SeeBluePlus2_LC5925_manual.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_SeeBluePlus2_LC5925_manual.pdf ✓",
+     "bands_kda": [
+      3,
+      6,
+      14,
+      17,
+      28,
+      38,
+      49,
+      62,
+      98,
+      198
+     ]
     },
     {
      "name": "MagicMark XP Western Protein Standard",
@@ -1217,7 +2320,18 @@
      "url": "https://www.thermofisher.com/order/catalog/product/LC5602",
      "bands": "9",
      "sizes_kda": "20, 30, 40, 50, 60, 80, 100, 120, 220",
-     "pdf": "pdfs/ThermoFisher_MagicMarkXP_LC5602_UG.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_MagicMarkXP_LC5602_UG.pdf ✓",
+     "bands_kda": [
+      20,
+      30,
+      40,
+      50,
+      60,
+      80,
+      100,
+      120,
+      220
+     ]
     },
     {
      "name": "HiMark Prestained Protein Standard",
@@ -1226,7 +2340,18 @@
      "url": "https://www.thermofisher.com/order/catalog/product/LC5699",
      "bands": "9 (range 30–460 kDa)",
      "sizes_kda": "31, 41, 55, 71, 117, 171, 238, 268, 460",
-     "pdf": "pdfs/ThermoFisher_HiMark_LC5699_manual.pdf ✓"
+     "pdf": "pdfs/ThermoFisher_HiMark_LC5699_manual.pdf ✓",
+     "bands_kda": [
+      31,
+      41,
+      55,
+      71,
+      117,
+      171,
+      238,
+      268,
+      460
+     ]
     }
    ]
   },
@@ -1248,7 +2373,15 @@
      "url": "https://www.transgenbiotech.com/unstained_protein_marker/proteinruler_i_12_80_kda.html",
      "bands": "6",
      "sizes_kda": "12 (blue prestained), 20, 30, 40 (2x intensity), 60, 80",
-     "pdf": "TransGen_DR101_ProteinRuler_I.pdf (https://www.transgenbiotech.com/download/pdf/1/DR101_400/DR101.pdf)"
+     "pdf": "TransGen_DR101_ProteinRuler_I.pdf (https://www.transgenbiotech.com/download/pdf/1/DR101_400/DR101.pdf)",
+     "bands_kda": [
+      12,
+      20,
+      30,
+      40,
+      60,
+      80
+     ]
     },
     {
      "name": "ProteinRuler® II (12-120 kDa)",
@@ -1257,7 +2390,18 @@
      "url": "https://www.transgenbiotech.com/unstained_protein_marker/proteinruler_ii_12_120_kda.html",
      "bands": "9",
      "sizes_kda": "12 (blue prestained), 20, 30, 40, 50 (2x intensity), 60, 80, 100, 120",
-     "pdf": "TransGen_DR201_ProteinRuler_II.pdf (https://www.transgenbiotech.com/download/pdf/1/DR201_403/DR201.pdf)"
+     "pdf": "TransGen_DR201_ProteinRuler_II.pdf (https://www.transgenbiotech.com/download/pdf/1/DR201_403/DR201.pdf)",
+     "bands_kda": [
+      12,
+      20,
+      30,
+      40,
+      50,
+      60,
+      80,
+      100,
+      120
+     ]
     },
     {
      "name": "ProteinRuler® IV (30-200 kDa)",
@@ -1266,7 +2410,16 @@
      "url": "https://www.transgenbiotech.com/unstained_protein_marker/proteinruler_iv_30_200_kda.html",
      "bands": "7",
      "sizes_kda": "30 (blue prestained), 40, 60, 80, 100 (2x intensity), 150, 200",
-     "pdf": "TransGen_DR401_ProteinRuler_IV.pdf (https://www.transgenbiotech.com/download/pdf/1/DR401_407/DR401.pdf)"
+     "pdf": "TransGen_DR401_ProteinRuler_IV.pdf (https://www.transgenbiotech.com/download/pdf/1/DR401_407/DR401.pdf)",
+     "bands_kda": [
+      30,
+      40,
+      60,
+      80,
+      100,
+      150,
+      200
+     ]
     },
     {
      "name": "Blue Plus® Protein Marker (14-100 kDa)",
@@ -1275,7 +2428,16 @@
      "url": "https://www.transgenbiotech.com/prestained_protein_marker/blue_plus_protein_marker_14_100_kda.html",
      "bands": "7 (range 14–100 kDa; reference bands 14 kDa yellow, 50 kDa orange)",
      "sizes_kda": "14, 25, 35, 45, 50, 70, 100 (typical Blue Plus I ladder; image-only PDF)",
-     "pdf": "- PDF: TransGen_DM101_BluePlus_I.pdf (https://www.transgenbiotech.com/download/pdf/1/DM101_408/DM101.pdf)"
+     "pdf": "- PDF: TransGen_DM101_BluePlus_I.pdf (https://www.transgenbiotech.com/download/pdf/1/DM101_408/DM101.pdf)",
+     "bands_kda": [
+      14,
+      25,
+      35,
+      45,
+      50,
+      70,
+      100
+     ]
     },
     {
      "name": "Blue Plus® II Protein Marker (14-120 kDa)",
@@ -1284,7 +2446,17 @@
      "url": "https://www.transgenbiotech.com/prestained_protein_marker/blue_plus_ii_protein_marker_14_120_kda.html",
      "bands": "8 (range 14–120 kDa)",
      "sizes_kda": "14, 25, 35, 45, 50, 70, 100, 120",
-     "pdf": "TransGen_DM111_BluePlus_II.pdf (https://www.transgenbiotech.com/download/pdf/1/DM111_411/DM111.pdf)"
+     "pdf": "TransGen_DM111_BluePlus_II.pdf (https://www.transgenbiotech.com/download/pdf/1/DM111_411/DM111.pdf)",
+     "bands_kda": [
+      14,
+      25,
+      35,
+      45,
+      50,
+      70,
+      100,
+      120
+     ]
     },
     {
      "name": "Blue Plus® V Protein Marker (10-190 kDa)",
@@ -1293,7 +2465,19 @@
      "url": "https://www.transgenbiotech.com/prestained_protein_marker/blue_plus_v_protein_marker_10_190_kda.html",
      "bands": "10 (range 10–190 kDa)",
      "sizes_kda": "10, 20, 30, 40, 50, 70, 100, 130, 170, 190",
-     "pdf": "TransGen_DM141_BluePlus_V.pdf (https://www.transgenbiotech.com/download/pdf/1/DM141_414/DM141.pdf)"
+     "pdf": "TransGen_DM141_BluePlus_V.pdf (https://www.transgenbiotech.com/download/pdf/1/DM141_414/DM141.pdf)",
+     "bands_kda": [
+      10,
+      20,
+      30,
+      40,
+      50,
+      70,
+      100,
+      130,
+      170,
+      190
+     ]
     },
     {
      "name": "Blue Plus® VI Protein Marker (10-250 kDa)",
@@ -1302,7 +2486,20 @@
      "url": "https://www.transgenbiotech.com/prestained_protein_marker/2630.html",
      "bands": "11 (range 10–250 kDa)",
      "sizes_kda": "10, 15, 25, 35, 48, 72, 100, 130, 180, 240, 250",
-     "pdf": "TransGen_DM151_BluePlus_VI.pdf (https://www.transgenbiotech.com/download/pdf/1/DM151_750/DM151.pdf)"
+     "pdf": "TransGen_DM151_BluePlus_VI.pdf (https://www.transgenbiotech.com/download/pdf/1/DM151_750/DM151.pdf)",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      48,
+      72,
+      100,
+      130,
+      180,
+      240,
+      250
+     ]
     },
     {
      "name": "EasySee® Western Marker (25-90 kDa)",
@@ -1311,7 +2508,18 @@
      "url": "https://www.transgenbiotech.com/western_protein_marker/easysee_western_marker_25_90_kda.html",
      "bands": "8 (range 25–90 kDa)",
      "sizes_kda": "25 (prestained), 30, 40, 45 (prestained), 50, 60, 70, 85 (prestained), 90",
-     "pdf": "TransGen_DM201_EasySee_Western.pdf (https://www.transgenbiotech.com/download/pdf/1/DM201_417/DM201.pdf)"
+     "pdf": "TransGen_DM201_EasySee_Western.pdf (https://www.transgenbiotech.com/download/pdf/1/DM201_417/DM201.pdf)",
+     "bands_kda": [
+      25,
+      30,
+      40,
+      45,
+      50,
+      60,
+      70,
+      85,
+      90
+     ]
     }
    ]
   },
@@ -1327,7 +2535,19 @@
      "url": "https://www.ubpbio.com/index.php/product/dna-protein-ladders/m-xstable-prestained-protein-ladder.html",
      "bands": "10",
      "sizes_kda": "Range ~10–180 kDa. Reference bands: green at 25 kDa, red at 75 kDa; remaining 8 bands blue. (Individual band masses depicted in datasheet migration chart.)",
-     "pdf": "UBPBio_MXstable_L2010_Datasheet.pdf, UBPBio_MXstable_L2010_MSDS.pdf"
+     "pdf": "UBPBio_MXstable_L2010_Datasheet.pdf, UBPBio_MXstable_L2010_MSDS.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "H-XStable Prestained Protein Ladder",
@@ -1336,7 +2556,20 @@
      "url": "https://www.ubpbio.com/index.php/product/dna-protein-ladders/h-xstable-prestained-protein-ladder.html",
      "bands": "12",
      "sizes_kda": "Range ~10–245 kDa. Reference bands: green at 25 kDa, red at 75 kDa; remaining 10 bands blue. (Individual band masses depicted in datasheet migration chart.)",
-     "pdf": "UBPBio_HXstable_L2020_Datasheet.pdf, UBPBio_HXstable_L2020_MSDS.pdf"
+     "pdf": "UBPBio_HXstable_L2020_Datasheet.pdf, UBPBio_HXstable_L2020_MSDS.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     }
    ]
   },
@@ -1344,17 +2577,7 @@
    "name": "VWR_Peqlab",
    "domain": "www.vwr.com (Peqlab brand, formerly peqlab.de — now folded into VWR/Avantor)",
    "protein_marker_count": 0,
-   "products": [
-    {
-     "name": "Attempted catalog / search URLs (all returned 403 to bots)",
-     "catalog": "",
-     "type": "",
-     "url": "",
-     "bands": "",
-     "sizes_kda": "",
-     "pdf": ""
-    }
-   ]
+   "products": []
   },
   "Vazyme": {
    "name": "Vazyme",
@@ -1368,7 +2591,20 @@
      "url": "https://bio.vazyme.com/product/752.html",
      "bands": "11",
      "sizes_kda": "12, 15, 20, 25, 35, 40, 55, 70, 100, 130, 250 (range 12–250 kDa)",
-     "pdf": "Vazyme_MP202_250kDa_Plus_Prestained.pdf (https://v4.cecdn.yun300.cn/100001_2005205005/MP202（单页版说明书）V23.1(2).pdf)"
+     "pdf": "Vazyme_MP202_250kDa_Plus_Prestained.pdf (https://v4.cecdn.yun300.cn/100001_2005205005/MP202（单页版说明书）V23.1(2).pdf)",
+     "bands_kda": [
+      12,
+      15,
+      20,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      250
+     ]
     },
     {
      "name": "180 kDa Plus Prestained Protein Marker",
@@ -1377,7 +2613,20 @@
      "url": "https://bio.vazyme.com/product/751.html",
      "bands": "11",
      "sizes_kda": "12, 15, 20, 25, 35, 40, 55, 70, 100, 130, 180 (range 12–180 kDa)",
-     "pdf": "Vazyme_MP201_180kDa_Plus_Prestained.pdf (https://v4.cecdn.yun300.cn/100001_2005205005/MP201（单页版说明书）V23.1.pdf)"
+     "pdf": "Vazyme_MP201_180kDa_Plus_Prestained.pdf (https://v4.cecdn.yun300.cn/100001_2005205005/MP201（单页版说明书）V23.1.pdf)",
+     "bands_kda": [
+      12,
+      15,
+      20,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     },
     {
      "name": "180 kDa Prestained Protein Marker",
@@ -1386,7 +2635,19 @@
      "url": "https://bio.vazyme.com/product/327.html",
      "bands": "10",
      "sizes_kda": "10, 15, 25, 35, 40, 55, 70, 100, 130, 180 (range 10–180 kDa)",
-     "pdf": "Vazyme_MP102_180kDa_Prestained.pdf (https://v1.cecdn.yun300.cn/100001_2005205005/MP102-说明书V20.1.pdf)"
+     "pdf": "Vazyme_MP102_180kDa_Prestained.pdf (https://v1.cecdn.yun300.cn/100001_2005205005/MP102-说明书V20.1.pdf)",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     }
    ]
   },
@@ -1408,7 +2669,22 @@
      "url": "https://www.biotechrabbit.com/products/electrophoresis-ladders/protein-electrophoresis/tricolor-broad-protein-ladder-ready-to-use-3-5-245-kda.html",
      "bands": "13",
      "sizes_kda": "Range 3.5–245 kDa. Two colored reference bands at ~25 kDa and ~75 kDa. (Individual 13 band masses shown in migration-chart image in PIN PDF.)",
-     "pdf": "- PDF: biotechrabbit_TriColorBroad_BR0900101_PIN.pdf"
+     "pdf": "- PDF: biotechrabbit_TriColorBroad_BR0900101_PIN.pdf",
+     "bands_kda": [
+      3.5,
+      5,
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180,
+      245
+     ]
     },
     {
      "name": "TriColor Protein Ladder (10-180 kDa)",
@@ -1417,7 +2693,19 @@
      "url": "https://www.biotechrabbit.com/products/electrophoresis-ladders/protein-electrophoresis/tricolor-protein-ladder-ready-to-use-10-180-kda.html",
      "bands": "10",
      "sizes_kda": "Range 10–180 kDa. Two colored reference bands at ~25 kDa and ~75 kDa. (Individual 10 band masses shown in migration-chart image in PIN PDF.)",
-     "pdf": "- PDF: biotechrabbit_TriColor_BR0900201_PIN.pdf"
+     "pdf": "- PDF: biotechrabbit_TriColor_BR0900201_PIN.pdf",
+     "bands_kda": [
+      10,
+      15,
+      25,
+      35,
+      40,
+      55,
+      70,
+      100,
+      130,
+      180
+     ]
     }
    ]
   }
