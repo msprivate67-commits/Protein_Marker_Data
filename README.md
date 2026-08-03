@@ -2,28 +2,31 @@
 
 Curated dataset of commercial **protein molecular weight markers / protein ladders** (蛋白分子量标准), gathered from the same suppliers covered in the DNA Marker project.
 
-Each entry includes the product name, supplier, catalog number, type (prestained/unstained/multicolor/fluorescent/native...), band count, molecular weights (kDa), product page URL, and locally downloaded manuals/PDFs where available.
+Each entry includes the product name, supplier, catalog number, type (prestained/unstained/multicolor/fluorescent/native...), band count, molecular weights (kDa), product page URL, and locally downloaded manuals/PDFs where available. Products used by GenePad also include the application's display color, HEX value, relative intensity, and reference-band flag for every band.
 
 ## Overview
 
 | | |
 |---|---|
 | Suppliers surveyed | 56 |
-| Suppliers with protein markers | **27** |
+| Suppliers with protein markers | **29** |
 | Protein marker products | **121** |
-| PDFs downloaded (manuals/COA/specs) | 98 |
-| Raw product HTML saved | 208 |
+| Products mapped to GenePad display metadata | **61** |
+| Per-band records | **1,189** |
+| PDFs downloaded (manuals/COA/specs) | 102 |
+| Raw product HTML saved | 218 |
 
 ## Data Files
 
 | File/Dir | Description |
 |----------|-------------|
-| `protein_markers.json` | Structured data (all suppliers + products) |
+| `protein_markers.json` | Structured data (all suppliers + products), including `band_details` and `genepad_ladder_id` |
 | `suppliers/` | One Markdown file per supplier (56 files) with full details |
 | `pdfs/` | Downloaded product manuals / COAs / catalog PDFs |
 | `raw_html/` | Saved product/category page snapshots |
-| `protein_marker_bands.md` | **Complete per-band MW (kDa) profiles** for all products |
-| `protein_marker_bands.csv` | Flat table, one row per band (Excel-friendly) |
+| `protein_marker_bands.md` | **Complete per-band MW, display color, HEX, intensity, and reference-band profiles** |
+| `protein_marker_bands.csv` | Flat table, one row per band (Excel-friendly), with GenePad display metadata |
+| `scripts/sync_genepad_band_metadata.mjs` | Reproducibly sync display metadata from a GenePad checkout |
 
 ## Suppliers with protein markers
 
@@ -55,14 +58,19 @@ Each entry includes the product name, supplier, catalog number, type (prestained
 | 24 | UBPBio | ubpbio.com | 2 |
 | 25 | Vazyme | bio.vazyme.com (corporate: www.vazyme.com) | 3 |
 | 26 | biotechrabbit | biotechrabbit.com (biotechrabbit GmbH, Berlin, Germany) | 2 |
+| 27 | Epizyme | epizyme.cn | 7 |
+| 28 | MilliporeSigma | sigmaaldrich.com / emdmillipore.com | 3 |
+| 29 | Promega | promega.com | 3 |
 
 ## Suppliers without protein markers
 
 Surveyed but no protein marker product line found:
-Agilent, Axygen, Bioline, Bionexus, Canvax_Biotech, DyneBio, Ecogen, Eurogentec, Fisher_Scientific, GeneDireX, GeneMate, Geneaid, Genessee_Scientific, IBI-Scientific, KAPA-Biosystems, Lucigen, MIDSCI, MilliporeSigma, NIPPON_GENE, NZYTech, PHENIX_Research, PennState_DNA_Ladders, Phage_and_Plasmid_Markers, Promega, Qiagen, Solis_BioDyne, Takara, Toyobo, VWR_Peqlab, WATSON
+Agilent, Axygen, Bioline, Bionexus, Canvax_Biotech, DyneBio, Ecogen, Eurogentec, Fisher_Scientific, GeneDireX, GeneMate, Geneaid, Genessee_Scientific, IBI-Scientific, KAPA-Biosystems, Lucigen, MIDSCI, NIPPON_GENE, NZYTech, PHENIX_Research, PennState_DNA_Ladders, Phage_and_Plasmid_Markers, Qiagen, Solis_BioDyne, Takara, Toyobo, VWR_Peqlab, WATSON
 
 ## Notes
 
 - "Protein markers found" counts reflect distinct commercial protein standard products; `suppliers/` files contain per-product details (catalog #, type, bands, kDa sizes, URL, PDF).
 - Some suppliers' sites are geo-blocked or require JS; where a product line was confirmed from catalogs/docs but pages could not be saved, this is noted in the supplier file.
 - PDFs were downloaded where the host allowed automated/browser retrieval; blocked hosts (e.g. some CDN-gated manuals) are recorded as URLs in the supplier files.
+- GenePad colors describe the application's gel visualization. `unknown` means a product is not mapped in GenePad; it does not mean the physical band is unstained.
+- Re-run `node scripts/sync_genepad_band_metadata.mjs <GenePad repository>` after changing GenePad's protein ladder definitions.
